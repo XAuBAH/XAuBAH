@@ -39,7 +39,13 @@ var Balloon = function () {
     var container = new PIXI.Container();
     this.app.stage.addChild(container);
     this.app.view.style['transform'] = 'translatez(0)';
-
+    this.app.view.style['position'] = 'fixed';
+    this.app.view.style['top'] = '0px';
+    this.app.view.style['z-index'] = '-1';
+    
+    
+    
+    
     this.interval = setInterval(function () {
       this.particles.push(new Particle(this.app, container, {
         speed: 1 + Math.random() * 5,
