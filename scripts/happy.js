@@ -26,7 +26,8 @@ var Balloon = function () {
 
     this.app = new PIXI.Application($(window).width(), $(window).height(), {
       antialias: true,
-      backgroundColor: 0x000
+      backgroundColor: 0x000,
+      opacity: 0.3
     });
 
     var amount = this.app.renderer instanceof PIXI.WebGLRenderer ? 100 : 5;
