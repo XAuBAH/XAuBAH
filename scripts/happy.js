@@ -31,7 +31,7 @@ class Balloon{
       this.app.renderer.context.webkitImageSmoothingEnabled = false;
     }
 
-    document.wrapper.appendChild(this.app.view);
+    document.body.appendChild(this.app.view);
     var container = new PIXI.Container();
     this.app.stage.addChild(container);
     this.app.view.style['transform'] = 'translatez(0)'
