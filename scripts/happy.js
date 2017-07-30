@@ -60,6 +60,13 @@ var Balloon = function () {
     $("canvas").remove();
     this.init();
   };
+  
+  Balloon.prototype.resize = function remove() {
+    $("canvas").remove();
+    $("close").remove();
+    
+    
+  };
 
   return Balloon;
 }();
