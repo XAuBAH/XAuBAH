@@ -61,7 +61,7 @@ var Balloon = function () {
     this.init();
   };
   
-  Balloon.prototype.resize = function remove() {
+  Balloon.prototype.resize = function removebalons() {
     $("canvas").remove();
     $("close").remove();
     
