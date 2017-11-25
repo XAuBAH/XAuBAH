@@ -1,0 +1,25 @@
+//-----------
+.promotion-header {
+    position: unset!important;
+  	height: 0px!important;
+}
+//Верхняя плашка
+.icon-sp-1, .icon-sp-11 {
+    background-image: url(https://i.imgur.com/g6zJDvA.png)!important;
+}
+.icon-sp-1 {
+    background-position: 0 -1696px!important;
+}
+.icon-sp-9 {
+    background-position: -724px -1050px!important;
+}
+//Нажпись Безб скидки
+.icon-sp-subtitle-en {
+    background-position: -2099px -4px!important;
+    width: 551px!important;
+    height: 48px!important;
+}
+.icon-sp-10 {
+    top: 9px!important;
+    left: 725px!important;
+}
