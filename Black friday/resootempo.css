@@ -1,0 +1,135 @@
+/*подгон мониторов*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  	.navbar {
+    top: -70px;
+    z-index: 1000000;
+}
+  .xbox {
+    top: -70px;
+}
+    .header__image {
+	width: 1009px;
+    height: 763px;
+    margin-left: -22.5%;
+    max-width: unset;
+    }
+  #browser-ponies{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: 250px;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 543px;
+    top: -10220px;
+    width: 110px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  	.navbar {
+    top: -71px;
+}
+  
+  .xbox {
+    top: -70px;
+}
+    .header__image {
+    width: 1352px;
+    height: 724px;
+    margin-left: -22.2%;
+    max-width: unset;
+    }
+  #browser-ponies{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: unset;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 785px;
+    top: -835px;
+    width: 110px;
+  }
+}
+@media (min-width: 576px)
+.modal-sm {
+    max-width: 301px;
+}
+@media (min-width: 1200px) {
+  	.navbar {
+    top: -87px;
+}
+  .xbox {
+    top: -84px;
+}
+    .header__image {
+    width: 1618px;
+    height: 765px;
+    max-width: unset;
+    margin-left: -22.5%;
+    }
+  .xbox_monitoring {
+    position: relative;
+    background: #2b343a;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
+    top: -84px;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 925px;
+    top: -835px;
+    width: 150px;
+  }
+  .xbox_vk-member-reward .xbox__footer1 > a:after{
+    content: "бонус";
+}
+}
+@media (max-width: 767px) {
+    /*Картинка шапки в мобильной версии*/
+    
+    .header__image {
+        content: url("https://pic.moscow.ovh/images/2017/05/01/b381a1dcabf592ea599407cc147ecf0c.png");
+    	height: 714px;
+    }
+  .xbox_store {
+    top: -20px;
+	}
+  #browser-ponies{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .title {
+    display: none;
+}
+  .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+   width: 250px;
+}
+  .footer {
+    display: none;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 393px;
+    top: -17070px;
+    width: 109px;
+  }
+  .modal-roulette .roulette__description:before {
+    content: "УБЕДИТЕЛЬНАЯ ПРОСЬБА НЕ ОТКРЫВАТЬ РУЛЕТКИ С ТЕЛЕФОНА, ОТОБРАЖЁННЫЕ ВЕЩИ МОГУТ ОТЛИЧАТСЯ ОТ ПОЛУЧЕННЫХ В ДЕЙСТВИТЕЛЬНОСТИ ИЗ-ЗА СЖАТИЯ ЭКРАНА";
+  }
+}
