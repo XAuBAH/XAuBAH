@@ -710,7 +710,7 @@ curcontent["plugins"] = {
 </div>'
 };
 
-string aboutserversdub = '<li>Мощные анти-читы [AntiCheat]</li>\
+var aboutserversdub = '<li>Мощные анти-читы [AntiCheat]</li>\
 <li>Отзывчивая Администрация</li>\
 <li>Бесплатные оповещения о рейдах (/vk)</li>\
 <li>Частые Эвенты [EVENTS]</li>\
