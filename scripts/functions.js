@@ -798,6 +798,8 @@ curcontent["block"] = {
 <div class="kit-item__quantity block-lvl-2">6 часов</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/coffeecan.helmet.png">\
 <div class="kit-item__quantity block-lvl-2">6 часов</div></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/roadsign.kilt.png">\
+<div class="kit-item__quantity block-lvl-2">6 часов</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/roadsign.jacket.png">\
 <div class="kit-item__quantity block-lvl-2">6 часов</div></div></div></div>\
 <div class="block_by_category block_category_3">\
@@ -832,6 +834,10 @@ curcontent["block"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.bolt.png">\
 <div class="kit-item__quantity block-lvl-5">24 часа</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.lr300.png">\
+<div class="kit-item__quantity block-lvl-5">24 часа</div></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.l96.png">\
+<div class="kit-item__quantity block-lvl-5">24 часа</div></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.m39.png">\
 <div class="kit-item__quantity block-lvl-5">24 часа</div></div></div></div>\
 <div class="block_by_category block_category_6">\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/lmg.m249.png">\
