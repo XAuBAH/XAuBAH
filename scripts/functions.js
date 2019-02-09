@@ -843,9 +843,9 @@ curcontent["block"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/explosive.satchel.png">\
 <div class="kit-item__quantity block-lvl-6">26 часов</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/surveycharge.png">\
-<div class="kit-item__quantity block-lvl-6">26 часов</div></div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/ammo.rifle.explosive.png">\
 <div class="kit-item__quantity block-lvl-6">26 часов</div></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/ammo.rifle.explosive.png">\
+<div class="kit-item__quantity block-lvl-6">26 часов</div></div></div></div>\
 <div class="block_by_category block_category_7">\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/explosive.timed.png">\
 <div class="kit-item__quantity block-lvl-7">28 часов</div></div></div>\
