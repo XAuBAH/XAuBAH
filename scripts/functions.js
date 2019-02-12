@@ -785,7 +785,8 @@ curcontent["serv"] = {
 
 curcontent["block"] = {
 	xhead: 'Блокировки после вайпа',
-	xcon: '<div class="xbox_custom_block"><div class="kit-items">\
+	xcon: '<div class="xbox_custom_block">\
+<i class="fa fa-info-circle"></i> Внимание! Вся эта таблице так же доступна на сервере по команде /block для более подробного ознакомления с оставшимся временем до разблокировки!<br><div class="kit-items">\
 <div class="block_by_category block_category_1">\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pistol.revolver.png">\
 <div class="kit-item__quantity block-lvl-1">3 часа</div></div></div></div>\
