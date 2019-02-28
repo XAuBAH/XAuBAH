@@ -185,6 +185,8 @@ curcontent["help"] = {
 <span class="MsoCommand">bind u building.upgrade</span> Автоматическое улучшение строений.<br>\
 <span class="MsoCommand">bind k kits.open</span> Открыть меню китов.<br>\
 <span class="MsoCommand">bind esc kits.destroy</span> Закрыть меню китов.<br>\
+<span class="MsoCommand">bind o store.opencart</span> Открыть корзину магазина.<br>\
+<span class="MsoCommand">bind o store.giveitemall</span> Быстро забрать всё из корзины магазина.<br>\
 <span class="MsoCommand">bind l skills</span> Открыть меню прокачек.</div><br>\
 <!--<i class="fa fa-info-circle"></i>--> Так же если в этом списке нет ваших любимых команд, вы всё ещё можете забиндить их традиционно. (Кавычки обьязательны)<br>\
 <div style="padding: 1px 29px;">\
@@ -784,7 +786,7 @@ curcontent["serv"] = {
 };
 
 curcontent["block"] = {
-	xhead: 'Блокировки после вайпа',
+	xhead: 'Блокировка оружия и взрывчатого после вайпа',
 	xcon: '<div class="xbox_custom_block"><div class="kit-items">\
 <div class="block_by_category block_category_1">\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pistol.revolver.png">\
@@ -858,7 +860,7 @@ curcontent["block"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rocket.launcher.png">\
 <div class="kit-item__quantity block-lvl-7">28 часов</div></div></div>\
 </div></div>\
-<br><i class="fa fa-info-circle"></i> Внимание! Вся эта таблице так же доступна на сервере по команде /block для более подробного ознакомления с оставшимся временем до разблокировки!</div>'
+<br><i class="fa fa-info-circle"></i> Внимание! Вся эта таблица так же доступна на сервере по команде /block для более подробного ознакомления с оставшимся временем до разблокировки!</div>'
 };
 
 
