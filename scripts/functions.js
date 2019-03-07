@@ -112,7 +112,7 @@ curcontent["rules"] = {
 <p><li>Проверяющие отвечают только за проверку на стороннее ПО у игроков, при наличии жалоб или репортов на него. Отказ от проверки карается баном. При вызове у вас появляется уведомление на экране. Вызовы через чат не производятся</li></p>\
 <p><li>Вы несете ответственность за все свои аккаунты. Получив бан за нарушение, вы получите его и на последующих аккаунтах.</li></p><br>\
 <p class="MsoNormal"><span>Игровой процесс</span></li></p>\
-<p><li>Запрещено использовать/хранить/распространять стороннее ПО или любые другие средства, позволяющие получить преимущество над другими игроками. Использование услуг читеров/макросников приравнивается к хранению.</li></p>\
+<p><li>Запрещено использовать/хранить/приобретать/распространять стороннее ПО или любые другие средства, позволяющие получить преимущество над другими игроками. Использование услуг читеров/макросников приравнивается к хранению.</li></p>\
 <p><li>Запрещено превышать лимит игроков в команде, установленный сервером. (см. название сервера MAX 1/2/3)</li></p>\
 <p><li>Игрокам запрещено строить дома в текстурах, а так же застраивать игровые локации, препятствующие к использованию РТ.</li></p>\
 <p><li>Запрещено строиться или хранить лут в текстурах/скалах/камнях и подобных недоработках карт.</li></p>\
@@ -350,7 +350,7 @@ curcontent["kit-wars"] = {
 <div class="kit-item__quantity">x25</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/scrap.png">\
 <div class="kit-item__quantity">x80</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/pistol.python.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/smg.thompson.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/ammo.pistol.png">\
 <div class="kit-item__quantity">x100</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/hatchet.png"></div></div>\
