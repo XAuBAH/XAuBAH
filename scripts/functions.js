@@ -624,8 +624,8 @@ curcontent["serv"] = {
 Мы попытались разнообразить геймплей для вас и привнести что-то новое в игру.<br>Хватит читать, заходи и попробуй сам:</div>\
 \
 <h4 class="serverheader">GRAND RUST#1 Barren Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
-<ul><li>Рейты x3, Стаки</li>\
-<li>Рейты печек х3</li>\
+<ul><li>Рейты x2, Стаки</li>\
+<li>Рейты печек х4</li>\
 <li>Разрешено играть только соло</li>\
 '+ aboutserversdub +'\
 </ul>\
