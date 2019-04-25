@@ -625,35 +625,35 @@ curcontent["serv"] = {
 \
 <h4 class="serverheader">GRAND RUST#1 Barren Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х4</li>\
+<li>Рейты печек х3</li>\
 <li>Разрешено играть только соло</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
 <h4 class="serverheader">GRAND RUST#2 Procedural Max 2 </h4><p class="ipconnect">connect 2.grand-rust.ru:10000<a href="steam://connect/185.97.254.136:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х4</li>\
+<li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
 <h4 class="serverheader">GRAND RUST#3 Barren Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/185.97.254.82:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х4</li>\
+<li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
 <h4 class="serverheader">GRAND RUST#4 Barren Max 3 </h4><p class="ipconnect">connect 4.grand-rust.ru:10000<a href="steam://connect/185.97.254.146:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х4</li>\
+<li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
 <h4 class="serverheader">GRAND RUST#5 Hapis Max 2 </h4><p class="ipconnect">connect 5.grand-rust.ru:10000<a href="steam://connect/185.97.254.11:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х4</li>\
+<li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
