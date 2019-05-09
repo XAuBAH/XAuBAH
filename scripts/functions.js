@@ -230,9 +230,9 @@ curcontent["help"] = {
 };
 
 
-var kit_prem = ['stones', 5000, 10000, 12000, 
-				'wood', 4000, 1000, 3500,
-				'metal.fragments', 1500, 3000, 3000,
+var kit_prem = ['stones', 5000, 10000, 13000, 
+				'wood', 4000, 10000, 12000,
+				'metal.fragments', 1500, 3000, 3500,
 				'lowgradefuel', 500, 1500, 2000,
 				'cloth', 500, 1000, 1500,
 				'leather', 500, 1000, 1500,
@@ -476,9 +476,9 @@ curcontent["kit-grand"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/hazmatsuit.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/hazmatsuit.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/sulfur.png">\
-<div class="kit-item__quantity">x10000</div></div></div>\
+<div class="kit-item__quantity">x15000</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/gunpowder.png">\
-<div class="kit-item__quantity">x3000</div></div></div>\
+<div class="kit-item__quantity">x5000</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/metal.fragments.png">\
 <div class="kit-item__quantity">x10000</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/workbench1.png"></div></div>\
@@ -568,7 +568,9 @@ curcontent["plugins"] = {
 Всего нашивок 15, если вам удастся разблокировать 15 нашивок раньше всех, вы получите 10.000 рублей на карту или qiwi кошелёк.</p>\
 <br>\
 <blockquote class="pluginsheader"><center>Суперигра (Еженедельный ивент)</center></blockquote>\
-<p>Если у тебя нет денег но хочется поиграть с привилегией, ты всегда можешь принять участие в СУПЕРИГРЕ и выиграть. За добычу дерева, камня, серную и железную руду, тебе будет выпадать случайное число от 1 до 5. Задача набрать 100 баллов на каждом ресурсе. Всего ресурсов 4. За каждые набранные 100 баллов, ты получаешь внутриигровую валюту и можешь потратить их во внутриигровом магазине. Если наберёшь 400 баллов, получишь случайную привилегию Premium, Wars, Elite, King или Grand на 7 дней. Удачи!</p>\
+<p>Если у тебя нет денег но хочется поиграть с привилегией, ты всегда можешь принять участие в СУПЕРИГРЕ и выиграть. За добычу дерева, камня, серную и железную руду, \
+тебе будет выпадать случайное число от 1 до 5. Задача набрать определённое количество баллов на каждом из ресурсов. Всего ресурсов 4. За каждые набранные ресурсы, \
+ты получаешь внутриигровую валюту и можешь потратить их в магазине /shop. Если наберёшь баллы сразу на всех 4-х ресурсах, получишь случайную привилегию Premium, Wars, Elite, King или Grand на 7 дней. Удачи!</p>\
 <br>\
 <blockquote class="pluginsheader"><center>Уникальный шкаф (Еженедельный ивент).</center></blockquote>\
 <p>Ивент, в котором могут принять участие все игроки, проведя на сервере не менее 5 часов. \
@@ -625,14 +627,14 @@ curcontent["serv"] = {
 \
 <h4 class="serverheader">GRAND RUST#1 Barren Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х3</li>\
+<li>Рейты печек х4</li>\
 <li>Разрешено играть только соло</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
 <h4 class="serverheader">GRAND RUST#2 Procedural Max 2 </h4><p class="ipconnect">connect 2.grand-rust.ru:10000<a href="steam://connect/185.97.254.136:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
-<li>Рейты печек х3</li>\
+<li>Рейты печек х2</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
