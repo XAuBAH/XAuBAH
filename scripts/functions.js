@@ -625,7 +625,7 @@ curcontent["serv"] = {
 Тщательно настроенные модификации сервера, отличные плагины и правильная сборка сервера поможет вам ощутить все прелести Раста на себе и к тому же получить незабываемый опыт игры.<br><br>\
 Мы попытались разнообразить геймплей для вас и привнести что-то новое в игру.<br>Хватит читать, заходи и попробуй сам:</div>\
 \
-<h4 class="serverheader">GRAND RUST#1 Barren Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Разрешено играть только соло</li>\
