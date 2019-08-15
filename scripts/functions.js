@@ -176,7 +176,7 @@ curcontent["help"] = {
 Мы кое-что изменили, теперь вы можете биндить хом следующим образом.<br>\
 Наример: ставите хомку "/sethome 1", далее пишите в консоль такую команду bind клавиша "home 1" и бинд работает!<br><br>\
 <h4>Также доступны следующие быстрые бинды</h4>\
-<div style="padding: 1px 29px;">\
+<div class="commandblock">\
 \
 <span class="MsoCommand">bind t tpr имя или steam часто запрашиваемого товарища</span> Отправить запрос на товарища.<br>\
 <span class="MsoCommand">bind p remove</span> Включение/Выключение ремувера ваших построек.<br>\
@@ -188,18 +188,18 @@ curcontent["help"] = {
 <span class="MsoCommand">bind o store.giveitemall</span> Быстро забрать всё из корзины магазина.<br>\
 <span class="MsoCommand">bind l skills</span> Открыть меню прокачек.</div><br>\
 <!--<i class="fa fa-info-circle"></i>--> Так же если в этом списке нет ваших любимых команд, вы всё ещё можете забиндить их традиционно. (Кавычки обьязательны)<br>\
-<div style="padding: 1px 29px;">\
+<div class="commandblock">\
 <span class="MsoCommand">bind c chat.say "/skin"</span> Скины.<br>\
 <span class="MsoCommand">bind f7 "chat.say /back"</span> Скрафтить Доп. Рюкзак.</div>\
 <h4>Бинды для отдельных привилегий</h4>\
-<div style="padding: 1px 29px;">\
+<div class="commandblock">\
 <!--<span class="MsoCommand">bind b backpack.open</span> Открыть Доп. Рюкзак.<br>-->\
 <span class="MsoCommand">bind b back</span> Скрафтить Доп. Рюкзак.<br>\
 <span class="MsoCommand">bind c rec</span> Открыть окно переработчика.</div>\
 <!--<i class="fa fa-info-circle"></i>--> На каждую команду можно назначить именно свою, удобную для Вас кнопку.<br>\
 <br>\
 <h4>ЧАТ команды телепорта</h4>\
-<div style="padding: 1px 29px;">\
+<div class="commandblock">\
 <span class="MsoCommand">/tpr ник</span> Отправить запрос на телепортацию к игроку.<br>\
 <span class="MsoCommand">/tpa</span> Принять запрос на телепортацию.<br>\
 <span class="MsoCommand">/tpc</span> Отменить/отклонить телепортацию.<br>\
@@ -208,25 +208,39 @@ curcontent["help"] = {
 <span class="MsoCommand">/home list</span> Показать список Ваших домов.<br>\
 <span class="MsoCommand">/home название дома</span> Телепортироваться на дом с указанным названием.</div><br>\
 <h4>Команды системы друзей и кланов</h4>\
-<div style="padding: 1px 29px;">\
+<div class="commandblock">\
 <span class="MsoCommand">/friend add ник</span> Отправить игроку запрос на дружбу.<br>\
 <span class="MsoCommand">/friend accept</span> Принять запрос дружбы.<br>\
 <span class="MsoCommand">/friend deny</span> Отклонить запрос дружбы.<br>\
 <span class="MsoCommand">/friend remove ник</span> Удалить друга.<br>\
 <span class="MsoCommand">/friend list</span> Показать список друзей.<br>\
-<span class="MsoCommand">/ff on/off</span> Включить/Выключить урон по друзьям и соклановцам.</div><br>\
+<span class="MsoCommand">/ff on/off</span> Включить/Выключить урон по друзьям и соклановцам.</div>\
+<br>\
 <h4>Команды китов</h4>\
-<div style="padding: 1px 29px;">\
+<div class="commandblock">\
 <span class="MsoCommand">/kit</span> Показать меню наборов.</div><br>\
 <!--<span class="MsoCommand">/kits</span> Показать в чате список наборов.<br>\
 <span class="MsoCommand">/kit кит</span> Получить набор с указанным названием.<br></div>-->\
 <h4>Список команд по привилегиям</h4>\
-<div style="padding: 1px 29px;">\
-<span class="MsoCommand">/skin</span> Открыто окно выбора скинов.<br>\
+<div class="commandblock">\
+<span class="MsoCommand">/skin</span> Открыть окно выбора скинов.<br>\
 <span class="MsoCommand">/sil ссылка на картинку</span> Поставить картинку из интернета на табличку.<br>\
 <span class="MsoCommand">/chat color</span> Сменить цвет ника.<br>\
 <span class="MsoCommand">/chat prefix</span> Смена префикса перед ником.<br>\
-<span class="MsoCommand">/rec</span> Открыть окно переработчика.</div></div>'
+<span class="MsoCommand">/rec</span> Открыть окно переработчика.</div>\
+<br>\
+<h4>Полезные команды</h4>\
+<div class="commandblock">\
+<span class="MsoCommand">/block</span> Список заблокированных предметов после вайпа.<br>\
+<span class="MsoCommand">/ar</span> Сделать калибровку под ваше разрешение экрана.<br>\
+<span class="MsoCommand">/us</span> Зарепортить дом на использование усов выше нормы установленной сервером. (>10 квадратов радиусом)<br>\
+<span class="MsoCommand">/vk</span> Привязать ваш VK для увкдомлений о рейде или вайпе.<br>\
+<span class="MsoCommand">/map</span> Открыть карту.<br>\
+<span class="MsoCommand">/case</span> Открыть ваш склад внутриигровых накоплений.<br>\
+<span class="MsoCommand">/skill</span> Открыть окно прокачек.<br>\
+<span class="MsoCommand">/trade ник</span> Отправить запрос на трейд.<br>\
+<span class="MsoCommand">/votemute ник</span> Проголосовать за мут игрока.<br>\
+<span class="MsoCommand">/voteban ник</span> Проголосовать за бан игрока.</div></div>'
 };
 
 
@@ -502,8 +516,8 @@ curcontent["kit-free"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamuserimages-a.akamaihd.net/ugc/851593237065046314/C4394B54330D8C6C0D1DC624FE5F20F448880603/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamuserimages-a.akamaihd.net/ugc/821190300748591786/D677BA94E2D706E033F9BB3B78B154364E17EAE0/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamuserimages-a.akamaihd.net/ugc/90478291046828677/21E21062B5573D3ACBCD9DBFAB2571923538CB90/?imw=637&imh=358&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamcommunity-a.akamaihd.net/economy/image/rtOnLXYSD-u65eusOk-nO4hCpUCJo2NbCxc2U4Y51MLNQ5Hz3URG1UJcBu0sv2Ko-M1Zj0mvYmKzVOblhE7lZDmDtDkHlikYyUNwwYoHBW_srcbfFyoHWEr7cg/360fx360f"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamcommunity-a.akamaihd.net/economy/image/rtOnLXYSD-u65eusOk-nO4hCpUCJo2NbCxc2U4Y51MLNQ5Hz3URG1UJcBu0sv2Ko-M1Zj0mvYmKzVOblhE7mZTiDtDkHlikYyUNwwYgMBmLmq8naHS-Xv8MmjA/360fx360f"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamuserimages-a.akamaihd.net/ugc/956350181140504911/CB13074BC7EE6C818347E10CF8ECDBFA47F1E9A3/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://steamuserimages-a.akamaihd.net/ugc/956350181140521182/4D408A70093BFEF6C339E99628E4907AC069E253/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
 </div></div>\
 <div class="serverheader">Starter</div>\
 <div class="kit_set"><div class="kit-items">\
@@ -625,7 +639,7 @@ curcontent["serv"] = {
 Тщательно настроенные модификации сервера, отличные плагины и правильная сборка сервера поможет вам ощутить все прелести Раста на себе и к тому же получить незабываемый опыт игры.<br><br>\
 Мы попытались разнообразить геймплей для вас и привнести что-то новое в игру.<br>Хватит читать, заходи и попробуй сам:</div>\
 \
-<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#1 Barren Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Разрешено играть только соло</li>\
@@ -653,7 +667,14 @@ curcontent["serv"] = {
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#5 Hapis Max 2 </h4><p class="ipconnect">connect 5.grand-rust.ru:10000<a href="steam://connect/185.97.254.11:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#5 Procedural Max 3 </h4><p class="ipconnect">connect 5.grand-rust.ru:10000<a href="steam://connect/185.97.254.7:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<ul><li>Рейты x2, Стаки</li>\
+<li>Рейты печек х3</li>\
+<li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>\
+'+ aboutserversdub +'\
+</ul>\
+<br>\
+<h4 class="serverheader">GRAND RUST#6 Procedural Custom Max 2 </h4><p class="ipconnect">connect 6.grand-rust.ru:10000<a href="steam://connect/185.97.254.11:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
@@ -692,7 +713,7 @@ function Open(el, usefade = true, zind = false) {
 	if(!usefade) div2.classList.add("show");
 	div2.style = 'display: block;';
 	div2.id = 'closer';
-	//div2.onclick = closepage
+	//div2.onclick = closepage;
 	var div3 = document.createElement("div");
 	div3.className = "modal-dialog modal-lg";
 	if(el=="block")div3.className+=" modal-lg-block"
@@ -706,7 +727,7 @@ function Open(el, usefade = true, zind = false) {
 	div6.innerHTML = curcontent[el].xcon;
 	var div7 = document.createElement("div");
 	div7.className = "modal-footer";
-	div7.innerHTML = '<center><button class="btn btn-danger" id="closer">Закрыть</button><center>';
+	div7.innerHTML = '<center><button class="btn btn-danger" id="closer" onclick="closepage()">Закрыть</button><center>';
 	var div8 = document.createElement("div");
 	div8.className = "modal-backdrop fade show";
 	
