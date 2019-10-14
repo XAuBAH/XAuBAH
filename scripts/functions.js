@@ -178,6 +178,7 @@ curcontent["help"] = {
 <h4>Также доступны следующие быстрые бинды</h4>\
 <div class="commandblock">\
 \
+<span class="MsoCommand">bind h home название</span> Запрос тп на хом.</div><br>\
 <span class="MsoCommand">bind t tpr имя или steam часто запрашиваемого товарища</span> Отправить запрос на товарища.<br>\
 <span class="MsoCommand">bind p remove</span> Включение/Выключение ремувера ваших построек.<br>\
 <span class="MsoCommand">bind m map.open</span> Открыть/закрыть карту.<br>\
@@ -187,6 +188,7 @@ curcontent["help"] = {
 <span class="MsoCommand">bind o store.opencart</span> Открыть корзину магазина.<br>\
 <span class="MsoCommand">bind o store.giveitemall</span> Быстро забрать всё из корзины магазина.<br>\
 <span class="MsoCommand">bind l skills</span> Открыть меню прокачек.</div><br>\
+<span class="MsoCommand">bind l xp</span> Открыть меню внутриигровой валюты.</div><br>\
 <!--<i class="fa fa-info-circle"></i>--> Так же если в этом списке нет ваших любимых команд, вы всё ещё можете забиндить их традиционно. (Кавычки обьязательны)<br>\
 <div class="commandblock">\
 <span class="MsoCommand">bind c chat.say "/skin"</span> Скины.<br>\
@@ -234,7 +236,7 @@ curcontent["help"] = {
 <span class="MsoCommand">/block</span> Список заблокированных предметов после вайпа.<br>\
 <span class="MsoCommand">/ar</span> Сделать калибровку под ваше разрешение экрана.<br>\
 <span class="MsoCommand">/us</span> Зарепортить дом на использование усов выше нормы установленной сервером. (>10 квадратов радиусом)<br>\
-<span class="MsoCommand">/vk</span> Привязать ваш VK для увкдомлений о рейде или вайпе.<br>\
+<span class="MsoCommand">/vk</span> Привязать ваш VK для уведомлений о рейде или вайпе.<br>\
 <span class="MsoCommand">/map</span> Открыть карту.<br>\
 <span class="MsoCommand">/case</span> Открыть ваш склад внутриигровых накоплений.<br>\
 <span class="MsoCommand">/skill</span> Открыть окно прокачек.<br>\
@@ -463,10 +465,11 @@ curcontent["kit-grand"] = {
 <div class="kit-item__quantity">x50</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/scrap.png">\
 <div class="kit-item__quantity">x200</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/chainsaw.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.ak.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/ammo.rifle.png">\
 <div class="kit-item__quantity">x200</div></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/chainsaw.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.ak.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/rifle.lr300.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/uberpickaxe.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/uberhatchet.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/supply.signal.png"></div></div>\
@@ -571,13 +574,13 @@ curcontent["plugins"] = {
 	xhead: 'Уникальные плагины и ивенты',
 	xcon: '<div class="xbox_custom_plugins xbox_custom_rules">\
 <!--<a class="xbox_custom_photo"><img src="https://pp.userapi.com/c637530/v637530980/5d5b4/0uh_67rtFgo.jpg"></a>-->\
-<blockquote class="pluginsheader" helvetica=""><center>Радиоактивный дом</center></blockquote>\
+<blockquote class="pluginsheader"><center>Радиоактивный дом.</center></blockquote>\
 <p>Дом появляется ежедневно, с промежутком 2 часа, координаты дома указаны в чате и на карте. \
 Суть проста – авторизоваться в шкафу, удержать свою авторизацию в течении 10 минут. \
 После чего вам будет доступен ящик с ресурсами. Ресурсы выпадают рандомно, в зависимости от времени проведения вайпа, ценность ресурсов будет только увеличиваться. \
 Ах да, забыли сообщить. Там будет радиация, много радиации.</p>\
 <br>\
-<blockquote class="pluginsheader"><center>Нашивки (Ежемесячный ивент)</center></blockquote>\
+<blockquote class="pluginsheader"><center>Нашивки (Ежемесячный ивент).</center></blockquote>\
 <p>Открывайте нашивки выполняя задания. За каждую разблокированную нашивку, вы будете получать рандомные призы. \
 Всего нашивок 15, если вам удастся разблокировать 15 нашивок раньше всех, вы получите 10.000 рублей на карту или qiwi кошелёк.</p>\
 <br>\
@@ -591,17 +594,47 @@ curcontent["plugins"] = {
 Игрок получает уникальный шкаф, который бережёт от уничтожения, в то же время сам старается найти \
 и уничтожить как можно больше вражеских шкафов чтобы получить за них очки в топе, тем самым игроки, попавшие в топ 3, и заработавшие больше 0 баллов, получают бонус в виде баланса на магазин.</p>\
 <br>\
-<blockquote class="pluginsheader"><center>Дуэли</center></blockquote>\
+<blockquote class="pluginsheader"><center>Дуэли.[Временно не доступны!]</center></blockquote>\
 <p>На всех серверах установлены Дуэли, на которых вы можете играть просто так или же делать ставки! Дуэлиться можно даже во время блокировки предметов.</p>\
 <br>\
-<blockquote class="pluginsheader"><center>Система XP, Игровая валюта, Способности и Кейсы</center></blockquote>\
+<blockquote class="pluginsheader"><center>Система XP, Игровая валюта, Способности и Кейсы.</center></blockquote>\
 <p>Играя на серверах, вы будете прокачивать свой уровень выполняя различные действия, как при системе ХР. \
 Прокачивая уровень вам будут разблокироваться кейсы, которые вы сможете открывать ежедневно. \
 Всё содержимое кейсов попадает на склад и храниться там пока вы это не заберёте. \
 С прокачкой уровней, вам начисляются Гранды, которые вы можете потратить на покупку необходимых товаров в магазине или прокачку способностей.</p>\
 <br>\
-<blockquote class="pluginsheader"><center>ПРМ, Грандий, Ломидий</center></blockquote>\
+<blockquote class="pluginsheader"><center>ПРМ, Грандий, Ломидий.</center></blockquote>\
 <p>Имеется свой собственный ресурс, переработчик и квесты для нахождения редких деталей ПРМ.</p>\
+<br>\
+<blockquote class="pluginsheader"><center>Домашнее кaзино.</center></blockquote>\
+<p>Вы можете собрать детали от кaзино и приобрести лицензию на установку игрового стoла в нашем внутриигровом магазине. \
+После этого сможете поставить его у себя дома и не бегать с драгоценным ресами в общественное кaзино. К тому же мы добавили лицензии не только на скрап но и на другие ценные ресурсы! \
+Покупая их вы сможете ставить разные предметы не выходя из дома! Более подробная информация во внутриигровом магазине во вкладке кaзино.</p>\
+<br>\
+<blockquote class="pluginsheader"><center>Система XP возможность вывода.</center></blockquote>\
+<p>Теперь вы можете выводить ващи накопления XP в электронном кошельке ввиде монеток в инвентарь. <br>\
+Вывод доступен через меню внутриигровой валюты и левела в верхнем правом углу экрана. Чтобы внести монеты обратно на счёт нужно набрать от 10 шт. и нажать Upgrade на предмете. <br>\
+<i class="fa fa-info-circle"></i> Более подробного вы можете ознакомится в самом меню внутриигровой валюты и левела. <br><br>\
+Что это даёт: <br>\
+- Теперь вы сможете поделится с другом вашими XP, например, если вы уже прокачали способности, а вашему другу не много не хватило. <br>\
+- Теперь можно трейдить XP как ресурс на интересующие вас предметы. <br>\
+- Вы можете зарабатывать XP добывая его даже во время отсутствия на сервере с помощью прибора под названием Майнинговая ферма. </p><br>\
+<br>\
+<blockquote class="pluginsheader"><center>Майнинговая ферма.</center></blockquote>\
+<p>Для сборки Фермы необходимо: устройство для выработки энергии (Малый генератор, Cолнечная панель или Ветрогенератор) \
+Разветвитель, Мигалка, Аккумулятор, Радиопередатчик.</p>\
+<div class="x-spoiler" style="width: 695px;margin-left: 43px;">\
+<input class="spoil-button" type="checkbox" tabindex="-1">\
+     <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Пример подключения смотреть на картинке...</span><br>\
+	 <blockquote class="spoil-Untext"><a class="xbox_custom_photo"><img src="https://media.discordapp.net/attachments/619458176483328020/621435647089049659/generator_wind_scrap.png?width=910&height=512"></a></blockquote>\
+     </div></div><br>\
+<p>После того как всё было собрано и подключено, задайте на Радиопередатчике частоту 1001 и нажмите Применить. <br>\
+Если электро цепь была собрана правильно, сразу после подачи питания на Аккумулятор,<br>\
+возле него появится Почтовый ящик, в который и будут майниться ваши Гранды.<br>\
+Как только заряд в Аккумуляторе накопит энергии на 6 минут,<br>\
+в Почтовом ящике появится 1 Гранд в обмен на энергию в Аккумуляторе, и так по кругу. <br>\
+6 минут заряда аккумулятора = 1 Гранду.<br>\
+<i class="fa fa-info-circle"></i> Более подобно можно ознакомится в самом меню внутриигровой валюты и левела во вкладке XP</p><br>\
 <br>\
 </div>'
 };
