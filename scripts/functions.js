@@ -71,14 +71,16 @@ EAC не идеален и может ошибочно отключать игр
 <div class="x-spoiler">\
 <input class="spoil-button" type="checkbox" tabindex="-1">\
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Можно получить промокод или скидку?</span><br>\
-	 <blockquote class="spoil-Untext">Промокод выпускается на сутки ограниченным тиражом сразу после вайпа. Узнать его можно только подписавшись на уведомления о вайпе в нашей <a href="https://vk.com/grandrust_server?w=app5748831_-124254208" target=blank>группе Вконтакте</a><br><br>\
-<i class="fa fa-info-circle"></i> Промокод будет приходить вам в личных сообщениях сразу вместе с проведением вайпа, обычно каждый четверг в 13:00 МСК</blockquote>\
+	 <blockquote class="spoil-Untext">Промокод может выпускаться на сутки ограниченным тиражом сразу после вайпа. Узнать его можно только подписавшись на уведомления о вайпе в нашей <a href="https://vk.com/grandrust_server?w=app5748831_-124254208" target="blank">группе Вконтакте</a><br><br>\
+<i class="fa fa-info-circle"></i> Промокод будет приходить вам в личных сообщениях сразу вместе с проведением вайпа, обычно каждый четверг в 13:00 МСК<br><br>\
+Так же промокод получают те кто первый зашёл на сервер сразу после вайпа (обычно 100-150 чел.) и поиграл на сервере 10-20 минут. Вы получите уведомление при переходе по которому Вам перечислят деньги на баланс привязанного аккаунта в магазине<br><br>\
+<i class="fa fa-info-circle"></i> Внимание! В таком случае аккаунт с которого вы играете должен быть зарегистрирован в магазине! Подробнее о сроках/местах/порядке получения приза мы сообщаем в каждом посте о вайпе в нашей <a href="https://vk.com/grandrust_server" target="blank">группе Вконтакте</a><br><br></blockquote>\
      </div></div>\
 <div class="x-spoiler">\
 <input class="spoil-button" type="checkbox" tabindex="-1">\
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Как забрать предметы на сервере купленные в магазине?</span><br>\
-	 <blockquote class="spoil-Untext">Откройте корзину на сервере с помощью кнопки в виде коробки слева вверху экрана или командой /store в чат. Перед Вами появится список всех Ваших покупок. <br><br>\
-<i class="fa fa-info-circle"></i> Их можно получить только если у вас есть достаточно места в инвентаре для выдачи и только в своей билде</blockquote>\
+	 <blockquote class="spoil-Untext">Откройте корзину на сервере с помощью кнопки в виде коробки <i class="fa fa-box-open"></i> слева вверху экрана или командой /store в чат. Перед Вами появится список всех Ваших покупок. <br><br>\
+<i class="fa fa-info-circle"></i> Их можно получить только если у вас есть достаточно места в инвентаре для выдачи и только в своей билде!</blockquote>\
      </div></div>\
 <div class="x-spoiler">\
 <input class="spoil-button" type="checkbox" tabindex="-1">\
@@ -89,7 +91,7 @@ EAC не идеален и может ошибочно отключать игр
 <input class="spoil-button" type="checkbox" tabindex="-1">\
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Я увидел нарушителей, что делать?</span><br>\
 	 <blockquote class="spoil-Untext">Если вы заметили игроков превышающих лимит в команде либо нарушающих иные правила, пожалуйста, сделайте скрин либо запомните ники игроков и предоставьте нам через группу ВК.<br><br>\
-<i class="fa fa-info-circle"></i> Так же, если вас очень смутил, убивший вас, подозреваемый читер, нажмите на соответствующую кнопку report на экране смерти, все ваши заявки очень тщательно рассматриваются нашим патрулём и они проводят принудительную проверку всех подозреваемых вами игроков</blockquote>\
+<i class="fa fa-info-circle"></i> Так же, если вас очень смутил, убивший вас, подозреваемый читер, нажмите на соответствующую кнопку report на экране смерти, все ваши заявки очень тщательно рассматриваются нашим патрулём и мы проводим принудительную проверку всех подозреваемых вами игроков</blockquote>\
      </div></div>\
 <!--<div class="x-spoiler">\
 <input class="spoil-button" type="checkbox" tabindex="-1">\
@@ -144,7 +146,7 @@ curcontent["rules"] = {
 <p><li>Если вы заметили игроков превышающих лимит в команде, пожалуйста, сделайте скрин либо запомните ники игроков и предоставьте нам через группу ВК.</li></p>\
 <p><li>Если вас вызвали на проверку на стороннее ПО, Вы имеете право отказаться, но в этом случае Вы получите бан на всех серверах.</li></p>\
 <p><li>Проверка на стороннее ПО проводится, только если вы на сервере, не АФК и не имеете РБ. Если вы покидаете сервер после вызова, не предоставив контакты для связи, вы получаете бан на всех серверах.</li></p>\
-<p><li>Администрация и проверяющие имеют право забанить весь состав друзей/сокланов за игру с читером, за игру с макросами при повторном аккаунте макросника к этим же друзьям, за игру с использованием услуг читеров, на основании банов на других проектах</li></p>\
+<p><li>Администрация и проверяющие имеют право забанить весь состав друзей/сокланов за игру с читером, за игру с макросами при повторном аккаунте макросника к этим же друзьям а так же за игру с использованием услуг читеров или на основании банов на других проектах (при наличии веских доказательств).</li></p>\
 <p><li>Вещи, купленные в магазине, не подлежат возврату или обмену если они были получены на сервере.</li></p>\
 <p><li>Вам никто и ничего не должен, а так же ни чем не обязан.</li></p>\
 <p><li>Администраторы и проверяющие сервера не возвращают утерянный лут.</li></p>\
@@ -170,7 +172,7 @@ curcontent["rules"] = {
 
 curcontent["help"] = {
 	xhead: 'Команды сервера и бинды',
-	xcon: '<div style="padding: 1px 29px;">\
+	xcon: '<div style="padding: 0px 10px;">\
 Разработчики убрали возможность биндить команды, где присутствует пробел.<br>\
 Этот бинд стал не рабочим bind клавиша chat.say /home 1.\
 Мы кое-что изменили, теперь вы можете биндить хом следующим образом.<br>\
@@ -178,7 +180,7 @@ curcontent["help"] = {
 <h4>Также доступны следующие быстрые бинды</h4>\
 <div class="commandblock">\
 \
-<span class="MsoCommand">bind h home название</span> Запрос тп на хом.</div><br>\
+<span class="MsoCommand">bind h home название</span> Запрос тп на хом.<br>\
 <span class="MsoCommand">bind t tpr имя или steam часто запрашиваемого товарища</span> Отправить запрос на товарища.<br>\
 <span class="MsoCommand">bind p remove</span> Включение/Выключение ремувера ваших построек.<br>\
 <span class="MsoCommand">bind m map.open</span> Открыть/закрыть карту.<br>\
@@ -187,7 +189,7 @@ curcontent["help"] = {
 <span class="MsoCommand">bind esc kits.destroy</span> Закрыть меню китов.<br>\
 <span class="MsoCommand">bind o store.opencart</span> Открыть корзину магазина.<br>\
 <span class="MsoCommand">bind o store.giveitemall</span> Быстро забрать всё из корзины магазина.<br>\
-<span class="MsoCommand">bind l skills</span> Открыть меню прокачек.</div><br>\
+<span class="MsoCommand">bind l skills</span> Открыть меню прокачек.<br>\
 <span class="MsoCommand">bind l xp</span> Открыть меню внутриигровой валюты.</div><br>\
 <!--<i class="fa fa-info-circle"></i>--> Так же если в этом списке нет ваших любимых команд, вы всё ещё можете забиндить их традиционно. (Кавычки обьязательны)<br>\
 <div class="commandblock">\
@@ -631,9 +633,9 @@ curcontent["plugins"] = {
 <p>После того как всё было собрано и подключено, задайте на Радиопередатчике частоту 1001 и нажмите Применить. <br>\
 Если электро цепь была собрана правильно, сразу после подачи питания на Аккумулятор,<br>\
 возле него появится Почтовый ящик, в который и будут майниться ваши Гранды.<br>\
-Как только заряд в Аккумуляторе накопит энергии 150 rWm (полный заряд),<br>\
+Как только заряд в Аккумуляторе накопит энергии на 6 минут,<br>\
 в Почтовом ящике появится 1 Гранд в обмен на энергию в Аккумуляторе, и так по кругу. <br>\
-~6 минут заряда аккумулятора = 1 Гранду.<br>\
+6 минут заряда аккумулятора = 1 Гранду.<br>\
 <i class="fa fa-info-circle"></i> Более подобно можно ознакомится в самом меню внутриигровой валюты и левела во вкладке XP</p><br>\
 <br>\
 </div>'
@@ -672,7 +674,7 @@ curcontent["serv"] = {
 Тщательно настроенные модификации сервера, отличные плагины и правильная сборка сервера поможет вам ощутить все прелести Раста на себе и к тому же получить незабываемый опыт игры.<br><br>\
 Мы попытались разнообразить геймплей для вас и привнести что-то новое в игру.<br>Хватит читать, заходи и попробуй сам:</div>\
 \
-<h4 class="serverheader">GRAND RUST#1 Barren Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Разрешено играть только соло</li>\
@@ -718,7 +720,7 @@ curcontent["serv"] = {
 
 
 
-var BlockListArrays = [['pistol.revolver'], 
+var BlockListArrays = [['pistol.revolver', 'shotgun.double'], 
 ['pistol.python', 'pistol.semiauto', 'flamethrower', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
 ['shotgun.pump'], 
 ['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.plate.torso', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'],
@@ -812,7 +814,10 @@ function search(e){
     }
 }
 
-window.onload = function () {
+var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+
+DOMReady(function () {
+//window.onload = function () {
 	document.body.onclick=function(event)
 	{
 		if(event.target.id == 'closer')closepage();
@@ -822,10 +827,10 @@ window.onload = function () {
 	for (var i = 0; i < BlockListArrays.length; i++) {
 		curcontent["block"].xcon += '<div class="block_by_category block_category_'+ (i + 1) +'">';
 		for (var b = 0; b < BlockListArrays[i].length; b++) {
-			if(b == 5 && i == 4)
+			/* if(b == 5 && i == 4)
 			curcontent["block"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://rustlabs.com/img/items180/ammo.grenadelauncher.he.png">\
 										<div class="kit-item__quantity block-lvl-'+ (i + 1) +'"></div></div></div>';
-			else
+			else */
 			curcontent["block"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://static.moscow.ovh/images/games/rust/icons/'+ BlockListArrays[i][b] +'.png">\
 										<div class="kit-item__quantity block-lvl-'+ (i + 1) +'"></div></div></div>';
 		}
@@ -864,4 +869,5 @@ window.onload = function () {
 	curcontent["kit-wars"].xcon += '</div></div></div>';
 	curcontent["kit-elite"].xcon += '</div></div></div>';
 
-}
+//}
+});
