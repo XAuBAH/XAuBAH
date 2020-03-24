@@ -638,7 +638,7 @@ curcontent["plugins"] = {
 Покупая их вы сможете ставить разные предметы не выходя из дома! Более подробная информация во внутриигровом магазине во вкладке кaзино.</p>\
 <br>\
 <blockquote class="pluginsheader"><center>Система XP возможность вывода.</center></blockquote>\
-<p>Теперь вы можете выводить ващи накопления XP в электронном кошельке ввиде монеток в инвентарь. <br>\
+<p>Теперь вы можете выводить ваши накопления XP в электронном кошельке ввиде монеток в инвентарь. <br>\
 Вывод доступен через меню внутриигровой валюты и левела в верхнем правом углу экрана. Чтобы внести монеты обратно на счёт нужно набрать от 10 шт. и нажать Upgrade на предмете. <br>\
 <i class="fa fa-info-circle"></i> Более подробного вы можете ознакомится в самом меню внутриигровой валюты и левела. <br><br>\
 Что это даёт: <br>\
@@ -668,7 +668,7 @@ curcontent["plugins"] = {
 var aboutserversdub = '<li>Мощные анти-читы [AntiCheat]</li>\
 <li>Отзывчивая Администрация</li>\
 <li>Бесплатные оповещения о рейдах (/vk)</li>\
-<li>Частые Эвенты [EVENTS]</li>\
+<li>Частые Ивенты [EVENTS]</li>\
 <li>Ремув своих строений (8 часов с момента строения)[/remove]</li>\
 <li>Блокировка оружия и взрывчатки после вайпа[/block]</li>\
 <li>Антимат для чата[Censore]</li>\
@@ -737,6 +737,13 @@ curcontent["serv"] = {
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
+'+ aboutserversdub +'\
+</ul>\
+<br>\
+<h4 class="serverheader">GRAND RUST#7 Procedural No Limit </h4><p class="ipconnect">connect 7.grand-rust.ru:10000<a href="steam://connect/37.230.137.223:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<ul><li>Рейты x2, Стаки</li>\
+<li>Рейты печек х3</li>\
+<li>Система друзей - разрешено играть в тиме [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 </div>'
@@ -809,7 +816,7 @@ function Open(el, usefade = true, zind = false) {
 function closepage(){
 	var Modal = document.getElementById('Modal');
 	var Modalparent = null;
-	try{ Modalparent = ((Modal.parentElement) ? Modal.parentElement : ((Modal.parentNode) ? Modal.parentNode : null));}catch{return;}
+	try{ Modalparent = ((Modal.parentElement) ? Modal.parentElement : ((Modal.parentNode) ? Modal.parentNode : null));}catch (err){return;}
 	if(Modalparent == null)return;
 	Modalparent.removeChild(Modal);
 	document.getElementsByTagName('body')[0].className = "";
