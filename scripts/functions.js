@@ -206,15 +206,15 @@ curcontent["help"] = {
 <span class="MsoCommand">bind m map.open</span> Открыть/закрыть карту.<br>\
 <span class="MsoCommand">bind u building.upgrade</span> Автоматическое улучшение строений.<br>\
 <span class="MsoCommand">bind k kits.open</span> Открыть меню китов.<br>\
-<span class="MsoCommand">bind esc kits.destroy</span> Закрыть меню китов.<br>\
+<span class="MsoCommand">bind i skin</span> Открыть меню скинов.<br>\
 <span class="MsoCommand">bind o store.opencart</span> Открыть корзину магазина.<br>\
 <span class="MsoCommand">bind o store.giveitemall</span> Быстро забрать всё из корзины магазина.<br>\
 <span class="MsoCommand">bind l skills</span> Открыть меню прокачек.<br>\
 <span class="MsoCommand">bind l xp</span> Открыть меню внутриигровой валюты.</div><br>\
 <!--<i class="fa fa-info-circle"></i>--> Так же если в этом списке нет ваших любимых команд, вы всё ещё можете забиндить их традиционно. (Кавычки обьязательны)<br>\
 <div class="commandblock">\
-<span class="MsoCommand">bind c chat.say "/skin"</span> Скины.<br>\
-<span class="MsoCommand">bind f7 "chat.say /back"</span> Скрафтить Доп. Рюкзак.</div>\
+<span class="MsoCommand">bind f7 chat.say "/skin"1</span> Скины.<br>\
+<span class="MsoCommand">bind mouse4 chat.say "/back"1</span> Скрафтить Доп. Рюкзак.</div>\
 <h4>Бинды для отдельных привилегий</h4>\
 <div class="commandblock">\
 <!--<span class="MsoCommand">bind b backpack.open</span> Открыть Доп. Рюкзак.<br>-->\
@@ -264,11 +264,11 @@ curcontent["help"] = {
 <span class="MsoCommand">/skill</span> Открыть окно прокачек.<br>\
 <span class="MsoCommand">/trade ник</span> Отправить запрос на трейд.<br>\
 <span class="MsoCommand">/votemute ник</span> Проголосовать за мут игрока.<br>\
-<span class="MsoCommand">/voteban ник</span> Проголосовать за бан игрока.</div></div>\
-<span class="MsoCommand">/dm</span> Включение/Выключение килл бара.</div></div>\
-<span class="MsoCommand">/tc</span> ТОП по ивентам шкафов.</div></div>\
-<span class="MsoCommand">/who</span> узнать есть ли в доме уникальный шкаф (смотря на дом).</div></div>\
-<span class="MsoCommand">/help</span> узнать всю информацию о сервере.</div></div>'
+<span class="MsoCommand">/voteban ник</span> Проголосовать за бан игрока.<br>\
+<span class="MsoCommand">/dm</span> Включение/Выключение килл бара.<br>\
+<span class="MsoCommand">/tc</span> ТОП по ивентам шкафов.<br>\
+<span class="MsoCommand">/who</span> узнать есть ли в доме уникальный шкаф (смотря на дом).<br>\
+<span class="MsoCommand">/help</span> узнать всю информацию о сервере.</div>'
 };
 
 
@@ -629,13 +629,17 @@ curcontent["plugins"] = {
 Всё содержимое кейсов попадает на склад и храниться там пока вы это не заберёте. \
 С прокачкой уровней, вам начисляются Гранды, которые вы можете потратить на покупку необходимых товаров в магазине или прокачку способностей.</p>\
 <br>\
-<blockquote class="pluginsheader"><center>ПРМ, Грандий, Ломидий.</center></blockquote>\
+<blockquote class="pluginsheader"><center>ПРМ.</center></blockquote>\
 <p>Имеется свой собственный ресурс, переработчик и квесты для нахождения редких деталей ПРМ.</p>\
+<br>\
+<blockquote class="pluginsheader"><center>Уникальные металлы.</center></blockquote>\
+<p>Имеются свои собственные уникальные металлы, для переработки в переработчике и ПРМ. После переработки выпадает сера, металл, МВК и другой ценный лут.</p>\
 <br>\
 <blockquote class="pluginsheader"><center>Домашнее кaзино.</center></blockquote>\
 <p>Вы можете собрать детали от кaзино и приобрести лицензию на установку игрового стoла в нашем внутриигровом магазине. \
 После этого сможете поставить его у себя дома и не бегать с драгоценным ресами в общественное кaзино. К тому же мы добавили лицензии не только на скрап но и на другие ценные ресурсы! \
-Покупая их вы сможете ставить разные предметы не выходя из дома! Более подробная информация во внутриигровом магазине во вкладке кaзино.</p>\
+Покупая их вы сможете ставить разные предметы не выходя из дома!\
+<i class="fa fa-info-circle"></i> Более подробная информация во внутриигровом магазине во вкладке кaзино.</p>\
 <br>\
 <blockquote class="pluginsheader"><center>Система XP возможность вывода.</center></blockquote>\
 <p>Теперь вы можете выводить ваши накопления XP в электронном кошельке ввиде монеток в инвентарь. <br>\
@@ -684,23 +688,28 @@ var aboutserversdub = '<li>Мощные анти-читы [AntiCheat]</li>\
 <li>Частые Ивенты [EVENTS]</li>\
 <li>Ремув своих строений (8 часов с момента строения)[/remove]</li>\
 <li>Блокировка оружия и взрывчатки после вайпа[/block]</li>\
-<li>Антимат для чата[Censore]</li>\
+<li>Цензура в чата [Censor]</li>\
 <li>Внутриигровая карта (bind m map.open)</li>\
 <li>Онлайн карта [RustIO:/map]</li>\
 <li>Система телепортации [HOME]</li>\
-<li>Наборы для новичков [Kits:Starter,HOME,Med,Food,Hunt]</li>\
+<li>Наборы для новичков [Kits:Starter,Бомж,Med,Food,Hunt]</li>\
 <li>Мгновенный крафт [InstaCraft]</li>\
 <li>Блок телепорта в зоне рейда [NoEscape]</li>\
-<li>Авто-апгрейд при постройке [Up]</li>\
+<li>Авто-апгрейд при постройке в зоне авторизации [Up]</li>\
 <li>Картинки на таблички [/sil]</li>\
 <li>Донат-наборы [STORE:Premium, WARS, ELITE, KING, GRAND]</li>\
-<li>Вертолет каждые 2 часа</li>\
-<li>Автоматические ивенты.</li>\
-<li>Переработчик Редких Металлов (ПРМ).</li>\
-<li>Способности на сервере прокачиваемые за опыт.</li>\
-<li>Супер игра в которой могут принять участие все желающие.</li>\
-<li>Внутриигровой магазин с покупкой вещей за опыт.</li>\
-<li>День длится 55 минут, Ночь 3 минут</li>\
+<li>Вертолет каждые 4 часа</li>\
+<li>Танк каждые 4 часа</li>\
+<li>Корабль каждые 4 часа</li>\
+<li>Чинук каждые 4 часа</li>\
+<li>Автоматические ивенты</li>\
+<li>Переработчик Редких Металлов (ПРМ)</li>\
+<li>Способности на сервере прокачиваемые за опыт</li>\
+<li>Супер игра в которой могут принять участие все желающие</li>\
+<li>Внутриигровой магазин с покупкой вещей за опыт</li>\
+<li>Майнинговая ферма грандов (внутриигровой валюты)</li>\
+<li>Кейсы с внутриигровым складом</li>\
+<li>День длится 55 минут, Ночь 3 минуты</li>\
 <li>Запрещено строить дома в текстурах и монументах</li>';
 
 curcontent["serv"] = {
@@ -711,35 +720,35 @@ curcontent["serv"] = {
 Тщательно настроенные модификации сервера, отличные плагины и правильная сборка сервера поможет вам ощутить все прелести Раста на себе и к тому же получить незабываемый опыт игры.<br><br>\
 Мы попытались разнообразить геймплей для вас и привнести что-то новое в игру.<br>Хватит читать, заходи и попробуй сам:</div>\
 \
-<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/185.97.254.106:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/1.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Разрешено играть только соло</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#2 Procedural Max 2 </h4><p class="ipconnect">connect 2.grand-rust.ru:10000<a href="steam://connect/185.97.254.136:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#2 Procedural Max 2 </h4><p class="ipconnect">connect 2.grand-rust.ru:10000<a href="steam://connect/2.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#3 Barren Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/185.97.254.82:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#3 Barren Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/3.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#4 Barren Max 3 </h4><p class="ipconnect">connect 4.grand-rust.ru:10000<a href="steam://connect/185.97.254.146:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#4 Barren Max 3 </h4><p class="ipconnect">connect 4.grand-rust.ru:10000<a href="steam://connect/4.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
 <li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#5 Procedural Max 3 </h4><p class="ipconnect">connect 5.grand-rust.ru:10000<a href="steam://connect/193.164.16.154:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#5 Procedural Max 3 </h4><p class="ipconnect">connect 5.grand-rust.ru:10000<a href="steam://connect/5.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li><b>Новейшее железо сервера</b></li>\
 <li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
@@ -747,7 +756,7 @@ curcontent["serv"] = {
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#6 Procedural Max 2 </h4><p class="ipconnect">connect 6.grand-rust.ru:10000<a href="steam://connect/193.164.16.160:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#6 Procedural Max 2 </h4><p class="ipconnect">connect 6.grand-rust.ru:10000<a href="steam://connect/6.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li><b>Новейшее железо сервера</b></li>\
 <li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
@@ -755,7 +764,7 @@ curcontent["serv"] = {
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#7 Procedural No Limit </h4><p class="ipconnect">connect 7.grand-rust.ru:10000<a href="steam://connect/37.230.137.223:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#7 Procedural No Limit </h4><p class="ipconnect">connect 7.grand-rust.ru:10000<a href="steam://connect/7.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li><b>Новейшее железо сервера</b></li>\
 <li>Рейты x2, Стаки</li>\
 <li>Рейты печек х3</li>\
