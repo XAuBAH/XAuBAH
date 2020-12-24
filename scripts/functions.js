@@ -781,6 +781,34 @@ curcontent["serv"] = {
 
 
 
+curcontent["Oplata"] = {
+	xhead: 'Пополнение баланса',
+	xcon: '<div class="xbox oplata_info"><form onsubmit="return qiwiHandler(event)" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
+<div class="qiwi-inp-main">\
+	<div class="qiwi-widget-title">Пополнить с QIWI</div>\
+	<div class="qiwi-inp-box">\
+			<label for="qiwi-donation-amount" class="qiwi-label">Cумма</label>\
+			<div class="qiwi-rub">₽</div>\
+			<input type="tel" id="qiwi-donation-amount" name="amount" required="" value="">\
+			<input type="hidden" id="qiwi-donation-comment" name="comment" value="Автоматическое пополнение через QIWI Grand Rust Аккаунт">\
+			<input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPpUQmfaEpAhq21XR23R28hYHpLoCdSST3kVCoiwxCzz1qWreJPpkHz4L8uoKbBGkMr4MGHdUzc1F49BAKbmA9Jyt9BBQodFG3RLUYfKUT8">\
+			<input type="hidden" id="qiwi-donation-account" name="account" value="0">\
+			<input type="hidden" name="customFields[themeCode]" value="Svetlana-S-vh5ib6hm">\
+			<input type="hidden" name="successUrl" value="https://shop.grand-rust.ru">\
+			<div class="qiwi-error-box" id="qiwi-error-box"></div>\
+	</div>\
+	<div class="qiwi-button-box">\
+		<button class="qiwi-submit-main" id="qiwi-submit-main" width="159px" type="submit">Оплатить</button>\
+	</div>\
+</div>\
+</form>\
+<a class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
+	<div class="qiwi-widget-title">Другие способы</div><img class="qiwi-inp-other-img" src="https://pic.moscow.ovh/images/2020/12/24/08a847e9d7f387ec60b4b3c89a8879e9.png">\
+</a></div>'
+};
+
+
+
 var BlockListArrays = [['pistol.revolver', 'shotgun.double'], 
 ['pistol.python', 'pistol.semiauto', 'flamethrower', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
 ['shotgun.pump'], 
@@ -875,10 +903,116 @@ function search(e){
     }
 }
 
+
+var CustomerSteamId = "0";
+var OvhPayUrl = "";
+
+function qiwiHandler(e){
+	//e.preventDefault();
+	var inputval = document.getElementById('qiwi-donation-amount').value;
+	var inputfloat = parseFloat(inputval).toFixed(2);
+	if(inputfloat < 1 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('qiwi-error-box').innerText = "От 1 до 15000 RUB";
+		e.preventDefault();
+		return false;
+	}else{
+		document.getElementById('qiwi-error-box').innerText = "";
+	}
+	document.getElementById('qiwi-donation-amount').value = inputfloat;
+	if(CustomerSteamId == "0" || CustomerSteamId == ""){
+		document.getElementById('qiwi-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
+		e.preventDefault();
+		return false;
+	}
+	qiwiFormHandle();
+	
+	
+	
+	
+	return null;
+}
+
+function qiwiFormHandle(){
+	var qiwi_comment = document.getElementById('qiwi-donation-comment');
+	qiwi_comment.value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
+	document.getElementById('qiwi-donation-account').value = CustomerSteamId;
+	document.getElementById('qiwi-inp-other').setAttribute("href", OvhPayUrl);
+}
+
+function OvhUrlOverrite(){
+	var slides = document.getElementsByClassName("nav-link");
+	for (var i = 0; i < slides.length; i++) {
+		var elelink = slides.item(i);
+		var urlelelink = elelink.getAttribute("href");
+	   if(urlelelink.startsWith('https://pay.moscow.ovh')){
+		   OvhPayUrl = urlelelink;
+		   console.log(OvhPayUrl);
+		   elelink.setAttribute("href", "javascript:;");
+		   elelink.setAttribute("onclick", "OpenOplata()");
+	   }
+	}
+}
+
+function obtainShopSteamId(){
+	if(CustomerSteamId != "0" && CustomerSteamId != ""){
+		return;
+	}
+	var xmlHttp = new XMLHttpRequest();
+
+        if(xmlHttp != null)
+        {
+            xmlHttp.open( "GET", "/api/index.php?modules=users&action=getData", true );
+            xmlHttp.send( null );
+        }
+		xmlHttp.onload = function(gjson) {
+			var gjson = JSON.parse(xmlHttp.response);
+          console.log(gjson);
+			var preSteam = gjson.data.steamID;
+			OvhPayUrl = "https://pay.moscow.ovh/?"+gjson.data.pay;
+			if(preSteam > 76561100000000000 || !isNaN(preSteam)){
+				CustomerSteamId = preSteam.toString();
+				//qiwiFormHandle();
+				OvhUrlOverrite();
+			}else{
+				console.log("error obtainShopSteamId! "+ gjson);
+			}
+		}
+
+}
+
+function OpenOplata(){
+	Open('Oplata');
+			qiwiFormHandle();
+	setTimeout(() => function () {
+		try{
+			qiwiFormHandle();
+		}catch(e){
+			console.log('element not found '+ e);
+		}
+	}, 3000);
+}
+
 var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+window.addEventListener("load",function () {
+	try{
+		obtainShopSteamId();
+	}catch(e){
+		console.log('element not found '+ e);
+	}
+});
+
 
 DOMReady(function () {
 //window.onload = function () {
+	
+	try{
+		setTimeout(() => obtainShopSteamId(), 6000);
+	}catch(e){
+		console.log('element not found '+ e);
+	}
+	
+	//setTimeout(() => CheckDisCounter(), 5000);
+	
 	document.body.onclick=function(event)
 	{
 		if(event.target.id == 'closer')closepage();
