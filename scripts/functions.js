@@ -995,7 +995,7 @@ function OpenOplata(){
 var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
 window.addEventListener("load",function () {
 	try{
-		obtainShopSteamId();
+		//obtainShopSteamId();
 	}catch(e){
 		console.log('element not found '+ e);
 	}
@@ -1006,7 +1006,7 @@ DOMReady(function () {
 //window.onload = function () {
 	
 	try{
-		setTimeout(() => obtainShopSteamId(), 6000);
+		//setTimeout(() => obtainShopSteamId(), 6000);
 	}catch(e){
 		console.log('element not found '+ e);
 	}
