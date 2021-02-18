@@ -785,7 +785,7 @@ curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
 	xcon: '<div class="xbox oplata_info"><form onsubmit="return qiwiHandler(event)" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
 <div class="qiwi-inp-main">\
-	<div class="qiwi-widget-title">Пополнить с QIWI</div>\
+	<div class="qiwi-widget-title">QIWI или Карты</div>\
 	<div class="qiwi-inp-box">\
 			<label for="qiwi-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -803,7 +803,7 @@ curcontent["Oplata"] = {
 </div>\
 </form>\
 <a class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
-	<div class="qiwi-widget-title"style="color: white;">Другие способы</div><div class="qiwi-widget-title" style="font-size: 0.8rem;color: #ff9617;margin-top: 0px;margin-bottom: 0px;">Внимание!<br>Этот метод пока работает не стабильно!<br>Воспользуйтесь пополнением через киви кошелёк, вкладка через карту</div><!--img class="qiwi-inp-other-img" src="https://pic.moscow.ovh/images/2020/12/24/08a847e9d7f387ec60b4b3c89a8879e9.png">-->\
+	<div class="qiwi-widget-title"style="color: white;">Другие способы</div><div class="qiwi-widget-title" style="font-size: 0.8rem;color: #ff9617;margin-top: 0px;margin-bottom: 0px;">Внимание!<br>Этот метод пока работает не стабильно!<br>Выберите способ для пополнения баланса через киви кошелёк, в нём так же есть оплата с Банковской Карты</div><!--img class="qiwi-inp-other-img" src="https://pic.moscow.ovh/images/2020/12/24/08a847e9d7f387ec60b4b3c89a8879e9.png">-->\
 </a></div>'
 };
 
