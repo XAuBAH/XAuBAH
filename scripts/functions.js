@@ -803,7 +803,7 @@ curcontent["Oplata"] = {
 </div>\
 </form>\
 <a class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
-	<div class="qiwi-widget-title">Другие способы</div><div class="qiwi-widget-title" style="font-size: 0.8rem;color: red;margin-top: 0px;margin-bottom: 0px;">Внимание!<br>Этот метод пока работает не стабильно!<br>Нажмите через QIWI там есть вкладка через карту<br>QIWI работает нормально!</div><!--img class="qiwi-inp-other-img" src="https://pic.moscow.ovh/images/2020/12/24/08a847e9d7f387ec60b4b3c89a8879e9.png">-->\
+	<div class="qiwi-widget-title"style="color: white;">Другие способы</div><div class="qiwi-widget-title" style="font-size: 0.8rem;color: #ff9617;margin-top: 0px;margin-bottom: 0px;">Внимание!<br>Этот метод пока работает не стабильно!<br>Воспользуйтесь пополнением через киви кошелёк, вкладка через карту</div><!--img class="qiwi-inp-other-img" src="https://pic.moscow.ovh/images/2020/12/24/08a847e9d7f387ec60b4b3c89a8879e9.png">-->\
 </a></div>'
 };
 
