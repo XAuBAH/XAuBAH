@@ -962,8 +962,9 @@ function obtainShopSteamId(){
 
         if(xmlHttp != null)
         {
-            xmlHttp.open( "GET", "/api/index.php?modules=users&action=getData", true );
-            xmlHttp.send( null );
+            xmlHttp.open( "POST", "/api/index.php", true );
+			xmlHttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+            xmlHttp.send( "modules=users&action=getData" );
         }
 		xmlHttp.onload = function(gjson) {
 			var gjson = JSON.parse(xmlHttp.response);
