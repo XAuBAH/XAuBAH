@@ -954,8 +954,13 @@ function OvhUrlOverrite(){
 	}
 }
 
-function obtainShopSteamId(){
+function obtainShopSteamId(userid = null){
 	if(CustomerSteamId != "0" && CustomerSteamId != ""){
+		return;
+	}
+	if(userid != null){
+		CustomerSteamId = userid.toString();
+		OvhUrlOverrite();
 		return;
 	}
 	var xmlHttp = new XMLHttpRequest();
@@ -997,7 +1002,7 @@ function OpenOplata(){
 var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
 window.addEventListener("load",function () {
 	try{
-		obtainShopSteamId();
+		//obtainShopSteamId();
 	}catch(e){
 		console.log('element not found '+ e);
 	}
