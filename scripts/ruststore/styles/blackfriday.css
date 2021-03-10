@@ -1,0 +1,424 @@
+/* ////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////head */
+/* ////////////////////////////////////////////////////////////////// */
+/* 
+<script>
+var DOMReadyF = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+var ModalWarp;
+
+DOMReadyF(function () {
+  if(window.innerWidth >= 1024) {
+  ModalWarp = document.getElementById('warpLight');
+    window.addEventListener("mousemove", mousemoveF);
+          function mousemoveF(e) {
+			//if(ModalWarp != null)
+            var styNew = "background-position: "+ (e.pageX - 728) +"px "+ (e.pageY - 728 - window.scrollY) +"px;";
+              ModalWarp.setAttribute("style", styNew);
+          }
+  }
+  //SetTimerCD();
+});
+var countDownDate = new Date("Nov 28, 2020 23:59:00 GMT+0300").getTime();
+var countDownelement;
+
+function SetTimerCD() {
+  
+  countDownelement = document.getElementById("timer");
+  var x = setInterval(function() {//Timeout
+
+    var now = new Date().getTime();
+
+    var distance = countDownDate - now;
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    /**/
+   countDownelement.innerHTML = '<div class="header-sale__title"><p>До конца распродажи осталось:</p></div>'+
+    		'<div class="number">' + days +
+			'<span class="name">дней</span>' +
+			"</div>" +
+			'<span class="bullet">•</span>' +
+			'<div class="number">' +((hours < 10) ? '0' + hours : hours)+
+			'<span class="name">часов</span>' +
+			"</div>" +
+			'<span class="bullet">•</span>' +
+			'<div class="number">' +((minutes < 10) ? '0' + minutes : minutes)+
+			'<span class="name">минут</span>' +
+			"</div>" +
+			'<span class="bullet">•</span>' +
+			'<div class="number">' +((seconds < 10) ? '0' + seconds : seconds)+
+			'<span class="name">секунд</span>' +
+			"</div>";
+    if (distance < 0) {
+      clearInterval(x);
+      countDownelement.innerHTML = '<div id="w4" class="form-subscribe form-done"><a href="/"><span>Время пришло. За дело!</span></a></div>';
+    }
+  }, 1000);
+}
+</script>
+
+*/
+/* ////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////body */
+/* ////////////////////////////////////////////////////////////////// */
+/*
+
+<div class="section-a__main__title">
+ <div id="w1"><h2 class="title">Распродажа 2020 года на GRAND RUST!</h2>
+    <h3><strong>26&nbsp;ноября в 13:00 по МСК</strong> НАЧНЁТСЯ ОБВАЛ ЦЕН.</h3>
+</div>        
+<div id="w2"><p>Такие огромные скидки будут <span>только три дня.</span><br>
+        Это настоящее ограбление! Нажимайте «Подписаться» в нашей группе, чтобы<br>
+        не пропустить!</p>
+<div class="timer-dock"><span id="timer"></span></div>    
+</div>
+</div>
+<div class="wrap landing-coming-index" id="warpLight" style="background-position: 50% -640px;"></div>
+
+<div class="separator substrate">
+    <div class="caution leftup"></div>
+    <div class="caution rightup"></div>
+</div>
+
+*/
+
+
+
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #3f3f3f;
+  //outline: 1px solid slategrey;
+}
+
+
+.header__image {
+        content: url("https://pic.moscow.ovh/images/2020/11/26/48599bc4c334278cf85f2da8a9440f03.png")!important;
+    }
+
+.wrapper {
+    background: black !important;
+}
+.animated .header {
+    margin-top: 79px;
+    margin-bottom: 50px;
+}
+.footer {
+    position: sticky;
+}
+
+
+.substrate {
+    z-index: 0;
+    position: relative;
+    height: 138px
+}
+
+.substrate .caution {
+    background: url("https://pic.moscow.ovh/images/2020/11/26/44f17b187d1c62106c2af58875951c28.jpg") left center repeat-x;//https://i.imgur.com/VFT0NLC.png
+    background-size: contain;
+    height: 65px;
+    left: -20px;
+    position: fixed;
+    right: -20px;
+    top: 735px;
+    z-index: 1
+}
+
+.substrate .leftup {
+    -moz-transform: rotate(-6deg);
+    -o-transform: rotate(-6deg);
+    -webkit-transform: rotate(-6deg);
+    -ms-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix( M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
+    zoom:1;
+    top: 760px;
+}
+.separator .leftup {
+    box-shadow: inset 0 0 39px 21px rgba(0,0,0,.3), 0 4px 11px rgba(0,0,0,.8);
+}
+
+.substrate .rightup {
+    background-position: right center;
+    margin: 15px 0;
+    -moz-transform: rotate(4.3deg);
+    -o-transform: rotate(4.3deg);
+    -webkit-transform: rotate(4.3deg);
+    -ms-transform: rotate(4.3deg);
+    transform: rotate(4.3deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix( M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
+    zoom:1}
+
+@media only screen and (max-width: 767px) {
+
+    .substrate {
+        height: 70px
+    }
+
+    .substrate .caution {
+        height: 22px;
+        left: -59px;
+        right: -59px
+    }
+
+    .substrate .leftup {
+        top: 11px
+    }
+}
+
+.wrap {
+    background: url("https://pic.moscow.ovh/images/2020/11/26/46f83ac2cbf5c7af61719d019d6e5339.png") center center no-repeat;
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+}
+
+
+
+.section-a__main__title {
+    position: absolute;
+    top: 83px;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+#w1,#w2 {
+    position: absolute;
+    width: 100%;
+    left: 100px;
+}
+#w2 {
+    top: 86px;
+    //left: 40%;
+}
+
+#w4 {
+    pointer-events: all;
+}
+#w4 a {
+    color: #ffffff;
+}
+
+.section-a__main__title .title,.section-a__main__title h3,.section-a__main__title p {
+    text-align: center;
+    text-transform: uppercase
+}
+
+.section-a__main__title .title,.section-a__main__title h3 {
+    display: block
+}
+
+.section-a__main__title h3 {
+    font-family: 'PT Sans Narrow',sans-serif;
+    font-size: 1.8rem;
+    line-height: 31px;
+    font-weight: 700;
+    letter-spacing: .4px;
+    padding-bottom: 25px;
+    text-shadow: 2px 2px 3px #000
+}
+
+.section-a__main__title h3 strong {
+    font-weight: 700
+}
+
+.section-a .comments-mobile {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .1px;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 20px
+}
+.section-a__main__title h3 strong {
+    color: #f1c40f;
+}
+.section-a__main__title h3 strong {
+    font-weight: 700;
+}
+.section-a__main__title h3 strong {
+    color: #f1c40f;
+}
+.section-a__main__title h3 strong {
+    font-weight: 700;
+}
+.section-a__main__title p span {
+    color: #f1c40f;
+}
+
+
+
+.timer-dock {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+}
+.timer-dock #timer {
+	display: flex;
+    //position: absolute;
+    //top: 167px;
+	justify-content: center;
+	align-items: center;
+}
+.timer-dock #timer * {
+	line-height: 1.1;
+}
+.timer-dock #timer .number {
+	font-size: 30px;
+	//font-weight: 900;
+}
+.timer-dock #timer .name {
+	display: block;
+    font-size: 12px;
+    text-align: center;
+}
+.timer-dock #timer .bullet {
+	margin: 0 10px;
+	font-size: 4vw;
+	color: #f25648;
+}
+
+.form-subscribe {
+    background-color: #f25648;
+    background-position: 0 0;
+    // width: 423px;
+    height: 41px;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 11px 11px 10px 9px;
+    letter-spacing: 0;
+    font-size: 20;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-shadow: 0 6px 40px -9px rgba(0,0,0,.75);
+    -moz-box-shadow: 0 6px 40px -9px rgba(0,0,0,.75);
+    box-shadow: 0 6px 40px -9px rgba(0,0,0,.75);
+}
+.done-info span, .done-info a {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+}
+.header-sale__title {
+    padding-right: 15px;
+    font-size: 0.6rem;
+}
+
+.xbox {
+    background-color: rgba(23, 23, 23, 0.86);
+}
+.navbar {
+    background: rgba(23, 23, 23, 0.86);
+}
+.modal .modal-content {
+    background: rgba(23, 23, 23, 0.86);
+}
+#Modal .modal-content {
+    background: rgba(23, 23, 23, 0.86)!important;
+}
+
+@media (min-width: 1200px) {
+  
+	.timer-dock #timer .number {
+		font-size: 30px;
+	}
+    .section-a__main__title {
+        max-width: none;
+        margin: 0
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+      .section-a__main__title h2 {
+          font-size: 1.4rem;
+      }
+      .section-a__main__title h3 {
+        font-size: 18px;
+        line-height: 14px;
+        padding-bottom: 17px;
+      }
+      .section-a__main__title p {
+        font-size: 10px;
+    }
+      #w2 {
+        top: 65px;
+    }
+      .timer-dock {
+        top: 55px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+	.timer-dock #timer .number {
+		font-size: 30px;
+	}
+	.timer-dock #timer .name {
+		font-size: 10px;
+	}
+	.timer-dock #timer .bullet {
+		margin: 0 10px;
+		font-size: 3vw;
+	}
+  
+}
+
+@media (max-width: 768px) {
+      .section-a__main__title h2 {
+          font-size: 0.8rem;
+      }
+      .section-a__main__title h3 {
+        font-size: 12px;
+        line-height: 14px;
+        padding-bottom: 17px;
+      }
+      .section-a__main__title p {
+        display: none;
+    }
+      #w2 {
+        top: 65px;
+    }
+    #w1, #w2 {
+      width: 65%;
+      left: 121px;
+	}
+      .timer-dock {
+        top: -8px;
+    }
+  .animated .header {
+    margin-top: 96px;
+    margin-bottom: 26px;
+}
+}

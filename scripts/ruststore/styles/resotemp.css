@@ -1,0 +1,145 @@
+/*подгон мониторов*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  	.navbar {
+    top: -70px;
+    z-index: 1000000;
+    background: url(https://i.imgur.com/hGb6GTD.gif) repeat-y;
+    background-size: 100% auto;
+}
+  .navbar-toggleable-md, .navbar-toggleable-md .navbar-nav {
+    text-align: left !important;
+}
+  .navbar:before {
+    background: url(https://i.imgur.com/D0RS2DL.png) repeat-x 0 2px;
+  }
+  .xbox {
+    top: -70px;
+    right: 108px;
+}
+    .header__image {
+	width: 1009px;
+    height: 330px;
+    margin-left: -22.5%;
+    max-width: unset;
+    }
+  #snows{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: 250px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  	.navbar {
+    background: url(https://i.imgur.com/tZPEnH9.png) no-repeat 0 0;
+    background-size: cover;
+    margin: -381px -7px 20px !important;
+    top: 355px;
+    height: 301px;
+    width: 181px;
+}
+  .navbar:before {    
+    background: url(https://i.imgur.com/Y5oUBgE.png) no-repeat 6px 0;
+    background-size: cover;
+  }
+  .navbar-toggleable-md, .navbar-toggleable-md .navbar-nav {
+    text-align: left !important;
+    background-size: 100% auto !important;
+}
+  .navbar-brand {
+    display: none;
+  }
+  .xbox {
+    top: 0px;
+    right: -30px;
+}
+    .header__image {
+    width: 956px;
+    height: 300px;
+    margin-left: 0;
+    max-width: unset;
+    }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: unset;
+}
+}
+@media (min-width: 576px)
+.modal-sm {
+    max-width: 301px;
+}
+@media (min-width: 1200px) {
+  	.navbar {
+    background: url(https://i.imgur.com/tZPEnH9.png) no-repeat 0 0;
+    background-size: cover;    
+    margin: -381px -30px -18px !important;
+    top: 352px;
+    height: 347px;
+    width: 202px;
+}
+  .navbar:before {
+    background: url(https://i.imgur.com/Y5oUBgE.png) no-repeat 6px 0;
+    background-size: cover;
+  }
+  .xbox {
+    top: 0px;
+}
+    .header__image {width: 1110px;
+    height: 352px;
+    max-width: unset;
+    margin-left: 0;
+    }
+}
+@media (max-width: 767px) {
+    /*Картинка шапки в мобильной версии*/
+    
+  .navbar {
+    background: url(https://i.imgur.com/hGb6GTD.gif) repeat-y;
+    background-size: 100% auto;
+}
+  .navbar-toggleable-md, .navbar-toggleable-md .navbar-nav {
+    text-align: left !important;
+}
+  .navbar:before {
+    background: url(https://i.imgur.com/D0RS2DL.png) repeat-x 0 2px;
+  }
+  .xbox {
+    top: -2px;
+    right: 85px;
+	}
+  .pl {
+    display: none;
+}
+  .title {
+    display: none;
+}
+ 	.xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+   width: 250px;
+}
+  .footer {
+    display: none;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 393px;
+    top: -23752px;
+    width: 109px;
+  }
+  .modal-roulette .roulette__description:before {
+    color: red;
+    content: "УБЕДИТЕЛЬНАЯ ПРОСЬБА НЕ ОТКРЫВАТЬ РУЛЕТКИ С ТЕЛЕФОНА, ОТОБРАЖЁННЫЕ ВЕЩИ МОГУТ ОТЛИЧАТСЯ ОТ ПОЛУЧЕННЫХ В ДЕЙСТВИТЕЛЬНОСТИ ИЗ-ЗА СЖАТИЯ ЭКРАНА";
+  }
+}

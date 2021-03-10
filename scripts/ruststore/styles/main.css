@@ -1,0 +1,425 @@
+.body {
+    font-family: Roboto,sans-serif;
+  	margin-bottom: 40px;
+  	overflow-x: hidden!important;
+  
+}
+.store-products:nth-child(29){
+	display: inline-block;
+} 
+.header .container {
+    z-index: 2;
+    pointer-events: none;
+}
+.animated .header {
+    margin-top: 113px;
+}
+.header__image {
+    margin-left: 3%;
+    pointer-events: none;
+    }
+.content {
+    margin: 0 auto;
+    /* //padding-bottom: 300px; */
+      width: 100%;
+    max-width: 1278px;
+}
+.wrapper {
+    background:  url('https://pic.moscow.ovh/images/2019/04/23/b65798dbd48ca9278c3ba19eee28c994.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0e0e0e;
+  	overflow: hidden!important;
+}
+.ml-auto > ul {
+    border-radius: 3px;
+    /* //background: #5cb85c; */
+    padding: 0 30px;
+}
+.navbar-nav .navbar-item .nav-link, {
+    color: white;
+}
+.xbox {
+    position: relative;
+    background: #2b343a;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  	z-index: 1;
+}
+.store-servers {
+    margin-bottom: 20px;
+    /*display: none;*/
+}
+.navbar {
+    font-family: Roboto,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* //background: #222f3c; */
+    margin: 0 0 20px;
+    border: none;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  	z-index: 2;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: rgb(192, 194, 196);
+    background-image: none;
+    border: 1px solid rgb(64, 72, 77);
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #2b343a;
+}
+.sk-spinner-wave.sk-spinner {
+    margin: 0 auto;
+    width: 170px;
+    height: 160px;
+    text-align: center;
+    font-size: 10px;
+    background: url(https://i.imgur.com/06R8hRJ.gif)no-repeat;
+}
+.sk-spinner-wave div {
+    display: none;
+}
+.product__price-old {
+    display: none;
+}
+.xbox_vk-widget {
+    display: none;
+}
+.xbox_store {
+    position: relative;
+    background: #2b343a;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+.xbox_monitoring {
+  	position: relative;
+    background: #2b343a;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    margin-bottom: 20px;
+}
+.modal-roulette .modal-footer {
+    top: 281px;
+    width: 50%;
+    margin-left: 25%;
+    position: absolute
+}
+.footer-link__item {
+    z-index: 1;
+}
+.roulette__railway {
+    -webkit-animation-name: ShowRoulette;
+    animation-name: ShowRoulette;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.roulette {
+    background: url(https://i.imgur.com/up2i0Wt.png);
+    background-color: #2b2b21;
+    margin-bottom: 10px;
+}
+
+.roulette:before {
+    border-top: 30px solid #5cb85c;
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    opacity: 0.4;
+    z-index: 1000
+}
+
+.roulette-item {
+    background: url(https://i.imgur.com/up2i0Wt.png);
+    background-color: #40484d;
+    border-radius: 0px;
+    box-shadow: 0 0 0 0
+}
+
+.roulette-item__image {
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 0px;
+    padding: 0px
+}
+
+.roulette-item__description {
+    background-color: #2b343a;
+    background: url(https://i.imgur.com/up2i0Wt.png);
+    text-align: left;
+    padding: 4px;
+    padding-left: 8px
+}
+
+.roulette_item {
+    margin: 1px;
+    margin-top: 10px;
+    display: inline-block;
+    background: url(https://i.imgur.com/up2i0Wt.png);
+    background-color: #424032;
+    width: 140px;
+    height: 140px
+}
+
+.roulette_item img {
+    width: 100px;
+    height: 100px;
+    margin-left: 20px
+}
+
+.roulette_item .roulette-item__description {
+    width: 140px;
+    height: 40px;
+    line-height: 20px;
+    padding: 0 0 0 6px;
+    overflow: hidden
+}
+
+.roulette__description {
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
+.store-categories>.btn+.btn {
+    margin-left: 5px;
+    font-family: Roboto, sans-serif;
+}
+.product__image {
+    width: 100%;
+    padding: 10%;
+}
+.progress-bar {
+    height: 20px;
+}
+.navbar-toggler:after {
+  content: "Меню"
+}
+.reward__button{
+  position :absolute;
+  top: 46.5%;
+  left: 79%;
+  margin:0;
+  padding:0;
+  z-index:9000000;
+}
+p {
+    margin-bottom: 0rem;
+}
+.product_blueprint .product__image {
+    background: url("https://static.moscow.ovh/images/games/rust/icons/blueprintbase.png");
+    /*background-size: cover*/
+  	background-size: 40%;
+    background-position: bottom;
+    background-position-x: right;
+    background-repeat: no-repeat;
+}
+/*блокировка тикетов*/
+.xbox_feedback-new-ticket .xbox__body:after {
+    content: "Внимание! В данный момент мы не отвечаем на тикеты из магазина! Для срочной связи с нами вы всегда можете использовать личные сообщения или обсуждения в нашей группе";
+    color: yellow;
+    font-size: 20px;
+}
+.xbox_feedback-new-ticket .row {
+    display: none;
+}
+.xbox_custom {
+       background: transparent;
+    height: 0px;
+}
+.changeserver {
+    display: block;
+  	position: relative;
+    margin-bottom: 16px;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    background: #fc6d28;
+    border-radius: 4px;
+  	z-index: 1;
+}
+.changeserver:before {
+    
+    content: "\f137";
+    position: absolute;
+    left: 1em;
+    padding: 0 1px;
+    font-family: FontAwesome;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+
+/* ///////////// */
+
+/*@-webkit-keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes hvr-ripple-in {
+  100% {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+  }
+}*/
+
+.store-products__item {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  
+}
+
+.store-products__item:before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  bottom: -12px;
+  left: -12px;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+/*.store-products__item:hover:before, .store-products__item:focus:before, .store-products__item:active:before {
+ -webkit-animation-name: hvr-ripple-in;
+  animation-name: hvr-ripple-in;
+  border: #e1e1e1 solid 6px;
+}*/
+
+/*
+.footer-link__item:nth-child(2) {
+    font-size: 0px;
+}
+
+.footer-link__item:nth-child(2):after {
+    content: 'Связатся с нами';
+    font-size: 0.75rem;
+}
+.footer-link__item_gr {
+    padding: .5rem;
+} 
+.copyright {
+    padding: .5rem;
+} */
+.footer {
+    /* //display: none; */
+    background: transparent;
+    position: static;
+    display: none;
+  
+} 
+/*.custom-footer {
+    display: block;
+    padding: .5rem;
+}*/
+.xbox {
+    background: rgba(43, 52, 58, 0.8);
+}
+.navbar {
+    background: rgba(43, 52, 58, 0.8);
+}
+.modal .modal-content {
+    background: rgba(43, 52, 58, 0.8);
+}
+.custom-warning {
+    top: 880px;
+    right: 30px;
+}
+.custom-warning-4s {
+    animation-duration: 4s !important;
+} 
+.custom-warning-1s {
+    animation-duration: 1s !important;
+}
+.content_blocked {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    animation: fadein 10s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.blocked_logoback {
+    background-color: white;
+    border-radius: 50px;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 32%;
+    top: 199px;
+}
+
+.blocked_image {
+    width: 60%;
+    position: relative;
+    top: 20%;
+}
+.blocked_image i {
+    position: absolute;
+    width: 767px;
+    top: 34%;
+}
+.snowoff{
+    position: fixed;
+    right: 1px;
+    top: 27px;
+}
+@media (max-width: 992px){
+   .snowoff{
+  	display: none;
+  }
+}
+
+
+/*
+#cote {
+    bottom: 9px;
+    cursor: pointer;
+    text-align: right;
+    pointer-events: none;
+    position: fixed;
+}
+@media (max-width: 992px){
+  #cote {
+  	display: none;
+  }
+}
+#cote img {
+    height: 150px;
+    width: 150px;
+    display: inline-block;
+    pointer-events: all;
+}
+*/

@@ -1,0 +1,2865 @@
+/* to body
+<!--<div class="promotion-stage">
+		
+		
+		<i class="beam icon-3 item-3"></i>
+		<i class="beam icon-4 item-4"></i>
+		<i class="beam icon-5 item-5"></i>
+		
+		<i class="beam icon-7 item-7"></i>
+		
+		<i class="beam icon-9 item-9"></i>
+		<i class="beam icon-10 item-10"></i>
+		
+		<i class="beam icon-12 item-12"></i>
+		<i class="beam icon-13 item-13"></i>
+		<i class="beam icon-14 item-14"></i>
+		
+		<i class="beam icon-16 item-16"></i>
+		<i class="beam icon-17 item-17"></i>
+		
+		<i class="beam icon-2 item-19"></i>
+		<i class="beam icon-3 item-20"></i>
+		<i class="beam icon-4 item-21"></i>
+		
+		<i class="beam icon-6 item-23"></i>
+		<i class="beam icon-7 item-24"></i>
+		
+		<i class="beam icon-9 item-26"></i>
+		
+		
+		<i class="beam icon-12 item-29"></i>
+		<i class="beam icon-13 item-30"></i>
+		<i class="beam icon-14 item-31"></i>
+		
+		<i class="beam icon-16 item-33"></i>
+		<i class="beam icon-17 item-34"></i>
+	</div>
+<div class="promotion-header">
+			<div class="inner">
+                <img class="top-banner-bg js-activeImg" src="https://i.imgur.com/Y8i2o0J.png" style="display: block;">
+				<div class="timeline">
+					<i class="icon-sp-1"></i>
+					<i class="icon-1 icon-sp-2"></i>
+					<i class="icon-2 icon-sp-2"></i>
+					<i class="icon-4 icon-sp-3"></i>
+					<i class="icon-5 icon-sp-3"></i>
+                    <div class="pendule lang-en">
+                        <i class="icon-sp-4"></i>
+                        <span class="text">
+                            <span class="text-inner">UP TO<em>25%</em>OFF</span>
+                        </span>
+                    </div>
+				</div>
+				<div class="title-wrap">
+					<i class="icon-sp-7"></i>
+					<i class="icon-sp-8"></i>
+					<i class="icon-sp-9"></i>
+					<i class="icon-sp-10"></i>
+                    <span class="subtitle">
+                        <i class="icon-sp-subtitle-en"></i>
+                    </span>
+				</div>
+
+			</div>
+		</div>
+
+*/
+
+/* resolution */
+/*подгон мониторов*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  	.navbar {
+    top: 194px;
+}
+  .xbox {
+    top: 189px;
+}
+    .header__image {
+	width: 1009px;
+    height: 330px;
+    margin-left: -22.5%;
+    max-width: unset;
+    }
+  #snows{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: 250px;
+}
+  .changeserver {
+     left: 10px;
+    top: -13914px;
+    width: 669px;
+    height: 46px;
+
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  	.navbar {
+    top: 154px;
+}
+  .navbar-brand {
+    display: none;
+  }
+  .xbox {
+    top: 154px;
+}
+    .header__image {
+    width: 1352px;
+    height: 370px;
+    margin-left: -22.2%;
+    max-width: unset;
+    }
+  #snows{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: unset;
+}
+  .changeserver {
+    left: 331px;
+    top: -260px;
+    width: 587px;
+    height: 44px;
+}
+}
+@media (min-width: 576px)
+.modal-sm {
+    max-width: 301px;
+}
+@media (min-width: 1200px) {
+  	.navbar {
+    top: -221px;
+}
+  .xbox {
+    top: -217px;
+}
+    .header__image {
+    width: 1618px;
+    height: 452px;
+    max-width: unset;
+    margin-left: -22.5%;
+    }
+  #snow{
+    display: none;
+  }
+    .container {
+    width: 1140px;
+    max-width: 100%;
+    top: 300px;
+}
+}
+@media (max-width: 767px) {
+    /*Картинка шапки в мобильной версии*/
+    
+    .header__image {
+        content: url("https://i.imgur.com/5vqU975.png");
+    }
+  	.navbar {
+    top: 290px;
+}
+  .xbox {
+    top: 283px !important;
+}
+  .xbox_store {
+    top: -20px;
+	}
+  .promotion-header .title-wrap {
+    top: 135px !important;
+}
+  #snows{
+    display: none;
+  }
+  #close{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .title {
+    display: none;
+}
+ 	.xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+   width: 250px;
+}
+  .footer {
+    display: none;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 393px;
+    top: -23752px;
+    width: 109px;
+  }
+  .changeserver {
+    left: 12px;
+    top: -13677px;
+    width: 514px;
+    height: 46px;
+}
+}
+/*@media (min-width: 0px) and (max-width: 575px) {
+  .xbox_vk-member-reward .xbox__footer1 {
+    position: fixed
+    left: 393px;
+    top: -17070px;
+    width: 109px;
+  }
+}*/
+
+
+/* ///end resolution */
+
+
+
+
+
+    .header__image {
+    opacity: 0;
+    }
+.footer {
+    position: unset;
+  background: #0e0e0e;
+}
+body {
+    background-color: #0e0e0e;
+}
+
+.content {
+    margin: 0 auto;
+    padding-bottom: 297px;
+    width: 100%;
+    max-width: 1278px;
+}
+
+.footer-link__list {
+    position: relative;
+    z-index: 1000;
+}
+
+.icon-sp-1 {
+    background-position: 0 -1623px;
+    width: 1920px;
+    height: 236px
+}
+
+.icon-sp-10 {
+    background-position: -2122px -62px;
+    width: 333px;
+    height: 56px
+}
+
+.icon-sp-11 {
+    background-position: -2105px -62px;
+    width: 16px;
+    height: 60px
+}
+
+.icon-sp-12,.icon-sp-14 {
+    width: 1100px
+}
+
+.icon-sp-12 {
+    background-position: -732px -1476px;
+    height: 125px
+}
+
+.icon-sp-13 {
+    background-position: -732px -1602px;
+    width: 1034px;
+    height: 13px
+}
+
+.icon-sp-14 {
+    background-position: -732px -1350px;
+    height: 125px
+}
+
+.icon-sp-15,.icon-sp-16 {
+    width: 1100px;
+    height: 28px
+}
+
+.icon-sp-15 {
+    background-position: -1155px -2097px
+}
+
+.icon-sp-16 {
+    background-position: 0 -2138px
+}
+
+.icon-sp-17 {
+    background-position: -1833px -1476px;
+    width: 86px;
+    height: 86px
+}
+
+.icon-sp-18 {
+    background-position: -2021px -657px;
+    width: 72px;
+    height: 72px
+}
+
+.icon-sp-19 {
+    background-position: 0 -1047px;
+    width: 220px;
+    height: 302px
+}
+
+.icon-sp-2 {
+    background-position: -2371px -325px;
+    width: 26px;
+    height: 29px
+}
+
+.icon-sp-20 {
+    background-position: -1461px -1047px;
+    width: 226px;
+    height: 226px
+}
+
+.icon-sp-21 {
+    background-position: -1688px -1047px;
+    width: 200px;
+    height: 200px
+}
+
+.icon-sp-22 {
+    background-position: -1833px -1350px;
+    width: 110px;
+    height: 110px
+}
+
+.icon-sp-23,.icon-sp-24 {
+    width: 132px;
+    height: 46px
+}
+
+.icon-sp-23 {
+    background-position: -2105px -325px
+}
+
+.icon-sp-24 {
+    background-position: -2238px -325px
+}
+
+.icon-sp-25 {
+    background-position: -1992px -583px;
+    width: 28px;
+    height: 180px
+}
+
+.icon-sp-26 {
+    background-position: -1891px -834px;
+    width: 200px;
+    height: 153px
+}
+
+.icon-sp-27 {
+    background-position: -2021px -583px;
+    width: 72px;
+    height: 73px
+}
+
+.icon-sp-28,.icon-sp-29 {
+    width: 83px;
+    height: 30px
+}
+
+.icon-sp-28 {
+    background-position: -2547px -176px
+}
+
+.icon-sp-29 {
+    background-position: -2543px -229px
+}
+
+.icon-sp-3 {
+    background-position: -1179px -583px;
+    width: 711px;
+    height: 414px
+}
+
+.icon-sp-30 {
+    background-position: -2456px -62px;
+    width: 78px;
+    height: 55px
+}
+
+.icon-sp-31 {
+    background-position: -2535px -96px;
+    width: 15px;
+    height: 15px
+}
+
+.icon-sp-32 {
+    background-position: -221px -1047px;
+    width: 500px;
+    height: 300px
+}
+
+.icon-sp-33 {
+    background-position: 0 -1860px;
+    width: 1920px;
+    height: 236px
+}
+
+.icon-sp-34 {
+    background-position: -1944px -1350px;
+    width: 88px;
+    height: 88px
+}
+
+.icon-sp-35 {
+    background-position: -722px -1047px;
+    width: 738px;
+    height: 293px
+}
+
+.icon-sp-36 {
+    background-position: -1889px -1047px;
+    width: 190px;
+    height: 123px
+}
+
+.icon-sp-4 {
+    background-position: -1891px -583px;
+    width: 100px;
+    height: 250px
+}
+
+.icon-sp-5 {
+    background-position: -2105px -278px;
+    width: 530px;
+    height: 46px
+}
+
+.icon-sp-6 {
+    background-position: -1461px -1274px;
+    width: 424px;
+    height: 63px
+}
+
+.icon-sp-7 {
+    background-position: 0 -583px;
+    width: 1178px;
+    height: 463px
+}
+
+.icon-sp-8 {
+    background-position: 0 0;
+    width: 2104px;
+    height: 582px
+}
+
+.icon-sp-9 {
+    background-position: -724px -1052px;
+    width: 731px;
+    height: 320px;
+}
+
+/* // */
+
+.icon-sp-subtitle-en {
+    background-position: -2111px -5px;
+    width: 527px;
+    height: 47px;
+}
+
+.icon-sp-1,.icon-sp-3,.icon-sp-4,.icon-sp-5,.icon-sp-6,.icon-sp-7,.icon-sp-8,.icon-sp-9,.icon-sp-10,.icon-sp-11,.icon-sp-13,.icon-sp-15,.icon-sp-16,.icon-sp-17,.icon-sp-18,.icon-sp-19,.icon-sp-2,.icon-sp-20,.icon-sp-21,
+.icon-sp-22,.icon-sp-23,.icon-sp-24,.icon-sp-25,.icon-sp-26,.icon-sp-27,.icon-sp-28,.icon-sp-29,.icon-sp-30,.icon-sp-31,.icon-sp-32,.icon-sp-33,.icon-sp-34,.icon-sp-35,.icon-sp-36,.icon-sp-subtitle-en {
+    background-image: url(https://pic.moscow.ovh/images/2019/11/29/83274458968ebd3c012b42a560a991dc.png);
+}
+
+.icon-sp-tele {
+    background-position: -2547px -123px
+}
+
+.icon-sp-tw {
+    background-position: -2581px -123px
+}
+
+.icon-sp-vk {
+    background-position: -2513px -123px
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@keyframes fall {
+    0% {
+        transform: translate(0, -100%)
+    }
+
+    100% {
+        transform: translate(0, 100%)
+    }
+}
+
+@keyframes spotLampLeft {
+    0% {
+        transform: rotate(28deg)
+    }
+
+    100% {
+        transform: rotate(55deg)
+    }
+}
+
+@keyframes spotLampRight {
+    0% {
+        transform: rotate(152deg)
+    }
+
+    100% {
+        transform: rotate(125deg)
+    }
+}
+
+@keyframes glint {
+    0% {
+        opacity: .3
+    }
+
+    80% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes boom {
+    0% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(.8)
+    }
+}
+
+@keyframes shakeball {
+    0% {
+        transform: rotate(10deg)
+    }
+
+    100% {
+        transform: rotate(-10deg)
+    }
+}
+
+@keyframes clockwise {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes anticlockwise {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    100% {
+        transform: translate(0, -10px)
+    }
+}
+
+.multiline-hide {
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden
+}
+
+button {
+    outline: 0
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.view-screen {
+    position: relative;
+    left: 0;
+    width: 1100px;
+    margin: 0 auto;
+    transition: all .4s ease-in-out
+}
+
+.flyer {
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px !important;
+    z-index: 9999
+}
+
+.promotion-stage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #000
+}
+
+.promotion-stage .beam {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: url(https://i.imgur.com/MfnE7nj.png) no-repeat;
+    animation: fall 6s linear infinite;
+    transform: translate(0, -100%)
+}
+
+.promotion-stage .beam.icon-1 {
+    width: 33px;
+    background-position: -190px 0
+}
+
+.promotion-stage .beam.icon-2 {
+    width: 25px;
+    background-position: -101px 0
+}
+
+.promotion-stage .beam.icon-3 {
+    width: 12px;
+    background-position: -19px 0
+}
+
+.promotion-stage .beam.icon-4 {
+    width: 29px;
+    background-position: -127px 0
+}
+
+.promotion-stage .beam.icon-5 {
+    width: 58px;
+    background-position: -460px 0
+}
+
+.promotion-stage .beam.icon-6 {
+    width: 41px;
+    background-position: -224px 0
+}
+
+.promotion-stage .beam.icon-7 {
+    width: 2px;
+    background-position: 0 0
+}
+
+.promotion-stage .beam.icon-8 {
+    width: 48px;
+    background-position: -354px 0
+}
+
+.promotion-stage .beam.icon-9 {
+    width: 32px;
+    background-position: -157px 0
+}
+
+.promotion-stage .beam.icon-10 {
+    width: 25px;
+    background-position: -75px 0
+}
+
+.promotion-stage .beam.icon-11 {
+    width: 43px;
+    background-position: -310px 0
+}
+
+.promotion-stage .beam.icon-12 {
+    width: 2px;
+    background-position: -3px 0
+}
+
+.promotion-stage .beam.icon-13 {
+    width: 43px;
+    background-position: -266px 0
+}
+
+.promotion-stage .beam.icon-14 {
+    width: 16px;
+    background-position: -32px 0
+}
+
+.promotion-stage .beam.icon-15 {
+    width: 56px;
+    background-position: -403px 0
+}
+
+.promotion-stage .beam.icon-16 {
+    width: 25px;
+    background-position: -49px 0
+}
+
+.promotion-stage .beam.icon-17 {
+    width: 12px;
+    background-position: -6px 0
+}
+
+.promotion-stage .beam.item-1 {
+    top: 0;
+    margin-left: -900px;
+    animation-duration: 9s;
+    animation-delay: 0s
+}
+
+.promotion-stage .beam.item-2 {
+    top: 500px;
+    margin-left: 900px;
+    animation-duration: 9.3s;
+    animation-delay: 0s
+}
+
+.promotion-stage .beam.item-3 {
+    top: 100px;
+    margin-left: -790px;
+    animation-duration: 7s;
+    animation-delay: 1s
+}
+
+.promotion-stage .beam.item-4 {
+    top: 200px;
+    margin-left: 865px;
+    animation-duration: 8s;
+    animation-delay: .5s
+}
+
+.promotion-stage .beam.item-5 {
+    top: 100px;
+    margin-left: -940px;
+    animation-duration: 11.8s;
+    animation-delay: 2s
+}
+
+.promotion-stage .beam.item-6 {
+    top: 200px;
+    margin-left: 700px;
+    animation-duration: 8.8s;
+    animation-delay: 1.5s
+}
+
+.promotion-stage .beam.item-7 {
+    top: 400px;
+    margin-left: -630px;
+    animation-duration: 6.5s;
+    animation-delay: 3s
+}
+
+.promotion-stage .beam.item-8 {
+    top: 365px;
+    margin-left: 820px;
+    animation-duration: 8.5s;
+    animation-delay: 2s
+}
+
+.promotion-stage .beam.item-9 {
+    top: 485px;
+    margin-left: -470px;
+    animation-duration: 7.9s;
+    animation-delay: 4s
+}
+
+.promotion-stage .beam.item-10 {
+    top: 349px;
+    margin-left: 830px;
+    animation-duration: 10.2s;
+    animation-delay: 3s
+}
+
+.promotion-stage .beam.item-11 {
+    top: 456px;
+    margin-left: -200px;
+    animation-duration: 8.2s;
+    animation-delay: 5s
+}
+
+.promotion-stage .beam.item-12 {
+    top: 220px;
+    margin-left: 840px;
+    animation-duration: 5.6s;
+    animation-delay: 4s
+}
+
+.promotion-stage .beam.item-13 {
+    top: 123px;
+    margin-left: -690px;
+    animation-duration: 13.7s;
+    animation-delay: 6s
+}
+
+.promotion-stage .beam.item-14 {
+    top: 291px;
+    margin-left: 520px;
+    animation-duration: 9.3s;
+    animation-delay: 4.5s
+}
+
+.promotion-stage .beam.item-15 {
+    top: 426px;
+    margin-left: -856px;
+    animation-duration: 12.1s;
+    animation-delay: 6.5s
+}
+
+.promotion-stage .beam.item-16 {
+    top: 356px;
+    margin-left: 906px;
+    animation-duration: 9.9s;
+    animation-delay: 2.5s
+}
+
+.promotion-stage .beam.item-17 {
+    top: 95px;
+    margin-left: -868px;
+    animation-duration: 8.5s;
+    animation-delay: 1.5s
+}
+
+.promotion-stage .beam.item-18 {
+    top: 289px;
+    margin-left: 580px;
+    animation-duration: 7.7s;
+    animation-delay: 3.5s
+}
+
+.promotion-stage .beam.item-19 {
+    top: 470px;
+    margin-left: -610px;
+    animation-duration: 9.7s;
+    animation-delay: 2.5s
+}
+
+.promotion-stage .beam.item-20 {
+    top: 150px;
+    margin-left: 420px;
+    animation-duration: 6.6s;
+    animation-delay: .5s
+}
+
+.promotion-stage .beam.item-21 {
+    top: 230px;
+    margin-left: -670px;
+    animation-duration: 8.7s;
+    animation-delay: 3.5s
+}
+
+.promotion-stage .beam.item-22 {
+    top: 21px;
+    margin-left: 90px;
+    animation-duration: 13.8s;
+    animation-delay: 2.5s
+}
+
+.promotion-stage .beam.item-23 {
+    top: 170px;
+    margin-left: -830px;
+    animation-duration: 7.7s;
+    animation-delay: 3.5s
+}
+
+.promotion-stage .beam.item-24 {
+    top: 500px;
+    margin-left: 747px;
+    animation-duration: 9.1s;
+    animation-delay: 0s
+}
+
+.promotion-stage .beam.item-25 {
+    top: 490px;
+    margin-left: -520px;
+    animation-duration: 7.7s;
+    animation-delay: 5.5s
+}
+
+.promotion-stage .beam.item-26 {
+    top: 368px;
+    margin-left: 638px;
+    animation-duration: 10.8s;
+    animation-delay: 4.25s
+}
+
+.promotion-stage .beam.item-27 {
+    top: 391px;
+    margin-left: -589px;
+    animation-duration: 9.2s;
+    animation-delay: 6.5s
+}
+
+.promotion-stage .beam.item-28 {
+    top: 482px;
+    margin-left: 786px;
+    animation-duration: 9.65s;
+    animation-delay: 2.5s
+}
+
+.promotion-stage .beam.item-29 {
+    top: 496px;
+    margin-left: -840px;
+    animation-duration: 5.15s;
+    animation-delay: 6.5s
+}
+
+.promotion-stage .beam.item-30 {
+    top: 0;
+    margin-left: 90px;
+    animation-duration: 11.85s;
+    animation-delay: .5s
+}
+
+.promotion-stage .beam.item-31 {
+    top: 269px;
+    margin-left: -100px;
+    animation-duration: 9.35s;
+    animation-delay: 6.5s
+}
+
+.promotion-stage .beam.item-32 {
+    top: 280px;
+    margin-left: 665px;
+    animation-duration: 11s;
+    animation-delay: 2.5s
+}
+
+.promotion-stage .beam.item-33 {
+    top: 394px;
+    margin-left: -752px;
+    animation-duration: 8.7s;
+    animation-delay: 7.5s
+}
+
+.promotion-stage .beam.item-34 {
+    top: 480px;
+    margin-left: 568px;
+    animation-duration: 9.25s;
+    animation-delay: 4.5s
+}
+
+.promotion-container {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1
+}
+
+.promotion-header {
+    position: static;
+    height: 900px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.promotion-header .top-banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 900px
+}
+
+.promotion-header .inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px
+}
+
+.promotion-header .timeline {
+    position: absolute;
+    top: 11px;
+    left: 0;
+    right: 0;
+    /* //z-index: 20 */
+}
+
+.promotion-header .timeline .icon-sp-1,.promotion-header .timeline .icon-sp-33 {
+    position: absolute;
+    top: 6px;
+    left: 0
+}
+
+.promotion-header .timeline .icon-sp-2 {
+    position: absolute;
+    top: 20px
+}
+
+.promotion-header .timeline .icon-1 {
+    left: 757px
+}
+
+.promotion-header .timeline .icon-2 {
+    left: 1134px
+}
+
+.promotion-header .timeline .pendule {
+    position: absolute;
+    top: 60px;
+    left: 1309px;
+    transform-origin: 50% 0;
+    animation: shakeball 1.5s cubic-bezier(.52, -0.01, .47, 1.02) infinite alternate
+}
+
+.promotion-header .timeline .pendule .icon-sp-4 {
+    display: block
+}
+
+.promotion-header .timeline .pendule.lang-en .text .text-inner {
+    font-size: 18px
+}
+
+.promotion-header .timeline .pendule.lang-en .text em {
+    font-size: 36px
+}
+
+.promotion-header .timeline .pendule .text {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    width: 94px;
+    height: 92px;
+    color: #19b5d7;
+    font-size: 0;
+    line-height: 1;
+    text-align: center
+}
+
+.promotion-header .timeline .pendule .text .text-inner {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px
+}
+
+.promotion-header .timeline .pendule .text:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%
+}
+
+.promotion-header .timeline .pendule .text em {
+    display: block;
+    font-size: 32px
+}
+
+.promotion-header .timeline .icon-4 {
+    position: absolute;
+    top: -84px;
+    left: 310px;
+    z-index: 1;
+    transform: rotate(28deg);
+    transform-origin: 1% 43%;
+    animation: spotLampLeft 2s ease-in-out infinite alternate
+}
+
+.promotion-header .timeline .icon-5 {
+    position: absolute;
+    top: -84px;
+    left: 1593px;
+    z-index: 1;
+    transform: rotate(152deg);
+    transform-origin: 1% 43%;
+    animation: spotLampRight 2s ease-in-out infinite alternate
+}
+
+.promotion-header .timeline .content {
+    position: relative;
+    width: 100%;
+    font-size: 0;
+    text-align: center
+}
+
+.promotion-header .timeline .content .icon-sp-2 {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.promotion-header .timeline .content .item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 500px;
+    color: #f5080b;
+    padding: 0 20px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    line-height: 68px;
+    height: 68px
+}
+
+.promotion-header .timeline .content .item-1 {
+    color: #19b5d7
+}
+
+.promotion-header .timeline .content.lang-de .item {
+    width: auto;
+    line-height: 22px;
+    padding: 13px 0 0
+}
+
+.promotion-header .timeline .content.lang-de .icon-sp-2 {
+    margin: 0 72px
+}
+
+.promotion-header .timeline .content.lang-de .name {
+    display: block;
+    margin-right: 0
+}
+
+.promotion-header .timeline .content .name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 13px
+}
+
+.promotion-header .timeline .content .time {
+    font-size: 16px;
+    display: inline-block
+}
+
+.promotion-header .title-wrap {
+    position: absolute;
+    top: 203px;
+    left: 0;
+    right: 0;
+    /* //z-index: 19 */
+}
+
+.promotion-header .title-wrap .icon-sp-7 {
+    position: absolute;
+    top: -16px;
+    left: 366px;
+    animation: boom 6s ease-in-out infinite alternate
+}
+
+.promotion-header .title-wrap .icon-sp-8 {
+    position: absolute;
+    top: -18px;
+    left: -92px;
+    opacity: .8;
+    animation: boom 6s ease-in-out infinite alternate
+}
+
+.promotion-header .title-wrap .icon-sp-9 {
+    position: absolute;
+    top: 103px;
+    left: 584px
+}
+
+.promotion-header .title-wrap .icon-sp-35 {
+    position: absolute;
+    top: 0;
+    left: 584px
+}
+
+.promotion-header .title-wrap .icon-sp-10 {
+    position: absolute;
+    top: 110px;
+    left: 726px;
+    animation: glint 1.5s linear infinite alternate
+}
+
+.promotion-header .title-wrap .subtitle {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+.promotion-header .title-wrap .subtitle i {
+    display: inline-block
+}
+
+.promotion-header .carousel-text {
+    position: absolute;
+    top: 486px;
+    left: 692px;
+    z-index: 21
+}
+
+.promotion-header .carousel-text .icon-sp-5 {
+    position: absolute;
+    top: -2px;
+    left: -2px
+}
+
+.promotion-header .carousel-text .link-list {
+    position: relative;
+    width: 526px;
+    height: 42px;
+    overflow: hidden
+}
+
+.promotion-header .carousel-text .link-list .link {
+    position: absolute;
+    top: 42px;
+    width: 100%;
+    height: 42px;
+    padding: 0 16px;
+    font-size: 18px;
+    line-height: 42px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-header .carousel-text .link-list .link.in {
+    transform: translateY(-42px);
+    transition: all .4s ease-in-out
+}
+
+.promotion-header .carousel-text .link-list .link.out {
+    transform: translateY(-84px);
+    transition: all .4s ease-in-out
+}
+
+.promotion-header .carousel-text .link-list .link:hover span {
+    color: #19b5d7
+}
+
+.promotion-header .carousel-text .link-list .link span {
+    color: #ffee2d;
+    transition: all .1s
+}
+
+.promotion-header .countdown {
+    position: absolute;
+    top: 581px;
+    left: 747px;
+    z-index: 21;
+    width: 424px;
+    height: 63px;
+    line-height: 63px;
+    font-size: 0;
+    color: #19b5d7;
+    text-align: center
+}
+
+.promotion-header .countdown .title {
+    position: absolute;
+    line-height: 1;
+    font-size: 18px;
+    color: #19b5d7;
+    top: -31px;
+    left: 0;
+    width: 100%
+}
+
+.promotion-header .countdown .icon-sp-6 {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.promotion-header .countdown .text-wrap {
+    position: relative
+}
+
+.promotion-header .countdown .text-wrap span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0 6px
+}
+
+.promotion-header .countdown .text-wrap span:first-of-type {
+    color: #ffee2d
+}
+
+.promotion-header .countdown .text-wrap span i {
+    display: inline-block;
+    width: 20px;
+    margin: 0 11px;
+    line-height: 68px;
+    font-family: 'digital';
+    font-size: 40px;
+    font-style: normal;
+    vertical-align: bottom
+}
+
+.promotion-body {
+    padding-bottom: 200px;
+    margin-top: -90px;
+}
+
+.promotion-body .deal-box {
+    margin: 0 -8px -20px 0;
+    font-size: 0
+}
+
+.promotion-body .deal-box .deal-item {
+    position: relative;
+    display: inline-block;
+    width: 244px;
+    margin: 0 8px 20px 0;
+    padding-bottom: 16px;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff
+}
+
+.promotion-body .deal-box .deal-item .goods-time {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #19b5d7;
+    color: #fff
+}
+
+.promotion-body .deal-box .deal-item .goods-thumb {
+    display: block;
+    width: 210px;
+    height: 210px;
+    margin: 17px auto 14px;
+    text-align: center
+}
+
+.promotion-body .deal-box .deal-item .goods-thumb:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+.promotion-body .deal-box .deal-item .goods-thumb img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 210px;
+    max-height: 210px
+}
+
+.promotion-body .deal-box .deal-item .goods-title {
+    display: block;
+    height: 32px;
+    line-height: 16px;
+    padding: 0 20px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #171717;
+    display: -webkit-box !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.promotion-body .deal-box .deal-item .goods-price {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 36px;
+    color: #f30306
+}
+
+.promotion-body .deal-box .deal-item .goods-oldprice {
+    display: inline-block;
+    margin: 0 0 8px;
+    font-size: 14px;
+    line-height: 1;
+    color: #b1b0b4
+}
+
+.promotion-body .deal-box .deal-item .goods-limit {
+    position: relative;
+    width: 200px;
+    height: 14px;
+    margin: 0 auto 12px
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .process-bar {
+    border-radius: 14px;
+    background-color: #e7e7e7
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .process-bar em {
+    display: block;
+    height: 14px;
+    border-radius: 14px;
+    background-color: #ffc46f
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .goods-limit-tips {
+    position: absolute;
+    bottom: 21px;
+    left: 4px;
+    padding: 0 6px;
+    line-height: 16px;
+    font-size: 12px;
+    border: 1px solid #171717;
+    border-radius: 2px;
+    color: #171717
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .goods-limit-tips:before,.promotion-body .deal-box .deal-item .goods-limit .goods-limit-tips:after {
+    bottom: -6px;
+    left: 10px;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 6px 4px 0
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .goods-limit-tips:before {
+    border-top-color: #171717
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .goods-limit-tips:after {
+    bottom: -5px;
+    border-top-color: #fff
+}
+
+.promotion-body .deal-box .deal-item .goods-limit .goods-oldprice {
+    position: absolute;
+    bottom: 12px;
+    right: 2px
+}
+
+.promotion-body .deal-box .deal-item .goods-btn {
+    display: inline-block;
+    min-width: 100px;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #fff;
+    transition: all .2s
+}
+
+.promotion-body .deal-box .deal-item .goods-btn.if-normal {
+    background-color: #f30306
+}
+
+.promotion-body .deal-box .deal-item .goods-btn.if-normal:hover {
+    background-color: #690700
+}
+
+.promotion-body .deal-box .deal-item .goods-btn.if-ended {
+    background-color: #8c8c8c
+}
+
+.promotion-body .deal-box .deal-item .goods-btn.if-coming {
+    background-color: #ffc46f
+}
+
+.promotion-body .deal-box .deal-item .to-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 47px;
+    height: 47px;
+    overflow: hidden
+}
+
+.promotion-body .deal-box .deal-item .to-cart:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 193%;
+    height: 193%;
+    border-radius: 50%;
+    background-color: #ffe3ba;
+    transition: all .2s ease-in-out
+}
+
+.promotion-body .deal-box .deal-item .to-cart:hover::before {
+    width: 150%;
+    height: 150%
+}
+
+.promotion-body .deal-box .deal-item .to-cart:hover .sp-cart {
+    background-position: -1258px -157px
+}
+
+.promotion-body .deal-box .deal-item .to-cart .sp-cart {
+    position: absolute;
+    bottom: 7px;
+    right: 8px;
+    width: 22px;
+    height: 22px;
+    background: url(https://i.imgur.com/jl51Xwk.png) -1281px -157px;
+    z-index: 1
+}
+
+.promotion-body .deal-box .deal-item.style-2 .goods-price {
+    margin-bottom: 8px
+}
+
+.promotion-body .deal-box .deal-item.style-3 {
+    overflow: hidden
+}
+
+.promotion-body .deal-box .deal-item.style-3 .tag {
+    position: absolute;
+    top: -22px;
+    right: 0;
+    min-width: 86px;
+    height: 22px;
+    padding: 0 19px;
+    line-height: 24px;
+    z-index: 10;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background-color: #de8300;
+    color: #fff;
+    transform: translate(30%, 0) rotate(45deg);
+    transform-origin: 0 100%
+}
+
+.promotion-body .deal-box .deal-item.style-3 .goods-price {
+    margin-bottom: 0
+}
+
+.promotion-body .deal-box .goods-discount {
+    position: relative;
+    visibility: hidden
+}
+
+.promotion-body .deal-box .goods-discount .content {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #f30306
+}
+
+.promotion-body .deal-box .goods-discount .content em {
+    font-size: 20px;
+    font-weight: bold
+}
+
+.promotion-body .coupon-area {
+    position: relative;
+    margin-bottom: 60px;
+    height: 156px;
+    padding: 19px 0;
+    border: 3px solid #ffc46f;
+    background-color: #000;
+    font-size: 0;
+    text-align: center
+}
+
+.promotion-body .coupon-area .icon-sp-11 {
+    position: absolute;
+    top: 67px;
+    left: -10px
+}
+
+.promotion-body .coupon-area .icon-sp-11.icon-2 {
+    left: auto;
+    right: -10px
+}
+
+.promotion-body .coupon-area .item {
+    display: inline-block;
+    width: 240px;
+    height: 156px;
+    margin: 0 7px;
+    padding: 10px 10px 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background: url(https://i.imgur.com/jl51Xwk.png) 0 0
+}
+
+.promotion-body .coupon-area .item .price {
+    font-size: 40px;
+    line-height: 1;
+    color: #ffee2d;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-body .coupon-area .item .price sub {
+    font-size: 40px;
+    vertical-align: baseline
+}
+
+.promotion-body .coupon-area .item .title {
+    padding-left: 30px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-body .coupon-area .item .info {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-body .coupon-area .item .info:before {
+    content: '•';
+    margin-right: 3px
+}
+
+.promotion-body .coupon-area .item .btn {
+    position: relative;
+    display: inline-block;
+    min-width: 122px;
+    height: 28px;
+    padding: 0 8px;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 5px auto 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    border: 1px solid #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-body .coupon-area .item .btn.if-normal {
+    color: #00d1d9
+}
+
+.promotion-body .coupon-area .item .btn.if-normal:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4px 0 4px 6px;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    border-left-color: #00d1d9
+}
+
+.promotion-body .coupon-area .item .btn.if-alltaken {
+    background-color: #0d2d34
+}
+
+.promotion-body .coupon-area .item .btn.if-expired {
+    background-color: #5c6d71
+}
+
+.promotion-body .coupon-area .item .btn.if-received {
+    background-color: #690700
+}
+
+.promotion-body .section-title {
+    position: relative;
+    height: 125px;
+    line-height: 44px;
+    font-size: 44px;
+    font-weight: bold;
+    color: #d5f7ff;
+    text-align: center
+}
+
+.promotion-body .section-title.lang-fr {
+    font-size: 40px
+}
+
+.promotion-body .section-title .icon-sp-12,.promotion-body .section-title .icon-sp-14 {
+    display: block
+}
+
+.promotion-body .section-title span {
+    position: absolute;
+    top: 33px;
+    left: 0;
+    right: 0
+}
+
+.promotion-body .section-content {
+    position: relative;
+    padding: 47px 47px 30px;
+    border: 3px solid #19b5d7;
+    border-bottom: 0;
+    background-color: rgba(0,36,44,0.8)
+}
+
+.promotion-body .section-content .icon-sp-16,.promotion-body .section-content .icon-sp-15 {
+    position: absolute;
+    bottom: -28px;
+    left: -3px
+}
+
+.promotion-body .theme-red .section-title {
+    color: #ffdfdf
+}
+
+.promotion-body .theme-red .section-content {
+    border-color: #f30306;
+    background-color: rgba(105,7,0,0.8)
+}
+
+.promotion-body .section-tips {
+    position: absolute;
+    top: 30px;
+    right: 7px;
+    padding-bottom: 26px;
+    z-index: 10
+}
+
+.promotion-body .section-tips:hover .tips-content {
+    opacity: 1;
+    visibility: visible
+}
+
+.promotion-body .section-tips .tips-toggle {
+    display: block;
+    width: 86px;
+    height: 86px;
+    text-align: center;
+    color: #ffee2d;
+    font-size: 0
+}
+
+.promotion-body .section-tips .tips-toggle .icon-sp-17 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: clockwise 6s linear infinite
+}
+
+.promotion-body .section-tips .tips-toggle .icon-sp-18 {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    animation: anticlockwise 6s linear infinite
+}
+
+.promotion-body .section-tips .tips-toggle span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 1;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.promotion-body .section-tips .tips-toggle span:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 6px 8px 0;
+    position: relative;
+    display: block;
+    margin: 4px auto 0;
+    border-top-color: #ffee2d
+}
+
+.promotion-body .section-tips .tips-toggle:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 106%
+}
+
+.promotion-body .section-tips .tips-content {
+    position: absolute;
+    top: 103px;
+    right: -4px;
+    width: 280px;
+    padding: 24px 30px;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 4px;
+    background-color: #f4b40e;
+    color: #000;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    transition: all .2s;
+    opacity: 0;
+    visibility: hidden
+}
+
+.promotion-body .section-tips .tips-content h4 {
+    font-size: 16px;
+    margin-bottom: 8px
+}
+
+.promotion-body .section-tips .tips-content:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 0 7px 10px;
+    top: -10px;
+    right: 40px;
+    border-bottom-color: #f4b40e
+}
+
+.promotion-body .switch-content-item {
+    display: none
+}
+
+.promotion-body .switch-content-item.on {
+    display: block
+}
+
+.promotion-body .countdown-deals,.promotion-body .elite-bestsellers,.promotion-body .contagem-reg {
+    position: relative;
+    margin-bottom: 60px
+}
+
+.promotion-body .countdown-deals .section-content,.promotion-body .elite-bestsellers .section-content,.promotion-body .contagem-reg .section-content {
+    padding-top: 17px
+}
+
+.promotion-body .countdown-deals .switch-nav,.promotion-body .elite-bestsellers .switch-nav,.promotion-body .contagem-reg .switch-nav {
+    position: relative;
+    height: 120px;
+    margin: 0 -20px 28px 0;
+    font-size: 0;
+    text-align: center
+}
+
+.promotion-body .countdown-deals .switch-nav .icon-sp-13,.promotion-body .elite-bestsellers .switch-nav .icon-sp-13,.promotion-body .contagem-reg .switch-nav .icon-sp-13 {
+    position: absolute;
+    bottom: -13px;
+    left: -18px
+}
+
+.promotion-body .countdown-deals .switch-nav .switch-nav-item,.promotion-body .elite-bestsellers .switch-nav .switch-nav-item,.promotion-body .contagem-reg .switch-nav .switch-nav-item {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 320px;
+    height: 120px;
+    padding-top: 85px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    line-height: 1;
+    font-size: 18px;
+    color: #00677d;
+    background: url(https://i.imgur.com/jl51Xwk.png) no-repeat -321px -157px;
+    transition: color .2s
+}
+
+.promotion-body .countdown-deals .switch-nav .switch-nav-item:hover,.promotion-body .elite-bestsellers .switch-nav .switch-nav-item:hover,.promotion-body .contagem-reg .switch-nav .switch-nav-item:hover {
+    color: #19b5d7
+}
+
+.promotion-body .countdown-deals .switch-nav .switch-nav-item.on,.promotion-body .elite-bestsellers .switch-nav .switch-nav-item.on,.promotion-body .contagem-reg .switch-nav .switch-nav-item.on {
+    padding-top: 78px;
+    font-size: 22px;
+    background-position: 0 -157px;
+    color: #ffee2d
+}
+
+.promotion-body .elite-bestsellers .subtitle,.promotion-body .contagem-reg .subtitle {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 1;
+    color: #ffc46f;
+    text-align: center
+}
+
+.promotion-body .elite-bestsellers .switch-nav .switch-nav-item,.promotion-body .contagem-reg .switch-nav .switch-nav-item {
+    width: 460px;
+    background: url(https://i.imgur.com/jl51Xwk.png) no-repeat -642px -157px
+}
+
+.promotion-body .elite-bestsellers .switch-nav .switch-nav-item.on,.promotion-body .contagem-reg .switch-nav .switch-nav-item.on {
+    background-position: 0 -278px
+}
+
+.promotion-body .elite-bestsellers .top-8 .deal-item .sort,.promotion-body .contagem-reg .top-8 .deal-item .sort {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 51px;
+    height: 65px;
+    line-height: 80px;
+    background: url(https://i.imgur.com/jl51Xwk.png) no-repeat -1207px -157px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #f30306;
+    z-index: 10
+}
+
+.promotion-body .elite-bestsellers .top-8 .deal-item:nth-of-type(1) .sort,.promotion-body .contagem-reg .top-8 .deal-item:nth-of-type(1) .sort {
+    background-position: -1103px -157px
+}
+
+.promotion-body .elite-bestsellers .top-8 .deal-item:nth-of-type(2) .sort,.promotion-body .contagem-reg .top-8 .deal-item:nth-of-type(2) .sort {
+    background-position: -1155px -157px
+}
+
+.promotion-body .venues {
+    margin-bottom: 60px
+}
+
+.promotion-body .venues .inner {
+    margin: 0 -10px -10px 0;
+    font-size: 0
+}
+
+.promotion-body .venues .col {
+    display: inline-block;
+    vertical-align: top
+}
+
+.promotion-body .venues .link {
+    display: block;
+    margin: 0 10px 10px 0
+}
+
+.promotion-body .venues .link img {
+    display: block;
+    width: 350px;
+    height: 250px
+}
+
+.promotion-body .venues .col-1 .link img {
+    width: 280px;
+    height: 510px
+}
+
+.promotion-body .ultimate-brands {
+    position: relative;
+    margin-bottom: 60px
+}
+
+.promotion-body .ultimate-brands .switch-nav {
+    font-size: 0;
+    margin: 0 -9px 20px 0
+}
+
+.promotion-body .ultimate-brands .switch-nav .switch-nav-item {
+    position: relative;
+    display: inline-block;
+    width: 186px;
+    height: 38px;
+    margin: 0 9px 10px 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 38px;
+    background-color: #ffc46f;
+    color: #6a050b;
+    border: 2px solid #ffc46f
+}
+
+.promotion-body .ultimate-brands .switch-nav .switch-nav-item:hover {
+    color: #f30306
+}
+
+.promotion-body .ultimate-brands .switch-nav .switch-nav-item.on {
+    color: #f30306;
+    border-color: #f30306;
+    background-color: #6a050b
+}
+
+.promotion-body .ultimate-brands .switch-nav .switch-nav-item.on:before,.promotion-body .ultimate-brands .switch-nav .switch-nav-item.on:after {
+    bottom: -8px;
+    left: 50%;
+    margin-left: -9px;
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 8px 9px 0;
+    border-top-color: #f30306
+}
+
+.promotion-body .ultimate-brands .switch-nav .switch-nav-item.on:after {
+    bottom: -6px;
+    border-top-color: #6a050b
+}
+
+.promotion-body .ultimate-brands .coupon-item {
+    position: relative;
+    display: inline-block;
+    width: 244px;
+    height: 379px;
+    margin: 0 8px 20px 0;
+    vertical-align: top;
+    text-align: center;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.promotion-body .ultimate-brands .coupon-item .icon-sp-19 {
+    position: absolute;
+    top: 20px;
+    left: 13px
+}
+
+.promotion-body .ultimate-brands .coupon-item .content {
+    position: relative;
+    width: 186px;
+    padding: 20px 17px 16px;
+    margin: 108px auto 0;
+    color: #fff;
+    overflow: hidden
+}
+
+.promotion-body .ultimate-brands .coupon-item .more {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #f30306
+}
+
+.promotion-body .ultimate-brands .coupon-item .more:hover {
+    text-decoration: underline
+}
+
+.promotion-body .ultimate-brands .coupon-item .title {
+    max-height: 36px;
+    margin-bottom: 5px;
+    line-height: 1;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.promotion-body .ultimate-brands .coupon-item .price {
+    margin-bottom: 5px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffee2d
+}
+
+.promotion-body .ultimate-brands .coupon-item .price sub {
+    font-size: 38px;
+    vertical-align: baseline
+}
+
+.promotion-body .ultimate-brands .coupon-item .info {
+    padding-left: 18px;
+    line-height: 16px;
+    font-size: 14px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-body .ultimate-brands .coupon-item .info:before {
+    content: '•';
+    margin-right: 3px
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn {
+    position: relative;
+    display: inline-block;
+    min-width: 122px;
+    height: 28px;
+    padding: 0 8px;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 28px auto 0;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    border: 1px solid #c29394;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn.if-normal {
+    color: #00d1d9
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn.if-normal:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 4px 0 4px 6px;
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    border-left-color: #00d1d9
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn.if-alltaken {
+    background-color: #0d2d34
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn.if-expired {
+    background-color: #5c6d71
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn.if-received {
+    background-color: #690700
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn:hover {
+    color: #ffee2d;
+    border-color: #ffc46f
+}
+
+.promotion-body .ultimate-brands .coupon-item .btn:hover:after {
+    border-left-color: #ffee2d
+}
+
+.promotion-body .sacola-da-sorte {
+    position: relative;
+    margin-bottom: 60px
+}
+
+.promotion-body .category-zones {
+    margin-bottom: 60px
+}
+
+.promotion-body .category-zones .section-content {
+    padding: 60px 47px 0
+}
+
+.promotion-body .category-zones .category-wrap {
+    position: relative;
+    margin-bottom: 70px;
+    text-align: right;
+    min-height: 786px
+}
+
+.promotion-body .category-zones .cat-title {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    text-align: left
+}
+
+.promotion-body .category-zones .cat-title .title-1 {
+    width: 250px;
+    margin-bottom: 15px;
+    line-height: 36px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffee2d;
+    word-break: break-word;
+    word-wrap: break-word
+}
+
+.promotion-body .category-zones .cat-title .title-2 {
+    width: 250px;
+    line-height: 24px;
+    font-size: 18px;
+    color: #fff;
+    word-break: break-word;
+    word-wrap: break-word
+}
+
+.promotion-body .category-zones .bg-img {
+    position: absolute;
+    top: -20px;
+    left: -21px;
+    width: 1040px;
+    height: 760px;
+    opacity: 1
+}
+
+.promotion-body .category-zones .view-more {
+    position: absolute;
+    top: 650px;
+    left: 0;
+    height: 38px;
+    min-width: 100px;
+    padding: 0 19px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffee2d;
+    background-color: #000;
+    border: 1px solid #ffee2d;
+    text-align: center;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.75)
+}
+
+.promotion-body .category-zones .view-more:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 5px 0 5px 8px;
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    margin-left: 7px;
+    border-left-color: #ffee2d
+}
+
+.promotion-body .category-zones .view-more-link {
+    position: absolute;
+    top: -20px;
+    left: -21px;
+    width: 1040px;
+    height: 760px;
+    background: url(/about:blank)
+}
+
+.promotion-body .category-zones .deal-box {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    width: 756px;
+    text-align: left;
+    vertical-align: top
+}
+
+.promotion-body .category-zones .goods-model {
+    position: absolute;
+    opacity: 1;
+    animation: up-down 1.8s ease-in-out infinite alternate
+}
+
+.promotion-body .category-zones .goods-model.model-1 {
+    top: 220px;
+    left: -78px;
+    width: 343px;
+    height: 344px
+}
+
+.promotion-body .category-zones .goods-model.model-2 {
+    top: 200px;
+    left: -84px;
+    width: 349px;
+    height: 358px
+}
+
+.promotion-body .category-zones .goods-model.model-3 {
+    top: 210px;
+    left: -88px;
+    width: 355px;
+    height: 351px
+}
+
+.promotion-body .category-zones .goods-model.model-4 {
+    top: 204px;
+    left: -90px;
+    width: 338px;
+    height: 375px
+}
+
+.promotion-body .category-zones .goods-model.model-5 {
+    top: 166px;
+    left: -60px;
+    width: 317px;
+    height: 425px
+}
+
+.promotion-body .category-zones .goods-model.model-6 {
+    top: 206px;
+    left: -110px;
+    width: 368px;
+    height: 419px
+}
+
+.promotion-body .category-zones .goods-model.model-9 {
+    top: 240px;
+    left: -120px;
+    width: 376px;
+    height: 420px
+}
+
+.promotion-body .more-events {
+    margin-bottom: 60px
+}
+
+.promotion-body .more-events .section-content {
+    padding: 36px 27px 1px
+}
+
+.promotion-body .more-events .ads-wrap {
+    margin: 0 -21px 18px 0;
+    font-size: 0
+}
+
+.promotion-body .more-events .col {
+    display: inline-block
+}
+
+.promotion-body .more-events .link {
+    display: inline-block;
+    margin: 0 20px 20px 0
+}
+
+.promotion-body .more-events .link img {
+    display: block
+}
+
+.promotion-body .more-events .link.link-1 img {
+    width: 580px;
+    height: 220px
+}
+
+.promotion-body .more-events .link.link-2 img {
+    width: 440px;
+    height: 220px
+}
+
+.promotion-body .more-events .link.link-3 img,.promotion-body .more-events .link.link-4 img {
+    width: 460px;
+    height: 180px
+}
+
+.promotion-body .more-events .link.link-5 img,.promotion-body .more-events .link.link-6 img {
+    width: 270px;
+    height: 380px
+}
+
+.promotion-body .more-events .more-lang {
+    margin-right: -54px;
+    font-size: 0;
+    text-align: center
+}
+
+.promotion-body .more-events .more-lang .item {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin: 0 53px 40px 0;
+    vertical-align: top
+}
+
+.promotion-body .more-events .more-lang .item:hover .icon-sp-20 {
+    animation: clockwise 8s linear infinite
+}
+
+.promotion-body .more-events .more-lang .item:hover .icon-sp-21 {
+    animation: anticlockwise 8s linear infinite
+}
+
+.promotion-body .more-events .more-lang img {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    width: 220px;
+    height: 220px
+}
+
+.promotion-body .more-events .more-lang .icon-sp-20 {
+    position: absolute;
+    top: -3px;
+    left: -3px
+}
+
+.promotion-body .more-events .more-lang .icon-sp-21 {
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+
+.promotion-body .cool-add-ons {
+    position: relative;
+    margin-bottom: 60px
+}
+
+.promotion-body .cool-add-ons .add-ons-intro {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 244px;
+    height: 321px;
+    padding: 20px 20px 0 0;
+    margin: 0 8px 20px 0;
+    vertical-align: top
+}
+
+.promotion-body .cool-add-ons .add-ons-intro .decs {
+    line-height: 18px;
+    font-size: 14px;
+    color: #ffdfdf
+}
+
+.promotion-body .cool-add-ons .add-ons-intro .view-and-buy {
+    display: inline-block;
+    bottom: 20px;
+    left: 0;
+    min-width: 100px;
+    height: 34px;
+    padding: 0 10px;
+    margin-top: 30px;
+    line-height: 34px;
+    border: 1px solid #ffc46f;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffee2d;
+    background-color: #000;
+    box-shadow: 0 8px 10px rgba(0,0,0,0.75)
+}
+
+.promotion-body .cool-add-ons .add-ons-intro .view-and-buy:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 5px 0 5px 8px;
+    position: relative;
+    display: inline-block;
+    margin-left: 7px;
+    border-left-color: #ffee2d
+}
+
+.promotion-body .app-download {
+    position: relative;
+    height: 150px;
+    line-height: 1;
+    color: #ffee2d;
+    background: url(https://i.imgur.com/jl51Xwk.png) no-repeat -241px 0
+}
+
+.promotion-body .app-download .content {
+    position: relative;
+    padding: 41px 0 0 94px;
+    z-index: 1
+}
+
+.promotion-body .app-download .title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px
+}
+
+.promotion-body .app-download .desc {
+    font-size: 18px
+}
+
+.promotion-body .app-download .icon-sp-22 {
+    position: absolute;
+    top: 20px;
+    right: 266px
+}
+
+.promotion-body .app-download .btns {
+    position: absolute;
+    top: 24px;
+    right: 90px
+}
+
+.promotion-body .app-download .btns a {
+    display: block;
+    margin-bottom: 9px
+}
+
+.promotion-body .app-download .btns a i {
+    display: block
+}
+
+.pop-dimmer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 0;
+    text-align: center;
+    z-index: 10000;
+    transition: all .2s;
+    opacity: 0;
+    visibility: hidden
+}
+
+.pop-dimmer.pop-in {
+    opacity: 1;
+    visibility: visible
+}
+
+.pop-dimmer.pop-in .pop-content {
+    animation: bouncein 1s;
+    animation-fill-mode: both
+}
+
+.pop-dimmer:after {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.pop-dimmer .pop-content {
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center
+}
+
+.pop-dimmer .pop-content:after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle
+}
+
+.pop-dimmer .pop-content .icon-sp-32 {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.pop-dimmer .pop-content .custom-content {
+    position: relative;
+    display: inline-block;
+    width: 420px;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e7cbcd
+}
+
+.pop-dimmer .pop-content .custom-content .coupon-tip {
+    display: inline-block;
+    padding: 0 30px;
+    min-width: 160px;
+    margin: 22px auto;
+    line-height: 46px;
+    background-color: #ffee2d;
+    color: #f5080b;
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px dashed #6a050b
+}
+
+.pop-dimmer .pop-content .custom-content .link {
+    display: inline-block;
+    color: #ffee2d;
+    text-decoration: underline
+}
+
+.pop-dimmer .pop-content .pop-close {
+    position: absolute;
+    top: -62px;
+    left: 50%;
+    margin-left: -16px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #19b5d7;
+    background-color: rgba(0,36,44,0.8)
+}
+
+.pop-dimmer .pop-content .pop-close .icon-sp-31 {
+    display: inline-block;
+    margin-top: 8px
+}
+
+.pop-dimmer .pop-content .pop-close:after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    width: 1px;
+    height: 30px;
+    background-color: #19b5d7
+}
+
+.promotion-nav {
+    position: absolute;
+    top: 1065px;
+    left: 50%;
+    width: 50%;
+    max-width: 810px
+}
+
+.promotion-nav .nav-toggle {
+    position: absolute;
+    top: 250px;
+    right: 0;
+    padding: 30px 0 30px 30px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden
+}
+
+.promotion-nav .nav-toggle .icon {
+    display: block
+}
+
+.promotion-nav.show-nav .inner {
+    right: 0
+}
+
+.promotion-nav.show-nav .nav-toggle {
+    opacity: 0;
+    visibility: hidden
+}
+
+.promotion-nav .inner {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 130px 10px 95px 10px;
+    transition: all .4s ease-in-out
+}
+
+.promotion-nav .icon-sp-26 {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    animation: up-down 1.8s ease-in-out infinite alternate
+}
+
+.promotion-nav .icon-sp-36 {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    animation: up-down 1.8s ease-in-out infinite alternate
+}
+
+.promotion-nav .hint-text {
+    padding: 8px 0 7px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #19b5d7;
+    text-align: center
+}
+
+.promotion-nav .app-download {
+    position: relative;
+    width: 180px;
+    height: 90px;
+    background-color: #690700;
+    margin: 0 auto
+}
+
+.promotion-nav .app-download .icon-sp-27 {
+    position: absolute;
+    top: 8px;
+    left: 10px
+}
+
+.promotion-nav .app-download .btns {
+    position: absolute;
+    top: 12px;
+    right: 10px
+}
+
+.promotion-nav .app-download .btns a {
+    display: block;
+    margin-bottom: 6px
+}
+
+.promotion-nav .app-download .btns i {
+    display: block
+}
+
+.promotion-nav .nav {
+    position: relative
+}
+
+.promotion-nav .nav .item {
+    display: block;
+    width: 198px;
+    height: 30px;
+    margin-bottom: 4px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(0,36,44,0.8);
+    border: 1px solid rgba(25,181,215,0.8);
+    border-radius: 4px;
+    text-align: center
+}
+
+.promotion-nav .nav .item:hover {
+    color: #ffee2d
+}
+
+.promotion-nav .nav .item.on {
+    color: #ffee2d;
+    background-color: rgba(105,7,0,0.8);
+    border-color: rgba(243,3,6,0.8)
+}
+
+.promotion-nav .bottom {
+    position: relative;
+    height: 130px;
+    background-color: rgba(0,36,44,0.8);
+    border: 1px solid rgba(25,181,215,0.8);
+    border-radius: 4px
+}
+
+.promotion-nav .bottom .share-box {
+    position: relative;
+    width: 138px;
+    padding-left: 13px;
+    margin: 0 auto;
+    font-size: 0
+}
+
+.promotion-nav .bottom .share-box .item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 33px;
+    height: 33px;
+    margin: 0 13px 8px 0
+}
+
+.promotion-nav .bottom .share-box .item .btn {
+    position: relative
+}
+
+.promotion-nav .bottom .share-box .item .btn:hover {
+    z-index: 1
+}
+
+.promotion-nav .bottom .share-box .item .btn:hover+.count {
+    opacity: 1;
+    visibility: visible
+}
+
+.promotion-nav .bottom .share-box .item .count {
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    box-sizing: border-box;
+    height: 30px;
+    padding: 3px 24px 0 10px;
+    line-height: 12px;
+    font-size: 12px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: rgba(255,238,45,0.9);
+    color: #000;
+    opacity: 0;
+    visibility: hidden
+}
+
+.promotion-nav .go-top {
+    position: absolute;
+    bottom: 0;
+    left: 83px;
+    width: 52px;
+    height: 52px;
+    line-height: 54px;
+    border: 2px solid #19b5d7;
+    border-radius: 50%;
+    color: #19b5d7;
+    background-color: rgba(0,36,44,0.8);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all .2s;
+    text-align: center
+}
+
+.promotion-nav .go-top .icon-sp-30 {
+    position: absolute;
+    top: -41px;
+    left: -14px
+}
+
+@media screen and (max-width: 1580px) {
+    .promotion-nav .inner {
+        right:-220px
+    }
+
+    .promotion-nav .nav-toggle {
+        opacity: 1;
+        visibility: visible
+    }
+}

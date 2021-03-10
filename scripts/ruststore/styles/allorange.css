@@ -1,0 +1,83 @@
+.product__discount {
+    background: rgb(242, 86, 71);
+}
+.bg-success {
+    background-color: #f25647!important;
+}
+.btn-success {
+    background-color: #f25647;
+    border-color: #f25647;
+}
+.btn-success hover {
+    background-color: #f25647;
+    border-color: #f25647;
+}
+/*
+.xserver__title a:hover {
+    color: #f25647!important;
+} 
+.xserver__links a:hover {
+    color: #f25647!important;
+}
+.footer-link__item a {
+    color: #f25647!important;
+}*/
+a {
+    color: #f25647
+}
+a:focus,a:hover {
+    color: #f25647;
+}
+.product__servers {
+    color: #f25647;
+}
+
+.btn-info {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-info:hover {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-info.focus,.btn-info:focus {
+    -webkit-box-shadow: 0 0 0 2px rgb(242, 86, 71);
+    box-shadow: 0 0 0 2px rgb(242, 86, 71)
+}
+
+.btn-info.disabled,.btn-info:disabled {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-info.active,.btn-info:active,.show>.btn-info.dropdown-toggle {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-success {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-success:hover {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-success.focus,.btn-success:focus {
+    -webkit-box-shadow: 0 0 0 2px rgb(242, 86, 71);
+    box-shadow: 0 0 0 2px rgb(242, 86, 71)
+}
+
+.btn-success.disabled,.btn-success:disabled {
+    background-color: #f25647;
+    border-color: #f25647
+}
+
+.btn-success.active,.btn-success:active,.show>.btn-success.dropdown-toggle {
+    background-color: #f25647;
+    border-color: #f25647
+}

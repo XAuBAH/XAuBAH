@@ -1,0 +1,264 @@
+/* Preloader on pure CSS
+created by XAuBAH © Please don't copy elements or images*/
+
+.close{
+  position:fixed;
+  top:0;
+  right:0;
+  margin:0;
+  padding:0;
+  z-index:9000000;
+}
+.pl{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.loaded .pl{
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*preloader zone*/
+
+.grpl{
+  position: fixed;
+  background: #222;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+.logo{
+  width: 100%;
+}
+
+.l1{
+  position: fixed;
+  left:465px;
+  top:0px;
+  margin: auto;
+  width: 1000px;
+  z-index: 1001;
+}
+.l2{
+  position: fixed;
+  left:265px;
+  top:45px;
+  margin: auto;
+  width: 1350px;
+  z-index: 1002;
+}
+.l3{
+  position: fixed;
+  left:765px;
+  top:120px;
+  margin: -75px 0px 0px -526px;
+  width: 1350px;
+  z-index: 1003;
+}
+.l4{
+  position: fixed;
+  left:50%;
+  top:140px;
+  margin: -75px 0px 0px -50%;
+  width: 1950px;
+  z-index: 1004;
+}
+.l5{
+  position: fixed;
+  left:50%;
+  top:270px;
+  margin: -75px 0px 0px -45%;
+  width: 1750px;
+  z-index: 1005;
+}
+.l6{
+  position: fixed;
+  left:50%;
+  top:350px;
+  margin: -75px 0px 0px -48%;
+  width: 1850px;
+  z-index: 1007;
+}
+.l7{
+  position: fixed;
+  left:49%;
+  top:75px;
+  margin: -75px 0px 0px -30%;
+  width: 1150px;
+  z-index: 1006;
+}
+.l8{
+  position: fixed;
+  left:49%;
+  top:430px;
+  margin: -75px 0px 0px -50%;
+  width: 1950px;
+  z-index: 1008;
+}
+.l9{
+  position: fixed;
+  left:49%;
+  top:430px;
+  margin: -75px 0px 0px -50%;
+  width: 1950px;
+  z-index: 1009;
+}
+
+.gr{
+  position: fixed;
+  left:49%;
+  top:450px;
+  margin: -125px 0px 0px -23%;
+  width: 1050px;
+  z-index: 1010;
+  @font-face {
+    font-family: Orator Std; 
+    src: url(https://github.com/XAuBAH/XAuBAH/blob/master/fonts/OratorStd.ttf?raw=true); 
+    src: local(Orator Std), url(https://github.com/XAuBAH/XAuBAH/blob/master/fonts/OratorStd.ttf?raw=true);
+  }
+  font-family: Orator Std;
+    font-size: 145px;
+    font-weight: 900;
+    line-height: 1.5;
+  text-shadow: rgba(183, 67, 15, 0.79) 3px 3px 0px, rgba(183, 67, 15, 0.79) -3px -3px 0, rgba(183, 67, 15, 0.79) -3px 3px 0, rgba(183, 67, 15, 0.79) 3px -3px 0;
+    color: rgb(255, 96, 0);
+}
+.l10{
+  position: fixed;
+  left:49%;
+  top:480px;
+  margin: -75px 0px 0px -47%;
+  width: 1850px;
+  z-index: 1011;
+}
+.l11{
+  position: fixed;
+  left:49%;
+  top:550px;
+  margin: -75px 0px 0px -49%;
+  width: 1950px;
+  z-index: 1012;
+}
+.waiting{
+  position: fixed;
+  left:65%;
+  top:90%;
+  margin: -125px 0px 0px -23%;
+  width: 500px;
+  z-index: 1015;
+  @font-face {
+    font-family: Orator Std; 
+    src: url(https://github.com/XAuBAH/XAuBAH/blob/master/fonts/OratorStd.ttf?raw=true); 
+    src: local(Orator Std), url(https://github.com/XAuBAH/XAuBAH/blob/master/fonts/OratorStd.ttf?raw=true);
+  }
+  font-family: Orator Std;
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.l1,.l2,.l3{
+  animation: animationFrames ease 4.8s;
+  animation-iteration-count: 1;
+  transform-origin: 20% -10%;
+}
+
+@keyframes animationFrames{
+  0% {   transform:  translate(-464%,-43%)  scaleX(18.23) scaleY(14.05) ;
+  }
+  801% {
+    transform:  translate(-172%,-186%)  scaleX(6.88) scaleY(4.14) ;
+  }
+}
+
+.l4,.l5{
+  animation: animationFrames2 ease 5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 10%;
+}
+
+@keyframes animationFrames2{
+  0% {
+    transform:  translate(0%,0%)  scaleX(20.78) scaleY(12.96) ;
+  }
+  200% {
+    transform:  translate(0%,-170%)  scaleX(4.19) scaleY(3.02) ;
+  }
+}
+
+.l7{
+  animation: animationFrames3 ease 5.1s;
+  animation-iteration-count: 1;
+  transform-origin: 45% 9%;
+}
+
+@keyframes animationFrames3{
+  0% {
+    transform:  translate(-66%,-101%)  scaleX(39.73) scaleY(40.25);
+  }
+ 
+  300% {
+    transform:  translate(-31%,-168%)  scaleX(4.14) scaleY(4.92) ;
+  }
+}
+.l6,.l8{
+  animation: animationFrames4 ease 5.2s;
+  animation-iteration-count: 1;
+  transform-origin: 50% -50%;
+}
+
+@keyframes animationFrames4{
+  0% {
+    transform:  translate(-66%,77%)  scaleX(19.73) scaleY(11.25) ;
+  }
+  400% {
+    transform:  translate(-31%,-168%)  scaleX(4.14) scaleY(2.92) ;
+  }
+}
+.l9{
+  animation: animationFrames5 ease 5.3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% -50%;
+}
+
+@keyframes animationFrames5{
+  0% {
+    transform:  translate(-66%,202%)  scaleX(19.73) scaleY(11.25) ;
+  }
+  400% {
+    transform:  translate(-31%,-168%)  scaleX(4.14) scaleY(2.92) ;
+  }
+}
+.gr,.l10{
+  animation: animationFrames6 ease 5.4s;
+  animation-iteration-count: 1;
+  transform-origin: 50% -50%;
+}
+
+@keyframes animationFrames6{
+  0% {
+    transform:  translate(-66%,339%)  scaleX(19.73) scaleY(11.25) ;
+  }
+  200% {
+    transform:  translate(-31%,-168%)  scaleX(4.14) scaleY(2.92) ;
+  }
+}
+.l11{
+  animation: animationFrames7 ease 5.5s;
+  animation-iteration-count: 1;
+  transform-origin: 50% -50%;
+}
+
+@keyframes animationFrames7{
+  0% {
+    transform:  translate(-66%,422%)  scaleX(19.73) scaleY(11.25) ;
+  }
+  300% {
+    transform:  translate(-31%,-168%)  scaleX(4.14) scaleY(2.92) ;
+  }
+}

@@ -1,0 +1,147 @@
+.theme-dark.authBox {
+    /* //color: #72767d; */
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+.authBox {
+    width: 100%;
+    padding: 9px;
+}
+
+.centeringWrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.guildIcon {
+    margin-bottom: 20px;
+}
+.inviteLargeIcon {
+    margin-right: 0;
+}
+.inviteIcon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.iconSizeXLarge {
+    width: 100px;
+    height: 100px;
+}
+.iconInactive {
+    border-radius: 50%;
+}
+.icon-dis {
+    position: relative;
+    background-clip: padding-box;
+    background-color: none;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+
+.size16 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.colorHeaderPrimary {
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 8px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+.activityCount {
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+.flex-dis {
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+
+.pillOnline {
+    margin-right: 8px;
+}
+
+.pill-dis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 5px 16px 4px;
+    border-radius: 100px;
+    background-color: #202225;
+}
+
+.pillIconOnline {
+    background-color: #43b581;
+}
+.pillIconTotal {
+    background-color: #b9bbbe;
+}
+.pillIcon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.pillMessage-1btqlx {
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+@media (min-width: 992px){
+  .flex-dis {
+    display: grid;
+  }
+  
+  /*.pill-dis {
+    width: 100%;
+  }*/
+ .pillOnline {
+    margin-bottom: 8px;
+    margin-right: 0px;
+  }
+}

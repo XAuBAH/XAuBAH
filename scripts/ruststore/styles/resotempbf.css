@@ -1,0 +1,145 @@
+/*подгон мониторов*/
+@media (min-width: 768px) and (max-width: 1199px) {
+  	.navbar {
+    top: -70px;
+    z-index: 1000000;
+}
+  .xbox {
+    top: -70px;
+}
+    .header__image {
+	width: 1009px;
+    height: 330px;
+    margin-left: -22.5%;
+    max-width: unset;
+    }
+  #snows{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: 250px;
+}
+  .container {
+    width: 720px;
+    max-width: 100%;
+    top: 379px;
+}
+  body {
+   overflow-x: hidden;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  	.navbar {
+    top: -71px;
+}
+  .navbar-brand {
+    display: none;
+  }
+  .xbox {
+    top: -70px;
+}
+    .header__image {
+    width: 1352px;
+    height: 370px;
+    margin-left: -22.2%;
+    max-width: unset;
+    }
+  #snows{
+    display: none;
+  }
+  .pl {
+    display: none;
+}
+  .xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+    width: unset;
+}
+  .container {
+    width: 960px;
+    max-width: 100%;
+    top: 341px;
+}
+  body {
+   overflow-x: hidden;
+}
+}
+@media (min-width: 576px)
+.modal-sm {
+    max-width: 301px;
+}
+@media (min-width: 1200px) {
+  	.navbar {
+    top: -87px;
+}
+  .xbox {
+    top: -84px;
+}
+    .header__image {
+    width: 1618px;
+    height: 452px;
+    max-width: unset;
+    margin-left: -22.5%;
+    }
+  #snow{
+    display: none;
+  }
+    .container {
+    width: 1140px;
+    max-width: 100%;
+    top: 300px;
+}
+  body {
+   overflow-x: hidden;
+}
+}
+@media (max-width: 767px) {
+    /*Картинка шапки в мобильной версии*/
+    
+    .header__image {
+        content: url("https://i.imgur.com/WRPcZxm.png");
+    }
+  .xbox_store {
+    top: -20px;
+	}
+  .promotion-header {
+    display: none;
+}
+  .promotion-stage {
+    display: none;
+}
+  .pl {
+    display: none;
+}
+  .title {
+    display: none;
+}
+ 	.xbox .xbox_custom {
+    display: none;
+}
+  .ml-auto > ul {
+   width: 250px;
+}
+  .footer {
+    display: none;
+}
+  .xbox_vk-member-reward .xbox__footer1 {
+    left: 393px;
+    top: -23752px;
+    width: 109px;
+  }
+  .modal-roulette .roulette__description:before {
+    color: red;
+    content: "УБЕДИТЕЛЬНАЯ ПРОСЬБА НЕ ОТКРЫВАТЬ РУЛЕТКИ С ТЕЛЕФОНА, ОТОБРАЖЁННЫЕ ВЕЩИ МОГУТ ОТЛИЧАТСЯ ОТ ПОЛУЧЕННЫХ В ДЕЙСТВИТЕЛЬНОСТИ ИЗ-ЗА СЖАТИЯ ЭКРАНА";
+  }
+  .container {
+    top: 0px;
+}
+}
