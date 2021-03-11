@@ -1,0 +1,4 @@
+.btn-primary,.btn-success  {
+    /* display: none; */
+    pointer-events: none;
+}
