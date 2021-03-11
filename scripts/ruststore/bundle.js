@@ -21317,7 +21317,7 @@ webpackJsonp([27], [function(e, t, n) {
             return u.default.createElement("a", {
                 className: "nav-link",
                 // href: "https://pay.moscow.ovh/?" + e.user.pay
-                href: "javascript:;"/*  + e.user.pay */
+                href: "https://oplata.qiwi.com/create?amount=&comment=%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BF%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5+%D1%87%D0%B5%D1%80%D0%B5%D0%B7+QIWI+Grand+Rust+%D0%90%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82+"+e.user.steamID+"&publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPpUQmfaEpAhq21XR23R28hYHpLoCdSST3kVCoiwxCzz1qWreJPpkHz4L8uoKbBGkMr4MGHdUzc1F49BAKbmA9Jyt9BBQodFG3RLUYfKUT8&account="+e.user.steamID+"&customFields%5BthemeCode%5D=Svetlana-S-vh5ib6hm&successUrl=https%3A%2F%2Fshop.grand-rust.ru"/*  + e.user.pay */
             }, "number" == typeof t ? (0,
             _.getFloorNumber)(t) + (0,
             _.getFloorNumber)(n) + " RUB" : "Загрузка...", u.default.createElement(c.Modal, {
