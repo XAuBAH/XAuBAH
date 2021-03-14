@@ -982,7 +982,7 @@ function OvhUrlOverrite(){
 	for (var i = 0; i < slides.length; i++) {
 		var elelink = slides.item(i);
 		var urlelelink = elelink.getAttribute("href");
-	   if(urlelelink.startsWith('https://pay.moscow.ovh')){
+	   if(urlelelink.startsWith('https://oplata.qiwi.com')){
 		   OvhPayUrl = urlelelink;
 		   console.log(OvhPayUrl);
 		   elelink.setAttribute("href", "javascript:;");
