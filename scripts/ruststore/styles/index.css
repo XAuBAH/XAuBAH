@@ -13,5 +13,5 @@
 /* @import 'glitch.css'; */
 @import 'sidemenu.css';
 @import 'discord.css';
-@import 'qiwiwidget.css?1';
+@import 'qiwiwidget.min.css';
 @import 'statsnotworks.css';
