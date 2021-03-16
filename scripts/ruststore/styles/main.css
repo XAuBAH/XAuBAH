@@ -1,7 +1,9 @@
-.body {
-    font-family: Roboto,sans-serif;
-  	margin-bottom: 40px;
-  	overflow-x: hidden!important;
+body {
+    background:  url('https://pic.moscow.ovh/images/2019/04/23/b65798dbd48ca9278c3ba19eee28c994.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0e0e0e;
   
 }
 .store-products:nth-child(29){
@@ -24,19 +26,23 @@
       width: 100%;
     max-width: 1278px;
 }
-.wrapper {
+/* .wrapper {
     background:  url('https://pic.moscow.ovh/images/2019/04/23/b65798dbd48ca9278c3ba19eee28c994.png');
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
     background-color: #0e0e0e;
   	overflow: hidden!important;
-}
+} */
 .ml-auto > ul {
     border-radius: 3px;
     /* //background: #5cb85c; */
     padding: 0 30px;
 }
+.nav {
+    font-size: 0.9rem;
+}
+
 .navbar-nav .navbar-item .nav-link, {
     color: white;
 }
