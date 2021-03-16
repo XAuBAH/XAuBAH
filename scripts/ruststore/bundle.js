@@ -20986,7 +20986,7 @@ webpackJsonp([27], [function(e, t, n) {
                 return l.default.createElement(c.NavItem, {
                     key: e
                 }, l.default.createElement(_.default, {
-                    className: "nav-link",
+                    className: "nav-link nav-link-" + e,
                     to: "/" + e
                 }, "navbar." + e))
             }), l.default.createElement(d.default, {
@@ -21202,15 +21202,15 @@ webpackJsonp([27], [function(e, t, n) {
             })), u.default.createElement(l.NavItem, {
                 key: "1"
             }, u.default.createElement(d.default, {
-                className: "nav-link",
+                className: "nav-link nav-link-profile",
                 to: "/profile"
             }, a + "profile"))] : u.default.createElement(l.NavItem, null, u.default.createElement(d.default, {
-                className: "nav-link",
+                className: "nav-link nav-link-login",
                 to: "/login"
             }, a + "login")), u.default.createElement(l.NavItem, {
                 key: "1"
             }, u.default.createElement(d.default, {
-                className: "nav-link",
+                className: "nav-link nav-link-lang",
                 href: "/api/lang.php"
             }, a + "" + o)))
         }
@@ -21315,7 +21315,7 @@ webpackJsonp([27], [function(e, t, n) {
               , i = e.handleSubmit
               , s = this.state.isOpen;
             return u.default.createElement("a", {
-                className: "nav-link",
+                className: "nav-link nav-link-pay",
                 // href: "https://pay.moscow.ovh/?" + e.user.pay
                 href: "https://oplata.qiwi.com/create?amount=&comment=%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%BE%D0%B5+%D0%BF%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5+%D1%87%D0%B5%D1%80%D0%B5%D0%B7+QIWI+Grand+Rust+%D0%90%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82+"+e.user.steamID+"&publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPpUQmfaEpAhq21XR23R28hYHpLoCdSST3kVCoiwxCzz1qWreJPpkHz4L8uoKbBGkMr4MGHdUzc1F49BAKbmA9Jyt9BBQodFG3RLUYfKUT8&account="+e.user.steamID+"&customFields%5BthemeCode%5D=Svetlana-S-vh5ib6hm&successUrl=https%3A%2F%2Fshop.grand-rust.ru"/*  + e.user.pay */
             }, "number" == typeof t ? (0,
@@ -23275,7 +23275,7 @@ webpackJsonp([27], [function(e, t, n) {
         var t = e.url
           , n = e.title;
         return a.default.createElement(o.NavItem, null, a.default.createElement("a", {
-            className: "nav-link",
+            className: "nav-link nav-link-custom",
             href: t,
             target: "_blank",
             rel: "noopener noreferrer"
@@ -23329,7 +23329,7 @@ webpackJsonp([27], [function(e, t, n) {
               , t = e.alerts
               , n = e.locale;
             return i.default.createElement(u.NavItem, null, i.default.createElement(c.default, {
-                className: "nav-link",
+                className: "nav-link nav-link-feedback",
                 to: "/feedback",
                 data: {
                     count: t
@@ -26389,7 +26389,7 @@ webpackJsonp([27], [function(e, t, n) {
                 return o.default.createElement("a", {
                     key: e,
                     href: "#",
-                    className: "nav-link text-md-center" + (t.id === r[2].columnValue ? " active" : ""),
+                    className: "nav-link text-md-center nav-link-main" + (t.id === r[2].columnValue ? " active" : ""),
                     onClick: function(e) {
                         e.preventDefault(),
                         n._changeProductsFilters({
