@@ -1,19 +1,19 @@
-@import 'resolution.css';
-@import 'main.css';
-@import 'allorange.css';
-/* @import 'blackfriday.css'; */
-/* @import 'oldblackfriday.css'; ▼+'resotemp.css' не забыть */
-/* @import 'halloween.css'; ▼+'halloweenreso.css' не забыть */
-/* @import 'halloweenreso.css'; */
-/* @import 'resotemp.css';  */
-/* @import 'paralaxmain.css'; */
-/* @import 'secondsnow.css';  */
-/* @import 'snow.css'; */
-/* @import 'lightrope.css';  */
-/* @import 'glitch.css'; */
-@import 'sidemenu.css';
-@import 'discord.css';
-@import 'qiwiwidget.css';
-@import 'customelements.css';
-@import 'statsnotworks.css';
-/* @import 'alldisabletemp.css'; */
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/resolution.css';
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/main.css';
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/allorange.css';
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/blackfriday.css'; */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/oldblackfriday.css'; ▼+'resotemp.css' не забыть */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/halloween.css'; ▼+'halloweenreso.css' не забыть */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/halloweenreso.css'; */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/resotemp.css';  */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/paralaxmain.css'; */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/secondsnow.css';  */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/snow.css'; */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/lightrope.css';  */
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/glitch.css'; */
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/sidemenu.css';
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/discord.css';
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/qiwiwidget.css';
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/customelements.css';
+@import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/statsnotworks.css';
+/* @import 'https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/styles/alldisabletemp.css'; */
