@@ -951,7 +951,7 @@ function freekassaHandler(e){
 	var inputval = document.getElementById('fk-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
 	if(inputfloat < 100 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('fk-error-box').innerText = "От 5 до 15000 RUB";
+		document.getElementById('fk-error-box').innerText = "От 100 до 15000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
@@ -982,7 +982,7 @@ function OvhUrlOverrite(){
 	for (var i = 0; i < slides.length; i++) {
 		var elelink = slides.item(i);
 		var urlelelink = elelink.getAttribute("href");
-	   if(urlelelink.startsWith('https://pay.moscow.ovh')){
+	   if(urlelelink.startsWith('https://oplata.qiwi.com')){
 		   OvhPayUrl = urlelelink;
 		   console.log(OvhPayUrl);
 		   elelink.setAttribute("href", "javascript:;");
