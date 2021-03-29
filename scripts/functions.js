@@ -784,7 +784,7 @@ curcontent["serv"] = {
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
 	xcon: '<div class="xbox oplata_info">\
-<form onsubmit="return qiwiHandler(event)" class="qiwi-inp-form" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
+<!-- <form onsubmit="return qiwiHandler(event)" class="qiwi-inp-form" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
 <div class="qiwi-inp-main">\
 	<div class="qiwi-widget-title">QIWI или Карты</div>\
 	<div class="qiwi-inp-box">\
@@ -804,7 +804,7 @@ curcontent["Oplata"] = {
 	<div class="payment-block">\
             <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div></div>\
 	</div>\
-</form>\
+</form> -->\
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://www.free-kassa.ru/merchant/cash.php">\
 <div class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
 	<div class="qiwi-widget-title">Другие способы</div>\
@@ -951,7 +951,7 @@ function freekassaHandler(e){
 	var inputval = document.getElementById('fk-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
 	if(inputfloat < 100 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('fk-error-box').innerText = "От 100 до 15000 RUB";
+		document.getElementById('fk-error-box').innerText = "От 5 до 15000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
@@ -982,7 +982,7 @@ function OvhUrlOverrite(){
 	for (var i = 0; i < slides.length; i++) {
 		var elelink = slides.item(i);
 		var urlelelink = elelink.getAttribute("href");
-	   if(urlelelink.startsWith('https://oplata.qiwi.com')){
+	   if(urlelelink.startsWith('https://pay.moscow.ovh')){
 		   OvhPayUrl = urlelelink;
 		   console.log(OvhPayUrl);
 		   elelink.setAttribute("href", "javascript:;");
