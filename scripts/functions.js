@@ -969,12 +969,12 @@ function freekassaHandler(e){
 }
 
 function qiwiFormHandle(){
-	document.getElementById('qiwi-donation-comment').value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
 	document.getElementById('fk-donation-comment').value = "Account " + CustomerSteamId + "-" + Math.floor(Math.random() * 999999);
-	document.getElementById('qiwi-donation-account').value = CustomerSteamId;
 	document.getElementById('fk-donation-account').value = CustomerSteamId;
 	// document.getElementById('qiwi-inp-other').setAttribute("href", OvhPayUrl);
-	document.getElementById('qiwi-successUrl').value = 'https://'+window.location.hostname;
+	//document.getElementById('qiwi-successUrl').value = 'https://'+window.location.hostname;
+	//document.getElementById('qiwi-donation-comment').value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
+	//document.getElementById('qiwi-donation-account').value = CustomerSteamId;
 }
 
 function OvhUrlOverrite(){
