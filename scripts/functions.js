@@ -1031,6 +1031,7 @@ function OvhUrlOverrite(){
 
 function obtainShopSteamId(){
 	if(CustomerSteamId != "0" && CustomerSteamId != ""){
+		OvhUrlOverrite();
 		return;
 	}
 	CustomerSteamId = getCookie().toString();
