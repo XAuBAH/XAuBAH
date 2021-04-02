@@ -784,7 +784,7 @@ curcontent["serv"] = {
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
 	xcon: '<div class="xbox oplata_info">\
-<!-- <form onsubmit="return qiwiHandler(event)" class="qiwi-inp-form" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
+<form onsubmit="return qiwiHandler(event)" class="qiwi-inp-form" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
 <div class="qiwi-inp-main">\
 	<div class="qiwi-widget-title">QIWI или Карты</div>\
 	<div class="qiwi-inp-box">\
@@ -804,10 +804,10 @@ curcontent["Oplata"] = {
 	<div class="payment-block">\
             <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div></div>\
 	</div>\
-</form> -->\
+</form>\
 <form onsubmit="return unitpayHandler(event)" class="qiwi-inp-form" id="unitpay-inp-form" method="get" target="_blank" action="https://unitpay.money/pay/407453-95885/card">\
 <div class="qiwi-inp-main" id="qiwi-inp-unitpay">\
-	<div class="qiwi-widget-title">С карты или моб. телефона</div>\
+	<div class="qiwi-widget-title">Моб. телефон или Иностранные карты</div>\
 	<div class="qiwi-inp-box">\
 			<label for="unitpay-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -823,7 +823,7 @@ curcontent["Oplata"] = {
 </form>\
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://www.free-kassa.ru/merchant/cash.php">\
 <div class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
-	<div class="qiwi-widget-title">QIWI, скины или криптовалюта</div>\
+	<div class="qiwi-widget-title">Скины или Криптовалюта</div>\
 	<div class="qiwi-inp-box">\
 			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -873,7 +873,7 @@ function Open(el, usefade = true, zind = false) {
 	div2.id = 'closer';
 	//div2.onclick = closepage;
 	var div3 = document.createElement("div");
-	div3.className = "modal-dialog modal-lg";
+	div3.className = "modal-dialog modal-lg modal-custom";
 	if(el=="block")div3.className+=" modal-lg-block"
 	var div4 = document.createElement("div");
 	div4.className = "modal-content";
@@ -1007,12 +1007,12 @@ function unitpayHandler(e){
 function qiwiFormHandle(){
 	document.getElementById('unitpay-donation-comment').value = "Grand Rust Account " + CustomerSteamId;
 	document.getElementById('unitpay-donation-account').value = CustomerSteamId;
-	document.getElementById('fk-donation-comment').value = "Account " + CustomerSteamId + "-" + Math.floor(Math.random() * 999999);
+	document.getElementById('fk-donation-comment').value = "Account " + CustomerSteamId;
 	document.getElementById('fk-donation-account').value = CustomerSteamId;
 	// document.getElementById('qiwi-inp-other')?.setAttribute("href", OvhPayUrl);
-	/* document.getElementById('qiwi-donation-comment').value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
+	document.getElementById('qiwi-donation-comment').value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
 	document.getElementById('qiwi-donation-account').value = CustomerSteamId;
-	document.getElementById('qiwi-successUrl').value = 'https://'+window.location.hostname; */
+	document.getElementById('qiwi-successUrl').value = 'https://'+window.location.hostname;
 }
 
 function OvhUrlOverrite(){
@@ -1020,12 +1020,13 @@ function OvhUrlOverrite(){
 	for (var i = 0; i < slides.length; i++) {
 		var elelink = slides.item(i);
 		var urlelelink = elelink.getAttribute("href");
-	   if(urlelelink.startsWith('https://pay.moscow.ovh') || urlelelink.startsWith('/pay')){
+		if(urlelelink.startsWith('https://pay.moscow.ovh') || urlelelink.startsWith('/pay')){
 		   OvhPayUrl = urlelelink;
 		   console.log(OvhPayUrl);
 		   elelink.setAttribute("href", "javascript:;");
 		   elelink.setAttribute("onclick", "OpenOplata()");
-	   }
+		   break;
+		}
 	}
 }
 
@@ -1066,7 +1067,6 @@ function obtainShopSteamId(){
 
 function OpenOplata(){
 	Open('Oplata');
-			qiwiFormHandle();
 	setTimeout(() => function () {
 		try{
 			qiwiFormHandle();
@@ -1074,6 +1074,7 @@ function OpenOplata(){
 			console.log('element not found '+ e);
 		}
 	}, 3000);
+	qiwiFormHandle();
 }
 
 var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
