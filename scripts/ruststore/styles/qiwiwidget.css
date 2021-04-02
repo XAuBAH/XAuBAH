@@ -1,6 +1,6 @@
 
 .qiwi-inp-form {
-    margin-right: 6%;
+    margin: 1%;
 }
 .oplata_info {
     display: flex;
@@ -74,6 +74,11 @@
     text-overflow: ellipsis;
     align-items: center;
 }
+
+#unitpay-submit-main {
+    margin: 0px;
+}
+
 .qiwi-inp-other {
     background-color: #464a4c;
     border: 1px solid #2b343a;

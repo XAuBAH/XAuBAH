@@ -91,6 +91,13 @@
     display: none;
   }
 }
+
+@media (min-width: 992px){
+  .modal-custom  {
+      max-width: 860px!important;
+  }
+}
+
 .ipconnect{
     width: 100%;
     text-align: right;
