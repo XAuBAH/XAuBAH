@@ -1,5 +1,5 @@
 body {
-    background:  url('https://pic.moscow.ovh/images/2019/04/23/b65798dbd48ca9278c3ba19eee28c994.png');
+    background:  url('https://i.imgur.com/MhiMSvh.png');
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
@@ -27,7 +27,7 @@ body {
     max-width: 1278px;
 }
 /* .wrapper {
-    background:  url('https://pic.moscow.ovh/images/2019/04/23/b65798dbd48ca9278c3ba19eee28c994.png');
+    background:  url('https://i.imgur.com/MhiMSvh.png');
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
@@ -223,7 +223,7 @@ p {
     margin-bottom: 0rem;
 }
 .product_blueprint .product__image {
-    background: url("https://static.moscow.ovh/images/games/rust/icons/blueprintbase.png");
+    background: url("https://i.imgur.com/Xh1NUQT.png");
     /*background-size: cover*/
   	background-size: 40%;
     background-position: bottom;
