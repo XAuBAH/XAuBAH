@@ -1163,3 +1163,24 @@ function getCookie(name = "_id") {
   ));
   return matches ? decodeURIComponent(matches[1]) : "";
 }
+
+
+function closewarn(){
+	var Modal = document.getElementById('thlztj679ll');
+	var Modalparent = null;
+	try{ Modalparent = ((Modal.parentElement) ? Modal.parentElement : ((Modal.parentNode) ? Modal.parentNode : null));}catch{return;}
+	if(Modalparent == null)return;
+  	Modal.classList.remove("s-alert-show"); 
+  	Modal.classList.remove("custom-warning-4s");
+    Modal.classList.add("s-alert-hide"); 
+    Modal.classList.add("custom-warning-1s");
+  setTimeout(function() {
+     Modalparent.removeChild(Modal);
+   }, 250);
+}
+
+function snow_off() {
+    document.getElementById('winter-snow-main').style.display = 'none';
+  	document.getElementById('snow_off').style.display = 'none';
+    document.getElementById('lightrope').style.display = 'none';
+}
