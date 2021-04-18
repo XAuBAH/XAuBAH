@@ -94,7 +94,7 @@ body {
     height: 160px;
     text-align: center;
     font-size: 10px;
-    background: url(https://i.imgur.com/06R8hRJ.gif)no-repeat;
+    background: url("https://i.imgur.com/06R8hRJ.gif")no-repeat;
 }
 .sk-spinner-wave div {
     display: none;
@@ -388,9 +388,14 @@ p {
 }
 
 .blocked_image {
-    width: 60%;
+    /* width: 100%; */
+    height: 100%;
     position: relative;
-    top: 20%;
+    top: 2%;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/4/48/AdGuard_Logo.png")no-repeat;
+    background-position: 50% 50%;
+    background-size: 51px;
+}
 }
 .blocked_image i {
     position: absolute;
