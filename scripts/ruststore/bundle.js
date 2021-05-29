@@ -26739,7 +26739,7 @@ webpackJsonp([27], [function(e, t, n) {
         }
         ,
         n.onExit = function() {
-            n.context.router.push("/products")
+            n.context.router.push("")
         }
         ,
         i(n, t)

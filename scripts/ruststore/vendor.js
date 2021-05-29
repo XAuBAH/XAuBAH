@@ -92,7 +92,7 @@
         return Object.prototype.hasOwnProperty.call(e, t)
     }
     ,
-    t.p = "https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH/scripts/ruststore/modules/",
+    t.p = "https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/modules/",
     t.oe = function(e) {
         throw e
     }
