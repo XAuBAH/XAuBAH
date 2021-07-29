@@ -1052,7 +1052,7 @@ function qiwiFormHandle(){
 	a2.value = CustomerSteamId; */
 	var b1 = document.getElementById('cent-donation-comment');
 	if(b1 != null)
-	b1.value = "Grand Rust Account " + CustomerSteamId;
+	b1.value = "Account " + CustomerSteamId;
 	var b2 = document.getElementById('cent-donation-account');
 	if(b2 != null)
 	b2.value = CustomerSteamId;
