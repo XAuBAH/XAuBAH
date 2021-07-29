@@ -1007,14 +1007,28 @@ function unitpayHandler(e){
 }
 
 function qiwiFormHandle(){
-	document.getElementById('unitpay-donation-comment')?.value = "Grand Rust Account " + CustomerSteamId;
-	document.getElementById('unitpay-donation-account')?.value = CustomerSteamId;
-	document.getElementById('fk-donation-comment')?.value = "Account " + CustomerSteamId;
-	document.getElementById('fk-donation-account')?.value = CustomerSteamId;
+	var a1 = document.getElementById('unitpay-donation-comment');
+	if(a1 != null)
+	a1.value = "Grand Rust Account " + CustomerSteamId;
+	var a2 = document.getElementById('unitpay-donation-account');
+	if(a2 != null)
+	a2.value = CustomerSteamId;
+	var a3 = document.getElementById('fk-donation-comment');
+	if(a3 != null)
+	a3.value = "Account " + CustomerSteamId;
+	var a4 = document.getElementById('fk-donation-account');
+	if(a4 != null)
+	a4.value = CustomerSteamId;
 	// document.getElementById('qiwi-inp-other')?.setAttribute("href", OvhPayUrl);
-	document.getElementById('qiwi-donation-comment')?.value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
-	document.getElementById('qiwi-donation-account')?.value = CustomerSteamId;
-	document.getElementById('qiwi-successUrl')?.value = 'https://'+window.location.hostname;
+	var a5 = document.getElementById('qiwi-donation-comment');
+	if(a5 != null)
+	a5.value = "Автоматическое пополнение через QIWI Grand Rust Аккаунт " + CustomerSteamId;
+	var a6 = document.getElementById('qiwi-donation-account');
+	if(a6 != null)
+	a6.value = CustomerSteamId;
+	var a7 = document.getElementById('qiwi-successUrl');
+	if(a7 != null)
+	a7.value = 'https://'+window.location.hostname;
 }
 
 function OvhUrlOverrite(){
