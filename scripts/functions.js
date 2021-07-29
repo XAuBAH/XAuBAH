@@ -807,7 +807,7 @@ curcontent["Oplata"] = {
             <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div></div>\
 	</div>\
 </form>\
-<form onsubmit="return unitpayHandler(event)" class="qiwi-inp-form" id="unitpay-inp-form" method="get" target="_blank" action="https://unitpay.money/pay/407453-95885/card">\
+<!--<form onsubmit="return unitpayHandler(event)" class="qiwi-inp-form" id="unitpay-inp-form" method="get" target="_blank" action="https://unitpay.money/pay/407453-95885/card">\
 <div class="qiwi-inp-main" id="qiwi-inp-unitpay">\
 	<div class="qiwi-widget-title">Моб. телефон или Иностранные карты</div>\
 	<div class="qiwi-inp-box">\
@@ -822,7 +822,7 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="unitpay-submit-main" width="159px" type="submit">Оплатить</button>\
 	</div>\
 </div>\
-</form>\
+</form>-->\
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://www.free-kassa.ru/merchant/cash.php">\
 <div class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
 	<div class="qiwi-widget-title">Скины или Криптовалюта</div>\
