@@ -809,7 +809,7 @@ curcontent["Oplata"] = {
 </form>\
 <!--<form onsubmit="return unitpayHandler(event)" class="qiwi-inp-form" id="unitpay-inp-form" method="get" target="_blank" action="https://unitpay.money/pay/407453-95885/card">\
 <div class="qiwi-inp-main" id="qiwi-inp-unitpay">\
-	<div class="qiwi-widget-title">Моб. телефон или Иностранные карты</div>\
+	<div class="qiwi-widget-title">Моб. платежи или Иностранные карты</div>\
 	<div class="qiwi-inp-box">\
 			<label for="unitpay-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -823,6 +823,22 @@ curcontent["Oplata"] = {
 	</div>\
 </div>\
 </form>-->\
+<form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">\
+<div class="qiwi-inp-main" id="qiwi-inp-cent">\
+	<div class="qiwi-widget-title">Иностранные карты</div>\
+	<div class="qiwi-inp-box">\
+			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>\
+			<div class="qiwi-rub">₽</div>\
+			<input type="tel" class="qiwi-donation-amount" id="cent-donation-amount" name="amo" required="" value="">\
+			<input type="hidden" id="cent-donation-comment" name="desc" value="Account">\
+			<input type="hidden" id="cent-donation-account" name="acc" value="0">\
+			<div class="qiwi-error-box" id="cent-error-box"></div>\
+	</div>\
+	<div class="qiwi-button-box">\
+		<button class="qiwi-submit-main" id="cent-submit-main" width="159px" type="submit">Оплатить</button>\
+	</div>\
+</div>\
+</form>\
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://www.free-kassa.ru/merchant/cash.php">\
 <div class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
 	<div class="qiwi-widget-title">Скины или Криптовалюта</div>\
@@ -1006,13 +1022,40 @@ function unitpayHandler(e){
 	return null;
 }
 
+function centHandler(e){
+	qiwiFormHandle();
+	var inputval = document.getElementById('cent-donation-amount').value;
+	var inputfloat = parseFloat(inputval).toFixed(2);
+	if(inputfloat < 15 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('cent-error-box').innerText = "От 15 до 15000 RUB";
+		e.preventDefault();
+		return false;
+	}else{
+		document.getElementById('cent-error-box').innerText = "";
+	}
+	document.getElementById('cent-donation-amount').value = inputfloat;
+	if(CustomerSteamId == "0" || CustomerSteamId == ""){
+		document.getElementById('cent-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
+		e.preventDefault();
+		return false;
+	}
+	
+	return null;
+}
+
 function qiwiFormHandle(){
-	var a1 = document.getElementById('unitpay-donation-comment');
+	/* var a1 = document.getElementById('unitpay-donation-comment');
 	if(a1 != null)
 	a1.value = "Grand Rust Account " + CustomerSteamId;
 	var a2 = document.getElementById('unitpay-donation-account');
 	if(a2 != null)
-	a2.value = CustomerSteamId;
+	a2.value = CustomerSteamId; */
+	var b1 = document.getElementById('cent-donation-comment');
+	if(b1 != null)
+	b1.value = "Grand Rust Account " + CustomerSteamId;
+	var b2 = document.getElementById('cent-donation-account');
+	if(b2 != null)
+	b2.value = CustomerSteamId;
 	var a3 = document.getElementById('fk-donation-comment');
 	if(a3 != null)
 	a3.value = "Account " + CustomerSteamId;
