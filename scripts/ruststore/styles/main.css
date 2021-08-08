@@ -1,5 +1,12 @@
 body {
-    background:  url('https://i.imgur.com/MhiMSvh.png'),url('https://i.imgur.com/gLpC720.jpg'),url('https://i.imgur.com/KyR4WJE.jpg'),url('https://i.imgur.com/cGi0Yyf.jpg');;
+	/* Progressive jpeg */
+    background:  url('https://i.imgur.com/MhiMSvh.png'),
+				url('https://i.imgur.com/gLpC720.jpg'),
+				url('https://i.imgur.com/KyR4WJE.jpg'),
+				url('https://i.imgur.com/cGi0Yyf.jpg'),
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1500&fidelity=low'),
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low'); 
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
