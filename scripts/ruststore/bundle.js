@@ -26266,6 +26266,13 @@ webpackJsonp([27], [function(e, t, n) {
               , l = t.discount
               , c = t.image
               , d = t.name;
+			  var scrset = "";
+			  if(c.indexOf('imgur') !== 0){
+				var imgurId = c.match(/\.com\/(\w+)_d/)[1] || "";
+				if(imgurId != ""){
+					scrset = "https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=250&fidelity=low 0.5x, https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=320&fidelity=low 1x, https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=320&fidelity=high 1.5x, https://i.imgur.com/"+ imgurId +".webp 2x";
+				}
+			  }
             return a && (o = a[0][1]),
             f.default.createElement(_.Link, {
                 className: (0,
@@ -26287,6 +26294,7 @@ webpackJsonp([27], [function(e, t, n) {
             }, "-" + l + "%"), f.default.createElement("img", {
                 className: "product__image",
                 src: c,
+                srcset: scrset,
                 onError: function(e) {
                     e.target.src = "//i.imgur.com/mj5N737.png"
                 }
