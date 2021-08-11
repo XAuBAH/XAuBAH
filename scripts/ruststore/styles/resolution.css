@@ -1,4 +1,5 @@
-/*подгон мониторов*/
+/*aspect ratio*/
+
 @media (min-width: 768px) and (max-width: 1199px) {
   	.navbar {
     top: -4px;
@@ -20,12 +21,13 @@
     display: none;
   }
   body {
-    background: url('https://i.imgur.com/gLpC720.jpg'),
-				url('https://i.imgur.com/KyR4WJE.jpg'),
-				url('https://i.imgur.com/cGi0Yyf.jpg'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1500&fidelity=low'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low'); 
+    background: url('https://i.imgur.com/gLpC720.jpg'),    /* 277kb */
+				url('https://i.imgur.com/gLpC720.webp'),    /* 97kb */
+				url('https://i.imgur.com/KyR4WJE.jpg'),    /* 79kb */
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1500&fidelity=low'),    /* 36kb */
+				url('https://i.imgur.com/cGi0Yyf.jpg'),    /* 22kb */
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),    /* 17kb */
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low');     /* 4.8kb */
 }
   .ml-auto > ul {
     width: 250px;
@@ -64,10 +66,14 @@
 }
 }
 @media (max-width: 767px) {
-    /*Картинка шапки в мобильной версии*/
-    
+	
+    /* mobile header image */
     .header__image {
         content: url("https://i.imgur.com/9ytxFTQ_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=500&fidelity=low') 0.5x,
+									url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1000&fidelity=low') 1.5x,
+									url('https://i.imgur.com/9ytxFTQ.webp') 2x);
 		margin-left: 0 !important;
     }
   .xbox_store {
@@ -83,12 +89,12 @@
     display: none;
   }
   body {
-    background: url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=2000&fidelity=high'),
-				url('https://i.imgur.com/KyR4WJE.jpg'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=2000&fidelity=low'),
-				url('https://i.imgur.com/cGi0Yyf.jpg'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low');
+    background: url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=2000&fidelity=high'),    /* 121kb */
+				url('https://i.imgur.com/KyR4WJE.jpg'),    /* 79kb */
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=2000&fidelity=low'),    /* 62kb */
+				url('https://i.imgur.com/cGi0Yyf.jpg'),    /* 22kb */
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),    /* 17kb */
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low');     /* 4.8kb */
 }
   .ml-auto > ul {
    width: 250px;
@@ -96,10 +102,7 @@
   .footer {
     display: none;
 }
-  /* .modal-roulette .roulette__description:before {
-    color: red;
-    content: "УБЕДИТЕЛЬНАЯ ПРОСЬБА НЕ ОТКРЫВАТЬ РУЛЕТКИ С ТЕЛЕФОНА, ОТОБРАЖЁННЫЕ ВЕЩИ МОГУТ ОТЛИЧАТСЯ ОТ ПОЛУЧЕННЫХ В ДЕЙСТВИТЕЛЬНОСТИ ИЗ-ЗА СЖАТИЯ ЭКРАНА";
-  } */
+	/* fix overflow-x in mobile version */
   .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
     padding-right: 0 !important;
     overflow-x: inherit;
