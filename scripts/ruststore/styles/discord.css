@@ -39,6 +39,7 @@
     border-radius: 50%;
 }
 .icon-dis {
+    background-image: url('https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png?size=256');
     position: relative;
     background-clip: padding-box;
     background-color: none;
@@ -144,4 +145,9 @@
     margin-bottom: 8px;
     margin-right: 0px;
   }
+}
+
+#discord-guild-invite-btn {
+    background-color: #7289da;
+    border-color: #7289da;
 }
