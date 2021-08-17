@@ -2057,15 +2057,17 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ;
     t.fetchWidgets = function() {
-		const cacheddata = getC("widgetsgetData");
-		if(cacheddata && cacheddata !== ""){
-			console.log('non set cookie');
-			var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
-			return {
-				type: u.AT.FETCH_WIDGETS, 
-				payload: cachedjson
+		try{
+			const cacheddata = getC("widgetsgetData");
+			if(cacheddata && cacheddata !== ""){
+				console.log('non set cookie');
+				var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
+				return {
+					type: u.AT.FETCH_WIDGETS, 
+					payload: cachedjson
+				}
 			}
-		}
+		}catch(e){console.log("error in widgetsgetData");}
         var e = (0,
         i.post)(u.URL, (0,
         s.stringify)({
@@ -2099,22 +2101,11 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ,
     t.fetchCustomWidget = function(e) {
-        var t = e.widgetID;
-        var n = e.widgetIndex;
+        const t = e.widgetID;
+        const n = e.widgetIndex;
 		
-		const cacheddata = getC("widgetsgetData_"+t);
-		if(cacheddata && cacheddata !== ""){
-			console.log('non set cookie');
-			var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
-			return {
-				type: u.AT.FETCH_WIDGET_CUSTOM, 
-				payload: cachedjson,
-				meta: {
-					widgetIndex: n
-				}
-			}
-		}
 		try{OnCustomWidgetSet(t);}catch(e){}
+		
         var r = (0,
         i.post)(u.URL, (0,
         s.stringify)({
@@ -2563,15 +2554,17 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ,
     t.fetchCategories = function() {
-		const cacheddata = getC("itemsgetCategories");
-		if(cacheddata && cacheddata !== ""){
-			console.log('non set cookie');
-			var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
-			return {
-				type: i.AT.FETCH_CATEGORIES, 
-				payload: cachedjson
+		try{
+			const cacheddata = getC("itemsgetCategories");
+			if(cacheddata && cacheddata !== ""){
+				console.log('non set cookie');
+				var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
+				return {
+					type: i.AT.FETCH_CATEGORIES, 
+					payload: cachedjson
+				}
 			}
-		}
+		}catch(e){console.log("error in itemsgetCategories");}
         var e = (0,
         a.post)(i.URL, (0,
         o.stringify)({
@@ -26109,7 +26102,7 @@ webpackJsonp([27], [function(e, t, n) {
               , n = e.categories
               , r = e.fetchProducts
               , a = e.fetchCategories;
-            t || r(null,true),
+            t || r(null,(Math.random()>0.8)),
             n || a()
         }
     }, {
