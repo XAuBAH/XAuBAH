@@ -26102,7 +26102,7 @@ webpackJsonp([27], [function(e, t, n) {
               , n = e.categories
               , r = e.fetchProducts
               , a = e.fetchCategories;
-            t || r(null,(Math.random()>0.8)),
+            t || r(null,(Math.random()>0.2)),
             n || a()
         }
     }, {
