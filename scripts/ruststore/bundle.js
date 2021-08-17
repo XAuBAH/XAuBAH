@@ -2057,14 +2057,24 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ;
     t.fetchWidgets = function() {
+		const cacheddata = getC("widgetsgetData");
+		if(cacheddata && cacheddata !== ""){
+			console.log('non set cookie');
+			var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
+			return {
+				type: u.AT.FETCH_WIDGETS, 
+				payload: cachedjson
+			}
+		}
         var e = (0,
         i.post)(u.URL, (0,
         s.stringify)({
             modules: "widgets",
             action: "getData"
         }));
+		
         return {
-            type: u.AT.FETCH_WIDGETS,
+            type: u.AT.FETCH_WIDGETS, 
             payload: e
         }
     }
@@ -2089,15 +2099,31 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ,
     t.fetchCustomWidget = function(e) {
-        var t = e.widgetID
-          , n = e.widgetIndex
-          , r = (0,
+        var t = e.widgetID;
+        var n = e.widgetIndex;
+		
+		const cacheddata = getC("widgetsgetData_"+t);
+		if(cacheddata && cacheddata !== ""){
+			console.log('non set cookie');
+			var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
+			return {
+				type: u.AT.FETCH_WIDGET_CUSTOM, 
+				payload: cachedjson,
+				meta: {
+					widgetIndex: n
+				}
+			}
+		}
+		try{OnCustomWidgetSet(t);}catch(e){}
+        var r = (0,
         i.post)(u.URL, (0,
         s.stringify)({
             modules: "widgets",
             action: "getData",
             widgetID: t
         }));
+		
+		
         return {
             type: u.AT.FETCH_WIDGET_CUSTOM,
             payload: r,
@@ -2510,13 +2536,20 @@ webpackJsonp([27], [function(e, t, n) {
         }
     }
     ,
-    t.fetchProducts = function(e) {
-        var t = (0,
-        a.post)(i.URL, (0,
-        o.stringify)(r({
-            modules: "items",
-            action: "getItems"
-        }, e)));
+    t.fetchProducts = function(e, DirectlyFromjson = false) {
+		var t;
+		if(DirectlyFromjson){
+			t = (0,
+			a.get)("/store/getItems.json", (0,
+			o.stringify));
+		}else{
+			t = (0,
+			a.post)(i.URL, (0,
+			o.stringify)(r({
+				modules: "items",
+				action: "getItems"
+			}, e)));
+		}
         return {
             type: i.AT.FETCH_PRODUCTS,
             payload: t
@@ -2530,6 +2563,15 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ,
     t.fetchCategories = function() {
+		const cacheddata = getC("itemsgetCategories");
+		if(cacheddata && cacheddata !== ""){
+			console.log('non set cookie');
+			var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
+			return {
+				type: i.AT.FETCH_CATEGORIES, 
+				payload: cachedjson
+			}
+		}
         var e = (0,
         a.post)(i.URL, (0,
         o.stringify)({
@@ -2556,6 +2598,14 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ,
     t.fetchPaymentSystems = function() {
+		// const cacheddata = '{"status": "success","data": [{"id": "card","name": "Банковские карты","available": 1}]}';
+			console.log('non set cookie');
+			// var cachedjson = {data: JSON.parse(cacheddata),needCache: false};
+			var cachedjson = {data: {status: "success",data: [{id: "card",name: "Банковские карты",available: 1}]},needCache: false};
+			return {
+				type: i.AT.FETCH_PAYMENT_SYSTEMS, 
+				payload: cachedjson
+			}
         var e = (0,
         a.post)(i.URL, (0,
         o.stringify)({
@@ -4927,6 +4977,12 @@ webpackJsonp([27], [function(e, t, n) {
     }
     ,
     t.fetchAlerts = function() {
+			console.log('non set cookie');
+			var cachedjson = {data: {status: "error", message: "Вы не авторизованы"},needCache: false};
+			return {
+				type: i.AT.FETCH_FEEDBACK_ALERTS, 
+				payload: cachedjson
+			}
         var e = (0,
         a.post)(i.URL, (0,
         o.stringify)({
@@ -19773,6 +19829,9 @@ webpackJsonp([27], [function(e, t, n) {
                 data: s
             });
         case l.AT.FETCH_CATEGORIES:
+			if (r.needCache != false){
+				setC("itemsgetCategories", JSON.stringify(r.data), 604800);
+			}
             return u({}, e, {
                 products: u({}, e.products, {
                     categories: r.data.data
@@ -20219,6 +20278,9 @@ webpackJsonp([27], [function(e, t, n) {
             return e;
         switch (a) {
         case L.AT.FETCH_WIDGETS:
+			if (r.needCache != false){
+				setC("widgetsgetData", JSON.stringify(r.data), 1000);
+			}
             return r.data.data.map(function(e) {
                 return 1 === e.widgetType && e.html ? g({}, e, {
                     html: (0,
@@ -20265,6 +20327,9 @@ webpackJsonp([27], [function(e, t, n) {
               , h = r.data.data
               , y = h.className
               , v = h.html;
+			  if(r.needCache){
+				setC("widgetsgetData_"+h.widgetID, JSON.stringify(r.data), 3600);
+			  }
             return p[m] = g({}, p[m], {
                 className: (0,
                 Y.tryParseBase64)(y),
@@ -23278,7 +23343,7 @@ webpackJsonp([27], [function(e, t, n) {
         return a.default.createElement(o.NavItem, null, a.default.createElement("a", {
             className: "nav-link nav-link-custom",
             href: t,
-            target: "_blank",
+            target: (e.blank==0)?"_self":"_blank",
             rel: "noopener noreferrer"
         }, n))
     }
@@ -23632,7 +23697,7 @@ webpackJsonp([27], [function(e, t, n) {
             e.setState({
                 loading: !0
             }),
-            e.props.fetchServers().then(function() {
+            e.props.fetchServers(true).then(function() {
                 e.setState({
                     loading: !1
                 }),
@@ -23643,7 +23708,7 @@ webpackJsonp([27], [function(e, t, n) {
         e._setInterval = function() {
             e.updateInterval = setInterval(function() {
                 e.props.fetchServers()
-            }, 60000)
+            }, 240000)
         }
         ,
         e.state = {
@@ -23684,13 +23749,20 @@ webpackJsonp([27], [function(e, t, n) {
     Object.defineProperty(t, "__esModule", {
         value: !0
     }),
-    t.fetchServers = function() {
-        var e = (0,
-        r.post)(o.URL, (0,
-        a.stringify)({
-            modules: "monitoring",
-            action: "getServers"
-        }));
+    t.fetchServers = function(DirectlyFromjson = false) {
+		var e;
+		if(DirectlyFromjson){
+			e = (0,
+			r.get)("/store/getServers.json", (0,
+			a.stringify));
+		}else{
+			e = (0,
+			r.post)(o.URL, (0,
+			a.stringify)({
+				modules: "monitoring",
+				action: "getServers"
+			}));
+		}
         return {
             type: o.AT.FETCH_SERVERS_DATA,
             payload: e
@@ -26037,7 +26109,7 @@ webpackJsonp([27], [function(e, t, n) {
               , n = e.categories
               , r = e.fetchProducts
               , a = e.fetchCategories;
-            t || r(),
+            t || r(null,true),
             n || a()
         }
     }, {
@@ -26842,3 +26914,27 @@ webpackJsonp([27], [function(e, t, n) {
     })
 }
 ], [380]);
+
+function setC(name,value,sec) {
+    var expires = "";
+    if (sec) {
+        var date = new Date();
+        date.setTime(date.getTime() + (sec*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+	console.log("set cookie "+name);
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getC(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+function eraseC(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
