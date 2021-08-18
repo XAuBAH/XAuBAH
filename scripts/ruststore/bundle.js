@@ -2531,7 +2531,7 @@ webpackJsonp([27], [function(e, t, n) {
 		var t;
 		if(DirectlyFromjson){
 			t = (0,
-			a.get)("/store/getItems.json", (0,
+			a.get)("/store/getItems.json?"+Math.floor(Date.now()/1000000), (0,
 			o.stringify));
 		}else{
 			t = (0,
@@ -20206,7 +20206,7 @@ webpackJsonp([27], [function(e, t, n) {
                             image: n[1]
                         }
                           , s = (0,
-                        f.default)(1e3 * a).format("LLL");
+                        f.default)(1e3 * a).format("LLL:ss");
                         return l({
                             victimData: o,
                             killerData: i,
@@ -20272,7 +20272,7 @@ webpackJsonp([27], [function(e, t, n) {
         switch (a) {
         case L.AT.FETCH_WIDGETS:
 			if (r.needCache != false){
-				setC("widgetsgetData", JSON.stringify(r.data), 1000);
+				setC("widgetsgetData", JSON.stringify(r.data), 7200);
 			}
             return r.data.data.map(function(e) {
                 return 1 === e.widgetType && e.html ? g({}, e, {
@@ -23746,7 +23746,7 @@ webpackJsonp([27], [function(e, t, n) {
 		var e;
 		if(DirectlyFromjson){
 			e = (0,
-			r.get)("/store/getServers.json", (0,
+			r.get)("/store/getServers.json?"+Math.floor(Date.now()/1000000), (0,
 			a.stringify));
 		}else{
 			e = (0,
