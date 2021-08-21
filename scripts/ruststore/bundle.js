@@ -271,7 +271,7 @@ webpackJsonp([27], [function(e, t, n) {
     t.getProductImage = function(e, t) {
         var n = t.image
           , r = t.shortName;
-        return n || (r ? "//files.facepunch.com/" + e + "/item/" + r + "_256.png" : "//i.imgur.com/mj5N737.png")
+        return n || (r ? "//files/images/" + e + "/items256/" + r + ".png" : "//i.imgur.com/mj5N737.png") //"//files.facepunch.com/" + e + "/item/" + r + "_256.png"
     }
     ,
     t.getOptions = function(e, t, n) {
@@ -26336,7 +26336,12 @@ webpackJsonp([27], [function(e, t, n) {
 					className: "product__image",
 					src: c,
 					onError: function(e) {
-						e.target.src = "//i.imgur.com/mj5N737.png"
+						if(e.target.currentSrc.indexOf('webp') !== -1){
+							e.target.srcset = "";
+						}else{
+							e.target.src = "//i.imgur.com/mj5N737.png";
+							e.target.onerror = null;
+						}
 					}
 				};
 			  if(c.indexOf('imgur') !== -1){
@@ -26346,6 +26351,14 @@ webpackJsonp([27], [function(e, t, n) {
 					if(scrset!="")
 					elCreationOption.srcSet = scrset;
 				}
+			  }else{
+				  elCreationOption.loading = "lazy";
+				}
+			  if(c.startsWith('/files')){
+					const imgWebp = c.replace(".png",".webp");
+					const imgWebp512 = imgWebp.replace("items/","items512/");
+					scrset = imgWebp +" 1x, "+ imgWebp512 +" 1.2x";
+					elCreationOption.srcSet = scrset;
 			  }
             return a && (o = a[0][1]),
             f.default.createElement(_.Link, {

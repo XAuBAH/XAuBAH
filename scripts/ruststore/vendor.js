@@ -15872,7 +15872,9 @@
             itemRef: 0,
             results: 0,
             security: 0,
-            unselectable: 0
+            unselectable: 0,
+			//my custom dom content
+            loading: 0,
         },
         DOMAttributeNames: {
             acceptCharset: "accept-charset",
