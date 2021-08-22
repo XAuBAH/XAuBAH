@@ -59,7 +59,7 @@
         s.async = !0,
         s.timeout = 12e4,
         t.nc && s.setAttribute("nonce", t.nc),
-        s.src = t.p + "" + e + ".js";
+        s.src = t.p + "" + e + ".min.js?1";
         var u = setTimeout(n, 12e4);
         return s.onerror = s.onload = n,
         a.appendChild(s),
@@ -93,6 +93,7 @@
     }
     ,
     t.p = "https://cdn.jsdelivr.net/gh/XAuBAH/XAuBAH@master/scripts/ruststore/modules/",
+    // t.p = "/files/",
     t.oe = function(e) {
         throw e
     }

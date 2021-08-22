@@ -4561,7 +4561,7 @@ webpackJsonp([27], [function(e, t, n) {
         }
     }
     function a(e) {
-        var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 5e3;
+        var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 7e3;
         s.default.error(e, {
             position: "top-right",
             effect: "slide",
@@ -4569,7 +4569,7 @@ webpackJsonp([27], [function(e, t, n) {
         })
     }
     function o(e) {
-        var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 3e3;
+        var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : 5e3;
         s.default.success(e, {
             position: "top-right",
             effect: "slide",
@@ -25939,12 +25939,12 @@ webpackJsonp([27], [function(e, t, n) {
               , r = e.data;
             setTimeout(function() {
                 return "success" === t ? (0,
-                o.alertSuccess)("Бонус успешно зачислен.") : (0,
+                o.alertSuccess)(n == null?("Бонус успешно зачислен."):(n)) : (0,
                 o.handleError)({
                     message: n,
                     data: r
                 })
-            }, 500),
+            }, 1000),
             this.context.router.push("/")
         }
     }]),
@@ -26356,7 +26356,7 @@ webpackJsonp([27], [function(e, t, n) {
 				}
 			  if(c.startsWith('/files')){
 					const imgWebp = c.replace(".png",".webp");
-					const imgWebp512 = imgWebp.replace("items/","items512/");
+					const imgWebp512 = imgWebp.replace("items256/","items/");
 					scrset = imgWebp +" 1x, "+ imgWebp512 +" 1.2x";
 					elCreationOption.srcSet = scrset;
 			  }
