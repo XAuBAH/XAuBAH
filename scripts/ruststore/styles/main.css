@@ -410,6 +410,27 @@ p {
   	display: none;
   }
 }
+.xbox_profile .xbox__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+/* .xbox_profile .xbox__body .table {
+    width: 68%;
+    width: -webkit-fill-available;
+    max-width: 68%;
+} */
+.profile_ava {
+    width: 170px!important;
+    height: 170px!important;
+}
+.xbox_profile_perevod_info {
+    padding: 15px;
+}
+
+
+
+
 
 
 /*
