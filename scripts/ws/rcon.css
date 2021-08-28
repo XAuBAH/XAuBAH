@@ -183,3 +183,100 @@ a:hover
     padding: 15px;
 	line-height: 20px;
 }
+
+
+
+
+
+
+
+
+
+.TabByCategory {
+    padding: 5px 7px 0px 4px;
+    margin: 0 5px 10px 0px;
+	color: #000;
+}
+.TabItemMain {
+    margin: 0 5px 4px 0px;
+	color: #000;
+    width: 100px;
+    height: 100px;
+}
+.TabItemMain:active {
+    background: #a4a4a4;
+    color: #fff;
+}
+.TabItemMain:focus {
+    background: #1ca8dd;
+    color: #fff;
+}
+.TabItemMain:hover {
+    background: #6c6c6c;
+    color: #fff;
+}
+.product__image {
+    padding: 3%;
+    height: 90px;
+    pointer-events: none;
+    min-block-size: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+.tabContItemImgP {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: -6px -9px;
+    position: absolute;
+    width: 100px;
+}
+.TabByCategory.active {
+	background: #1ca8dd;
+	color: #fff;
+}
+.TabContentByCategory {
+    margin: 0 0 15px 0;
+    display: none;
+}
+.TabContentByCategory.active {
+    display: inline;
+}
+.tabContItemXall {
+    padding: 0;
+    font-size: 1rem;
+}
+.tabContItemX {
+    display: flex;
+    position: relative;
+    opacity: 0%;
+    top: -3px;
+    right: 7px;
+    color: #000;
+}
+.TabItemMain:hover .tabContItemX {
+    opacity: 34%;
+}
+.tabContItemX:hover {
+    opacity: 100%!important;
+}
+.tabContItemXall:hover {
+    border: 1px solid #00000059;
+    background-color: #1ca8dd;
+}
+.alert-give {
+    opacity: 0%;
+}
+#alerts-givemsg {
+    max-height: 52.75px;
+    overflow-y: auto;
+}
+.tabContItemXinput {
+    width: 32px;
+}
+
+
+
+
+
+
+
