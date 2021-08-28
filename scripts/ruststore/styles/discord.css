@@ -39,7 +39,8 @@
     border-radius: 50%;
 }
 .icon-dis {
-    background-image: url('https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png?size=256');
+    background-image: url('https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png');
+    content: -webkit-image-set(url(https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png?size=64) 0.5x, url(https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png) 1x, url(https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png?size=256) 1.5x);
     position: relative;
     background-clip: padding-box;
     background-color: none;
