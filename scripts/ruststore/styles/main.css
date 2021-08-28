@@ -26,10 +26,9 @@ body {
 .header__image {
     margin-left: 3%;
     pointer-events: none;
-	content: -webkit-image-set(url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=500&fidelity=low') 0.5x,
-								url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=700&fidelity=low') 1x,
-								url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1000&fidelity=low') 1.5x,
-								url('https://i.imgur.com/9ytxFTQ.webp') 2x);
+	content: -webkit-image-set(url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1200&fidelity=low') 0.99x,
+								url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1300&fidelity=low') 1x,
+								url('https://i.imgur.com/9ytxFTQ.webp') 1.1x);
     }
 .content {
     margin: 0 auto;
