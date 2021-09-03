@@ -403,23 +403,23 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   image: "https://media.discordapp.net/attachments/578323395842670593/871838952091430952/icon.png?width=256&height=256",
   name: "Пока не<br>работает"// Налог ящик
 },{
-  command: "cases.add {steamid} s2 10",
+  command: "case.add {steamid} s2 10",
   image: "https://i.imgur.com/7HWdil3_d.png?maxwidth=250&fidelity=low",
   name: "Гранд в склад<br>7д"
 },{
-  command: "cases.add {steamid} s5 9",
+  command: "case.add {steamid} s5 9",
   image: "https://i.imgur.com/2iUxbNF_d.png?maxwidth=250&fidelity=low",
   name: "Кинг в склад<br>7д"
 },{
-  command: "cases.add {steamid} s8 8",
+  command: "case.add {steamid} s8 8",
   image: "https://i.imgur.com/xQZGxhr_d.png?maxwidth=250&fidelity=low",
   name: "Элит в склад<br>7д"
 },{
-  command: "cases.add {steamid} s11 7",
+  command: "case.add {steamid} s11 7",
   image: "https://i.imgur.com/ceXnaMI_d.png?maxwidth=250&fidelity=low",
   name: "Варс в склад<br>7д"
 },{
-  command: "cases.add {steamid} s14 6",
+  command: "case.add {steamid} s14 6",
   image: "https://i.imgur.com/FlryHJ6_d.png?maxwidth=250&fidelity=low",
   name: "Прем в склад<br>7д"
 },{
