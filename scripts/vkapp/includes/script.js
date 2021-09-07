@@ -128,7 +128,7 @@ function updateOnline(first = false) {
 				i--;
 				
 			} else {
-				console.log('serv not ok ' +servok);
+				console.log('serv not ok ' +servid);
 				document.getElementById("label"+servid).innerText = 'Не удалось установить соединение';
 					document.getElementById("bar"+servid+'-1').style["width"] = "0%";
 					document.getElementById("bar"+servid+'-2').style["width"] = "0%";
@@ -136,6 +136,7 @@ function updateOnline(first = false) {
 					warn.style["width"] = "100%";
 					warn.classList.remove("bg-warning");
 					warn.classList.add("bg-danger");
+				i--;
 			}
 		}
 		autosize();
