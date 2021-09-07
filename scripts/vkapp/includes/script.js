@@ -70,7 +70,7 @@ function updateOnline(first = false) {
 	TriggerCount++;
 	
 	getJSON('./servstats.php', function(gjson){
-		let i = 7;
+		let i = 8;
 		try{
 			gjson = JSON.parse(gjson);
 		}catch(e){
