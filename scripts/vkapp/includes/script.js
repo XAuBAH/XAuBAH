@@ -91,7 +91,7 @@ function updateOnline(first = false) {
 		while (i) {
 			var singleServ = gjson[i];
 			var servid = i;
-			var servname = singleServ.name || null;
+			var servname = singleServ?.name || null;
 			
 			if(servname !== null){
 				var servkeyword = singleServ.gametype;
