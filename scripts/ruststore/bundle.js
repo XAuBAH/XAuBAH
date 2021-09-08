@@ -20946,13 +20946,14 @@ webpackJsonp([27], [function(e, t, n) {
         }
     })(function(e) {
         var t = e.store;
+		var himage = t ? t.header : "https://i.imgur.com/9ytxFTQ_d.webp";
         return a.default.createElement("div", {
             className: "header"
         }, a.default.createElement("div", {
             className: "container"
         }, a.default.createElement("img", {
             className: "header__image",
-            src: t ? t.header : ""
+            src: himage
         })))
     })
 }
