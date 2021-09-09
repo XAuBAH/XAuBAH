@@ -1,0 +1,67 @@
+.store-servers .nav-link:last-of-type {
+    display: none
+}
+
+/*a[href="/servers/6031"] {
+    display: none
+}*/
+.xbox_store .xbox__header h4 {
+  display:none;
+}
+.xbox_store .xbox__header:before {
+    content: "Внимание! Магазин не доступен на сервере #8 Classic";
+    display: block;
+    clear: both;
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 28px;
+  color: rgba(255,255,255,.70);
+  /* Animation */
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 790px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}
+
+/* aspect ratio */
+
+@media (max-width: 1199px) and (min-width: 768px){
+  .xbox_store .xbox__header:before {
+    font-size: 20px;
+  }
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 570px;}
+}
+}
+@media (max-width: 768px) and (min-width: 576px){
+  .xbox_store .xbox__header:before {
+    font-size: 18px;
+  }
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 505px;}
+}
+}
+@media (max-width: 575px){
+  .xbox_store .xbox__header:before {
+    font-size: 3vw;
+  }
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 85vw;}
+}
+}
