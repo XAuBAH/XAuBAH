@@ -790,6 +790,14 @@ curcontent["serv"] = {
 <li>Система друзей - разрешено играть в тиме [Friends,FF,HitMarker]</li>\
 '+ aboutserversdub +'\
 </ul>\
+<br>\
+<h4 class="serverheader">GRAND RUST#8 Classic No Limit Vanilla </h4><p class="ipconnect">connect 8.grand-rust.ru:10000<a href="steam://connect/8.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<ul><li><b>Новейшее железо сервера</b></li>\
+<li>Рейты x1, Классика</li>\
+<li>Система репортов на читеров</li>\
+<li>Система проверок читеров</li>\
+<li>Более нет никаких плагинов</li>\
+</ul>\
 </div>'
 };
 
@@ -800,7 +808,9 @@ curcontent["Oplata"] = {
 	xcon: '<div class="xbox oplata_info">\
 <form onsubmit="return qiwiHandler(event)" class="qiwi-inp-form" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">\
 <div class="qiwi-inp-main">\
-	<div class="qiwi-widget-title">QIWI или Карты</div>\
+	<div class="qiwi-widget-title qiwi-title-1">QIWI или Карты\
+		<p>с самой минимальной комиссией</p>\
+	</div>\
 	<div class="qiwi-inp-box">\
 			<label for="qiwi-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -816,12 +826,13 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="qiwi-submit-main" width="159px" type="submit">Оплатить</button>\
 	</div>\
 	<div class="payment-block">\
-            <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div></div>\
+            <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div>\
+	</div>\
 	</div>\
 </form>\
 <!--<form onsubmit="return unitpayHandler(event)" class="qiwi-inp-form" id="unitpay-inp-form" method="get" target="_blank" action="https://unitpay.money/pay/407453-95885/card">\
 <div class="qiwi-inp-main" id="qiwi-inp-unitpay">\
-	<div class="qiwi-widget-title">Моб. платежи или Иностранные карты</div>\
+	<div class="qiwi-widget-title qiwi-title-2">Моб. платежи или Иностранные карты</div>\
 	<div class="qiwi-inp-box">\
 			<label for="unitpay-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -837,7 +848,7 @@ curcontent["Oplata"] = {
 </form>-->\
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">\
 <div class="qiwi-inp-main" id="qiwi-inp-cent">\
-	<div class="qiwi-widget-title">Иностранные карты</div>\
+	<div class="qiwi-widget-title qiwi-title-2">Иностранные карты<br>или Apple Pay</div>\
 	<div class="qiwi-inp-box">\
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -849,11 +860,14 @@ curcontent["Oplata"] = {
 	<div class="qiwi-button-box">\
 		<button class="qiwi-submit-main" id="cent-submit-main" width="159px" type="submit">Оплатить</button>\
 	</div>\
-</div>\
+	<div class="payment-block">\
+        <div class="payment-type payment-block-cent"></div><div class="payment-type payment-block-applepay"></div>\
+	</div>\
+	</div>\
 </form>\
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://www.free-kassa.ru/merchant/cash.php">\
 <div class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">\
-	<div class="qiwi-widget-title">Скины или Криптовалюта</div>\
+	<div class="qiwi-widget-title qiwi-title-3">Скины, Криптовалюта, Наличные и др.</div>\
 	<div class="qiwi-inp-box">\
 			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>\
 			<div class="qiwi-rub">₽</div>\
@@ -867,7 +881,10 @@ curcontent["Oplata"] = {
 	<div class="qiwi-button-box">\
 		<button class="qiwi-submit-main" id="fk-submit-main" width="159px" type="submit">Оплатить</button>\
 	</div>\
-</div>\
+	<div class="payment-block">\
+        <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-cash"></div><div class="payment-type payment-block-beeline"></div><div class="payment-type payment-block-megafon"></div>\
+	</div>\
+	</div>\
 </form></div>'
 };
 
