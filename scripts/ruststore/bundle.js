@@ -26346,11 +26346,14 @@ webpackJsonp([27], [function(e, t, n) {
 					}
 				};
 			  if(c.indexOf('imgur') !== -1){
-				var imgurId = (c.match(/\.com\/(\w+)_d/)?.[1]) || "";
-				if(imgurId != ""){
-					scrset = "https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=250&fidelity=low 0.99x, https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=320&fidelity=low 1x, https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=320&fidelity=high 1.2x, https://i.imgur.com/"+ imgurId +".webp 1.5x";
-					if(scrset!="")
-					elCreationOption.srcSet = scrset;
+				var imgurId = (c.match(/\.com\/(\w+)_d/));
+				if(imgurId != null){
+					imgurId = imgurId[1];
+					if(imgurId != null){
+						scrset = "https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=250&fidelity=low 0.99x, https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=320&fidelity=low 1x, https://i.imgur.com/"+ imgurId +"_d.webp?maxwidth=320&fidelity=high 1.2x, https://i.imgur.com/"+ imgurId +".webp 1.5x";
+						if(scrset!="")
+						elCreationOption.srcSet = scrset;
+					}
 				}
 			  }else{
 				  elCreationOption.loading = "lazy";
