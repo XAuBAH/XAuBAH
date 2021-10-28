@@ -1,0 +1,22 @@
+.row,.topbar,.header {
+    user-select: none;
+}
+.cr.function.appBigFont {
+    font-size: 150%;
+    line-height: 27px;
+    background-color: #2F4F4F;
+}
+.dg.ac {
+    z-index: 2!important;
+}
+.header__image {
+    content: url(https://i.imgur.com/VghcFIi.png)!important;
+}
+@media (max-width: 767px){
+	.header__image {
+		content: url(https://i.imgur.com/VghcFIi.png)!important;
+	}
+	.dg.ac {
+		display: none;
+	}
+}
