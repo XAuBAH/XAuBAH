@@ -4,6 +4,8 @@
 
 var canvas = document.getElementsByTagName('canvas')[0];
 resizeCanvas();
+var stopped = false;
+var guiDat = null;
 
 var config = {
     SIM_RESOLUTION: 128,
@@ -154,6 +156,7 @@ function supportRenderTextureFormat (gl, internalFormat, format, type) {
     return status == gl.FRAMEBUFFER_COMPLETE;
 }
 
+
 function startGUI () {
     var gui = new dat.GUI({ width: 300 });
     gui.add(config, 'DYE_RESOLUTION', { 'high': 1024, 'medium': 512, 'low': 256, 'very low': 128 }).name('Качество анимации').onFinishChange(initFramebuffers);
@@ -184,10 +187,32 @@ function startGUI () {
     captureFolder.addColor(config, 'BACK_COLOR').name('background color');
     captureFolder.add(config, 'TRANSPARENT').name('transparent');
     captureFolder.add({ fun: captureScreenshot }, 'fun').name('take screenshot');
+	
+	var app = gui.add({ fun : stopGUI }, 'fun').name('Отключить анимацию');
+    app.__li.className = 'cr function appBigFont';
+    app.__li.style.borderLeft = '3px solid #00FF7F';
 
 
     //if (isMobile())
-      gui.close();
+		gui.close();
+	guiDat = gui;
+}
+
+function stopGUI () {
+	
+	config.PAUSED = true;
+	stopped = true;
+	window.removeEventListener("keydown", keydownFunc);
+	window.removeEventListener("touchend", touchendFunc);
+	window.removeEventListener("touchmove", touchmoveFunc);
+	window.removeEventListener("touchstart", touchstartFunc);
+	window.removeEventListener("mouseup", mouseupFunc);
+	window.removeEventListener("mousemove", mousemoveFunc);
+	window.removeEventListener("mousedown", mousedownFunc);
+	
+	canvas.parentNode.removeChild(canvas);
+	
+    guiDat.destroy();
 }
 
 function isMobile () {
@@ -617,16 +642,17 @@ function updateKeywords () {
 
 updateKeywords();
 initFramebuffers();
-multipleSplats(parseInt(Math.random() * 20) + 5);
+// multipleSplats(parseInt(Math.random() * 20) + 5);
+// genIntro();
 
 var lastUpdateTime = Date.now();
 var colorUpdateTimer = 0.0;
 update();
 
 function update () {
+	if(stopped)return;
     var dt = calcDeltaTime();
-    if (resizeCanvas())
-        { initFramebuffers(); }
+    if (resizeCanvas()){ initFramebuffers(); }
     updateColors(dt);
     applyInputs();
     if (!config.PAUSED)
@@ -649,6 +675,7 @@ function resizeCanvas () {
     if (canvas.width != width || canvas.height != height) {
         canvas.width = width;
         canvas.height = height;
+		console.log("width " + width + " height " + height + " canvas.width " + canvas.width + " canvas.height " + canvas.height);
         return true;
     }
     return false;
@@ -898,6 +925,19 @@ function multipleSplats (amount) {
     }
 }
 
+function genIntro () {
+    var color = generateColor();
+    color.r *= 10.0;
+    color.g *= 10.0;
+    color.b *= 10.0;
+    splat(0.897, 0.785, -1000, -50, color);
+    color = generateColor();
+    color.r *= 10.0;
+    color.g *= 10.0;
+    color.b *= 10.0;
+    setTimeout(splat(0.097, 0.785, 1000, -50, color), 500);
+}
+
 function splat (x, y, dx, dy, color) {
     gl.viewport(0, 0, velocity.width, velocity.height);
     splatProgram.bind();
@@ -923,28 +963,36 @@ function correctRadius (radius) {
     return radius;
 }
 
-canvas.addEventListener('mousedown', function (e) {
-    var posX = scaleByPixelRatio(e.offsetX);
-    var posY = scaleByPixelRatio(e.offsetY);
+window.addEventListener('load', genIntro);
+
+const mousedownFunc = function (e) {
+    var posX = scaleByPixelRatio(e.clientX);
+    var posY = scaleByPixelRatio(e.clientY);
     var pointer = pointers.find(function (p) { return p.id == -1; });
     if (pointer == null)
         { pointer = new pointerPrototype(); }
     updatePointerDownData(pointer, -1, posX, posY);
-});
+}
 
-canvas.addEventListener('mousemove', function (e) {
+window.addEventListener('mousedown', mousedownFunc);
+
+const mousemoveFunc = function (e) {
     var pointer = pointers[0];
     if (!pointer.down) { return; }
-    var posX = scaleByPixelRatio(e.offsetX);
-    var posY = scaleByPixelRatio(e.offsetY);
+    var posX = scaleByPixelRatio(e.clientX);
+    var posY = scaleByPixelRatio(e.clientY);
     updatePointerMoveData(pointer, posX, posY);
-});
+}
 
-window.addEventListener('mouseup', function () {
+window.addEventListener('mousemove', mousemoveFunc);
+
+const mouseupFunc = function () {
     updatePointerUpData(pointers[0]);
-});
+}
 
-canvas.addEventListener('touchstart', function (e) {
+window.addEventListener('mouseup', mouseupFunc);
+
+const touchstartFunc = function (e) {
     e.preventDefault();
     var touches = e.targetTouches;
     while (touches.length >= pointers.length)
@@ -954,9 +1002,11 @@ canvas.addEventListener('touchstart', function (e) {
         var posY = scaleByPixelRatio(touches[i].pageY);
         updatePointerDownData(pointers[i + 1], touches[i].identifier, posX, posY);
     }
-});
+}
 
-canvas.addEventListener('touchmove', function (e) {
+window.addEventListener('touchstart', touchstartFunc);
+
+const touchmoveFunc = function (e) {
     e.preventDefault();
     var touches = e.targetTouches;
     for (var i = 0; i < touches.length; i++) {
@@ -966,9 +1016,11 @@ canvas.addEventListener('touchmove', function (e) {
         var posY = scaleByPixelRatio(touches[i].pageY);
         updatePointerMoveData(pointer, posX, posY);
     }
-}, false);
+}
 
-window.addEventListener('touchend', function (e) {
+window.addEventListener('touchmove', touchmoveFunc, false);
+
+const touchendFunc = function (e) {
     var touches = e.changedTouches;
     var loop = function ( i ) {
         var pointer = pointers.find(function (p) { return p.id == touches[i].identifier; });
@@ -978,14 +1030,17 @@ window.addEventListener('touchend', function (e) {
 
     for (var i = 0; i < touches.length; i++)
     loop( i );
-});
+}
 
-window.addEventListener('keydown', function (e) {
+window.addEventListener('touchend', touchendFunc);
+
+const keydownFunc = function (e) {
     if (e.code === 'KeyP')
         { config.PAUSED = !config.PAUSED; }
     if (e.key === ' ')
         { splatStack.push(parseInt(Math.random() * 20) + 5); }
-});
+}
+window.addEventListener('keydown', keydownFunc);
 
 function updatePointerDownData (pointer, id, posX, posY) {
     pointer.id = id;
