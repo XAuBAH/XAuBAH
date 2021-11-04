@@ -1,3 +1,12 @@
+/* body
+
+<script src="https://cdn.jsdelivr.net/combine/npm/dat.gui@0.7.7/build/dat.gui.min.js,gh/XAuBAH/XAuBAH@master/scripts/ruststore/js/fluid-simulation.min.js"></script>
+css
+fluidSim.css 
+
+*/
+
+
 'use strict';
 
 // Simulation code
