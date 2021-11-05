@@ -23747,7 +23747,7 @@ webpackJsonp([27], [function(e, t, n) {
 		var e;
 		if(DirectlyFromjson){
 			e = (0,
-			r.get)("/store/getServers.json?"+Math.floor(Date.now()/1000000), (0,
+			r.get)("/store/getServers.json?"+Math.floor(Date.now()/100000), (0,
 			a.stringify));
 		}else{
 			e = (0,
