@@ -423,6 +423,26 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   image: "https://i.imgur.com/FlryHJ6_d.png?maxwidth=250&fidelity=low",
   name: "Прем в склад<br>7д"
 },{
+  command: "case.add {steamid} s3 7",
+  image: "https://i.imgur.com/7HWdil3_d.png?maxwidth=250&fidelity=low",
+  name: "Гранд в склад<br>3д"
+},{
+  command: "case.add {steamid} s6 6",
+  image: "https://i.imgur.com/2iUxbNF_d.png?maxwidth=250&fidelity=low",
+  name: "Кинг в склад<br>3д"
+},{
+  command: "case.add {steamid} s9 5",
+  image: "https://i.imgur.com/xQZGxhr_d.png?maxwidth=250&fidelity=low",
+  name: "Элит в склад<br>3д"
+},{
+  command: "case.add {steamid} s13 4",
+  image: "https://i.imgur.com/ceXnaMI_d.png?maxwidth=250&fidelity=low",
+  name: "Варс в склад<br>3д"
+},{
+  command: "case.add {steamid} s15 3",
+  image: "https://i.imgur.com/FlryHJ6_d.png?maxwidth=250&fidelity=low",
+  name: "Прем в склад<br>3д"
+},{
   command: "copter.add {steamid}",
   image: "https://media.discordapp.net/attachments/578323395842670593/738225124385488976/icon.png?width=256&height=256",
   name: "Коптер"
