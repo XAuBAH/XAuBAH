@@ -395,7 +395,7 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   image: "https://media.discordapp.net/attachments/619458176483328020/621437920674578433/icon.png?width=256&height=256",
   name: "Левел"
 },{
-  command: "givegold {steamid}",
+  command: "givegold {steamid} 1",
   image: "https://media.discordapp.net/attachments/578323395842670593/878378478221803530/icon.png?width=256&height=256",
   name: "Грандий"
 },{
