@@ -791,12 +791,12 @@ curcontent["serv"] = {
 '+ aboutserversdub +'\
 </ul>\
 <br>\
-<h4 class="serverheader">GRAND RUST#8 Classic No Limit Vanilla </h4><p class="ipconnect">connect 8.grand-rust.ru:10000<a href="steam://connect/8.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
+<h4 class="serverheader">GRAND RUST#8 Procedural Max 5 </h4><p class="ipconnect">connect 8.grand-rust.ru:10000<a href="steam://connect/8.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>\
 <ul><li><b>Новейшее железо сервера</b></li>\
-<li>Рейты x1, Классика</li>\
-<li>Система репортов на читеров</li>\
-<li>Система проверок читеров</li>\
-<li>Более нет никаких плагинов</li>\
+<li>Рейты x2, Стаки</li>\
+<li>Рейты печек х3</li>\
+<li>Система друзей - разрешено играть в 5 [Friends,FF,HitMarker]</li>\
+'+ aboutserversdub +'\
 </ul>\
 </div>'
 };
