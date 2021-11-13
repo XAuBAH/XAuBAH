@@ -2531,7 +2531,7 @@ webpackJsonp([27], [function(e, t, n) {
 		var t;
 		if(DirectlyFromjson){
 			t = (0,
-			a.get)("/store/getItems.json?"+Math.floor(Date.now()/1000000), (0,
+			a.get)("/store/getItems.json?"+Math.floor(Date.now()/100000), (0,
 			o.stringify));
 		}else{
 			t = (0,
