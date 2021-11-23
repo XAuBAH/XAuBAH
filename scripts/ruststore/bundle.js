@@ -2501,13 +2501,20 @@ webpackJsonp([27], [function(e, t, n) {
         return e
     }
     ;
-    t.fetchStoreData = function() {
-        var e = (0,
-        a.post)(i.URL, (0,
-        o.stringify)({
-            modules: "store",
-            action: "getData"
-        }));
+    t.fetchStoreData = function(DirectlyFromjson = false) {
+        var e;
+		if(DirectlyFromjson){
+			e = (0,
+			a.get)("/store/links.json?"+Math.floor(Date.now()/1000000), (0,
+			o.stringify));
+		}else{
+			e = (0,
+			a.post)(i.URL, (0,
+			o.stringify)({
+				modules: "store",
+				action: "getData"
+			}));
+		}
         return {
             type: i.AT.FETCH_DATA,
             payload: e
@@ -20799,7 +20806,7 @@ webpackJsonp([27], [function(e, t, n) {
               , n = e.fetchStoreData
               , r = e.initUserData
               , a = e.fetchUserData;
-            n().then(function(e) {
+            n((Math.random()>0.2)).then(function(e) {
                 "success" === e.payload.data.status && t.initVK()
             }),
             r().then(function() {
