@@ -16,27 +16,34 @@ DOMReadyF(function () {
               ModalWarp.setAttribute("style", styNew);
           }
   }
-  //SetTimerCD();
+  SetTimerCD();
 });
-var countDownDate = new Date("Nov 28, 2020 23:59:00 GMT+0300").getTime();
+var now = new Date().getTime();
+//var countDownDate = new Date("Nov 24, 2021 09:16:30 GMT+0300").getTime();
+var countDownDate = new Date("Nov 25, 2021 13:00:00 GMT+0300").getTime();
 var countDownelement;
+var distance = countDownDate - now;
+var isStarted = 'начала';
+if (distance < 0) {
+	  countDownDate = new Date("Nov 28, 2021 00:00:00 GMT+0300").getTime();
+      isStarted = 'конца';
+    }
 
 function SetTimerCD() {
   
-  countDownelement = document.getElementById("timer");
-  var x = setInterval(function() {//Timeout
+  if(countDownelement == null) countDownelement = document.getElementById("timer");
+	
+  var x = setInterval(function() {//Timer
+    now = new Date().getTime();
 
-    var now = new Date().getTime();
-
-    var distance = countDownDate - now;
+    distance = countDownDate - now;
 
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    /**/
-   countDownelement.innerHTML = '<div class="header-sale__title"><p>До конца распродажи осталось:</p></div>'+
+	countDownelement.innerHTML = '<div class="header-sale__title"><p>До '+  isStarted +' распродажи осталось:</p></div>'+
     		'<div class="number">' + days +
 			'<span class="name">дней</span>' +
 			"</div>" +
@@ -54,7 +61,7 @@ function SetTimerCD() {
 			"</div>";
     if (distance < 0) {
       clearInterval(x);
-      countDownelement.innerHTML = '<div id="w4" class="form-subscribe form-done"><a href="/"><span>Время пришло. За дело!</span></a></div>';
+      countDownelement.innerHTML = '<div id="w4" class="form-subscribe form-done"><a href="/?start"><span>Время пришло. За дело!</span></a></div>';
     }
   }, 1000);
 }
@@ -67,11 +74,11 @@ function SetTimerCD() {
 /*
 
 <div class="section-a__main__title">
- <div id="w1"><h2 class="title">Распродажа 2020 года на GRAND RUST!</h2>
-    <h3><strong>26&nbsp;ноября в 13:00 по МСК</strong> НАЧНЁТСЯ ОБВАЛ ЦЕН.</h3>
+ <div id="w1"><h2 class="title">Распродажа 2021 года на GRAND RUST!</h2>
+    <h3><strong>25 ноября в 13:00 по МСК</strong> НАЧНЁТСЯ ОБВАЛ ЦЕН.</h3>
 </div>        
 <div id="w2"><p>Такие огромные скидки будут <span>только три дня.</span><br>
-        Это настоящее ограбление! Нажимайте «Подписаться» в нашей группе, чтобы<br>
+        Это настоящее ограбление! Нажимайте <a href="//vk.com/grandrust_server" class="w4" target="_blank" rel="noopener noreferrer">«Подписаться»</a> в нашей группе, чтобы<br>
         не пропустить!</p>
 <div class="timer-dock"><span id="timer"></span></div>    
 </div>
@@ -89,6 +96,7 @@ function SetTimerCD() {
 
 body {
     background-color: #000000;
+    background: black;
     overflow-x: hidden;
     overflow-y: overlay;
 }
@@ -103,12 +111,12 @@ body::-webkit-scrollbar-track {
  
 body::-webkit-scrollbar-thumb {
   background-color: #3f3f3f;
-  //outline: 1px solid slategrey;
+  /* outline: 1px solid slategrey; */
 }
 
 
 .header__image {
-        content: url("https://pic.moscow.ovh/images/2020/11/26/48599bc4c334278cf85f2da8a9440f03.png")!important;
+        content: url("https://i.imgur.com/CXptxMM.png")!important;
     }
 
 .wrapper {
@@ -130,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .substrate .caution {
-    background: url("https://pic.moscow.ovh/images/2020/11/26/44f17b187d1c62106c2af58875951c28.jpg") left center repeat-x;//https://i.imgur.com/VFT0NLC.png
+    background: url("https://i.imgur.com/bOcZZY1.jpg") left center repeat-x; /* https://i.imgur.com/VFT0NLC.png */
     background-size: contain;
     height: 65px;
     left: -20px;
@@ -183,7 +191,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .wrap {
-    background: url("https://pic.moscow.ovh/images/2020/11/26/46f83ac2cbf5c7af61719d019d6e5339.png") center center no-repeat;
+    background: url("https://i.imgur.com/8I7JnPH.jpg") center center no-repeat;
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -209,10 +217,10 @@ body::-webkit-scrollbar-thumb {
 }
 #w2 {
     top: 86px;
-    //left: 40%;
+    /* left: 40%; */
 }
 
-#w4 {
+#w4,.w4 {
     pointer-events: all;
 }
 #w4 a {
@@ -276,8 +284,8 @@ body::-webkit-scrollbar-thumb {
 }
 .timer-dock #timer {
 	display: flex;
-    //position: absolute;
-    //top: 167px;
+    /* position: absolute; */
+    /* top: 167px; */
 	justify-content: center;
 	align-items: center;
 }
@@ -286,7 +294,7 @@ body::-webkit-scrollbar-thumb {
 }
 .timer-dock #timer .number {
 	font-size: 30px;
-	//font-weight: 900;
+	/* font-weight: 900; */
 }
 .timer-dock #timer .name {
 	display: block;
@@ -302,7 +310,7 @@ body::-webkit-scrollbar-thumb {
 .form-subscribe {
     background-color: #f25648;
     background-position: 0 0;
-    // width: 423px;
+    /* width: 423px; */
     height: 41px;
     border-radius: 5px;
     margin: 0 auto;
