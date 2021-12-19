@@ -23842,7 +23842,9 @@ webpackJsonp([27], [function(e, t, n) {
             var e = this.props
               , t = e.servers
               , n = e.game
+			  , testtt = "0"
               , r = this.state.online;
+
             return d.default.createElement("div", {
                 className: "xserver"
             }, d.default.createElement("div", {
@@ -23853,12 +23855,38 @@ webpackJsonp([27], [function(e, t, n) {
             }, t[0].hostname)), d.default.createElement("div", {
                 className: "xserver__status"
             }, d.default.createElement(i.Progress, {
+                        id: ("online_bar_" + (1 < t.length ? "all" : t[0].id)),
+                        multi: !0,
+						className: "progress bs-tether-target bs-tether-abutted bs-tether-abutted-top bs-tether-element-attached-bottom bs-tether-element-attached-center bs-tether-target-attached-top bs-tether-target-attached-center"
+            }, d.default.createElement(i.Progress, {
                 value: r ? r.players : 100,
                 max: r ? r.maxPlayers : 100,
                 color: r ? "success" : "danger",
                 animated: !!r,
+                bar: !0,
                 striped: !0
-            })), d.default.createElement("div", {
+            }), [d.default.createElement(i.Progress, {
+                        key: "1",
+                        bar: !0,
+                        value: r ? r.connections : 0,
+                        max: r ? r.maxPlayers : 100,
+                        striped: !0,
+                        animated: !0
+            }), d.default.createElement(i.Progress, {
+                        key: "2",
+                        bar: !0,
+                        value: r ? r.queue : 0,
+                        max: r ? r.maxPlayers : 100,
+                        color: "warning",
+                        striped: !0,
+                        animated: !0
+            })]), ( 0 !== r.connections || 0 !== r.queue ) && d.default.createElement(i.Tooltip, {
+                        target: ("online_bar_" + (1 < t.length ? "all" : t[0].id)),
+                        isOpen: this.state.tooltipOpen,
+                        toggle: this.toggle,
+                        placement: "top"
+                    }, 0 !== r.players && d.default.createElement("div", null, "В игре: " + r.players), 0 !== r.connections && d.default.createElement("div", null, "Подключается: " + r.connections), 0 !== r.queue && d.default.createElement("div", null, "В очереди: " + r.queue))
+			), d.default.createElement("div", {
                 className: "xserver__links"
             }, this._renderStatus(t, r), this._renderLinks(t, n)))
         }
@@ -23878,16 +23906,27 @@ webpackJsonp([27], [function(e, t, n) {
             var n = 0
               , r = 0
               , t = 0
+              , copl = 0
+              , qup = 0
               , a = !1;
             return e.map(function(e) {
                 var t = e.steamData;
                 t && (a = !0,
-                "timeout" !== t && (n += t.players,
-                r += t.maxplayers))
+                /* "timeout" !== t && (n += t.players,
+                r += t.maxplayers,
+                copl += t.playersConnects,
+                qup += parseInt(t.keywords.match(/qp(\d+)/)[1], 10))) */
+				
+                "timeout" !== t && (n += parseInt(t.keywords.match(/cp(\d+)/)[1], 10),
+                r += parseInt(t.keywords.match(/mp(\d+)/)[1], 10),
+                copl += (t.players - parseInt(t.keywords.match(/cp(\d+)/)[1], 10)),
+                qup += parseInt(t.keywords.match(/qp(\d+)/)[1], 10)))
             }),
             a ? (n && r && (t = n / r * 100),
             {
                 players: n,
+                connections: (copl < 0) ? 0 : copl,
+                queue: qup,
                 maxPlayers: r,
                 percent: t
             }) : null
@@ -23957,9 +23996,16 @@ webpackJsonp([27], [function(e, t, n) {
             }
         }
         ,
+		n.toggle = function() {
+                    n.setState({
+                        tooltipOpen: !n.state.tooltipOpen
+                    })
+        }
+        ,
         n.state = {
             online: null,
-            lastOnline: 0
+            lastOnline: 0,
+            tooltipOpen: !1
         },
         n
     }
