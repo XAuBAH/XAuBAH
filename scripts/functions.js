@@ -1268,7 +1268,8 @@ function closewarn(){
 }
 
 function snow_off() {
-    document.getElementById('winter-snow-main').style.display = 'none';
   	document.getElementById('snow_off').style.display = 'none';
     document.getElementById('lightrope').style.display = 'none';
+    // document.getElementById('winter-snow-main').style.display = 'none';
+    document.getElementById('snowcanvas').style.display = 'none';
 }
