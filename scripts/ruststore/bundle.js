@@ -23856,8 +23856,7 @@ webpackJsonp([27], [function(e, t, n) {
                 className: "xserver__status"
             }, d.default.createElement(i.Progress, {
                         id: ("online_bar_" + (1 < t.length ? "all" : t[0].id)),
-                        multi: !0,
-						className: "progress bs-tether-target bs-tether-abutted bs-tether-abutted-top bs-tether-element-attached-bottom bs-tether-element-attached-center bs-tether-target-attached-top bs-tether-target-attached-center"
+                        multi: !0
             }, d.default.createElement(i.Progress, {
                 value: r ? r.players : 100,
                 max: r ? r.maxPlayers : 100,
@@ -23912,15 +23911,17 @@ webpackJsonp([27], [function(e, t, n) {
             return e.map(function(e) {
                 var t = e.steamData;
                 t && (a = !0,
-                /* "timeout" !== t && (n += t.players,
+                /* "timeout" !== t && null !== t && null !== t.keywords && "" !== t.keywords && (n += t.players,
                 r += t.maxplayers,
                 copl += t.playersConnects,
                 qup += parseInt(t.keywords.match(/qp(\d+)/)[1], 10))) */
 				
-                "timeout" !== t && (n += parseInt(t.keywords.match(/cp(\d+)/)[1], 10),
-                r += parseInt(t.keywords.match(/mp(\d+)/)[1], 10),
-                copl += (t.players - parseInt(t.keywords.match(/cp(\d+)/)[1], 10)),
-                qup += parseInt(t.keywords.match(/qp(\d+)/)[1], 10)))
+                "timeout" !== t && null !== t && null !== t.keywords && "" !== t.keywords && (
+					n += parseInt(t.keywords.match(/cp(\d+)/)[1], 10),
+					r += parseInt(t.keywords.match(/mp(\d+)/)[1], 10),
+					copl += (t.players - parseInt(t.keywords.match(/cp(\d+)/)[1], 10)),
+					qup += parseInt(t.keywords.match(/qp(\d+)/)[1], 10)
+				))
             }),
             a ? (n && r && (t = n / r * 100),
             {
