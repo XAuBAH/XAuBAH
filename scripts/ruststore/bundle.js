@@ -23919,7 +23919,7 @@ webpackJsonp([27], [function(e, t, n) {
                 "timeout" !== t && null !== t && null !== t.keywords && "" !== t.keywords && (
 					n += parseInt(t.keywords.match(/cp(\d+)/)[1], 10),
 					r += parseInt(t.keywords.match(/mp(\d+)/)[1], 10),
-					copl += (t.players - parseInt(t.keywords.match(/cp(\d+)/)[1], 10)),
+					copl += (t.players - parseInt(t.keywords.match(/cp(\d+)/)[1], 10) - parseInt(t.keywords.match(/qp(\d+)/)[1], 10)),
 					qup += parseInt(t.keywords.match(/qp(\d+)/)[1], 10)
 				))
             }),
