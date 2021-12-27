@@ -24362,13 +24362,14 @@ webpackJsonp([27], [function(e, t, n) {
                 dangerouslySetInnerHTML: {
                     __html: a
                 }
-            }) : null, i.default.createElement("div", {
-                className: "xbox__footer"
+            }) : null, 
+			r === 3745 ? i.default.createElement("div", {
+                className: "xbox__footer widget_xbox_footer" + r
             }, i.default.createElement("a", {
                 className: "btn btn-success btn-block",
                 href: "//oauth.vk.com/authorize?client_id=7786063&scope=notify,groups&redirect_uri=https%3A%2F%2Fshop.grand-rust.ru%2Fapi%2Fvkreward%2Findex.php&response_type=code"
                 // href: "/api/index.php?modules=vkMemberReward&action=getBonus&token=" + n + "&widgetID=" + r
-            }, "Получить бонус")))) : null
+            }, "Получить бонус")) : null )) : null
         }
     }]),
     c);
