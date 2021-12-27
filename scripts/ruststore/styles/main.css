@@ -1,7 +1,7 @@
 body, .wrapper {
 	/* Progressive jpegs loading */
     background:  url('https://i.imgur.com/vAHcZFC.webp'),
-    background:  url('https://i.imgur.com/vAHcZFC.jpg'),
+				url('https://i.imgur.com/vAHcZFC.jpg'),
 				url('https://i.imgur.com/vAHcZFC_d.webp?maxwidth=1000&fidelity=low'),
 				url('https://i.imgur.com/vAHcZFC_d.webp?maxwidth=320&fidelity=low'); 
     background-position: 50% 50%;
