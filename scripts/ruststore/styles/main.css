@@ -1,12 +1,9 @@
-body {
+body, .wrapper {
 	/* Progressive jpegs loading */
-    background:  url('https://i.imgur.com/MhiMSvh.webp'),
-				url('https://i.imgur.com/gLpC720.jpg'),
-				url('https://i.imgur.com/KyR4WJE.jpg'),
-				url('https://i.imgur.com/cGi0Yyf.jpg'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1500&fidelity=low'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),
-				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low'); 
+    background:  url('https://i.imgur.com/vAHcZFC.webp'),
+    background:  url('https://i.imgur.com/vAHcZFC.jpg'),
+				url('https://i.imgur.com/vAHcZFC_d.webp?maxwidth=1000&fidelity=low'),
+				url('https://i.imgur.com/vAHcZFC_d.webp?maxwidth=320&fidelity=low'); 
     background-position: 50% 50%;
     background-size: cover;
     background-attachment: fixed;
@@ -25,11 +22,10 @@ body {
     margin-top: 113px;
 }
 .header__image {
-    margin-left: 3%;
     pointer-events: none;
-	content: -webkit-image-set(url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1200&fidelity=low') 0.99x,
-								url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1300&fidelity=low') 1x,
-								url('https://i.imgur.com/9ytxFTQ.webp') 1.1x);
+	content: -webkit-image-set(url('https://i.imgur.com/WmEXcoE_d.webp?maxwidth=1200&fidelity=low') 0.99x,
+								url('https://i.imgur.com/WmEXcoE_d.webp?maxwidth=1300&fidelity=low') 1x,
+								url('https://i.imgur.com/WmEXcoE.webp') 1.1x);
     }
 .content {
     margin: 0 auto;

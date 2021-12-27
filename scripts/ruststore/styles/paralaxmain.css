@@ -1,133 +1,57 @@
-
-.prlxoff {
-    text-align: center;
+#parallax-banner {
+    display: contents;
+    overflow: hidden;
+    height: 360px;
+    /*forces max height of background images to 1/3 = 3x retina.*/
+    background: -webkit-linear-gradient(#a8cdff 10%,#eaf0f7 40%);
+    background: linear-gradient(#a8cdff 10%, #eaf0f7 40%);
+    }
+.banner {
     position: fixed;
-    z-index: 2;
-  	cursor: pointer;
-    margin: 0 0 0 14px;
-    padding: 0;
-    width: 130px;
-    top: 22px;
-    background-color: black;
-}
-.paralax-main,
-.paralax {
-  /* //z-index: 1; */
-  pointer-events: none;
-}
-.paralax-main {
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  background: transparent;
-}
-.paralax-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    height: 360px;
+    /*forces max height of background images to 1/3 = 3x retina.*/
+    width: 100%;
+    background-position: center bottom;
     background-size: cover;
-    background-position-x: 50%;
+    /*scales background images as media queries increase height of parallax-layers*/
     background-repeat: no-repeat;
 }
-.paralax-1 {
-  background-image: url("https://i.imgur.com/SnN9ip6.png");
-    background-size: 118% 98%;
-    height: 224%;
-  /* // */
+#parallax-layer1 {
+    background-image: url('https://i.imgur.com/eS31U7g.webp');
 }
-.paralax-2 {
-  background-image: url("https://i.imgur.com/eHEYn9W.png");
-    background-size: 101% 107%;
-    height: 195%;
+#parallax-layer2 {
+    background-image: url('https://i.imgur.com/yAmhbvn.webp');
 }
-.paralax-3 {
-  background-image: url("https://i.imgur.com/oho0voX.png");
-    background-size: 101% 89%;
-    height: 181%;
-  /* //margin-right: 740px; */
-  /* //filter: brightness(0.45); */
-} 
-.paralax-4 {
-  background-image: url("https://i.imgur.com/46Z9TDM.png");
-    height: 161%;
-    left: -30%;
-    background-size: 100% 100%;
-  /* //margin-right: -1178px; */
-    /* //filter: brightness(0.45); */
+#parallax-layer3 {
+    background-image: url('https://i.imgur.com/sTqVrXV.webp');
 }
-.paralax-5 {
-  background-image: url("https://i.imgur.com/WSUcKUQ.png");
-  background-position-y: -35px;
-  height: 131%;
-  background-size: 100% 100%;
-  /* //margin-right: -1364px; */
-    /* //filter: brightness(0.45); */
+#parallax-layer4 {
+    background-image: url('https://i.imgur.com/s8CiQnS.webp');
 }
-.paralax-6 {
-  background-image: url("https://i.imgur.com/912qczQ.png"); //-56
-    height: 114%;
-  /* //margin-right: 0px; */
-  /* //https://i.imgur.com/WosizDf.png */
-    /* //filter: brightness(0.45); */
-} 
-.paralax-7 {
-  background-image: url("https://i.imgur.com/qo6lhIa.png");
-  /* //margin-right: 1536px; */
-    /* //filter: brightness(0.45); */
+#parallax-layer5 {
+    background-image: url('https://i.imgur.com/RWFqKFl.webp');
 }
-.paralax-8 {
-  background-image: url("https://i.imgur.com/qxDQJRS.png");
-  /* //margin-right: 743px; */
-    /* //filter: brightness(0.45); */
-}
-.paralax-9 {
-  background-image: url("https://i.imgur.com/plLj2LW.png");
-  /* //margin-right: 1px; */
-    /* //filter: brightness(0.45); */
-} 
-.paralax-10 {
-  background-image: url("https://i.imgur.com/2D11Cp2.png");
-  /* //margin-right: 351px; */
-    /* //filter: brightness(0.45); */
-}
-.paralax-11 {
-  background-image: url("https://i.imgur.com/6GSn7zj.png");
-  /* //margin-right: -289px; */
-    /* //filter: brightness(0.45); */
-}
-.paralax-12 {
-  background-image: url("https://i.imgur.com/fOCekip.png");
-  /* //margin-right: -94px; */
-    /* //filter: brightness(0.45); */
-} 
-.paralax-13 {
-  background-image: url("https://i.imgur.com/CMqQmDO.png");
-  /* //margin-right: -1379px; */
-    /* //filter: brightness(0.45); */
-}
-.paralax-14 {
-  background-image: url("https://i.imgur.com/D0ksMbj.png");
-  /* //margin-right: -1078px; */
-  /* // */
-    /* //filter: brightness(0.45); */
-}
-.paralax-15 {
-  background-image: url("https://i.imgur.com/P9hJ7TG.png");
-  /* //margin-right: -1689px; */
-    /* //filter: brightness(0.45); */
-} 
-.paralax-16 {
-  background-image: url("https://i.imgur.com/cqdTBEI.png");
-  background-position-y: -10px;
-  /* //margin-right: 0px; */
-    /* //filter: brightness(0.45); */
+#parallax-layer6 {
+    background-image: url('https://i.imgur.com/Wp0a3V3.webp');
 }
 
-/*.wrapper {
-      opacity: 0;
-}*/
+/*Media queries
+––––––––––––––––––––––––– */
+
+/* 1080p+ Large screens */
+@media (min-width: 1200px) {
+    #parallax-banner, .banner {
+        height: 1701px;
+    	background-position: 50% 50%;
+        /*1.5x resolution*/
+    }
+}
+@media (max-width: 1199px) {
+    #parallax-banner {
+        display: none;
+    }
+}
+
+.header .container {
+    mix-blend-mode: overlay;
+}
