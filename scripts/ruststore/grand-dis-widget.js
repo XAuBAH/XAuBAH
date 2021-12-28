@@ -39,7 +39,7 @@ function UpdateDiscord(isRetry = false) {
 		if(gjson.guild != null){
 		try{
 			document.getElementById('discord-guild-name').innerText = gjson.guild.name;
-			document.getElementById('discord-guild-icon').setAttribute("style", "content: url('https://cdn.discordapp.com/icons/"+ guild_id +"/"+ gjson.guild.icon +".png'); content: -webkit-image-set(url(https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png?size=64) 0.5x, url(https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png) 1x, url(https://cdn.discordapp.com/icons/729354570618372156/607937561fec981f6e852c877ced008c.png?size=256) 2x);");
+			document.getElementById('discord-guild-icon').setAttribute("style", "content: url('https://cdn.discordapp.com/icons/"+ guild_id +"/"+ gjson.guild.icon +".png'); content: -webkit-image-set(url(https://cdn.discordapp.com/icons/"+ guild_id +"/"+ gjson.guild.icon +".png?size=64) 0.5x, url(https://cdn.discordapp.com/icons/"+ guild_id +"/"+ gjson.guild.icon +".png) 1x, url(https://cdn.discordapp.com/icons/"+ guild_id +"/"+ gjson.guild.icon +".png?size=256) 2x);");
 			document.getElementById('discord-guild-online').innerText = gjson.approximate_presence_count+' в сети';
 			document.getElementById('discord-guild-all').innerText = gjson.approximate_member_count;
 			if(isRetry){
