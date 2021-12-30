@@ -1273,4 +1273,5 @@ function snow_off() {
     // document.getElementById('winter-snow-main').style.display = 'none';
     document.getElementById('snowcanvas').style.display = 'none';
 	if(s != null)s.destroy();
+    document.getElementById('parallax-banner').style.display = 'none';
 }
