@@ -4,7 +4,7 @@ body {
 				url('https://i.imgur.com/Qz5GAso.jpg'),
 				url('https://i.imgur.com/Qz5GAso_d.webp?maxwidth=1000&fidelity=low'),
 				url('https://i.imgur.com/Qz5GAso_d.webp?maxwidth=320&fidelity=low'); 
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     background-size: cover;
     background-attachment: fixed;
     background-color: #0e0e0e;
@@ -419,6 +419,12 @@ p {
     padding: 15px;
 }
 
+.btn-success.disabled,
+.btn-success:disabled,
+.btn-success[disabled]{
+  cursor: wait;
+  pointer-events: none;
+}
 
 
 
