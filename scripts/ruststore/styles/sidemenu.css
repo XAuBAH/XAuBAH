@@ -1,4 +1,4 @@
-//#circle {display:none}
+/* #circle {display:none} */
 
 #Modal .modal-content {
     background: rgba(43, 52, 58, 0.9);
@@ -426,14 +426,14 @@
 
 /* ///// MAIN CIRCLE ///// */
 #circle {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: #f25647;
     position: fixed;
-    z-index:3;
-    top: 25px;
-    left: 25px;
+    z-index: 0;
+    top: 60px;
+    left: 40px;
     box-shadow: 0 0 4px rgba(0, 0, 0, .11), 0 4px 8px rgba(0, 0, 0, .22);
     cursor: pointer;
 }
@@ -444,15 +444,15 @@
     position: absolute;
     border-radius: 50%;
     background: rgb(242, 86, 41);
-    left: 35px;
-    top: 35px;
+    left: 20px;
+    top: 22px;
 }
 #circle i {
-    font-size: 50px;
+    font-size: 44px;
     color: #fff;
     position: absolute;
-    top: 18px;
-    left: 24px;
+    top: 4px;
+    left: 11px;
     z-index: 1;
     pointer-events: none;
 }
@@ -461,8 +461,8 @@
 }
 #circle i.icon2 {
     opacity: 0;
-    top: 25px;
-    left: 22px;
+    top: 4px;
+    left: 11px;
 }
 /* ANIMATION */
 #circle, #circle i, #circle:after {
@@ -473,10 +473,11 @@
 #circle:hover {
     background: #626186;
     box-shadow: 0 0 4px rgba(0, 0, 0, .15), 0 4px 8px rgba(0, 0, 0, .30);
+    z-index:3;
 }
 #circle:hover:after {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     left: 0;
     top: 0;
 }
@@ -670,10 +671,10 @@
     opacity: 1;
 }
 #circle:hover + #sub {
-visibility:visible;
+	visibility:visible;
 }
 #sub:hover {
-visibility:visible;
+	visibility:visible;
 }
 #sub:hover > #circle {
     opacity:1;

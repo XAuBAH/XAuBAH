@@ -1,4 +1,4 @@
-body, .wrapper {
+body {
 	/* Progressive jpegs loading */
     background:  url('https://i.imgur.com/vAHcZFC.webp'),
 				url('https://i.imgur.com/vAHcZFC.jpg'),
@@ -400,16 +400,6 @@ p {
     position: absolute;
     width: 767px;
     top: 34%;
-}
-.snowoff{
-    position: fixed;
-    right: 1px;
-    top: 27px;
-}
-@media (max-width: 992px){
-   .snowoff{
-  	display: none;
-  }
 }
 .xbox_profile .xbox__body {
     display: -webkit-box;

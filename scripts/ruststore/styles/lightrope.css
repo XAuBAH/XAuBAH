@@ -1,8 +1,8 @@
 /*<ul class="lightrope">
-  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
-<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+  <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
 </ul>*/
 
 .lightrope {
@@ -95,7 +95,7 @@
   content: none;
 }
 .lightrope li:first-child {
-  margin-left: -40px;
+  margin-left: 0px;
 }
 
 @-webkit-keyframes flash-1 {
