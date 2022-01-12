@@ -1017,7 +1017,7 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="fk-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
 	<div class="payment-block">
-        <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-cash"></div><div class="payment-type payment-block-yoomoney"></div><div class="payment-type payment-block-megafon"></div>
+        <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-cash"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
 	</div>
 	</label>
 </form></div>`
@@ -1026,7 +1026,7 @@ curcontent["Oplata"] = {
 
 
 var BlockListArrays = [['pistol.revolver', 'shotgun.double'], 
-['pistol.python', 'pistol.semiauto', 'flamethrower', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
+['pistol.python', 'pistol.semiauto', 'flamethrower', 'ammo.rocket.mlrs', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
 ['shotgun.pump'], 
 ['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.plate.torso', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'],
 ['rifle.ak', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.grenadelauncher.he'], 
@@ -1333,7 +1333,7 @@ DOMReady(function () {
 		curcontent["block"].xcon += '<div class="block_by_category block_category_'+ (i + 1) +'">';
 		for (var b = 0; b < BlockListArrays[i].length; b++) {
 			var curblitem = BlockListArrays[i][b];
-			curcontent["block"].xcon += `<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/`+ curblitem +`.png" srcSet="https://shop.grand-rust.ru/files/images/rust/items256/`+ curblitem +`.webp 1x, https://shop.grand-rust.ru/files/images/rust/items512/`+ curblitem +`.webp 1.1x">
+			curcontent["block"].xcon += `<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/`+ curblitem +`.png" srcSet="https://shop.grand-rust.ru/files/images/rust/items256/`+ curblitem +`.webp 1x, https://shop.grand-rust.ru/files/images/rust/items/`+ curblitem +`.webp 1.1x">
 										<div class="kit-item__quantity block-lvl-`+ (i + 1) +`"></div></div></div>`;
 		}
 		curcontent["block"].xcon += '</div>';
