@@ -98,10 +98,10 @@ EAC не идеален и может ошибочно отключать игр
 
 curcontent["rules"] = {
 	xhead: 'Правила',
-	xcon: `<div class="xbox_custom_rules"><ul>
+	xcon: `<div class="xbox_custom_rules">
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Основная информация</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Основная информация</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -140,7 +140,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Игровой процесс</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Игровой процесс</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -176,7 +176,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Лимит игроков в команде</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Лимит игроков в команде</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -213,7 +213,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Игровой чат</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Игровой чат</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -249,7 +249,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Взаимодействие с Администрацией и Модерацией</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Взаимодействие с Администрацией и Модерацией</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -281,7 +281,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Дополнительная информация</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Дополнительная информация</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -341,7 +341,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Правила магазина проекта</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Правила магазина проекта</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -380,7 +380,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Правила участия в ивентах</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Правила участия в ивентах</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -404,7 +404,7 @@ curcontent["rules"] = {
 <tbody>
   <tr>
 	<td class="tg-1lax">8.2</td>
-    <td class="tg-2lax"><b>Уникальный шкаф<b><br><br>
+    <td class="tg-2lax"><b>Уникальный шкаф</b><br><br>
 		- Запрещено покупать, отдавать и т д. шкаф. Очки за шкаф зачтутся только в ходе честной игры.<br>
 		- Запрещено покупать/продавать информацию по местонахождению уникального шкафа у сторонних игроков, владельца или друзей владельца.<br>
 		- Игрок заабузивший нашивку, теряет возможность принять повторное участие от 60 дней, а так же не получает нашивку.<br>
@@ -423,7 +423,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Проверка Подозреваемых</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Проверка Подозреваемых</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -502,7 +502,7 @@ curcontent["rules"] = {
 <br>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Условия разбана</span><br>
+    <div class="spoil-box"><div class="spoil-image"></div><span class="spoil-head">Условия разбана</span><br>
 	<blockquote class="spoil-Untext">
 <table class="tg">
 <tbody>
@@ -548,7 +548,7 @@ curcontent["rules"] = {
 	</blockquote>
 </div></div>
 
-</ul></div></div>`
+</div></div>`
 };
 curcontent["help"] = {
 	xhead: 'Команды сервера и бинды',
