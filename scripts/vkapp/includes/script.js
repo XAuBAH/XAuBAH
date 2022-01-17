@@ -39,7 +39,7 @@ DOMReady(function() {
 	
 });
 //на всякий
-setTimeout(() => vkConnect.send("VKWebAppInit", {}), 3000);
+vkConnect.send("VKWebAppInit", {});
 
 function steam(el) {
 	
@@ -355,8 +355,8 @@ curcontent["kit-king"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rifle.ak_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/ammo.rifle_256.png">\
 <div class="kit-item__quantity">x100</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/uberpickaxe_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/uberhatchet_256.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberpickaxe.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberhatchet.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/supply.signal_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
 </div></div></div>\
@@ -364,9 +364,9 @@ curcontent["kit-king"] = {
 <div class="kit_set"><div class="kit-items">\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/coffeecan.helmet_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/roadsign.jacket_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/835832255996856478/C94DC702DFFCD444D2EB063E50F0058070FECB22/?imw=268&imh=268&ima=fit&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/835832255996847303/98730BA2501FC28059707E08A080718CE9026565/?imw=268&imh=268&ima=fit&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/850465965368818420/7BFE0E70C0B8BB0DE8EC3B39A7EE169594C1359F/?imw=268&imh=268&ima=fit&impolicy=Letterbox"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/GvxXs8B.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/YFkZu1P.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/YyHcuty.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/largemedkit_256.png">\
 <div class="kit-item__quantity">x10</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/syringe.medical_256.png">\
@@ -449,8 +449,8 @@ curcontent["kit-grand"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/chainsaw_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rifle.ak_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rifle.lr300_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/uberpickaxe_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/uberhatchet_256.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberpickaxe.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberhatchet.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/supply.signal_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
 </div></div></div>\
@@ -458,9 +458,9 @@ curcontent["kit-grand"] = {
 <div class="kit_set"><div class="kit-items">\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.facemask_256.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.plate.torso_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/867355724173241313/A699E74A69184F91A5BD81DBC9D2A7528F1C32AD/?imw=268&imh=268&ima=fit&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/867355893168560145/03DF3272223A4A9F7B445D8CC3ED10A8D12B8D5A/?imw=268&imh=268&ima=fit&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/835832990473838125/CBB88C83250F86B393D58B81219EFC3604A93C36/?imw=268&imh=268&ima=fit&impolicy=Letterbox"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/qEqeAEJ.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/i0Jjxwa.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/ej93jZZ.png"></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/largemedkit_256.png">\
 <div class="kit-item__quantity">x10</div></div></div>\
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/syringe.medical_256.png">\
@@ -495,11 +495,11 @@ curcontent["kit-free"] = {
 <div class="xbox_custom_kits" >\
 <p class="MsoNormal"><span>Бомж</span></p>\
 <div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/851593237065046314/C4394B54330D8C6C0D1DC624FE5F20F448880603/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/821190300748591786/D677BA94E2D706E033F9BB3B78B154364E17EAE0/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/90478291046828677/21E21062B5573D3ACBCD9DBFAB2571923538CB90/?imw=637&imh=358&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/956350181140504911/CB13074BC7EE6C818347E10CF8ECDBFA47F1E9A3/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://steamuserimages-a.akamaihd.net/ugc/956350181140521182/4D408A70093BFEF6C339E99628E4907AC069E253/?imw=268&imh=268&impolicy=Letterbox"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/JJBgiWq.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/SAO2qu3.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/aBpfww2.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/3XpNUFs.png"></div></div>\
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/NiJvm68.png"></div></div>\
 </div></div>\
 <p class="MsoNormal"><span>Starter</span></p>\
 <div class="kit_set"><div class="kit-items">\

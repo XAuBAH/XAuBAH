@@ -361,8 +361,6 @@ body {
   }
 }
 
-/* //#circle {display:none} */
-
 #Modal .modal-content {
     background: rgba(43, 52, 58, 0.9);
 }
@@ -376,17 +374,12 @@ body {
 .MsoNormal span {
     color: rgb(255,255,255);
     font-weight: bold;
-} 
-/* .xbox_custom_rules p {
-    padding: 0px 41px 0px 43px;
-} */
+}
 
 .aboutus_main {
     padding: 0px 20px;
-    /* background: rgb(65, 73, 78); */
 }
 .MsoCommand {
-    /* //background-color: #f25647; */
     text-shadow: 1px 1px 1px #333;
     padding: 0px 4px 2px 4px;
     border-radius: 4px;
@@ -806,9 +799,19 @@ body {
 .x-spoiler >  input:checked + .spoil-box > blockquote {
 	display: block;
 }
+
+.x-spoiler >  input:checked + .spoil-box > .spoil-image {
+   transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+   -moz-transform: rotate(90deg);
+   -ms-transform: rotate(90deg);
+   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+}
+
 .spoil-button{
-	width: 192%;
-    height: 52px;
+	width: 93%;
+    height: 70px;
+    left: 68px;
 }
 .x-spoiler >  input[type="checkbox"] {
 	cursor: pointer;
@@ -817,7 +820,7 @@ body {
 	background:transparent none!important;
 	position: absolute;
   	z-index:1;
-    margin: -16px 0 0 -391px; 
+	margin: -16px 0 0 0;
     opacity: 0;
  }
 .x-spoiler span.spoil-close,
@@ -828,8 +831,23 @@ body {
 } 
 .x-spoiler span.spoil-close:before{
 	content: "\f0ab";
+    color: #7fffd4;
+}
+.spoil-image{
+    transition-duration: .4s;
+    transition-property: transform;
+    overflow: hidden;
+    background: url('https://i.imgur.com/x3kOsSo.png') no-repeat;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
 
 }
+
+
 .x-spoiler span.spoil-open:before{
 	content: "\f0a9";
 }
@@ -840,7 +858,6 @@ body {
 	display: none;
 }
 .x-spoiler >  input:checked +  .spoil-box > span.spoil-close {
-	/* //background: url(https://i.imgur.com/UM07ecp.png) 4px 60% no-repeat; */
 	display: inline;
     text-decoration: none;
 }
@@ -848,7 +865,6 @@ body {
 	display: none;
 }
 .x-spoiler >  input +  .spoil-box >  span.spoil-open {
-	/* //background: url(https://i.imgur.com/LYgptyL.png) 4px  60% no-repeat; */
 	display: inline;
     text-decoration: none;
 }
@@ -875,21 +891,17 @@ body {
 .x-spoiler blockquote {
    margin-top:12px;
    min-height: 23px;
-   border:#CDCDCD 2px dashed;
-   margin-right: -18px;
-   margin-left: -18px;
 }
-.spoil-Extend {
-    margin-inline-start: -18px!important;
-    margin-inline-end: -19px!important;
-}
-.spoil-Extend ul {
-    padding-inline-start: 20px;
-}
+				   
 
-#tab4 .x-spoiler{
-    margin-top: 8px;
-	
+.xbox_custom_rules .spoil-head {
+    font-size: x-large;
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+  .xbox_custom_rules .spoil-head {
+    font-size: medium;
+  }
 }
 /* end spoiler */
 
@@ -1123,6 +1135,13 @@ label {
 	}
 }
 
+.tg-1lax {
+    vertical-align: top;
+    padding-right: 12px;
+}
+.tg-2lax {
+    padding-bottom: 10px;
+}
 
 
 
