@@ -16,7 +16,7 @@ EAC не идеален и может ошибочно отключать игр
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Всё на английском</span><br>
-	 <blockquote class="spoil-Untext">Если у вас все сообщения на английском, в том числе ответы от плагинов в чате, включите стандартный язык клиента на русском и перезайдите (или \'/lang ru\' в чат)</blockquote>
+	 <blockquote class="spoil-Untext">Если у вас все сообщения на английском, в том числе ответы от плагинов в чате, включите стандартный язык клиента на русском и перезайдите (или '/lang ru' в чат)</blockquote>
      </div></div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -32,17 +32,17 @@ EAC не идеален и может ошибочно отключать игр
 <b>Вопрос</b>: Могу ли я зайти с пиратской версии игры?<br>
 <b>Ответ</b>: Нет, только лицензионная версия игры.<br><br>
 <b>Вопрос</b>: Почему все системные сообщения сервера на английском?<br>
-<b>Ответ</b>: Переключите ваш стандартный язык клиента на русский! Любой отличный от русского языка игрок, автоматически получает сообщения на англ. (либо используйте \'lang ru\' в консоли F1)</blockquote>
+<b>Ответ</b>: Переключите ваш стандартный язык клиента на русский! Любой отличный от русского языка игрок, автоматически получает сообщения на англ. (либо используйте 'lang ru' в консоли F1)</blockquote>
      </div></div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Что входит в KIT</span><br>
-	 <blockquote class="spoil-Untext">Вы можете ознакомится с китами<a href="javascript:;" onclick="Open(\'kit-free\');"> здесь.</a> Либо можете обратится к альбому со скринами в нашей <a href="https://vk.com/album-124254208_233413146" target="blank">группе Вк</a></blockquote>
+	 <blockquote class="spoil-Untext">Вы можете ознакомится с китами<a href="javascript:;" onclick="Open('kit-free');"> здесь.</a> Либо можете обратится к альбому со скринами в нашей <a href="https://vk.com/album-124254208_233413146" target="blank">группе Вк</a></blockquote>
      </div></div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Как забиндить команды</span><br>
-	 <blockquote class="spoil-Untext"><a href="javascript:;" onclick="Open(\'help\');">Как биндить основные команды на нашем сервере</a></blockquote>
+	 <blockquote class="spoil-Untext"><a href="javascript:;" onclick="Open('help');">Как биндить основные команды на нашем сервере</a></blockquote>
      </div></div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -54,10 +54,10 @@ EAC не идеален и может ошибочно отключать игр
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Уникальные плагины</span><br>
-	 <blockquote class="spoil-Untext">О наших уникальных собственных плагинах вы можете прочитать <a href="javascript:;" onclick="Open(\'plugins\');">здесь</a></blockquote>
+	 <blockquote class="spoil-Untext">О наших уникальных собственных плагинах вы можете прочитать <a href="javascript:;" onclick="Open('plugins');">здесь</a></blockquote>
      </div></div>
 <div class="x-spoiler">
-<input class="spoil-button" type="checkbox" onclick="Open(\'serv\');" tabindex="-1">
+<input class="spoil-button" type="checkbox" onclick="Open('serv');" tabindex="-1">
      <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Можно подробнее узнать О Серверах?</span><br>
 	 <blockquote class="spoil-Untext">- -</blockquote>
      </div></div>
@@ -533,6 +533,10 @@ curcontent["rules"] = {
   </tr>
   <tr>  
     <td class="tg-1lax">10.6</td>
+    <td class="tg-2lax">Если вы имеете бан по причине "Выход при проверке", вы можете оставить заявку на разбан в течение недели с момента вайпа, по истечению 7 дней - перепроверка невозможна.</td>
+  </tr>
+  <tr>  
+    <td class="tg-1lax">10.7</td>
     <td class="tg-2lax">Если вы заходите с другого аккаунта, при наличии бана по причине "Выход при проверке" на основном аккаунте, и ваш бан имеет срок действия с  2022 года, то ваш аккаунт получит бан за мультиаккаунт.</td>
 </tr>
 </tbody>
@@ -657,12 +661,12 @@ var kit_prem = ['stones', 5000, 10000, 13000,
 curcontent["kit-prem"] = {
 	xhead: 'Что входит в киты',
 	xcon: `<div class="store-categories">
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
 	<button class="btn btn-secondary active">Prem</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
 	<div class="xbox_custom_kits" ><div class="serverheader">KIT PREMIUM (по привилегии)</div>
 <div class="kit_set"><div class="kit-items">`
 };
@@ -672,12 +676,12 @@ curcontent["kit-prem"] = {
 curcontent["kit-wars"] = {
 	xhead: 'Что входит в киты',
 	xcon: `<div class="store-categories">
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
 	<button class="btn btn-secondary active">Wars</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
 	<div class="xbox_custom_kits" ><div class="serverheader">KIT WARS (по привилегии)</div>
 <div class="kit_set"><div class="kit-items">`
 };
@@ -685,12 +689,12 @@ curcontent["kit-wars"] = {
 curcontent["kit-elite"] = {
 	xhead: 'Что входит в киты',
 	xcon: `<div class="store-categories">
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
 	<button class="btn btn-secondary active">Elite</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
 	<div class="xbox_custom_kits" ><div class="serverheader">KIT ELITE (по привилегии)</div>
 <div class="kit_set"><div class="kit-items">`
 };
@@ -699,12 +703,12 @@ curcontent["kit-elite"] = {
 curcontent["kit-king"] = {
 	xhead: 'Что входит в киты',
 	xcon: `<div class="store-categories">
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
 	<button class="btn btn-secondary active">King</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
 	<div class="xbox_custom_kits" ><div class="serverheader">KIT KING (по привилегии)</div>
 <div class="kit_set"><div class="kit-items">
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stones.png">
@@ -792,11 +796,11 @@ curcontent["kit-king"] = {
 curcontent["kit-grand"] = {
 	xhead: 'Что входит в киты',
 	xcon: `<div class="store-categories">
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
 	<button class="btn btn-secondary active">Grand</button></div>
 	<div class="xbox_custom_kits" ><div class="serverheader">KIT GRAND (по привилегии)</div>
 <div class="kit_set"><div class="kit-items">
@@ -887,11 +891,11 @@ curcontent["kit-free"] = {
 	xhead: 'Что входит в бесплатные киты',
 	xcon: `<div class="store-categories">
 	<button class="btn btn-secondary active">Общие</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
 <div class="xbox_custom_kits" >
 <div class="serverheader">Бомж</div>
 <div class="kit_set"><div class="kit-items">
