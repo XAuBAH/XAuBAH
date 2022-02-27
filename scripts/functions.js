@@ -1273,7 +1273,7 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="cent-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
 	<div class="payment-block">
-        <div class="payment-type payment-block-cent"></div><div class="payment-type payment-block-applepay"></div>
+        <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-applepay"></div>
 	</div>
 	</label>
 </form>
@@ -1433,7 +1433,7 @@ function freekassaHandler(e){
 		document.getElementById('fk-error-box').innerText = "";
 	}
 	document.getElementById('fk-donation-amount').value = inputfloat;
-	document.getElementById('fk-donation-sign').value = MD5('12859:'+ inputfloat +':dblwsabt:RUB:'+ document.getElementById('fk-donation-comment').value);
+	document.getElementById('fk-donation-sign').value = MD5('12859:'+ inputval +':dblwsabt:RUB:'+ document.getElementById('fk-donation-comment').value);
 	if(CustomerSteamId == "0" || CustomerSteamId == ""){
 		document.getElementById('fk-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
 		e.preventDefault();
