@@ -1241,30 +1241,31 @@ curcontent["Oplata"] = {
 	</div>
 	</label>
 </form> -->
-<!--<form onsubmit="return unitpayHandler(event)" class="qiwi-inp-form" id="unitpay-inp-form" method="get" target="_blank" action="https://unitpay.money/pay/407453-95885/card">
-<div class="qiwi-inp-main" id="qiwi-inp-unitpay">
-	<div class="qiwi-widget-title qiwi-title-2">Моб. платежи или Иностранные карты</div>
+<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
+<label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
+	<div class="qiwi-widget-title qiwi-title-2">QIWI</div>
 	<div class="qiwi-inp-box">
-			<label for="unitpay-donation-amount" class="qiwi-label">Cумма</label>
+			<label for="lava-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
-			<input type="tel" class="qiwi-donation-amount" id="unitpay-donation-amount" name="sum" required="" value="">
-			<input type="hidden" id="unitpay-donation-comment" name="desc" value="Grand Rust Account">
-			<input type="hidden" id="unitpay-donation-account" name="account" value="0">
-			<div class="qiwi-error-box" id="unitpay-error-box"></div>
+			<input type="tel" class="qiwi-donation-amount" id="lava-donation-amount" name="amo" required="" value="">
+			<input type="hidden" id="lava-donation-account" name="acc" value="0">
+			<div class="qiwi-error-box" id="lava-error-box"></div>
 	</div>
 	<div class="qiwi-button-box">
-		<button class="qiwi-submit-main" id="unitpay-submit-main" width="159px" type="submit">Оплатить</button>
+		<button class="qiwi-submit-main" id="lava-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
-</div>
-</form>-->
+	<div class="payment-block">
+        <div class="payment-type payment-block-qiwi"></div><div class="payment-type payment-block-lava"></div>
+	</div>
+	</label>
+</form>
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">QIWI или карты</div>
+	<div class="qiwi-widget-title qiwi-title-2">Карты или Apple Pay</div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
 			<input type="tel" class="qiwi-donation-amount" id="cent-donation-amount" name="amo" required="" value="">
-			<input type="hidden" id="cent-donation-comment" name="desc" value="Account">
 			<input type="hidden" id="cent-donation-account" name="acc" value="0">
 			<div class="qiwi-error-box" id="cent-error-box"></div>
 	</div>
@@ -1272,7 +1273,7 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="cent-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
 	<div class="payment-block">
-        <div class="payment-type payment-block-qiwi"></div><div class="payment-type payment-block-cent"></div><div class="payment-type payment-block-applepay"></div>
+        <div class="payment-type payment-block-cent"></div><div class="payment-type payment-block-applepay"></div>
 	</div>
 	</label>
 </form>
@@ -1482,16 +1483,31 @@ function centHandler(e){
 	return null;
 }
 
+function lavaHandler(e){
+	qiwiFormHandle();
+	var inputval = document.getElementById('lava-donation-amount').value;
+	var inputfloat = parseFloat(inputval).toFixed(2);
+	if(inputfloat < 1 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('lava-error-box').innerText = "От 1 до 15000 RUB";
+		e.preventDefault();
+		return false;
+	}else{
+		document.getElementById('lava-error-box').innerText = "";
+	}
+	document.getElementById('lava-donation-amount').value = inputfloat;
+	if(CustomerSteamId == "0" || CustomerSteamId == ""){
+		document.getElementById('lava-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
+		e.preventDefault();
+		return false;
+	}
+	
+	return null;
+}
+
 function qiwiFormHandle(){
-	/* var a1 = document.getElementById('unitpay-donation-comment');
+	var a1 = document.getElementById('lava-donation-account');
 	if(a1 != null)
-	a1.value = "Grand Rust Account " + CustomerSteamId;
-	var a2 = document.getElementById('unitpay-donation-account');
-	if(a2 != null)
-	a2.value = CustomerSteamId; */
-	var b1 = document.getElementById('cent-donation-comment');
-	if(b1 != null)
-	b1.value = "Account " + CustomerSteamId;
+	a1.value = CustomerSteamId;
 	var b2 = document.getElementById('cent-donation-account');
 	if(b2 != null)
 	b2.value = CustomerSteamId;
@@ -1678,4 +1694,18 @@ function snow_off() {
     document.getElementById('snowcanvas').style.display = 'none';
 	if(s != null)s.destroy();
     document.getElementById('parallax-banner').style.display = 'none';
+}
+
+
+//////test user country
+if (window.performance && performance.getEntriesByType) { // avoid error in Safari 10, IE9- and other old browsers
+    let navTiming = performance.getEntriesByType('navigation')
+    if (navTiming.length > 0) { // still not supported as of Safari 14...
+        let serverTiming = navTiming[0].serverTiming
+        if (serverTiming && serverTiming.length > 0) {
+            for (let i=0; i<serverTiming.length; i++) {
+                console.log(`Detected continent is ${serverTiming[i].name}`)
+            }
+        }
+    }
 }
