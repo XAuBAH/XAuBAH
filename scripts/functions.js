@@ -1277,7 +1277,7 @@ curcontent["Oplata"] = {
 	</div>
 	</label>
 </form>
-<form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://www.free-kassa.ru/merchant/cash.php">
+<form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
 	<div class="qiwi-widget-title qiwi-title-3">Скины, Криптовалюта, Наличные и др.</div>
 	<div class="qiwi-inp-box">
@@ -1287,7 +1287,8 @@ curcontent["Oplata"] = {
 			<input type="hidden" id="fk-donation-comment" name="o" value="Account">
 			<input type="hidden" id="fk-donation-sign" name="s" value="">
 			<input type="hidden" id="fk-donation-account" name="us_account" value="0">
-			<input type="hidden" name="m" value="283330">
+			<input type="hidden" name="m" value="12859">
+			<input type="hidden" name="currency" value="RUB">
 			<div class="qiwi-error-box" id="fk-error-box"></div>
 	</div>
 	<div class="qiwi-button-box">
@@ -1432,7 +1433,7 @@ function freekassaHandler(e){
 		document.getElementById('fk-error-box').innerText = "";
 	}
 	document.getElementById('fk-donation-amount').value = inputfloat;
-	document.getElementById('fk-donation-sign').value = MD5('283330:'+ inputfloat +':dblwsabt:'+ document.getElementById('fk-donation-comment').value);
+	document.getElementById('fk-donation-sign').value = MD5('12859:'+ inputfloat +':dblwsabt:RUB:'+ document.getElementById('fk-donation-comment').value);
 	if(CustomerSteamId == "0" || CustomerSteamId == ""){
 		document.getElementById('fk-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
 		e.preventDefault();
