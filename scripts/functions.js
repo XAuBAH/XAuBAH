@@ -1401,10 +1401,10 @@ function search(e){
 var CustomerSteamId = "0";
 var OvhPayUrl = "";
 
-function qiwiHandler(e){
+/* function qiwiHandler(e){
 	var inputval = document.getElementById('qiwi-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 5 /* || inputfloat > 15000 */ || isNaN(inputfloat)){
+	if(inputfloat < 5 || inputfloat > 15000 || isNaN(inputfloat)){
 		document.getElementById('qiwi-error-box').innerText = "От 5 до 15000 RUB";
 		e.preventDefault();
 		return false;
@@ -1420,12 +1420,12 @@ function qiwiHandler(e){
 	qiwiFormHandle();
 	
 	return null;
-}
+} */
 function freekassaHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('fk-donation-amount').value;
-	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 100 /* || inputfloat > 15000 */ || isNaN(inputfloat)){
+	var inputfloat = parseFloat(inputval);
+	if(inputfloat < 100 || inputfloat > 15000 || isNaN(inputfloat)){
 		document.getElementById('fk-error-box').innerText = "От 100 до 15000 RUB";
 		e.preventDefault();
 		return false;
@@ -1467,7 +1467,7 @@ function centHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('cent-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 15 /* || inputfloat > 15000 */ || isNaN(inputfloat)){
+	if(inputfloat < 15 || inputfloat > 15000 || isNaN(inputfloat)){
 		document.getElementById('cent-error-box').innerText = "От 15 до 15000 RUB";
 		e.preventDefault();
 		return false;
@@ -1488,8 +1488,8 @@ function lavaHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('lava-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 1 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('lava-error-box').innerText = "От 1 до 15000 RUB";
+	if(inputfloat < 5 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('lava-error-box').innerText = "От 5 до 15000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
