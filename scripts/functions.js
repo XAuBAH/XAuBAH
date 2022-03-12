@@ -1261,7 +1261,7 @@ curcontent["Oplata"] = {
 </form>
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">Карты или Apple Pay</div>
+	<div class="qiwi-widget-title qiwi-title-2">Карты</div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1433,7 +1433,7 @@ function freekassaHandler(e){
 		document.getElementById('fk-error-box').innerText = "";
 	}
 	document.getElementById('fk-donation-amount').value = inputfloat;
-	document.getElementById('fk-donation-sign').value = MD5('12859:'+ inputval +':dblwsabt:RUB:'+ document.getElementById('fk-donation-comment').value);
+	document.getElementById('fk-donation-sign').value = MD5('12859:'+ inputfloat +':dblwsabt:RUB:'+ document.getElementById('fk-donation-comment').value);
 	if(CustomerSteamId == "0" || CustomerSteamId == ""){
 		document.getElementById('fk-error-box').innerText = "Пожалуйста авторизуйтесь в магазине!";
 		e.preventDefault();
