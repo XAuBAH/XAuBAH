@@ -1298,7 +1298,46 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-cash"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
 	</div>
 	</label>
-</form></div>`
+</form>
+</div>
+<div class="x-spoiler">
+<input class="spoil-button" type="checkbox" tabindex="-1" style="height: 14%;">
+    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Ни один метод выше не работает?</span><br>
+	<blockquote class="spoil-Untext">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-10 offset-md-1">
+			  <h1 class="tebex-header text-center mb-4">Сколько вы хотели перевести?</h1>
+			  <form>
+				<div class="form-group">
+				  <div class="input-group"><div class="input-group-addon">RUB</div><input id="rubInput" type="tel" class="form-control form-control-lg" placeholder="Введите сумму желаемого перевода в рублях" autocomplete="off"></div>
+				</div>
+			  </form>
+			  <div id="allbOutput" style="visibility: hidden;">
+				<div class="card card-primary mb-2">
+				  <div class="card-block">
+					<h4>Нужно оплатить: $ <span id="bucksOutput"></span></h4>
+				  </div>
+				</div>
+
+				<div class="tebex-mainlink mb-2 mt-3"">
+					<a href="https://grand-shop.tebex.io/checkout/packages/add/5009978/single" target="_blank" rel="nofollow noopener" title="https://grand-shop.tebex.io/checkout/packages/add/5009978/single" class="card-block">
+						<h4>Через <u>Tebex</u></h4>
+					</a>
+				</div>
+				<div class="tebex-warning mb-2 mt-4" style="background-color: #f0ad4e5e;padding: 5px 10px;border-radius: 5px;color: #ffe4c4;">
+					<h4><b>Внимание!</b></h4>
+					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам сразу после оплаты.</div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</blockquote>
+	</div>
+</div>
+<br>
+<br>`
 };
 
 
@@ -1696,6 +1735,17 @@ function snow_off() {
 	if(s != null)s.destroy();
     document.getElementById('parallax-banner').style.display = 'none';
 }
+
+document.addEventListener("input", function (e) {
+	if(e.target.id!='rubInput')return;
+	var sumbucks = parseFloat(e.target.value/85).toFixed(2);
+	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
+		sumbucks = 1;
+	}
+  document.getElementById("allbOutput").style.visibility = "visible";
+  document.getElementById("bucksOutput").innerHTML = sumbucks;
+});
+
 
 
 //////test user country
