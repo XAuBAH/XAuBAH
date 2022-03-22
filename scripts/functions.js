@@ -1321,13 +1321,13 @@ curcontent["Oplata"] = {
 				</div>
 
 				<div class="tebex-mainlink mb-2 mt-3"">
-					<a href="https://grand-shop.tebex.io/checkout/packages/add/5009978/single" target="_blank" rel="nofollow noopener" title="https://grand-shop.tebex.io/checkout/packages/add/5009978/single" class="card-block">
+					<a href="https://grand-rust.tebex.io/checkout/packages/add/5025323/single" target="_blank" rel="nofollow noopener" title="https://grand-rust.tebex.io/checkout/packages/add/5025323/single" class="card-block">
 						<h4>Через <u>Tebex</u></h4>
 					</a>
 				</div>
 				<div class="tebex-warning mb-2 mt-4" style="background-color: #f0ad4e5e;padding: 5px 10px;border-radius: 5px;color: #ffe4c4;">
 					<h4><b>Внимание!</b></h4>
-					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам сразу после оплаты.</div>
+					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам в течении 2-3 минут после оплаты.</div>
 				</div>
 			  </div>
 			</div>
