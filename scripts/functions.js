@@ -1321,7 +1321,7 @@ curcontent["Oplata"] = {
 				</div>
 
 				<div class="tebex-mainlink mb-2 mt-3"">
-					<a href="https://grand-rust.tebex.io/checkout/packages/add/5025323/single" target="_blank" rel="nofollow noopener" title="https://grand-rust.tebex.io/checkout/packages/add/5025323/single" class="card-block">
+					<a href="https://grand-rust.tebex.io/checkout/packages/add/5009978/single" target="_blank" rel="nofollow noopener" title="https://grand-rust.tebex.io/checkout/packages/add/5009978/single" class="card-block">
 						<h4>Через <u>Tebex</u></h4>
 					</a>
 				</div>
