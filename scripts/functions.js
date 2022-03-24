@@ -1308,7 +1308,7 @@ curcontent["Oplata"] = {
 		  <div class="row">
 			<div class="col-md-10 offset-md-1">
 			  <h1 class="tebex-header text-center mb-4">Сколько вы хотели перевести?</h1>
-			  <form>
+			  <form onsubmit="return false" >
 				<div class="form-group">
 				  <div class="input-group"><div class="input-group-addon">RUB</div><input id="rubInput" type="tel" class="form-control form-control-lg" placeholder="Введите сумму желаемого перевода в рублях" autocomplete="off"></div>
 				</div>
@@ -1741,6 +1741,8 @@ document.addEventListener("input", function (e) {
 	var sumbucks = parseFloat(e.target.value/85).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
+	}else{
+		sumbucks += 0.01;
 	}
   document.getElementById("allbOutput").style.visibility = "visible";
   document.getElementById("bucksOutput").innerHTML = sumbucks;
