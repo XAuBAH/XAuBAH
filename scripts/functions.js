@@ -1738,11 +1738,9 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = parseFloat(e.target.value/85).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/85) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
-	}else{
-		sumbucks += 0.01;
 	}
   document.getElementById("allbOutput").style.visibility = "visible";
   document.getElementById("bucksOutput").innerHTML = sumbucks;
