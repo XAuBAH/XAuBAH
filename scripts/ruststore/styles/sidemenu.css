@@ -86,11 +86,6 @@
     border-radius: 4px;
     margin-right: -21px;
 }
-@media (max-width: 767px) {
-  .ipconnect {
-    display: none;
-  }
-}
 
 @media (min-width: 992px){
   .modal-custom  {
@@ -159,11 +154,17 @@
       display: block;
   	}
   	.xbox_custom_block .kit-items__item {
-    width: 50%!important;
+      width: 50%!important;
   	}
   	.block_by_category {
-    width: 100%!important;
-    height: auto!important;
+      width: 100%!important;
+      height: auto!important;
+	}
+	.ipconnect {
+	  display: none;
+	}
+	#sub {
+	  z-index: 3!important;
 	}
 }
 .block_by_category .kit-item {
