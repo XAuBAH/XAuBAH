@@ -323,7 +323,7 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">6.10</td>
-    <td class="tg-2lax">Вы можете быть забанены автоматической системой обнаружения подозрительных действий игрока, если вы не совершали противоправных действий, пожалуйста, напишите нам в <a href="https://vk.com/grmoder" target="blank">группу ВК</a> сли вы были забанены по ошибке.</td>
+    <td class="tg-2lax">Вы можете быть забанены автоматической системой обнаружения подозрительных действий игрока, если вы не совершали противоправных действий, пожалуйста, напишите нам в <a href="https://vk.com/grmoder" target="blank">группу ВК</a> если вы были забанены по ошибке.</td>
   </tr>
   <tr>
     <td class="tg-1lax">6.11</td>
@@ -1359,11 +1359,9 @@ curcontent["block"] = {
 
 
 
-function Open(el, usefade = true, zind = false) {
+function Open(el, usefade = true, zind = '2') {
 	closepage();
 	var div1 = document.createElement("div");
-	if(zind) div1.style = 'position: relative;';
-	else div1.style = 'position: relative; z-index: 2;';
     div1.id = 'Modal';
 	var div2 = document.createElement("div");
 	div2.className = 'modal fade';
@@ -1738,7 +1736,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/85) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/78) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
