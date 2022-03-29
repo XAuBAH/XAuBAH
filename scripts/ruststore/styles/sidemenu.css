@@ -529,7 +529,7 @@
     top: 0px;
   width: 100px;
   height: 100%;
-  z-index: 3;
+  z-index: 1051;
   position: fixed;
   visibility:hidden;
 }
