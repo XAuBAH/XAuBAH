@@ -1321,7 +1321,7 @@ curcontent["Oplata"] = {
 				</div>
 
 				<div class="tebex-mainlink mb-2 mt-3"">
-					<a href="https://grand-shop.tebex.io/checkout/packages/add/5009978/single" target="_blank" rel="nofollow noopener" title="https://grand-shop.tebex.io/checkout/packages/add/5009978/single" class="card-block">
+					<a href="https://grand-rust.tebex.io/checkout/packages/add/5036554/single?currency=USD" target="_blank" rel="nofollow noopener" title="https://grand-rust.tebex.io/checkout/packages/add/5036554/single" class="card-block">
 						<h4>Через <u>Tebex</u></h4>
 					</a>
 				</div>
@@ -1736,7 +1736,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/78) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/74) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
