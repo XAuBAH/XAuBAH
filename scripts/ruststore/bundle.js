@@ -2369,7 +2369,7 @@ webpackJsonp([27], [function(e, t, n) {
         return {
             type: i.AT.LOGIN,
             payload: new Promise(function(e) {
-                e('https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=https%3A%2F%2Fshop.grand-rust.ru%2Fapi%2Fsteam-auth%2F&openid.realm=https%3A%2F%2Fshop.grand-rust.ru&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select')
+                e('https://steamcommunity.com/openid/login?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=checkid_setup&openid.return_to=https%3A%2F%2F'+ window.location.hostname +'%2Fapi%2Fsteam-auth%2F&openid.realm=https%3A%2F%2F'+ window.location.hostname +'&openid.ns.sreg=http%3A%2F%2Fopenid.net%2Fextensions%2Fsreg%2F1.1&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select')
             }
             )
         }
@@ -24367,7 +24367,7 @@ webpackJsonp([27], [function(e, t, n) {
                 className: "xbox__footer widget_xbox_footer" + r
             }, i.default.createElement("a", {
                 className: "btn btn-success btn-block",
-                href: "//oauth.vk.com/authorize?client_id=7786063&scope=notify,groups&redirect_uri=https%3A%2F%2Fshop.grand-rust.ru%2Fapi%2Fvkreward%2Findex.php&response_type=code"
+                href: "//oauth.vk.com/authorize?client_id=7786063&scope=notify,groups&redirect_uri=https%3A%2F%2F"+ window.location.hostname +"%2Fapi%2Fvkreward%2Findex.php&response_type=code"
                 // href: "/api/index.php?modules=vkMemberReward&action=getBonus&token=" + n + "&widgetID=" + r
             }, "Получить бонус")) : null )) : null
         }
