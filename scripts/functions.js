@@ -1261,7 +1261,8 @@ curcontent["Oplata"] = {
 </form>
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">Карты</div>
+	<div class="qiwi-widget-title qiwi-title-2">Карты
+		<p>Российские и иностанные работают</p></div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1736,7 +1737,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/74) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/69) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
