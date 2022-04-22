@@ -22,6 +22,7 @@ body {
     margin-top: 113px;
 }
 .header__image {
+    width: 104%;
     pointer-events: none;
 	content: -webkit-image-set(url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1200&fidelity=low') 0.99x,
 								url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1300&fidelity=low') 1x,
@@ -132,7 +133,7 @@ body {
     animation-duration: 3s;
 }
 .roulette {
-    background: url(https://i.imgur.com/up2i0Wt.png);
+    background: url("https://i.imgur.com/up2i0Wt.png");
     background-color: #2b2b21;
     margin-bottom: 10px;
 }
@@ -146,7 +147,7 @@ body {
 }
 
 .roulette-item {
-    background: url(https://i.imgur.com/up2i0Wt.png);
+    background: url("https://i.imgur.com/up2i0Wt.png");
     background-color: #40484d;
     border-radius: 0px;
     box-shadow: 0 0 0 0
@@ -162,7 +163,7 @@ body {
 
 .roulette-item__description {
     background-color: #2b343a;
-    background: url(https://i.imgur.com/up2i0Wt.png);
+    background: url("https://i.imgur.com/up2i0Wt.png");
     text-align: left;
     padding: 4px;
     padding-left: 8px
@@ -172,7 +173,7 @@ body {
     margin: 1px;
     margin-top: 10px;
     display: inline-block;
-    background: url(https://i.imgur.com/up2i0Wt.png);
+    background: url("https://i.imgur.com/up2i0Wt.png");
     background-color: #424032;
     width: 140px;
     height: 140px
