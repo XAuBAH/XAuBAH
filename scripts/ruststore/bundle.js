@@ -2505,7 +2505,7 @@ webpackJsonp([27], [function(e, t, n) {
         var e;
 		if(DirectlyFromjson){
 			e = (0,
-			a.get)("/store/links.json?"+Math.floor(Date.now()/1000000), (0,
+			a.get)("/store/links.json?"+Math.floor(servertime/1000000), (0,
 			o.stringify));
 		}else{
 			e = (0,
@@ -2538,7 +2538,7 @@ webpackJsonp([27], [function(e, t, n) {
 		var t;
 		if(DirectlyFromjson){
 			t = (0,
-			a.get)("/store/getItems.json?"+Math.floor(Date.now()/100000), (0,
+			a.get)("/store/getItems.json?"+Math.floor(servertime/100000), (0,
 			o.stringify));
 		}else{
 			t = (0,
@@ -23754,7 +23754,7 @@ webpackJsonp([27], [function(e, t, n) {
 		var e;
 		if(DirectlyFromjson){
 			e = (0,
-			r.get)("/store/getServers.json?"+Math.floor(Date.now()/100000), (0,
+			r.get)("/store/getServers.json?"+Math.floor(servertime/10000), (0,
 			a.stringify));
 		}else{
 			e = (0,
@@ -27003,3 +27003,15 @@ function getC(name) {
 function eraseC(name) {   
     document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
+var servertime = Date.now();
+try{
+	if (window.performance && performance.getEntriesByType) {
+		let navTiming = performance.getEntriesByType('navigation')
+		if (navTiming.length > 0) {
+			let serverTiming = navTiming[0].serverTiming
+			if (serverTiming && serverTiming.length > 0) {
+				servertime = serverTiming[0];
+			}
+		}
+	}
+}catch (e) {console.log('serverTiming error ' + e.message);}
