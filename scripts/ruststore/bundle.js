@@ -27010,7 +27010,7 @@ try{
 		if (navTiming.length > 0) {
 			let serverTiming = navTiming[0].serverTiming
 			if (serverTiming && serverTiming.length > 0) {
-				servertime = serverTiming[0];
+				servertime = serverTiming[0].name;
 			}
 		}
 	}
