@@ -1240,7 +1240,7 @@ curcontent["Oplata"] = {
             <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div>
 	</div>
 	</label>
-</form> -->
+</form>
 <form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
 	<div class="qiwi-widget-title qiwi-title-2">QIWI</div>
@@ -1299,7 +1299,8 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-cash"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
 	</div>
 	</label>
-</form>
+</form> -->
+<h1>Пока доступен только 1 метод:</h1>
 </div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1" style="height: 14%;">
