@@ -1262,7 +1262,7 @@ curcontent["Oplata"] = {
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
 	<div class="qiwi-widget-title qiwi-title-2">Карты
-		<p>Российские и иностанные работают</p></div>
+		<p>Российские и иностранные работают</p></div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1348,7 +1348,7 @@ var BlockListArrays = [['pistol.revolver', 'shotgun.double'],
 ['shotgun.pump'], 
 ['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.plate.torso', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'],
 ['rifle.ak', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.grenadelauncher.he'], 
-['lmg.m249', 'grenade.f1', 'grenade.beancan', 'explosive.satchel', 'surveycharge', 'ammo.rifle.explosive'], 
+['lmg.m249', 'hmlmg', 'grenade.f1', 'grenade.beancan', 'explosive.satchel', 'surveycharge', 'ammo.rifle.explosive'], 
 ['explosive.timed', 'rocket.launcher']];
 
 
