@@ -1120,7 +1120,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#3 Barren Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/3.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#3 HapisIsland Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/3.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
