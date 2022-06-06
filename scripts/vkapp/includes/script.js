@@ -106,9 +106,9 @@ function updateOnline(first = false) {
 				document.getElementById("bar"+servid+'-1').style["width"] = (100/servmax*playersCount)+"%";
 				if(first){
 					var mapcat = servmap.replace(/map/gi, '');
-					if(mapcat != 'Procedural ' && mapcat != 'Barren')
+					/* if(mapcat != 'Procedural ' && mapcat != 'Barren' && mapcat != 'HapisIsland')
 						document.getElementById("grname"+servid).innerText += " Custom";
-					else
+					else */
 						document.getElementById("grname"+servid).innerText += " "+mapcat;
 				}
 				
