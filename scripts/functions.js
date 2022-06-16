@@ -1296,7 +1296,7 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="fk-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
 	<div class="payment-block">
-        <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-cash"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
+        <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-webmoney"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
 	</div>
 	</label>
 </form>
@@ -1737,7 +1737,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/53) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/49) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
