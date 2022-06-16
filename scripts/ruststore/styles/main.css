@@ -17,6 +17,7 @@ body {
 .header .container {
     z-index: 2;
     pointer-events: none;
+    overflow: hidden;
 }
 .animated .header {
     margin-top: 113px;
