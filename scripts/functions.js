@@ -1120,7 +1120,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#3 HapisIsland Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/3.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#3 Custom Map Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/3.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1737,7 +1737,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/49) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/48) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
