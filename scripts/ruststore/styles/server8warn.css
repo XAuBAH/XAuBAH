@@ -9,7 +9,7 @@
   display:none;
 }
 .xbox_store .xbox__header:before {
-    content: "Внимание! Магазин не доступен на сервере #9 Semi-Classic";
+    content: "Внимание! Магазин не доступен на сервере #9 Classic";
     display: block;
     clear: both;
   border-right: solid 3px rgba(0,255,0,.75);
