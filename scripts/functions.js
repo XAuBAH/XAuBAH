@@ -1209,6 +1209,22 @@ curcontent["serv"] = {
 		</ul>
 	</blockquote>
 	</div></div>
+<br>
+<h4 class="serverheader">GRAND RUST#9 Procedural Classic </h4><p class="ipconnect">connect 9.grand-rust.ru:10000<a href="steam://connect/9.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+
+<div class="x-spoiler">
+<input class="spoil-button" type="checkbox" tabindex="-1">
+    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Описание сервера</span><br>
+	<blockquote class="spoil-Untext">
+		<ul><li><b>Новейшее железо сервера</b></li>
+		<li>Рейты x2</li>
+		<li>Стаки 2000 на дерево, камень и уголь</li>
+		<li>Рейты печек х1.5</li>
+		<li>Остльное классика</li>
+		<li>Запрещено строить дома в текстурах и монументах</li>
+		</ul>
+	</blockquote>
+	</div></div>
 </div>`
 };
 
@@ -1309,7 +1325,7 @@ curcontent["Oplata"] = {
 		  <div class="row">
 			<div class="col-md-10 offset-md-1">
 			  <h1 class="tebex-header text-center mb-4">Сколько вы хотели перевести?</h1>
-			  <form onsubmit="return false" >
+			  <form onsubmit="return false">
 				<div class="form-group">
 				  <div class="input-group"><div class="input-group-addon">RUB</div><input id="rubInput" type="tel" class="form-control form-control-lg" placeholder="Введите сумму желаемого перевода в рублях" autocomplete="off"></div>
 				</div>
@@ -1328,7 +1344,7 @@ curcontent["Oplata"] = {
 				</div>
 				<div class="tebex-warning mb-2 mt-4" style="background-color: #f0ad4e5e;padding: 5px 10px;border-radius: 5px;color: #ffe4c4;">
 					<h4><b>Внимание!</b></h4>
-					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам в течении 2-3 минут после оплаты.</div>
+					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам в течении 1-2 минут после оплаты.</div>
 				</div>
 			  </div>
 			</div>
@@ -1344,10 +1360,10 @@ curcontent["Oplata"] = {
 
 
 var BlockListArrays = [['pistol.revolver', 'shotgun.double'], 
-['pistol.python', 'pistol.semiauto', 'flamethrower', 'ammo.rocket.mlrs', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
+['pistol.python', 'pistol.semiauto', 'flamethrower', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
 ['shotgun.pump'], 
 ['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.plate.torso', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'],
-['rifle.ak', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.grenadelauncher.he'], 
+['rifle.ak', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.rocket.mlrs', 'ammo.grenadelauncher.he'], 
 ['lmg.m249', 'hmlmg', 'grenade.f1', 'grenade.beancan', 'explosive.satchel', 'surveycharge', 'ammo.rifle.explosive'], 
 ['explosive.timed', 'rocket.launcher']];
 
