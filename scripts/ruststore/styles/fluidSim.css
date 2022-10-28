@@ -16,6 +16,7 @@
 @media (max-width: 767px){
 	.header__image {
 		content: url(https://i.imgur.com/VghcFIi.png)!important;
+    		width: 101%;
 	}
 	.dg.ac {
 		display: none;
