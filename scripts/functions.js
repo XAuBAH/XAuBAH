@@ -1676,7 +1676,7 @@ DOMReady(function () {
 			var fkformstr = curcontent["Oplata"].xcon.match(/<!-- marker fk -->.*<!-- marker fk end -->/gs)[0].replace('marker', '');
 			
 			curcontent["Oplata"].xcon = curcontent["Oplata"].xcon.replace(/<!-- marker qiwi -->.*<!-- marker qiwi end -->/gs, fkformstr).replace(/<!-- marker fk -->.*<!-- marker fk end -->/gs, qiwiformstr);
-		}catch(Exception e){
+		}catch(e){
 			console.log(e.toString());
 			curcontent["Oplata"].xcon = origstring;
 		}
@@ -1742,4 +1742,4 @@ try{
 		}
 	}
 }
-catch(Exception e){console.log('Error serverTiming: '+e);}
+catch(e){console.log('Error serverTiming: '+e);}
