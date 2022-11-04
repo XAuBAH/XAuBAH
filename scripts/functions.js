@@ -359,7 +359,7 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">7.4</td>
-    <td class="tg-2lax">В случае возврата товара в корзине магазина, стоимость товара становится бонусами.</td>
+    <td class="tg-2lax">В случае возврата товара в корзине магазина, стоимость товара возврашается бонусами.</td>
   </tr>
   <tr>
     <td class="tg-1lax">7.5</td>
@@ -625,6 +625,7 @@ curcontent["help"] = {
 <span class="MsoCommand">/top</span> ТОП 10 игроков сервера.<br>
 <span class="MsoCommand">/tc</span> ТОП по ивентам шкафов.<br>
 <span class="MsoCommand">/who</span> узнать есть ли в доме уникальный шкаф (смотря на дом).<br>
+<span class="MsoCommand">/taxi</span> система автоматизированного такси.<br>
 <span class="MsoCommand">/help</span> узнать всю информацию о сервере в том числе о биндах.</div>`
 };
 
@@ -977,9 +978,6 @@ curcontent["plugins"] = {
 Игрок получает уникальный шкаф, который бережёт от уничтожения, в то же время сам старается найти 
 и уничтожить как можно больше вражеских шкафов чтобы получить за них очки в топе, тем самым игроки, попавшие в топ 3, и заработавшие больше 0 баллов, получают бонус в виде баланса на магазин.</p>
 <br>
-<blockquote class="pluginsheader"><center>Дуэли.[Временно не доступны!]</center></blockquote>
-<p>На всех серверах установлены Дуэли, на которых вы можете играть просто так или же делать ставки! Дуэлиться можно даже во время блокировки предметов.</p>
-<br>
 <blockquote class="pluginsheader"><center>Система XP, Игровая валюта, Способности и Кейсы.</center></blockquote>
 <p>Играя на серверах, вы будете прокачивать свой уровень выполняя различные действия, как при системе ХР. 
 Прокачивая уровень вам будут разблокироваться кейсы, которые вы сможете открывать ежедневно. 
@@ -991,12 +989,6 @@ curcontent["plugins"] = {
 <br>
 <blockquote class="pluginsheader"><center>Уникальные металлы.</center></blockquote>
 <p>Имеются свои собственные уникальные металлы, для переработки в переработчике и ПРМ. После переработки выпадает сера, металл, МВК и другой ценный лут.</p>
-<br>
-<blockquote class="pluginsheader"><center>Домашнее кaзино.</center></blockquote>
-<p>Вы можете собрать детали от кaзино и приобрести лицензию на установку игрового стoла в нашем внутриигровом магазине. 
-После этого сможете поставить его у себя дома и не бегать с драгоценным ресами в общественное кaзино. К тому же мы добавили лицензии не только на скрап но и на другие ценные ресурсы! 
-Покупая их вы сможете ставить разные предметы не выходя из дома!
-<i class="fa fa-info-circle"></i> Более подробная информация во внутриигровом магазине во вкладке кaзино.</p>
 <br>
 <blockquote class="pluginsheader"><center>Система XP возможность вывода.</center></blockquote>
 <p>Теперь вы можете выводить ваши накопления XP в электронном кошельке ввиде монеток в инвентарь. <br>
@@ -1023,34 +1015,6 @@ curcontent["plugins"] = {
 6 минут заряда аккумулятора = 1 Гранду.<br>
 <i class="fa fa-info-circle"></i> Более подобно можно ознакомится в самом меню внутриигровой валюты и левела во вкладке XP</p><br>
 <br>
-<blockquote class="pluginsheader"><center>Grand Bank.</center></blockquote>
-<p>Суть ивента проста, но задание слишком сложное.<br>
-На инкассатора, который перевозит электронные ключи от сейфа разработчиков, нападают.<br>
-Охрана отбивается от грабителей, и остаётся защищать груз.<br>
-Ваша задача найти груз инкассации, сделать это просто. В чате пишутся координаты места, локация отображается на G и M картах.<br><br>
-Избавьтесь от охраны. Поставьте ящик(и) на взлом и удерживайте позиции.<br>
-Ящики по стандарту взламываются <b>15 минут</b>. В одном ящике, хранится один электронный ключ от сейфа.<br>
-После того как взлом был произведён, постарайтесь залутать ключ. В момент когда вы заберёте ключ из одного ящика, все остальные снова блокируются. За это время у вас будет шанс спрятать электронный ключ в безопасности. 
-Необходимо взломать все <b>4 ящика</b> и забрать в общей сумме <b>4 ключа</b>. Подсказка! Если вы забрали <b>3 ключа</b>, а четвёртый забрал кто-то другой, вы всегда можете попросить обменяться предложив что-то выгодное взамен.<br>
-После того как все <b>4</b> электронных ключа с нумерацией <b>1-2-3-4</b> будут находиться у вас, поместите их в стол для исследования. Если все карты рабочие, вам будут указаны координаты спрятанного сейфа. Добежав до места и открыв сейф, вы получите доступ к счёту.<br>
-После этого на ваш баланс в магазине упадёт неплохая сумма денег.<br>
-<i class="fa fa-info-circle"></i> Обязательно авторизуйтесь в магазине для получения баланса.<br><br></p><br>
-<br>
-<blockquote class="pluginsheader"><center>Налоговый возврат.</center></blockquote>
-<p>Хотите получать <b>20%</b>,<b>25%</b> или даже <b>35%</b> от ресурсов добытых другими игроками, прямо в ваш контейнер не выходя из дома?<br>
-<b>•</b> Чтобы принять участие в ивенте проведите на сервере 5 часов, получите и поставьте свой контейнер <b>(Команда /nalog)</b>. Выбирайте место с умом, чем больше добывают ресурсов на вашей поляне, тем больше попадает к вам в контейнер.<br>
-<b>•</b> Количество получаемых налогов с вашей поляны зависит от времени прошедшего после вайпа, а также проведённого времени на сервере.<br>
-<b>•</b> В первые 24 часа после вайпа вы будете получать от 20%.<br>
-<b>•</b> Во второй день вайпа к вашим очкам налога добавляется ещё 10%.<br>
-<b>•</b> Наигранное время с момента установки ящика и количество получаемых за это налогов:<br>
-<b>•</b> 2 часа - 21%, 4 часа - 22%, 6 часов - 23%, 8 часов - 24%, 10 часов - 25%.<br>
-<b>•</b> Фармер видит что где-то поблизости с ним стоит налоговый ящик, так что за ящиком нужно внимательно следить и защищать его при попытках взлома (Взлом длится 15 минут).<br>
-<b>•</b> Взломав чужой ящик вы получите собранные яшиком ресурсы с момента последнего опустошения.<br>
-<b>•</b> С помощью курьера вы можете забрать ресурсы удаленно, за отдельную плату.<br>
-<b>•</b> Вызов курьера обойдётся вам в 10% собраных ресурсов. (При вызове курьера во время рейда, рейдер и владелец получит по 50%, но ящик после этого будет считаться зарейженым).<br>
-<b>•</b> Если ваш ящик уничтожается, вы сможете взять новый только через 10 часов. Первый ящик абсолютно бесплатен для вас.<br><br>
-<i class="fa fa-info-circle"></i> Присоединяйтесь к ивенту и получайте полагающуюся вам долю со своей территории уже сегодня!<br><br></p><br>
-<br>
 </div>`
 };
 
@@ -1063,10 +1027,9 @@ var aboutserversdub = `<li>Мощные анти-читы [AntiCheat]</li>
 <li>Цензура в чате [Censor]</li>
 <li>Внутриигровая карта (bind m map.open)</li>
 <li>Онлайн карта [RustIO:/map]</li>
-<li>Система телепортации [HOME]</li>
 <li>Наборы для новичков [Kits:Starter,Бомж,Med,Food,Hunt]</li>
 <li>Мгновенный крафт [InstaCraft]</li>
-<li>Блок телепорта в зоне рейда [NoEscape]</li>
+<li>Блок в зоне рейда [NoEscape]</li>
 <li>Авто-апгрейд при постройке в зоне авторизации [Up]</li>
 <li>Картинки на таблички [/sil]</li>
 <li>Донат-наборы [STORE:Premium, WARS, ELITE, KING, GRAND]</li>
@@ -1101,6 +1064,7 @@ curcontent["serv"] = {
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
 		<li>Разрешено играть только соло</li>
+		<li>Система телепортации [HOME]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
@@ -1115,6 +1079,7 @@ curcontent["serv"] = {
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
 		<li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>
+		<li>Система телепортации [HOME]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
@@ -1130,6 +1095,7 @@ curcontent["serv"] = {
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
 		<li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>
+		<li>Система телепортации [HOME]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
@@ -1145,6 +1111,7 @@ curcontent["serv"] = {
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
 		<li>Система друзей - разрешено играть в 2 [Friends,FF,HitMarker]</li>
+		<li>Система телепортации [HOME]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
@@ -1160,12 +1127,13 @@ curcontent["serv"] = {
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
 		<li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>
+		<li>Система телепортации [HOME]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#6 Procedural Max 2 </h4><p class="ipconnect">connect 6.grand-rust.ru:10000<a href="steam://connect/6.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#6 Procedural Max 3 </h4><p class="ipconnect">connect 6.grand-rust.ru:10000<a href="steam://connect/6.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1174,7 +1142,8 @@ curcontent["serv"] = {
 		<ul><li><b>Новейшее железо сервера</b></li>
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
-		<li>Система друзей - разрешено играть в 1+1 [Friends,FF,HitMarker]</li>
+		<li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>
+		<li>Система телепортации [HOME]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
@@ -1190,12 +1159,13 @@ curcontent["serv"] = {
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
 		<li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>
+		<li>Система автоматизированного такси [/taxi]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#8 Procedural Max 5 </h4><p class="ipconnect">connect 8.grand-rust.ru:10000<a href="steam://connect/8.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#8 Procedural Max 3 </h4><p class="ipconnect">connect 8.grand-rust.ru:10000<a href="steam://connect/8.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1204,7 +1174,8 @@ curcontent["serv"] = {
 		<ul><li><b>Новейшее железо сервера</b></li>
 		<li>Рейты x2, Стаки</li>
 		<li>Рейты печек х3</li>
-		<li>Система друзей - разрешено играть в 5 [Friends,FF,HitMarker]</li>
+		<li>Система друзей - разрешено играть в 3 [Friends,FF,HitMarker]</li>
+		<li>Система автоматизированного такси [/taxi]</li>
 		`+ aboutserversdub +`
 		</ul>
 	</blockquote>
@@ -1232,31 +1203,7 @@ curcontent["serv"] = {
 
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
-	xcon: `<div class="xbox oplata_info">
-<!-- <form onsubmit="return qiwiHandler(event)" class="qiwi-inp-form" id="qiwi-inp-form" method="get" target="_blank" action="https://oplata.qiwi.com/create">
-<label for="qiwi-donation-amount" class="qiwi-inp-main">
-	<div class="qiwi-widget-title qiwi-title-1">QIWI или Карты
-		<p>с самой минимальной комиссией</p>
-	</div>
-	<div class="qiwi-inp-box">
-			<label for="qiwi-donation-amount" class="qiwi-label">Cумма</label>
-			<div class="qiwi-rub">₽</div>
-			<input type="tel" class="qiwi-donation-amount" id="qiwi-donation-amount" name="amount" required="" value="">
-			<input type="hidden" id="qiwi-donation-comment" name="comment" value="Автоматическое пополнение через QIWI Grand Rust Аккаунт">
-			<input type="hidden" name="publicKey" value="48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPpUQmfaEpAhq21XR23R28hYHpLoCdSST3kVCoiwxCzz1qWreJPpkHz4L8uoKbBGkMr4MGHdUzc1F49BAKbmA9Jyt9BBQodFG3RLUYfKUT8">
-			<input type="hidden" id="qiwi-donation-account" name="account" value="0">
-			<input type="hidden" name="customFields[themeCode]" value="Svetlana-S-vh5ib6hm">
-			<input type="hidden" id="qiwi-successUrl" name="successUrl" value="https://shop.grand-rust.ru">
-			<div class="qiwi-error-box" id="qiwi-error-box"></div>
-	</div>
-	<div class="qiwi-button-box">
-		<button class="qiwi-submit-main" id="qiwi-submit-main" width="159px" type="submit">Оплатить</button>
-	</div>
-	<div class="payment-block">
-            <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-qiwi"></div>
-	</div>
-	</label>
-</form> -->
+	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
 <form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
 	<div class="qiwi-widget-title qiwi-title-2">QIWI</div>
@@ -1274,7 +1221,7 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-qiwi"></div><div class="payment-type payment-block-lava"></div>
 	</div>
 	</label>
-</form>
+</form><!-- marker qiwi end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
 	<div class="qiwi-widget-title qiwi-title-2">Карты
@@ -1293,7 +1240,7 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-applepay"></div>
 	</div>
 	</label>
-</form>
+</form><!-- marker cards end --><!-- marker fk -->
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
 	<div class="qiwi-widget-title qiwi-title-3">Скины, Криптовалюта, YooMoney и др.</div>
@@ -1315,7 +1262,7 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-webmoney"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
 	</div>
 	</label>
-</form>
+</form><!-- marker fk end -->
 </div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1" style="height: 14%;">
@@ -1373,6 +1320,8 @@ curcontent["block"] = {
 	xcon: '<div class="xbox_custom_block"><div class="kit-items">'
 	
 };
+
+var visitorCountry = 'RU';
 
 
 
@@ -1717,6 +1666,21 @@ DOMReady(function () {
 	curcontent["kit-prem"].xcon += '</div></div></div>';
 	curcontent["kit-wars"].xcon += '</div></div></div>';
 	curcontent["kit-elite"].xcon += '</div></div></div>';
+	
+	if(visitorCountry == 'UA'){
+		var origstring = curcontent["Oplata"].xcon.toString();
+		try{
+			curcontent["Oplata"].xcon = origstring.replace(/<!-- marker cards -->.*<!-- marker cards end -->/gs, '').replace('Скины, Криптовалюта, YooMoney и др.', 'Карты, Скины, Криптовалюта и др.').replace(' qiwi-inp-other', '');
+			
+			var qiwiformstr = curcontent["Oplata"].xcon.match(/<!-- marker qiwi -->.*<!-- marker qiwi end -->/gs)[0].replace('marker', '');
+			var fkformstr = curcontent["Oplata"].xcon.match(/<!-- marker fk -->.*<!-- marker fk end -->/gs)[0].replace('marker', '');
+			
+			curcontent["Oplata"].xcon = curcontent["Oplata"].xcon.replace(/<!-- marker qiwi -->.*<!-- marker qiwi end -->/gs, fkformstr).replace(/<!-- marker fk -->.*<!-- marker fk end -->/gs, qiwiformstr);
+		}catch(Exception e){
+			console.log(e.toString());
+			curcontent["Oplata"].xcon = origstring;
+		}
+	}
 });
 
 
@@ -1764,14 +1728,18 @@ document.addEventListener("input", function (e) {
 
 
 //////test user country
-if (window.performance && performance.getEntriesByType) { // avoid error in Safari 10, IE9- and other old browsers
-    let navTiming = performance.getEntriesByType('navigation')
-    if (navTiming.length > 0) { // still not supported as of Safari 14...
-        let serverTiming = navTiming[0].serverTiming
-        if (serverTiming && serverTiming.length > 0) {
-            for (let i=0; i<serverTiming.length; i++) {
-                console.log(`Detected continent is ${serverTiming[i].name}`)
-            }
-        }
-    }
+try{
+	if (window.performance && performance.getEntriesByType) { // avoid error in Safari 10, IE9- and other old browsers
+		let navTiming = performance.getEntriesByType('navigation')
+		if (navTiming.length > 0) { // still not supported as of Safari 14...
+			let serverTiming = navTiming[0].serverTiming
+			if (serverTiming && serverTiming.length > 0) {
+				for (let i=0; i<serverTiming.length; i++) {
+					console.log(`Detected continent is ${serverTiming[i].name}`);
+					visitorCountry = serverTiming[i].name;
+				}
+			}
+		}
+	}
 }
+catch(Exception e){console.log('Error serverTiming: '+e);}
