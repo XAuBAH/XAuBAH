@@ -1308,7 +1308,7 @@ curcontent["Oplata"] = {
 
 var BlockListArrays = [['pistol.revolver', 'shotgun.double'], 
 ['pistol.python', 'pistol.semiauto', 'flamethrower', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
-['shotgun.pump'], 
+['shotgun.pump', 'pistol.prototype17'], 
 ['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.plate.torso', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'],
 ['rifle.ak', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.rocket.mlrs', 'ammo.grenadelauncher.he'], 
 ['lmg.m249', 'hmlmg', 'grenade.f1', 'grenade.beancan', 'explosive.satchel', 'surveycharge', 'ammo.rifle.explosive'], 
