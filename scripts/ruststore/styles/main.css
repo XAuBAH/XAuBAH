@@ -1,10 +1,21 @@
 body {
 	/* Progressive jpegs loading */
-    background:  url('https://i.imgur.com/VMrwaGY.webp'),
-				url('https://i.imgur.com/VMrwaGY.jpg'),
-				url('https://i.imgur.com/VMrwaGY_d.webp?maxwidth=1000&fidelity=low'),
-				url('https://i.imgur.com/VMrwaGY_d.webp?maxwidth=320&fidelity=low'); 
-    background-position: 50% 0%;
+    /* background:  url('https://i.imgur.com/MhiMSvh.webp'),
+				url('https://i.imgur.com/gLpC720.jpg'),
+				url('https://i.imgur.com/KyR4WJE.jpg'),
+				url('https://i.imgur.com/cGi0Yyf.jpg'),
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1500&fidelity=low'),
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=1000&fidelity=low'),
+				url('https://i.imgur.com/MhiMSvh_d.webp?maxwidth=320&fidelity=low');
+    background:  linear-gradient(
+				  rgba(0, 0, 0, 0.5), 
+				  rgba(0, 0, 0, 0.7)
+				),
+				url('https://i.imgur.com/2TNeayN.jpg'),
+				url('https://i.imgur.com/2TNeayN_d.webp?maxwidth=1500&fidelity=low');   */
+	background: url('https://i.imgur.com/XZDisCU.jpg'),
+				url('https://i.imgur.com/XZDisCU_d.webp?maxwidth=1500&fidelity=low'); 
+    background-position: 50% 100%;
     background-size: cover;
     background-attachment: fixed;
     background-color: #0e0e0e;
@@ -23,11 +34,13 @@ body {
     margin-top: 113px;
 }
 .header__image {
-    width: 104%;
+    /* width: 104%; */
     pointer-events: none;
+    /* margin-left: 3%;
 	content: -webkit-image-set(url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1200&fidelity=low') 0.99x,
 								url('https://i.imgur.com/9ytxFTQ_d.webp?maxwidth=1300&fidelity=low') 1x,
-								url('https://i.imgur.com/9ytxFTQ.webp') 1.1x);
+								url('https://i.imgur.com/9ytxFTQ.webp') 1.1x); */
+    width: 0px;
     }
 .content {
     margin: 0 auto;
@@ -134,7 +147,7 @@ body {
     animation-duration: 3s;
 }
 .roulette {
-    background: url("https://i.imgur.com/up2i0Wt.png");
+    background: url(https://i.imgur.com/up2i0Wt.png);
     background-color: #2b2b21;
     margin-bottom: 10px;
 }
@@ -148,7 +161,7 @@ body {
 }
 
 .roulette-item {
-    background: url("https://i.imgur.com/up2i0Wt.png");
+    background: url(https://i.imgur.com/up2i0Wt.png);
     background-color: #40484d;
     border-radius: 0px;
     box-shadow: 0 0 0 0
@@ -164,7 +177,7 @@ body {
 
 .roulette-item__description {
     background-color: #2b343a;
-    background: url("https://i.imgur.com/up2i0Wt.png");
+    background: url(https://i.imgur.com/up2i0Wt.png);
     text-align: left;
     padding: 4px;
     padding-left: 8px
@@ -174,7 +187,7 @@ body {
     margin: 1px;
     margin-top: 10px;
     display: inline-block;
-    background: url("https://i.imgur.com/up2i0Wt.png");
+    background: url(https://i.imgur.com/up2i0Wt.png);
     background-color: #424032;
     width: 140px;
     height: 140px
