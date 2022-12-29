@@ -26429,15 +26429,15 @@ webpackJsonp([27], [function(e, t, n) {
                 to: "/products/" + s
             }, !(!o && !i) && f.default.createElement("div", {
                 className: "product__price"
-            }, !(!i || !l) && f.default.createElement("div", {
-                className: "product__price-old"
-            }, i + " RUB"), 0 < o && f.default.createElement("div", {
+            }, !(!i || !l) && 0 < o && f.default.createElement("div", {
                 className: "product__price-new"
-            }, o + " RUB")), 1 < u && f.default.createElement("div", {
-                className: "product__quantity"
-            }, "x" + u), 0 < l && f.default.createElement("div", {
+            }, o + " ₽"), f.default.createElement("div", {
+                className: "product__price-old"
+            }, i/*  + " ₽" */), 0 < l && f.default.createElement("div", {
                 className: "product__discount"
-            }, "-" + l + "%"), f.default.createElement("img", elCreationOption), f.default.createElement("div", {
+            }, "-" + l + "%")), 1 < u && f.default.createElement("div", {
+                className: "product__quantity"
+            }, "x" + u), f.default.createElement("img", elCreationOption), f.default.createElement("div", {
                 className: "product__name"
             }, d[n]))
         }
@@ -26629,8 +26629,18 @@ webpackJsonp([27], [function(e, t, n) {
               , t = e.products
               , n = e.categories
               , i = e.selected
+              , disco = e.products[0].discount
               , r = "" === i ? " active" : "";
-            return s.default.createElement("div", {
+			  console.log(o);
+            return s.default.createElement("div", null, 
+			
+			disco && disco > 1 && s.default.createElement("div", {
+                className: "store-global-discount"
+            }, s.default.createElement("div", {
+                className: "store-global-discount-label progress-bar-animated bg-warning progress-bar-striped"
+            }, disco)), 
+			
+			s.default.createElement("div", {
                 className: "store-categories"
             }, s.default.createElement("button", {
                 className: "btn btn-secondary" + r,
@@ -26651,7 +26661,7 @@ webpackJsonp([27], [function(e, t, n) {
                         }
                     }, n.ru)
                 }
-            }))
+            })))
         }
     }]),
     c);
