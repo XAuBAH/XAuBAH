@@ -303,6 +303,7 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     height: 3rem;
     padding: 10px;
     border-radius: 3px;
+    font-size: 18px;
 }
 .xbox__body .store-global-discount:before {
     display: block;
@@ -311,9 +312,9 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     left: 38px;
     width: max-content;
     content: "СКИДКА ДНЯ";
-    font-size: 18px;
     font-family: monospace;
     text-shadow: 0 0 5px black;
+	display: none;
 }
 
 .xbox__body .store-global-discount-label {
@@ -324,7 +325,7 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     text-shadow: 0 0 5px black;
 }
 .xbox__body .store-global-discount-label:before {
-    content: "-";
+    content: "СКИДКА ДНЯ:  -";
 }
 .xbox__body .store-global-discount-label:after {
     content: "%";
@@ -429,6 +430,10 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 	.xbox__body .store-global-discount:before {
 		top: -32px;
 		left: -6px;
+		display: block;
+	}
+	.xbox__body .store-global-discount-label:before {
+		content: "-";
 	}
 	
 }
