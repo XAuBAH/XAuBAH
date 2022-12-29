@@ -56,4 +56,56 @@ function CheckCards() {
 }
 DOMReady((function() {
     setTimeout((()=>initCards()), 3000);
+    setTimeout((()=>setTabsNav()), 3000);
 }));
+
+
+function setTabsNav() {
+    var headerbuttonNews = document.querySelector('.nav-link-news');
+	headerbuttonNews?.addEventListener("click", function() {
+	  document.querySelectorAll('.nav-link').forEach((curLink) => {
+		  curLink.classList.remove("active");
+		});
+	  this.classList.add("active");
+	});
+	 
+	 
+    var headerbuttonProducts = document.querySelector('.nav-link-products');
+	headerbuttonProducts?.addEventListener("click", function() {
+	  document.querySelectorAll('.nav-link').forEach((curLink) => {
+		  curLink.classList.remove("active");
+		});
+	  this.classList.add("active");
+	});
+    var headerbuttonDropdown = document.querySelector('.dropdown .nav-link');
+	headerbuttonDropdown?.addEventListener("click", function() {
+	  document.querySelectorAll('.nav-link').forEach((curLink) => {
+		  curLink.classList.remove("active");
+		});
+	  this.classList.add("active");
+	});
+    var headerbuttonProfile = document.querySelector('.nav-link-profile');
+	headerbuttonProfile?.addEventListener("click", function() {
+	  document.querySelectorAll('.nav-link').forEach((curLink) => {
+		  curLink.classList.remove("active");
+		});
+	  this.classList.add("active");
+	});
+	switch(location.pathname.split("/")[1]){
+		case 'news':
+			document.querySelector('.nav-link-news')?.classList.add("active");
+		break;
+		case 'products':
+			document.querySelector('.nav-link-products')?.classList.add("active");
+		break;
+		case 'servers':
+			if(location.pathname.split("/")[3] === 'bans')
+				document.querySelector('.nav-link-custom')?.classList.add("active");
+			else
+				document.querySelector('.dropdown .nav-link')?.classList.add("active");
+		break;
+		case 'profile':
+			document.querySelector('.nav-link-profile')?.classList.add("active");
+		break;
+	}
+   }
