@@ -535,6 +535,7 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 
 .product_blueprint .product__image {
     background-position: top;
+    background-position-x: right;
 }
 
 
