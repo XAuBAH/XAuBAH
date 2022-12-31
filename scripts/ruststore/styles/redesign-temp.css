@@ -213,7 +213,7 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 	/*.nav-item .nav-link:hover, */
 	.nav-item .nav-link:focus, 
 	.nav-item .nav-link.active {
-		background: rgba(43, 52, 58, 0.8);
+		background: rgba(43, 52, 58, 0.8)!important;
 		position: relative;
 		height: 65px;
 		top: -9px;
@@ -266,6 +266,10 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 
 	.ml-auto > ul {
 		padding: 0 0px 0px 30px;
+	}
+	
+	.nav-link-pay, .nav-link-profile {
+		background: transparent!important;
 	}
 
 	/*.ml-auto .navbar-nav :has(.nav-item .nav-link-pay){
@@ -507,6 +511,10 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     box-shadow: inset 0 0 0 2px #18b2eb;
     padding: 2px 7px;
     border-radius: 5px;
+    max-width: 66px;
+    max-height: 27px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 /*.product:hover .product__discount {
     display: flex;
@@ -523,6 +531,10 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 
 .product__image {
     padding: 0% 10% 24% 10%;
+}
+
+.product_blueprint .product__image {
+    background-position: top;
 }
 
 
