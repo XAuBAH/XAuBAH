@@ -23698,7 +23698,7 @@ webpackJsonp([27], [function(e, t, n) {
             e.setState({
                 loading: !0
             }),
-            e.props.fetchServers(true).then(function() {
+            e.props.fetchServers().then(function() {
                 e.setState({
                     loading: !1
                 }),
@@ -23708,7 +23708,7 @@ webpackJsonp([27], [function(e, t, n) {
         ,
         e._setInterval = function() {
             e.updateInterval = setInterval(function() {
-                e.props.fetchServers()
+                e.props.fetchServers(true)
             }, 240000)
         }
         ,
