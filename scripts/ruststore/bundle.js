@@ -26429,9 +26429,9 @@ webpackJsonp([27], [function(e, t, n) {
                 to: "/products/" + s
             }, !(!o && !i) && f.default.createElement("div", {
                 className: "product__price"
-            }, !(!i || !l) && 0 < o && f.default.createElement("div", {
+            }, 0 < o && f.default.createElement("div", {
                 className: "product__price-new"
-            }, o + " ₽"), f.default.createElement("div", {
+            }, o + " ₽"), !(!i || !l) && f.default.createElement("div", {
                 className: "product__price-old"
             }, i/*  + " ₽" */), 0 < l && f.default.createElement("div", {
                 className: "product__discount"
