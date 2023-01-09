@@ -2,6 +2,22 @@
     display: none
 }
 
+.product__servers:after {
+    content: " Кроме сервера #9 Classic";
+    display: block;
+}
+.modal-productID267349 .product__servers:after,
+.modal-productID267350 .product__servers:after,
+.modal-productID267351 .product__servers:after,
+.modal-productID267352 .product__servers:after,
+.modal-productID267348 .product__servers:after,
+.modal-productID502428 .product__servers:after,
+.modal-productID1016122 .product__servers:after,
+.modal-productID1047631 .product__servers:after {
+    display: none;
+}
+
+
 /*a[href="/servers/6031"] {
     display: none
 }*/
