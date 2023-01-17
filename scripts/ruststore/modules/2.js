@@ -199,7 +199,7 @@ webpackJsonp([2], {
                         className: "btn btn-success",
                         loading: p,
                         onClick: this.submit
-                    }, "Купить за " + d + " руб"))))
+                    }, "Купить за " + d.toString().replace(".", ",") + " руб"))))
                 }
             }]),
             t
