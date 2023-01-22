@@ -1,0 +1,326 @@
+@media (min-width: 1199px){
+	.modal-productID219902 .modal-sm,
+	.modal-productID107896 .modal-sm,
+	.modal-productID82915 .modal-sm,
+	.modal-productID82914 .modal-sm,
+	.modal-productID766 .modal-sm {
+		max-width: 1083px;
+	}
+	.modal-productID219902 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/Sm29IGH_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/Sm29IGH_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/Sm29IGH_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.modal-productID107896 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/QvExwR1_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/QvExwR1_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/QvExwR1_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.modal-productID82915 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/UEXZR9O_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/UEXZR9O_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/UEXZR9O_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.modal-productID82914 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/meVptl4_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/meVptl4_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/meVptl4_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.modal-productID766 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/D1EK8sM_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/D1EK8sM_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/D1EK8sM_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+
+	
+	.modal-productID219902 .modal-body,
+	.modal-productID107896 .modal-body,
+	.modal-productID82915 .modal-body,
+	.modal-productID82914 .modal-body,
+	.modal-productID766 .modal-body {
+		background-color: rgba(58, 50, 73, 0.5);
+		padding: 0px;
+		border-radius: 45px;
+	}
+	
+	.modal-productID219902 .modal-content,
+	.modal-productID107896 .modal-content,
+	.modal-productID82915 .modal-content,
+	.modal-productID82914 .modal-content,
+	.modal-productID766 .modal-content {
+		border-radius: 45px;
+	}
+	
+	.modal-productID219902 .modal-header,
+	.modal-productID107896 .modal-header,
+	.modal-productID82915 .modal-header,
+	.modal-productID82914 .modal-header,
+	.modal-productID766 .modal-header {
+		background-color: transparent;
+		padding: 15px 0px 0px 0px;
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+	}
+	
+	.modal-productID219902 .modal-title,
+	.modal-productID107896 .modal-title,
+	.modal-productID82915 .modal-title,
+	.modal-productID82914 .modal-title,
+	.modal-productID766 .modal-title {
+		background-color: transparent;
+		font-size: 50px !important;
+		font-weight: 800;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.modal-productID219902 .modal-title:after,
+	.modal-productID107896 .modal-title:after,
+	.modal-productID82915 .modal-title:after,
+	.modal-productID82914 .modal-title:after,
+	.modal-productID766 .modal-title:after {
+		content: " ПРИВИЛЕГИЯ";
+		font-size: 37px;
+		font-weight: 400;
+	}
+	
+	.modal-productID219902 .modal-footer,
+	.modal-productID107896 .modal-footer,
+	.modal-productID82915 .modal-footer,
+	.modal-productID82914 .modal-footer,
+	.modal-productID766 .modal-footer {
+		background-color: transparent;
+		padding: 15px 40px 50px 15px;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+
+		
+	}
+	.modal-productID219902 .service__description,
+	.modal-productID107896 .service__description,
+	.modal-productID82915 .service__description,
+	.modal-productID82914 .service__description,
+	.modal-productID766 .service__description {
+		margin: 0rem 0rem 1rem 20rem;
+	}
+	.modal-productID219902 .btn-success,
+	.modal-productID107896 .btn-success,
+	.modal-productID82915 .btn-success,
+	.modal-productID82914 .btn-success,
+	.modal-productID766 .btn-success {
+		line-height: 1.6;
+		font-size: 1.7rem;
+		border-radius: 10px;
+		font-variant: small-caps;
+		
+	}
+	.modal-productID219902 .form-group,
+	.modal-productID107896 .form-group,
+	.modal-productID82915 .form-group,
+	.modal-productID82914 .form-group,
+	.modal-productID766 .form-group, 
+	.modal-productID219902 .btn-secondary,
+	.modal-productID107896 .btn-secondary,
+	.modal-productID82915 .btn-secondary,
+	.modal-productID82914 .btn-secondary,
+	.modal-productID766 .btn-secondary {
+		display: none;
+	}
+	.modal-productID219902 .modal-footer .ml-auto,
+	.modal-productID107896 .modal-footer .ml-auto,
+	.modal-productID82915 .modal-footer .ml-auto,
+	.modal-productID82914 .modal-footer .ml-auto,
+	.modal-productID766 .modal-footer .ml-auto {
+		background: rgba(23, 20, 31, 0.81);
+		padding: 73px 40px 15px 40px;
+		border-radius: 10px;
+	}
+	.modal-productID219902 .product__servers,
+	.modal-productID107896 .product__servers,
+	.modal-productID82915 .product__servers,
+	.modal-productID82914 .product__servers,
+	.modal-productID766 .product__servers {
+		color: unset;
+		position: absolute;
+		bottom: 135px;
+		right: 74px;
+		z-index: 1;
+		font-size: small;
+	}
+	
+	.perm_desc_1 {
+		display: flex!important;
+		height: 75px!important;
+	}
+	.perm_desc_1 .perm_dop_item_value {
+		width: 211px!important;
+	}
+	
+}
+
+/* PRODUCT DESC */
+
+.perm_dop_item {
+    margin-top: 10px;
+    display: inline-block;
+    width: 117.2px;
+    height: 138px;
+}
+.perm_desc_2 .perm_dop_item img, .perm_dop_item_value {
+    width: 100%;
+    height: 85%;
+    /* margin-left: 20px; */
+    padding: 10px;
+    background: rgba(23, 20, 31, 0.81);
+    border-radius: 10px;
+}
+.perm_dop_item_name {
+    text-align: center;
+    text-transform: uppercase;
+}
+/* TO ALLORANGE */
+.perm_desc_title {
+    color: #0087f2;
+}
+
+.perm_desc_title {
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: 500;
+}
+.perm_dop_item_value {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: xxx-large;
+    text-align: center;
+    line-height: 37px;
+    display: table;
+    padding-top: 40px;
+}
+.perm_desc_3 {
+    padding-top: 9px; 
+}
+.perm_desc_3 .perm_dop_item {
+	cursor: pointer;
+    margin-top: 0px;
+}
+.perm_desc_3 .perm_dop_item_name{
+    font-size: x-small;
+}
+.perm_desc_3 .perm_dop_item_image {
+    width: 100%;
+    height: 85%;
+    padding: 13px;
+    background: rgba(23, 20, 31, 0.81);
+    border-radius: 10px;
+    margin-top: 6px;
+}
+.perm_desc_3 .perm_dop_item_image img {
+    filter: blur(1px);
+    min-height: 93px;
+    border-radius: 15px;
+}
+.perm_dop_item_icon {
+    position: relative;
+    left: 26px;
+    top: -74px;
+    font-size: xxx-large;
+}
+.perm_desc_1 {
+    display: block;
+    width: 97%;
+    height: 124px;
+}
+.perm_desc_1 .perm_dop_item {
+    width: unset;
+    height: unset;
+}
+.perm_desc_1 .perm_dop_item_value {
+    font-size: x-large;
+    padding-top: 9px;
+    width: 234px;
+    line-height: 40px;
+}
+.perm_dop_item:hover .product__name {
+    opacity: 1;
+}
+.perm_dop_item .product__name {
+    width: 100%;
+    height: 85%;
+    background: rgba(23, 20, 31, 0.91);
+    border-radius: 10px;
+    text-align: center;
+    display: table;
+    top: -117px;
+    position: relative;
+}
+    
+
+
+
+
+
+
+
