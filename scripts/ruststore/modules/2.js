@@ -1842,7 +1842,7 @@ webpackJsonp([2], {
         n(21))
           , l = o.default.createElement("div", {
             className: "product__servers"
-        }, "Товар доступен на всех серверах")
+        }, "Можно активировать 1 раз на любом сервере")
           , c = function(e) {
             var t = e.product
               , n = e.servers;
