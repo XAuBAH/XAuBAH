@@ -1,5 +1,5 @@
 body {
-	/* Progressive jpegs loading */
+	/* Progressive jpeg loading */
     /* background:  url('https://i.imgur.com/MhiMSvh.webp'),
 				url('https://i.imgur.com/gLpC720.jpg'),
 				url('https://i.imgur.com/KyR4WJE.jpg'),
@@ -13,8 +13,8 @@ body {
 				),
 				url('https://i.imgur.com/2TNeayN.jpg'),
 				url('https://i.imgur.com/2TNeayN_d.webp?maxwidth=1500&fidelity=low');   */
-	background: url('https://i.imgur.com/XZDisCU.jpg'),
-				url('https://i.imgur.com/XZDisCU_d.webp?maxwidth=1500&fidelity=low'); 
+	background: url('https://i.imgur.com/JaiQKMa.jpg'),
+				url('https://i.imgur.com/JaiQKMa_d.webp?maxwidth=1500&fidelity=low'); 
     background-position: 50% 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -256,35 +256,6 @@ p {
 .xbox_custom {
        background: transparent;
     height: 0px;
-}
-.changeserver {
-    display: block;
-  	position: relative;
-    margin-bottom: 16px;
-    padding: 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    color: white;
-    background: #fc6d28;
-    border-radius: 4px;
-  	z-index: 1;
-}
-.changeserver:before {
-    
-    content: "\f137";
-    position: absolute;
-    left: 1em;
-    padding: 0 1px;
-    font-family: FontAwesome;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
 }
 
 
