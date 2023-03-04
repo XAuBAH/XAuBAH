@@ -239,7 +239,7 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">4.6</td>
-    <td class="tg-2lax">Намеренное изменение нецензурной речи и оскорблений для обхода автоматического мута.</td>
+    <td class="tg-2lax">Запрещено намеренное изменение нецензурной речи и оскорблений для обхода автоматического мута.</td>
   </tr>
 </tbody>
 </table>
@@ -351,7 +351,7 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">7.2</td>
-    <td class="tg-2lax">В случае ошибочного пополнения баланса возврат средств обратно невозможен.</td>
+    <td class="tg-2lax">В случае ошибочного пополнения баланса возврат средств невозможен.</td>
   </tr>
   <tr>
     <td class="tg-1lax">7.3</td>
@@ -371,7 +371,7 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">7.7</td>
-    <td class="tg-2lax">Вещи, услуги или баланс не подлежат возврату, продаже или обмену, в том числе на денежные средства, выплата денежного эквивалента промокода не производится.</td>
+    <td class="tg-2lax">Вещи, услуги или баланс не подлежат возврату, продаже или обмену, в том числе на денежные средства или скины, выплата денежного эквивалента промокода не производится.</td>
   </tr>
 </tbody>
 </table>
@@ -407,8 +407,8 @@ curcontent["rules"] = {
     <td class="tg-2lax"><b>Уникальный шкаф</b><br><br>
 		- Запрещено покупать, отдавать и т д. шкаф. Очки за шкаф зачтутся только в ходе честной игры.<br>
 		- Запрещено покупать/продавать информацию по местонахождению уникального шкафа у сторонних игроков, владельца или друзей владельца.<br>
-		- Игрок заабузивший нашивку, теряет возможность принять повторное участие от 60 дней, а так же не получает нашивку.<br>
-		- Игрок, продавший или отдавший шкаф, теряет возможность принять повторное участие от 60 дней.<br>
+		- Игрок заабузивший нашивку, теряет возможность принять повторное участие на срок от 60 дней, а так же не получает нашивку.<br>
+		- Игрок, продавший или отдавший шкаф, теряет возможность принять повторное участие на срок от 60 дней.<br>
 		- Запрещено ставить шкаф в чужом доме для последующего уничтожения.<br>
 		- Запрещено уничтожать шкаф друга или заранее договорившись с игроком.<br>
 		- Запрещено повышать очки чужого шкафа.<br>
@@ -461,19 +461,19 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">9.9</td>
-    <td class="tg-2lax">Информация, которая может быть получена при вашей проверке не распространяется, за исключением результатов проверки, которые могут быть затребованы администрацией других проектов, так же использующих сервис RustCheatCheck для своих проверок.</td>
+    <td class="tg-2lax">Информация, которая может быть получена при вашей проверке не распространяется, за исключением результатов проверки, которые могут быть затребованы Администрацией других проектов, так же использующих сервис RustCheatCheck для своих проверок.</td>
   </tr>
   <tr>
     <td class="tg-1lax">9.10</td>
-    <td class="tg-2lax">Так же мы можем затребовать результаты ваших предыдущих проверок других проектов, использующих сервис RustCheatCheck, которые приобщаются к вашему делу (при наличии веских доказательств) и могут повлиять на окончательное решение и дальнейший бан.</td>
+    <td class="tg-2lax">Так же Администраторы/Модераторы могут затребовать результаты ваших предыдущих проверок других проектов, использующих сервис RustCheatCheck, которые приобщаются к вашему делу (при наличии веских доказательств) и могут повлиять на окончательное решение и дальнейший бан.</td>
   </tr>
   <tr>
     <td class="tg-1lax">9.11</td>
-    <td class="tg-2lax">Предварительное решение после проверки озвученное проверяющим может отличатся от окончательного, принятого администрацией.</td>
+    <td class="tg-2lax">Предварительное решение после проверки озвученное проверяющим может отличатся от окончательного, принятого Администрацией.</td>
   </tr>
   <tr>
     <td class="tg-1lax">9.12</td>
-    <td class="tg-2lax">Если вы не согласны с окончательным решением, принятым не в соответствии настоящих правил, вы можете затребовать у администрации материалы дела о вашей блокировке направив сообщение в группу по вопросам банов - <a href="https://vk.com/grmoder" target="blank">GRAND RUST | Модерация</a></td>
+    <td class="tg-2lax">Если вы не согласны с окончательным решением, принятым не в соответствии настоящих правил, вы можете затребовать у Администрации материалы дела о вашей блокировке направив сообщение в группу по вопросам банов - <a href="https://vk.com/grmoder" target="blank">GRAND RUST | Модерация</a></td>
   </tr>
   <tr>
     <td class="tg-1lax">9.13</td>
@@ -508,7 +508,7 @@ curcontent["rules"] = {
 <tbody>
   <tr>
     <td class="tg-1lax">10.1</td>
-    <td class="tg-2lax">Мы не даем второй шанс. Если бан обоснован, имеет доказательства и основания для бана - разбан невозможен.</td>
+    <td class="tg-2lax">Администрация не даёт второй шанс. Если бан обоснован, имеет доказательства и основания для бана - разбан невозможен.</td>
   </tr>
   <tr>
     <td class="tg-1lax">10.2</td>
@@ -1055,7 +1055,7 @@ curcontent["serv"] = {
 Тщательно настроенные модификации сервера, отличные плагины, правильная сборка сервера и уникальные захватывающие ивенты помогут вам ощутить все прелести Раста на себе и к тому же получить незабываемый опыт игры.<br><br>
 Мы попытались разнообразить геймплей для вас и привнести что-то новое в игру.<br>Хватит читать, заходи и попробуй сам:</div>
 
-<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru:10000<a href="steam://connect/1.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#1 Procedural Max 1 </h4><p class="ipconnect">connect 1.grand-rust.ru<a href="steam://connect/1.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
     <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Описание сервера</span><br>
@@ -1070,7 +1070,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#2 Procedural Max 2 </h4><p class="ipconnect">connect 2.grand-rust.ru:10000<a href="steam://connect/2.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#2 Procedural Max 2 </h4><p class="ipconnect">connect 2.grand-rust.ru<a href="steam://connect/2.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
     <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Описание сервера</span><br>
@@ -1085,7 +1085,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#3 Custom Map Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru:10000<a href="steam://connect/3.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#3 Custom Map Max 2 </h4><p class="ipconnect">connect 3.grand-rust.ru<a href="steam://connect/3.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1101,7 +1101,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#4 Procedural Max 2 </h4><p class="ipconnect">connect 4.grand-rust.ru:10000<a href="steam://connect/4.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#4 Procedural Max 2 </h4><p class="ipconnect">connect 4.grand-rust.ru<a href="steam://connect/4.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1117,7 +1117,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#5 Procedural Max 3 </h4><p class="ipconnect">connect 5.grand-rust.ru:10000<a href="steam://connect/5.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#5 Procedural Max 3 </h4><p class="ipconnect">connect 5.grand-rust.ru<a href="steam://connect/5.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1133,7 +1133,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#6 Procedural Max 3 </h4><p class="ipconnect">connect 6.grand-rust.ru:10000<a href="steam://connect/6.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#6 Procedural Max 3 </h4><p class="ipconnect">connect 6.grand-rust.ru<a href="steam://connect/6.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1149,7 +1149,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#7 Procedural Max 3 </h4><p class="ipconnect">connect 7.grand-rust.ru:10000<a href="steam://connect/7.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#7 Procedural Max 2 </h4><p class="ipconnect">connect 7.grand-rust.ru<a href="steam://connect/7.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1165,7 +1165,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#8 Procedural Max 3 </h4><p class="ipconnect">connect 8.grand-rust.ru:10000<a href="steam://connect/8.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#8 Procedural Max 5 </h4><p class="ipconnect">connect 8.grand-rust.ru<a href="steam://connect/8.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1181,7 +1181,7 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#9 Procedural Classic </h4><p class="ipconnect">connect 9.grand-rust.ru:10000<a href="steam://connect/9.grand-rust.ru:10000" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#9 Procedural Classic </h4><p class="ipconnect">connect 9.grand-rust.ru<a href="steam://connect/9.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
@@ -1191,7 +1191,7 @@ curcontent["serv"] = {
 		<li>Рейты x2</li>
 		<li>Стаки 2000 на дерево, камень и уголь</li>
 		<li>Рейты печек х1.5</li>
-		<li>Остльное классика</li>
+		<li>Остальное классика</li>
 		<li>Запрещено строить дома в текстурах и монументах</li>
 		</ul>
 	</blockquote>
