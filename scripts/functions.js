@@ -913,8 +913,6 @@ curcontent["kit-free"] = {
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/campfire.png"></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/building.planner.png"></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hammer.png"></div></div>
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cactusflesh.png">
-<div class="kit-item__quantity">x5</div></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stonehatchet.png"></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stone.pickaxe.png"></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bandage.png">
@@ -936,12 +934,8 @@ curcontent["kit-free"] = {
 <div class="kit-item__quantity">x2</div></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wolfmeat.cooked.png">
 <div class="kit-item__quantity">x5</div></div></div>
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/meat.pork.cooked.png">
-<div class="kit-item__quantity">x5</div></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smallwaterbottle.png">
-<div class="kit-item__quantity">150ml</div></div></div>
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smallwaterbottle.png">
-<div class="kit-item__quantity">150ml</div></div></div>
+<div class="kit-item__quantity">120ml</div></div></div>
 </div></div>
 <div class="serverheader">Hunter</div>
 <div class="kit_set"><div class="kit-items">
