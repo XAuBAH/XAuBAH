@@ -1237,7 +1237,7 @@ curcontent["Oplata"] = {
 </form><!-- marker cards end --><!-- marker fk -->
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
-	<div class="qiwi-widget-title qiwi-title-3">Скины, Криптовалюта, YooMoney и др.</div>
+	<div class="qiwi-widget-title qiwi-title-3">Криптовалюта,<br>YooMoney, WMZ и др.</div>
 	<div class="qiwi-inp-box">
 			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1253,10 +1253,18 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="fk-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
 	<div class="payment-block">
-        <div class="payment-type payment-block-steam"></div><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-webmoney"></div><div class="payment-type payment-block-yoomoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
+        <!-- <div class="payment-type payment-block-steam"></div> --><div class="payment-type payment-block-crypto"></div><div class="payment-type payment-block-yoomoney"></div><div class="payment-type payment-block-webmoney"></div><!--<div class="payment-type payment-block-megafon"></div>-->
 	</div>
 	</label>
-</form><!-- marker fk end -->
+</form><!-- marker fk end --><!-- marker sb -->
+<div class="qiwi-inp-form skinsback-create-main">
+<a class="qiwi-inp-main qiwi-inp-other" href="/api/skinsback/" target="_blank">
+	<div class="qiwi-widget-title qiwi-title-3">Оплата скинами<p>Практически по ценам с маркета</p></div>
+<div class="qiwi-button-box">
+		<button class="qiwi-submit-main" width="159px">Перейти</button>
+	</div>
+	</a>
+</div><!-- marker sb end -->
 </div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1" style="height: 14%;">
@@ -1711,7 +1719,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/50) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat(e.target.value/60) + parseFloat('0.01')).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
