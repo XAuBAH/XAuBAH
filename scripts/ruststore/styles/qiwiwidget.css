@@ -19,7 +19,7 @@
     margin-bottom: 15px;
 }
   .qiwi-inp-main {
-    width: 250px;
+    width: 250px!important;
 }
 }
 .qiwi-inp-main {
@@ -115,11 +115,11 @@
 }
 
 .skinsback-create-main .qiwi-inp-other {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6) ), url(https://i.imgur.com/Gg3G6cK_d.png?maxwidth=320&fidelity=low);
-    background-position: 50% 100%;
+    background: linear-gradient(rgba(70,74,76,0.70),rgba(70,74,76,0.40)),url(https://i.imgur.com/Gg3G6cK_d.png?maxwidth=320&fidelity=low);
+    /* background-position: 50% 100%; */
     background-size: cover;
-    background-attachment: fixed;
-    overflow-y: overlay;
+    /* background-attachment: fixed; */
+    /* overflow-y: overlay; */
 }
 
 .skinsback-create-main .qiwi-submit-main {
@@ -129,6 +129,9 @@
 .skinsback-create-main .qiwi-submit-main:hover {
     box-shadow: 0 12px 15px 0 rgba(255,140,0,.2);
     background-color: rgba(126,126,126,0.52);
+}
+.skinsback-create-main p {
+    font-size: 13px;
 }
 
 
