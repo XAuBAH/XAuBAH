@@ -113,25 +113,26 @@
     width: 30%;
     margin-top: 15px;
 }
-
 .skinsback-create-main .qiwi-inp-other {
-    background: linear-gradient(rgba(70,74,76,0.70),rgba(70,74,76,0.40)),url(https://i.imgur.com/Gg3G6cK_d.png?maxwidth=320&fidelity=low);
-    /* background-position: 50% 100%; */
-    background-size: cover;
-    /* background-attachment: fixed; */
-    /* overflow-y: overlay; */
+    background: linear-gradient(rgba(70,74,76,.7),rgba(70,74,76,.4)),url(https://i.imgur.com/Gg3G6cK_d.png?maxwidth=320&fidelity=low);
+    background-size: 108%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.skinsback-create-main .qiwi-inp-other:hover {
+    background-size: 115%;
 }
 
 .skinsback-create-main .qiwi-submit-main {
     box-shadow: none;
-    background-color: transparent;
+    background-color: rgba(126,126,126,.2);
 }
 .skinsback-create-main .qiwi-submit-main:hover {
     box-shadow: 0 12px 15px 0 rgba(255,140,0,.2);
-    background-color: rgba(126,126,126,0.52);
+    background-color: rgba(126,126,126,0.5);
 }
 .skinsback-create-main p {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
