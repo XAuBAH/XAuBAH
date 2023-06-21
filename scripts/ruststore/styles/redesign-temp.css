@@ -140,9 +140,6 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 .productselect button{
     margin-bottom: 5px;
 }
-.store-servers {
-    display: none;
-}
 
 .xbox {
     margin-bottom: 9px;
@@ -449,8 +446,27 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 	padding-left: 10px;
 }
 
-.xbox_store .xbox__header {
+/* .xbox_store .xbox__header {
     display: none;
+} */
+
+.nav-link.text-md-center.nav-link-main {
+    display: none;
+}
+.nav-link.text-md-center.nav-link-main span {
+    display: none;
+}
+.nav-link-id30, .nav-link-id6032 {
+    display: block!important;
+}
+.nav-link-id30:before {
+    content: "Модовые сервера (GR1/2/3/4/5/6/7/8)";
+}
+.nav-link-id6032:before {
+    content: "Классический сервер (GR9)";
+}
+.store-products .text-center:after {
+    content: "! Сначала выберите сервер перед покупкой!";
 }
 
 
