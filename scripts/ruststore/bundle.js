@@ -26537,7 +26537,7 @@ webpackJsonp([27], [function(e, t, n) {
                 return o.default.createElement("a", {
                     key: e,
                     href: "#",
-                    className: "nav-link text-md-center nav-link-main" + (t.id === r[2].columnValue ? " active" : ""),
+                    className: "nav-link text-md-center nav-link-main nav-link-id" + t.id + (t.id === r[2].columnValue ? " active" : ""),
                     onClick: function(e) {
                         e.preventDefault(),
                         n._changeProductsFilters({
@@ -26545,7 +26545,7 @@ webpackJsonp([27], [function(e, t, n) {
                             value: t.id
                         })
                     }
-                }, t.hostname)
+                }, o.default.createElement("span", {}, t.hostname))
             }))) : null
         }
     }]),
@@ -26631,7 +26631,7 @@ webpackJsonp([27], [function(e, t, n) {
               , i = e.selected
               , disco = e.products[0].discount
               , r = "" === i ? " active" : "";
-			  console.log(o);
+			  // console.log(o);
             return s.default.createElement("div", null, 
 			
 			disco && disco > 1 && s.default.createElement("div", {
