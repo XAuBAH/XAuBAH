@@ -417,6 +417,10 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 		content: "\f0e3";
 	}
 	.xbox__body .store-categories .btn:nth-child(15):before {
+		content: "\f0e7";
+		margin-left: 2px;
+	}
+	.xbox__body .store-categories .btn:nth-child(16):before {
 		content: "\f018";
 	}
 	
@@ -463,7 +467,7 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     content: "Модовые сервера (GR1/2/3/4/5/6/7/8)";
 }
 .nav-link-id6032:before {
-    content: "Классический сервер (GR9)";
+    content: "Полуклассический сервер (GR9)";
 }
 .store-products .text-center:after {
     content: "! Сначала выберите сервер перед покупкой!";

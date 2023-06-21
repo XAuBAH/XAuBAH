@@ -2,10 +2,10 @@
     display: none
 }
 
-.product__servers:after {
+/* .product__servers:after {
     content: " Кроме сервера #9 Classic";
     display: block;
-}
+} */
 .modal-productID267349 .product__servers:after,
 .modal-productID267350 .product__servers:after,
 .modal-productID267351 .product__servers:after,
