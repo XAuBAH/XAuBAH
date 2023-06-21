@@ -1843,9 +1843,21 @@ webpackJsonp([2], {
           , l = o.default.createElement("div", {
             className: "product__servers"
         }, "Можно активировать 1 раз на любом сервере")
+          , lmods = o.default.createElement("div", {
+            className: "product__servers"
+        }, "Товар доступен только на модовых серверах GR1/2/3/4/5/6/7/8")
+          , lclassic = o.default.createElement("div", {
+            className: "product__servers"
+        }, "Товар доступен только на сервере GR9")
           , c = function(e) {
             var t = e.product
               , n = e.servers;
+			if(t.serverID == 30){
+				return lmods;
+			}
+			if(t.serverID == 6032){
+				return lclassic;
+			}
             return t.serverID > 0 ? o.default.createElement("div", {
                 className: "product__servers"
             }, 'Товар доступен только на сервере "' + (0,
