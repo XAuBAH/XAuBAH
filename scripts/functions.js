@@ -1719,7 +1719,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat(e.target.value/60) + parseFloat('0.01')).toFixed(2);
+	var sumbucks = (parseFloat((e.target.value/80)-(e.target.value*parseFloat('0.08'))-parseFloat('0.02'))).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
