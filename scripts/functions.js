@@ -1291,9 +1291,10 @@ curcontent["Oplata"] = {
 						<h4>Через <u>Tebex</u></h4>
 					</a>
 				</div>
+				<span style="font-size: x-small;">(Чем крупнее платёж - тем выгоднее комиссия платформы Tebex)</span>
 				<div class="tebex-warning mb-2 mt-4" style="background-color: #f0ad4e5e;padding: 5px 10px;border-radius: 5px;color: #ffe4c4;">
 					<h4><b>Внимание!</b></h4>
-					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам в течении 1-2 минут после оплаты.</div>
+					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам на баланс в нашем магазине.</div>
 				</div>
 			  </div>
 			</div>
@@ -1719,7 +1720,7 @@ function snow_off() {
 
 document.addEventListener("input", function (e) {
 	if(e.target.id!='rubInput')return;
-	var sumbucks = (parseFloat((e.target.value/80)-(e.target.value*parseFloat('0.08'))-parseFloat('0.02'))).toFixed(2);
+	var sumbucks = (parseFloat(parseFloat(e.target.value/80)+parseFloat(0.3))*(100/(100-8))).toFixed(2);
 	if(sumbucks == '' || isNaN(sumbucks) || sumbucks < 1){
 		sumbucks = 1;
 	}
