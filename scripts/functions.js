@@ -1175,16 +1175,21 @@ curcontent["serv"] = {
 	</blockquote>
 	</div></div>
 <br>
-<h4 class="serverheader">GRAND RUST#9 Procedural Classic </h4><p class="ipconnect">connect 9.grand-rust.ru<a href="steam://connect/9.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
+<h4 class="serverheader">GRAND RUST#9 Procedural Semi-Classic </h4><p class="ipconnect">connect 9.grand-rust.ru<a href="steam://connect/9.grand-rust.ru:28015" title="Подключиться к серверу"><i class="fa fa-play"></i></a></p>
 
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1">
     <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Описание сервера</span><br>
 	<blockquote class="spoil-Untext">
 		<ul><li><b>Новейшее железо сервера</b></li>
-		<li>Рейты x2</li>
-		<li>Стаки 2000 на дерево, камень и уголь</li>
-		<li>Рейты печек х1.5</li>
+		<li>Рейты x1.5</li>
+		<li>Стаки х2 на ресурсы в шкафу</li>
+		<li>Рейты печек х2</li>
+		<li>Рейт карьеров х1.5</li>
+		<li>Скорость крафта х2</li>
+		<li>Ускоренные белые ночи (55 день, 5 ночь)</li>
+		<li>Блокировка доната первые 24 часа</li>
+		<li>Бесплатные уведомления о рейде</li>
 		<li>Остальное классика</li>
 		<li>Запрещено строить дома в текстурах и монументах</li>
 		</ul>
