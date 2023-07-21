@@ -34,7 +34,7 @@ DOMReady(function() {
 	setInterval(updateOnline, 10000);
 	setTimeout(() => autosize(), 3000);
 	
-	prepareKits();
+	//prepareKits();
 	
 	
 });
@@ -224,356 +224,565 @@ function autosize() {
 	
 
 var curcontent = new Array();
-
-var kit_prem = ['stones', 5000, 10000, 13000, 
-				'wood', 4000, 10000, 12000,
-				'metal.fragments', 1500, 3000, 3500,
-				'lowgradefuel', 500, 1500, 2000,
-				'cloth', 500, 1000, 1500,
-				'leather', 500, 1000, 1500,
-				'metal.refined', 100, 200, 300,
-				'gears', 6, 30, 40,
-				'techparts', 5, 10, 15,
-				'sewingkit', 20, 30, 40,
-				'metalblade', 10, 15, 20,
-				'metalpipe', 10, 20, 25,
-				'metalspring', 10, 25, 35,
-				'sheetmetal', 10, 15, 20,
-				'smgbody', 3, 4, 6,
-				'riflebody', 3, 4, 6,
-				'semibody', 3, 4, 5,
-				'roadsigns', 10, 25, 35,
-				'rope', 10, 25, 35,
-				'tarp', 10, 25, 35,
-				'propanetank', 10, 25, 35,
-				'scrap', 50, 80, 100,
-				'pistol.python', null, null, null,
-				'ammo.pistol', 100, 100, 100,
-				'hatchet', null, null, null,
-				'pickaxe', null, null, null,
-				'supply.signal', null, null, null,
-				'hazmatsuit', null, null, null];
 				
 curcontent["kit-prem"] = {
-	xhead: 'Prem',
-	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>\
-	<button class="btn btn-secondary active">Prem</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>\
-	<div class="xbox_custom_kits" ><p class="MsoNormal"><span>KIT PREMIUM (по привилегии)</span></p>\
-<div class="kit_set"><div class="kit-items">'
+	xhead: 'Что входит в киты',
+	xcon: `<div class="store-categories">
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary active">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
+	<div class="xbox_custom_kits" ><div class="serverheader">PREM оружие (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hat.wolf.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/mask.bandana.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/burlap.gloves.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/ammo.pistol.png">
+<div class="kit-item__quantity">x100</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pistol.python.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pickaxe.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hatchet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x5</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bandage.png">
+<div class="kit-item__quantity">x10</div></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">PREM ресурсы (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stones.png">
+<div class="kit-item__quantity">x5000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wood.png">
+<div class="kit-item__quantity">x4000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x1500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lowgradefuel.png">
+<div class="kit-item__quantity">x500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cloth.png">
+<div class="kit-item__quantity">x500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/leather.png">
+<div class="kit-item__quantity">x500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.refined.png">
+<div class="kit-item__quantity">x100</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/scrap.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gears.png">
+<div class="kit-item__quantity">x8</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/techparts.png">
+<div class="kit-item__quantity">x5</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sewingkit.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalblade.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalpipe.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sheetmetal.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smgbody.png">
+<div class="kit-item__quantity">x3</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/riflebody.png">
+<div class="kit-item__quantity">x3</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/semibody.png">
+<div class="kit-item__quantity">x3</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsigns.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rope.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/tarp.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalspring.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/supply.signal.png"></div></div>
+</div></div></div>`
 };
 
 
 
 curcontent["kit-wars"] = {
-	xhead: 'Wars',
-	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>\
-	<button class="btn btn-secondary active">Wars</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>\
-	<div class="xbox_custom_kits" ><p class="MsoNormal"><span>KIT WARS (по привилегии)</span></p>\
-<div class="kit_set"><div class="kit-items">'
+	xhead: 'Что входит в киты',
+	xcon: `<div class="store-categories">
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary active">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
+	<div class="xbox_custom_kits" ><div class="serverheader">WARS оружие (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hat.wolf.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/mask.bandana.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/burlap.gloves.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/attire.hide.poncho.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/ammo.pistol.png">
+<div class="kit-item__quantity">x150</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smg.thompson.png">
+<div class="kit-item__quantity">снаряжён</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bandage.png"></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">WARS ресурсы (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stones.png">
+<div class="kit-item__quantity">x10000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wood.png">
+<div class="kit-item__quantity">x10000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x3000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lowgradefuel.png">
+<div class="kit-item__quantity">x1500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cloth.png">
+<div class="kit-item__quantity">x1000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/leather.png">
+<div class="kit-item__quantity">x1000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.refined.png">
+<div class="kit-item__quantity">x250</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/scrap.png">
+<div class="kit-item__quantity">x80</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gears.png">
+<div class="kit-item__quantity">x15</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/techparts.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sewingkit.png">
+<div class="kit-item__quantity">x30</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalblade.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalpipe.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalspring.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sheetmetal.png">
+<div class="kit-item__quantity">x15</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smgbody.png">
+<div class="kit-item__quantity">x4</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/riflebody.png">
+<div class="kit-item__quantity">x4</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/semibody.png">
+<div class="kit-item__quantity">x4</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsigns.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rope.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/tarp.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/supply.signal.png"></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">WARS инструменты (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hatchet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pickaxe.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/woodtea.png">
+<div class="kit-item__quantity">дерево</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.png">
+<div class="kit-item__quantity">руда</div></div></div>
+</div></div></div>`
 };
 
 curcontent["kit-elite"] = {
-	xhead: 'Elite',
-	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>\
-	<button class="btn btn-secondary active">Elite</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>\
-	<div class="xbox_custom_kits" ><p class="MsoNormal"><span>KIT ELITE (по привилегии)</span></p>\
-<div class="kit_set"><div class="kit-items">'
+	xhead: 'Что входит в киты',
+	xcon: `<div class="store-categories">
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary active">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
+	<div class="xbox_custom_kits" ><div class="serverheader">ELITE оружие (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/coffeecan.helmet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.jacket.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.kilt.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/burlap.gloves.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/ammo.pistol.png">
+<div class="kit-item__quantity">x200</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smg.mp5.png">
+<div class="kit-item__quantity">снаряжён</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bandage.png"></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">ELITE ресурсы (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stones.png">
+<div class="kit-item__quantity">x13000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wood.png">
+<div class="kit-item__quantity">x12000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x3500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lowgradefuel.png">
+<div class="kit-item__quantity">x2000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cloth.png">
+<div class="kit-item__quantity">x1500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/leather.png">
+<div class="kit-item__quantity">x1500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.refined.png">
+<div class="kit-item__quantity">x300</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/scrap.png">
+<div class="kit-item__quantity">x100</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gears.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/techparts.png">
+<div class="kit-item__quantity">x15</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sewingkit.png">
+<div class="kit-item__quantity">x40</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalblade.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalpipe.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalspring.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sheetmetal.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smgbody.png">
+<div class="kit-item__quantity">x6</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/riflebody.png">
+<div class="kit-item__quantity">x6</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/semibody.png">
+<div class="kit-item__quantity">x6</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsigns.png">
+<div class="kit-item__quantity">x35</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rope.png">
+<div class="kit-item__quantity">x35</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/tarp.png">
+<div class="kit-item__quantity">x35</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/supply.signal.png"></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">ELITE инструменты (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/axe.salvaged.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/icepick.salvaged.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.advanced.png">
+<div class="kit-item__quantity">дерево прод.</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/woodtea.advanced.png">
+<div class="kit-item__quantity">руда прод.</div></div></div>
+</div></div></div>`
 };
 
 
 curcontent["kit-king"] = {
-	xhead: 'King',
-	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>\
-	<button class="btn btn-secondary active">King</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>\
-	<div class="xbox_custom_kits" ><p class="MsoNormal"><span>KIT KING (по привилегии)</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/stones_256.png">\
-<div class="kit-item__quantity">x15000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/wood_256.png">\
-<div class="kit-item__quantity">x15000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.fragments_256.png">\
-<div class="kit-item__quantity">x4500</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/lowgradefuel_256.png">\
-<div class="kit-item__quantity">x2500</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/cloth_256.png">\
-<div class="kit-item__quantity">x2500</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/leather_256.png">\
-<div class="kit-item__quantity">x2500</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.refined_256.png">\
-<div class="kit-item__quantity">x500</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/gears_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/techparts_256.png">\
-<div class="kit-item__quantity">x20</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sewingkit_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metalblade_256.png">\
-<div class="kit-item__quantity">x25</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metalpipe_256.png">\
-<div class="kit-item__quantity">x35</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metalspring_256.png">\
-<div class="kit-item__quantity">x40</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sheetmetal_256.png">\
-<div class="kit-item__quantity">x25</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/smgbody_256.png">\
-<div class="kit-item__quantity">x7</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/riflebody_256.png">\
-<div class="kit-item__quantity">x7</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/semibody_256.png">\
-<div class="kit-item__quantity">x7</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/roadsigns_256.png">\
-<div class="kit-item__quantity">x40</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rope_256.png">\
-<div class="kit-item__quantity">x40</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/tarp_256.png">\
-<div class="kit-item__quantity">x40</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/propanetank_256.png">\
-<div class="kit-item__quantity">x40</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/scrap_256.png">\
-<div class="kit-item__quantity">x150</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/chainsaw_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rifle.ak_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/ammo.rifle_256.png">\
-<div class="kit-item__quantity">x100</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberpickaxe.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberhatchet.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/supply.signal_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
-</div></div></div>\
-<div class="xbox_custom_kits" ><p class="MsoNormal"><span>Дополнительный кит</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/coffeecan.helmet_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/roadsign.jacket_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/GvxXs8B.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/YFkZu1P.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/YyHcuty.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/largemedkit_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/syringe.medical_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/blueberries_256.png">\
-<div class="kit-item__quantity">x20</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/candycane_256.png">\
-<div class="kit-item__quantity">x5</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sulfur_256.png">\
-<div class="kit-item__quantity">x10000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/gunpowder_256.png">\
-<div class="kit-item__quantity">x3000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.fragments_256.png">\
-<div class="kit-item__quantity">x5000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/workbench1_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/workbench2_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/research.table_256.png"></div></div>\
-</div></div></div>'
+	xhead: 'Что входит в киты',
+	xcon: `<div class="store-categories">
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary active">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
+	<div class="xbox_custom_kits" ><div class="serverheader">KING оружие (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.facemask.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.plate.torso.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.kilt.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/burlap.gloves.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/ammo.rifle.png">
+<div class="kit-item__quantity">x200</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rifle.ak.png">
+<div class="kit-item__quantity">снаряжён</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x15</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/largemedkit.png">
+<div class="kit-item__quantity">x5</div></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">KING ресурсы (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stones.png">
+<div class="kit-item__quantity">x15000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wood.png">
+<div class="kit-item__quantity">x15000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x4500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lowgradefuel.png">
+<div class="kit-item__quantity">x2500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cloth.png">
+<div class="kit-item__quantity">x2500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/leather.png">
+<div class="kit-item__quantity">x2500</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.refined.png">
+<div class="kit-item__quantity">x400</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/scrap.png">
+<div class="kit-item__quantity">x150</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gears.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/techparts.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sewingkit.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalblade.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalpipe.png">
+<div class="kit-item__quantity">x35</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalspring.png">
+<div class="kit-item__quantity">x35</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sheetmetal.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smgbody.png">
+<div class="kit-item__quantity">x7</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/riflebody.png">
+<div class="kit-item__quantity">x7</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/semibody.png">
+<div class="kit-item__quantity">x7</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsigns.png">
+<div class="kit-item__quantity">x40</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rope.png">
+<div class="kit-item__quantity">x40</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/tarp.png">
+<div class="kit-item__quantity">x40</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/supply.signal.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/targeting.computer.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cctv.camera.png"></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">KING инструменты (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/uberpickaxe.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/uberhatchet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/chainsaw.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/woodtea.pure.png">
+<div class="kit-item__quantity">дерево чистый</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.pure.png">
+<div class="kit-item__quantity">руда чистый</div></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">KING Доп. кит (по привилегии, еженедельный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/largemedkit.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/blueberries.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/candycaneclub.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sulfur.png">
+<div class="kit-item__quantity">x10000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gunpowder.png">
+<div class="kit-item__quantity">x3000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x5000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/research.table.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/workbench1.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/workbench2.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.facemask.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.plate.torso.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.kilt.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+</div></div></div>`
 };
 
 curcontent["kit-grand"] = {
-	xhead: 'Grand',
-	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary" onclick="Open(\'kit-free\', false);">Общие</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>\
-	<button class="btn btn-secondary active">Grand</button></div>\
-	<div class="xbox_custom_kits" ><p class="MsoNormal"><span>KIT GRAND (по привилегии)</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/stones_256.png">\
-<div class="kit-item__quantity">x20000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/wood_256.png">\
-<div class="kit-item__quantity">x20000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.fragments_256.png">\
-<div class="kit-item__quantity">x6000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/lowgradefuel_256.png">\
-<div class="kit-item__quantity">x3000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/cloth_256.png">\
-<div class="kit-item__quantity">x3000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/leather_256.png">\
-<div class="kit-item__quantity">x3000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.refined_256.png">\
-<div class="kit-item__quantity">x800</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/gears_256.png">\
-<div class="kit-item__quantity">x60</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/techparts_256.png">\
-<div class="kit-item__quantity">x25</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sewingkit_256.png">\
-<div class="kit-item__quantity">x60</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metalblade_256.png">\
-<div class="kit-item__quantity">x30</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metalpipe_256.png">\
-<div class="kit-item__quantity">x45</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metalspring_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sheetmetal_256.png">\
-<div class="kit-item__quantity">x30</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/smgbody_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/riflebody_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/semibody_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/roadsigns_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rope_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/tarp_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/propanetank_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/scrap_256.png">\
-<div class="kit-item__quantity">x200</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/ammo.rifle_256.png">\
-<div class="kit-item__quantity">x200</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/chainsaw_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rifle.ak_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/rifle.lr300_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberpickaxe.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://shop.grand-rust.ru/files/images/rust/items256/uberhatchet.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/supply.signal_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
-</div></div></div>\
-<div class="xbox_custom_kits" ><p class="MsoNormal"><span>Дополнительный кит</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.facemask_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.plate.torso_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/qEqeAEJ.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/i0Jjxwa.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/ej93jZZ.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/largemedkit_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/syringe.medical_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/blueberries_256.png">\
-<div class="kit-item__quantity">x20</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/candycane_256.png">\
-<div class="kit-item__quantity">x5</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hazmatsuit_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sulfur_256.png">\
-<div class="kit-item__quantity">x15000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/gunpowder_256.png">\
-<div class="kit-item__quantity">x5000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/metal.fragments_256.png">\
-<div class="kit-item__quantity">x10000</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/workbench1_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/workbench2_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/workbench3_256.png"></div></div>\
-</div></div></div>'
+	xhead: 'Что входит в киты',
+	xcon: `<div class="store-categories">
+	<button class="btn btn-secondary" onclick="Open('kit-free', false);">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary active">Grand</button></div>
+	<div class="xbox_custom_kits" ><div class="serverheader">GRAND оружие (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.facemask.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.plate.torso.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.kilt.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.gloves.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/ammo.rifle.png">
+<div class="kit-item__quantity">x300</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rifle.ak.png">
+<div class="kit-item__quantity">снаряжён</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rifle.lr300.png">
+<div class="kit-item__quantity">снаряжён</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x30</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/largemedkit.png">
+<div class="kit-item__quantity">x10</div></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">GRAND ресурсы (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stones.png">
+<div class="kit-item__quantity">x20000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wood.png">
+<div class="kit-item__quantity">x20000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x6000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.refined.png">
+<div class="kit-item__quantity">x450</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lowgradefuel.png">
+<div class="kit-item__quantity">x3000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cloth.png">
+<div class="kit-item__quantity">x3000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/leather.png">
+<div class="kit-item__quantity">x3000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/scrap.png">
+<div class="kit-item__quantity">x200</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gears.png">
+<div class="kit-item__quantity">x35</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/techparts.png">
+<div class="kit-item__quantity">x25</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sewingkit.png">
+<div class="kit-item__quantity">x60</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalblade.png">
+<div class="kit-item__quantity">x30</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/riflebody.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/semibody.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsigns.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/rope.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalpipe.png">
+<div class="kit-item__quantity">x45</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metalspring.png">
+<div class="kit-item__quantity">x45</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smgbody.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sheetmetal.png">
+<div class="kit-item__quantity">x30</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/tarp.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/supply.signal.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/targeting.computer.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/cctv.camera.png">
+<div class="kit-item__quantity">x2</div></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">GRAND инструменты (по привилегии, ежедневный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/healingtea.pure.png">
+<div class="kit-item__quantity">хил чистый</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.pure.png">
+<div class="kit-item__quantity">руда чистый</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/woodtea.pure.png">
+<div class="kit-item__quantity">дерево чистый</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/uberhatchet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/ubericepick.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/chainsaw.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/jackhammer.png"></div></div>
+</div></div></div>
+<div class="xbox_custom_kits" ><div class="serverheader">GRAND Доп. кит (по привилегии, еженедельный)</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.facemask.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.plate.torso.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/roadsign.kilt.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hoodie.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/shoes.boots.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/largemedkit.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/blueberries.png">
+<div class="kit-item__quantity">x20</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/candycaneclub.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hazmatsuit.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sulfur.png">
+<div class="kit-item__quantity">x15000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/gunpowder.png">
+<div class="kit-item__quantity">x5000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.fragments.png">
+<div class="kit-item__quantity">x10000</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/workbench1.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/workbench2.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/workbench3.png"></div></div>
+</div></div></div>`
 };
 
 curcontent["kit-free"] = {
-	xhead: 'Киты',
-	xcon: '<div class="store-categories">\
-	<button class="btn btn-secondary active">Общие</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-prem\', false);">Prem</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-wars\', false);">Wars</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-elite\', false);">Elite</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-king\', false);">King</button>\
-	<button class="btn btn-secondary" onclick="Open(\'kit-grand\', false);">Grand</button></div>\
-<div class="xbox_custom_kits" >\
-<p class="MsoNormal"><span>Бомж</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/JJBgiWq.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/SAO2qu3.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/aBpfww2.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/3XpNUFs.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://i.imgur.com/NiJvm68.png"></div></div>\
-</div></div>\
-<p class="MsoNormal"><span>Starter</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/furnace_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/sleepingbag_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/campfire_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/building.planner_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/hammer_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/cactusflesh_256.png">\
-<div class="kit-item__quantity">x5</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/stonehatchet_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/stone.pickaxe_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/bandage_256.png">\
-<div class="kit-item__quantity">x5</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/syringe.medical_256.png">\
-<div class="kit-item__quantity">x2</div></div></div>\
-</div></div>\
-<p class="MsoNormal"><span>Med</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/bandage_256.png">\
-<div class="kit-item__quantity">x10</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/syringe.medical_256.png">\
-<div class="kit-item__quantity">x2</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/largemedkit_256.png"></div></div>\
-</div></div>\
-<p class="MsoNormal"><span>Food</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/blueberries_256.png">\
-<div class="kit-item__quantity">x2</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/wolfmeat.cooked_256.png">\
-<div class="kit-item__quantity">x5</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/smallwaterbottle_256.png">\
-<div class="kit-item__quantity">120ml</div></div></div>\
-</div></div>\
-<p class="MsoNormal"><span>Hunter</span></p>\
-<div class="kit_set"><div class="kit-items">\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/arrow.wooden_256.png">\
-<div class="kit-item__quantity">x50</div></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/bow.hunting_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/spear.wooden_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/spear.stone_256.png"></div></div>\
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/knife.bone_256.png"></div></div>\
-</div></div></div>'
+	xhead: 'Что входит в бесплатные киты',
+	xcon: `<div class="store-categories">
+	<button class="btn btn-secondary active">Общие</button>
+	<button class="btn btn-secondary" onclick="Open('kit-prem', false);">Prem</button>
+	<button class="btn btn-secondary" onclick="Open('kit-wars', false);">Wars</button>
+	<button class="btn btn-secondary" onclick="Open('kit-elite', false);">Elite</button>
+	<button class="btn btn-secondary" onclick="Open('kit-king', false);">King</button>
+	<button class="btn btn-secondary" onclick="Open('kit-grand', false);">Grand</button></div>
+<div class="xbox_custom_kits" >
+<div class="serverheader">Бомж</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/tshirt.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/pants.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/movembermoustache.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hat.cap.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stone.pickaxe.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stonehatchet.png"></div></div>
+</div></div>
+<div class="serverheader">Starter</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/campfire.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/sleepingbag.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/furnace.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bandage.png">
+<div class="kit-item__quantity">x5</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stone.pickaxe.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/stonehatchet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/hammer.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/building.planner.png"></div></div>
+</div></div>
+<div class="serverheader">Med</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bandage.png">
+<div class="kit-item__quantity">x10</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/syringe.medical.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/largemedkit.png"></div></div>
+</div></div>
+<div class="serverheader">Food</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/blueberries.png">
+<div class="kit-item__quantity">x2</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/wolfmeat.cooked.png">
+<div class="kit-item__quantity">x5</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smallwaterbottle.png">
+<div class="kit-item__quantity">120ml</div></div></div>
+</div></div>
+<div class="serverheader">Hunter</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/arrow.wooden.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/bow.hunting.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/spear.wooden.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/spear.stone.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/knife.bone.png"></div></div>
+</div></div>
+<div class="serverheader">За приставку в нике #grandrust</div>
+<div class="kit_set"><div class="kit-items">
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/attire.ninja.suit.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/metal.refined.png">
+<div class="kit-item__quantity">x50</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lowgradefuel.png">
+<div class="kit-item__quantity">x200</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lumberjack.pickaxe.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/lumberjack.hatchet.png"></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/smallwaterbottle.png">
+<div class="kit-item__quantity">120ml</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.pure.png">
+<div class="kit-item__quantity">руда чистый</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/jar.pickle.png">
+<div class="kit-item__quantity">x5</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/can.tuna.png">
+<div class="kit-item__quantity">x2</div></div></div>
+</div></div></div>`
 };
-
-
-function prepareKits(){
-	
-	for (var i = 0; i < kit_prem.length; i+=4) {
-		if(kit_prem[(i+1)] != null)
-			curcontent["kit-prem"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/'+ kit_prem[i] +'_256.png">\
-										<div class="kit-item__quantity">x'+ kit_prem[(i+1)] +'</div></div></div>';
-		else 
-			curcontent["kit-prem"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/'+ kit_prem[i] +'_256.png"></div></div>';
-	
-		if(kit_prem[(i+2)] != null)
-			curcontent["kit-wars"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/'+ kit_prem[i] +'_256.png">\
-										<div class="kit-item__quantity">x'+ kit_prem[(i+2)] +'</div></div></div>';
-		else {
-			if(i==88)kit_prem[i] = "smg.thompson";
-			curcontent["kit-wars"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/'+ kit_prem[i] +'_256.png"></div></div>';
-		}
-	
-		if(kit_prem[(i+3)] != null){
-			if(i==92)kit_prem[i] = "ammo.rifle";
-			curcontent["kit-elite"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/'+ kit_prem[i] +'_256.png">\
-										<div class="kit-item__quantity">x'+ kit_prem[(i+3)] +'</div></div></div>';
-		}else {
-			if(i==88)kit_prem[i] = "rifle.ak";
-			curcontent["kit-elite"].xcon += '<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" loading="lazy" src="https://files.facepunch.com/rust/item/'+ kit_prem[i] +'_256.png"></div></div>';
-		}
-	}
-	curcontent["kit-prem"].xcon += '</div></div></div>';
-	curcontent["kit-wars"].xcon += '</div></div></div>';
-	curcontent["kit-elite"].xcon += '</div></div></div>';
-	
-}
