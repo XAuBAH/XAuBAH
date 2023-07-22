@@ -3,7 +3,9 @@
 	.modal-productID107896 .modal-sm,
 	.modal-productID82915 .modal-sm,
 	.modal-productID82914 .modal-sm,
-	.modal-productID766 .modal-sm {
+	.modal-productID1047726 .modal-sm,
+	.modal-productID1047721 .modal-sm,
+	.modal-productID1047717 .modal-sm {
 		max-width: 1083px;
 	}
 	.modal-productID219902 .service__image {
@@ -91,13 +93,67 @@
 		-webkit-animation-timing-function: linear;
 		animation-timing-function: linear;
 	}
+	.modal-productID1047726 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/bfx2cV2_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/bfx2cV2_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/bfx2cV2_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.modal-productID1047721 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/QsP5OaJ_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/QsP5OaJ_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/QsP5OaJ_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
+	.modal-productID1047717 .service__image {
+		max-width: 401px;
+		float: left;
+		position: fixed;
+		left: -85px;
+		margin: 26px 0 0 0;
+		content: url(https://i.imgur.com/dJTR8Hh_d.png?maxwidth=700&fidelity=low);
+		content: -webkit-image-set(url(https://i.imgur.com/dJTR8Hh_d.webp?maxwidth=700&fidelity=low) 1x,url(https://i.imgur.com/dJTR8Hh_d.webp?maxwidth=1200&fidelity=low) 1.1x);
+		filter: drop-shadow(-27px 17px 6px rgba(21, 21, 21, 0.84));
+		
+		-webkit-animation-name: animSlideElasticRight;
+		animation-name: animSlideElasticRight;
+		-webkit-animation-duration: 4s;
+		animation-duration: 4s;
+		-webkit-animation-timing-function: linear;
+		animation-timing-function: linear;
+	}
 
 	
 	.modal-productID219902 .modal-body,
 	.modal-productID107896 .modal-body,
 	.modal-productID82915 .modal-body,
 	.modal-productID82914 .modal-body,
-	.modal-productID766 .modal-body {
+	.modal-productID766 .modal-body,
+	.modal-productID1047726 .modal-body,
+	.modal-productID1047721 .modal-body,
+	.modal-productID1047717 .modal-body {
 		background-color: rgba(58, 50, 73, 0.5);
 		padding: 0px;
 		border-radius: 45px;
@@ -107,7 +163,10 @@
 	.modal-productID107896 .modal-content,
 	.modal-productID82915 .modal-content,
 	.modal-productID82914 .modal-content,
-	.modal-productID766 .modal-content {
+	.modal-productID766 .modal-content,
+	.modal-productID1047726 .modal-content,
+	.modal-productID1047721 .modal-content,
+	.modal-productID1047717 .modal-content {
 		border-radius: 45px;
 	}
 	
@@ -115,7 +174,10 @@
 	.modal-productID107896 .modal-header,
 	.modal-productID82915 .modal-header,
 	.modal-productID82914 .modal-header,
-	.modal-productID766 .modal-header {
+	.modal-productID766 .modal-header,
+	.modal-productID1047726 .modal-header,
+	.modal-productID1047721 .modal-header,
+	.modal-productID1047717 .modal-header {
 		background-color: transparent;
 		padding: 15px 0px 0px 0px;
 		position: absolute;
@@ -127,7 +189,10 @@
 	.modal-productID107896 .modal-title,
 	.modal-productID82915 .modal-title,
 	.modal-productID82914 .modal-title,
-	.modal-productID766 .modal-title {
+	.modal-productID766 .modal-title,
+	.modal-productID1047726 .modal-title,
+	.modal-productID1047721 .modal-title,
+	.modal-productID1047717 .modal-title {
 		background-color: transparent;
 		font-size: 50px !important;
 		font-weight: 800;
@@ -139,7 +204,10 @@
 	.modal-productID107896 .modal-title:after,
 	.modal-productID82915 .modal-title:after,
 	.modal-productID82914 .modal-title:after,
-	.modal-productID766 .modal-title:after {
+	.modal-productID766 .modal-title:after,
+	.modal-productID1047726 .modal-title:after,
+	.modal-productID1047721 .modal-title:after,
+	.modal-productID1047717 .modal-title:after {
 		content: " ПРИВИЛЕГИЯ";
 		font-size: 37px;
 		font-weight: 400;
@@ -149,7 +217,10 @@
 	.modal-productID107896 .modal-footer,
 	.modal-productID82915 .modal-footer,
 	.modal-productID82914 .modal-footer,
-	.modal-productID766 .modal-footer {
+	.modal-productID766 .modal-footer,
+	.modal-productID1047726 .modal-footer,
+	.modal-productID1047721 .modal-footer,
+	.modal-productID1047717 .modal-footer {
 		background-color: transparent;
 		padding: 15px 40px 50px 15px;
 		position: absolute;
@@ -162,14 +233,20 @@
 	.modal-productID107896 .service__description,
 	.modal-productID82915 .service__description,
 	.modal-productID82914 .service__description,
-	.modal-productID766 .service__description {
+	.modal-productID766 .service__description,
+	.modal-productID1047726 .service__description,
+	.modal-productID1047721 .service__description,
+	.modal-productID1047717 .service__description {
 		margin: 0rem 0rem 1rem 20rem;
 	}
 	.modal-productID219902 .btn-success,
 	.modal-productID107896 .btn-success,
 	.modal-productID82915 .btn-success,
 	.modal-productID82914 .btn-success,
-	.modal-productID766 .btn-success {
+	.modal-productID766 .btn-success,
+	.modal-productID1047726 .btn-success,
+	.modal-productID1047721 .btn-success,
+	.modal-productID1047717 .btn-success {
 		line-height: 1.6;
 		font-size: 1.7rem;
 		border-radius: 10px;
@@ -186,14 +263,23 @@
 	.modal-productID107896 .btn-secondary,
 	.modal-productID82915 .btn-secondary,
 	.modal-productID82914 .btn-secondary,
-	.modal-productID766 .btn-secondary {
+	.modal-productID766 .btn-secondary,
+	.modal-productID1047726 .form-group,
+	.modal-productID1047721 .form-group,
+	.modal-productID1047717 .form-group,
+	.modal-productID1047726 .btn-secondary,
+	.modal-productID1047721 .btn-secondary,
+	.modal-productID1047717 .btn-secondary {
 		display: none;
 	}
 	.modal-productID219902 .modal-footer .ml-auto,
 	.modal-productID107896 .modal-footer .ml-auto,
 	.modal-productID82915 .modal-footer .ml-auto,
 	.modal-productID82914 .modal-footer .ml-auto,
-	.modal-productID766 .modal-footer .ml-auto {
+	.modal-productID766 .modal-footer .ml-auto,
+	.modal-productID1047726 .modal-footer .ml-auto,
+	.modal-productID1047721 .modal-footer .ml-auto,
+	.modal-productID1047717 .modal-footer .ml-auto {
 		background: rgba(23, 20, 31, 0.81);
 		padding: 73px 40px 15px 40px;
 		border-radius: 10px;
@@ -202,7 +288,10 @@
 	.modal-productID107896 .product__servers,
 	.modal-productID82915 .product__servers,
 	.modal-productID82914 .product__servers,
-	.modal-productID766 .product__servers {
+	.modal-productID766 .product__servers,
+	.modal-productID1047726 .product__servers,
+	.modal-productID1047721 .product__servers,
+	.modal-productID1047717 .product__servers {
 		color: unset;
 		position: absolute;
 		bottom: 135px;
@@ -211,17 +300,47 @@
 		font-size: small;
 		width: 315px;
 	}
+	.modal-productID1047726 .product__servers,
+	.modal-productID1047721 .product__servers,
+	.modal-productID1047717 .product__servers {
+		bottom: 150px;
+	}
 	
 	.modal-productID219902 .perm_desc_1,
 	.modal-productID107896 .perm_desc_1,
 	.modal-productID82915 .perm_desc_1,
 	.modal-productID82914 .perm_desc_1,
-	.modal-productID766 .perm_desc_1 {
+	.modal-productID766 .perm_desc_1,
+	.modal-productID1047726 .perm_desc_1,
+	.modal-productID1047721 .perm_desc_1,
+	.modal-productID1047717 .perm_desc_1 {
 		display: flex!important;
 		height: 75px!important;
 	}
 	.perm_desc_1 .perm_dop_item_value {
 		width: 211px!important;
+	}
+	
+	.modal-productID1047726 .perm_desc_elem,
+	.modal-productID1047721 .perm_desc_elem,
+	.modal-productID1047717 .perm_desc_elem {
+		float: right;
+		margin-right: 40px;
+		position: relative;
+		top: 45px;
+	}
+	.modal-productID1047726 .perm_dop_item_img,
+	.modal-productID1047721 .perm_dop_item_img,
+	.modal-productID1047717 .perm_dop_item_img {
+		display: block;
+		width: 390px;
+		position: relative;
+		bottom: 166px;
+		right: 46px;
+		height: 620px;
+	}
+	.modal-productID1047717 .perm_dop_item_img {
+		height: 500px;
 	}
 	
 }
