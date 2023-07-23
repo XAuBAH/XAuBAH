@@ -121,6 +121,111 @@
 		background-repeat: no-repeat;
 	}
 
+	a[href="/products/1047726"] img {
+		content: url("https://i.imgur.com/bfx2cV2_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/bfx2cV2_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/bfx2cV2_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		padding: 3%;
+	}
+	a[href="/products/1047726"] img:hover {
+		content: url("https://i.imgur.com/XRfGqry_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/XRfGqry_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/XRfGqry_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		background: rgba(43, 52, 58, 1);
+		background: -moz-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: -webkit-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b343a",endColorstr="#2b343a",GradientType=1);
+		background-size: 594%;
+		background-position: -200px;
+		transition: background-position 200ms ease-out!important;
+		background-repeat: no-repeat;
+	}
+
+	a[href="/products/1047721"] img {
+		content: url("https://i.imgur.com/QsP5OaJ_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/QsP5OaJ_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/QsP5OaJ_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		padding: 3%;
+	}
+	a[href="/products/1047721"] img:hover {
+		content: url("https://i.imgur.com/EFWGKDG_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/EFWGKDG_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/EFWGKDG_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		background: rgba(43, 52, 58, 1);
+		background: -moz-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: -webkit-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b343a",endColorstr="#2b343a",GradientType=1);
+		background-size: 594%;
+		background-position: -200px;
+		transition: background-position 200ms ease-out!important;
+		background-repeat: no-repeat;
+	}
+
+	a[href="/products/1047717"] img {
+		content: url("https://i.imgur.com/dJTR8Hh_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/dJTR8Hh_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/dJTR8Hh_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		padding: 3%;
+	}
+	a[href="/products/1047717"] img:hover {
+		content: url("https://i.imgur.com/q8onGYE_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/q8onGYE_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/q8onGYE_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		background: rgba(43, 52, 58, 1);
+		background: -moz-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: -webkit-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b343a",endColorstr="#2b343a",GradientType=1);
+		background-size: 594%;
+		background-position: -200px;
+		transition: background-position 200ms ease-out!important;
+		background-repeat: no-repeat;
+	}
+
+	a[href="/products/1047774"] img {
+		content: url("https://i.imgur.com/iQci6Dh_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/iQci6Dh_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/iQci6Dh_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		padding: 3%;
+	}
+	a[href="/products/1047774"] img:hover {
+		content: url("https://i.imgur.com/Dzr3OYG_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/Dzr3OYG_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/Dzr3OYG_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		background: rgba(43, 52, 58, 1);
+		background: -moz-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: -webkit-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b343a",endColorstr="#2b343a",GradientType=1);
+		background-size: 594%;
+		background-position: -200px;
+		transition: background-position 200ms ease-out!important;
+		background-repeat: no-repeat;
+	}
+
+	a[href="/products/1047775"] img {
+		content: url("https://i.imgur.com/1BcWaqt_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/1BcWaqt_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/1BcWaqt_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		padding: 3%;
+	}
+	a[href="/products/1047775"] img:hover {
+		content: url("https://i.imgur.com/YEDF8Y1_d.png?maxwidth=700&fidelity=low");
+		content: -webkit-image-set(url('https://i.imgur.com/YEDF8Y1_d.webp?maxwidth=700&fidelity=low') 1x,
+									url('https://i.imgur.com/YEDF8Y1_d.webp?maxwidth=1200&fidelity=low') 1.1x);
+		background: rgba(43, 52, 58, 1);
+		background: -moz-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: -webkit-linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		background: linear-gradient(117deg, rgba(43,52,58,1) 0%, rgba(43,52,58,1) 34%, rgba(104,104,104,1) 35%, rgba(43,52,58,1) 49%, rgba(43,52,58,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b343a",endColorstr="#2b343a",GradientType=1);
+		background-size: 594%;
+		background-position: -200px;
+		transition: background-position 200ms ease-out!important;
+		background-repeat: no-repeat;
+	}
+
 }
 
 a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/products/229340"]:before, a[href="/products/229447"]:before, a[href="/products/229626"]:before { 
@@ -521,11 +626,23 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 .product:hover .product__price-old {
     display: block;
     position: absolute;
-    top: -16px;
-    right: 6px;
-    color: #878787;
-    /*text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;*/
+    top: -19px;
+    right: 2px;
+    color: #a2a2a2;
+    text-decoration: unset;
+    font-size: 0.9rem;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.product__price-old:before {
+  border-bottom: 1px solid red;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 50%;
+  transform: rotate(-12deg);
+}
+
 .product__price-new {
     background: #1b1f2a;
     box-shadow: inset 0 0 0 2px #18b2eb;
