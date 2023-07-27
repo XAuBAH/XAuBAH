@@ -59,7 +59,7 @@
         s.async = !0,
         s.timeout = 12e4,
         t.nc && s.setAttribute("nonce", t.nc),
-        s.src = t.p + "" + e + ".min.js?8";
+        s.src = t.p + "" + e + ".js?9";
         var u = setTimeout(n, 12e4);
         return s.onerror = s.onload = n,
         a.appendChild(s),
