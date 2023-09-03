@@ -712,6 +712,8 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     border-radius: 0;
     display: block;
     height: 2.9rem;
+    width: auto;
+    line-height: 1.7em;
     font-size: 2rem;
     text-align: center;
     padding: 0;
