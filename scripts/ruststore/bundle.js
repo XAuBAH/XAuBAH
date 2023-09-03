@@ -19838,6 +19838,31 @@ webpackJsonp([27], [function(e, t, n) {
                 })
             });
         case l.AT.FETCH_PRODUCTS:
+			if(r.data.paymentBonuses != null && r.data.paymentBonuses.length > 0){//paybonus
+				let curBonLen = r.data.paymentBonuses.length;
+				var promo_container = document.getElementById("promo_container_header");
+				let liFirst = document.createElement("div");
+				liFirst.className = "promo_container_div custom-warning2 custom-warning-4s s-alert-box s-alert-error s-alert-top-right s-alert-is-effect s-alert-effect-slide s-alert-show";
+				if(curBonLen<4){
+					liFirst.innerHTML = "<h4>Бонус при пополнении:</h4>";
+				}else if(curBonLen==4){
+					liFirst.innerHTML = "<h4>Бонус при пополнении:</h4>";
+					liFirst.className = "custom-warning2-padding " + liFirst.className;
+				}else{
+					liFirst.innerHTML = "<b>Бонус при пополнении:</b>";
+					r.data.paymentBonuses = r.data.paymentBonuses.slice(0, 5);
+					liFirst.className = "custom-warning2-padding " + liFirst.className;
+				}
+				promo_container.append(liFirst)
+				r.data.paymentBonuses.map(function(e) {
+					if(e.type == "1")
+						liFirst.innerHTML += "<p>От <b>"+ e.sum +"</b>₽ бонус +<b>"+ e.data +"</b>₽</p>";
+					else
+						liFirst.innerHTML += "<p>От <b>"+ e.sum +"</b>₽ бонус +<b>"+ e.data +"</b>%</p>";
+					
+				});
+			}
+			
             return u({}, e, {
                 products: u({}, e.products, {
                     list: r.data.data.sort(f).map(function(e) {
@@ -20955,13 +20980,16 @@ webpackJsonp([27], [function(e, t, n) {
         var t = e.store;
 		var himage = t ? t.header : "https://i.imgur.com/9ytxFTQ_d.webp";
         return a.default.createElement("div", {
-            className: "header"
+            className: "header",
         }, a.default.createElement("div", {
-            className: "container"
+            className: "container",
         }, a.default.createElement("img", {
             className: "header__image",
-            src: himage
-        })))
+            src: himage,
+        })), a.default.createElement("div", {
+            className: "container",
+            id: "promo_container_header",
+        }))
     })
 }
 , function(e, t, n) {
