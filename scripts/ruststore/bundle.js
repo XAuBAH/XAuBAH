@@ -21380,14 +21380,22 @@ webpackJsonp([27], [function(e, t, n) {
               , o = e.method
               , i = e.handleSubmit
               , s = this.state.isOpen;
+			  
             return u.default.createElement("a", {
                 className: "nav-link nav-link-pay",
 				id: "mainpaybutton",
+                // onClick: this._toggle,
                 // href: "https://pay.moscow.ovh/?" + e.user.pay
                 href: "/pay/?userid="+e.user.steamID
-            }, "number" == typeof t ? (0,
-            _.getFloorNumber)(t) + (0,
-            _.getFloorNumber)(n) + " RUB" : "Загрузка...", u.default.createElement(c.Modal, {
+            }, "number" == typeof t ? ((0,
+            _.getFloorNumber)(t+n)).toLocaleString("ru-RU", { style: "currency", currency: "RUB" }) : "Загрузка...",
+			u.default.createElement(c.Tooltip, {
+                        target: "mainpaybutton",
+                        isOpen: s,
+                        toggle: this._toggle,
+                        placement: "top"
+                    }, u.default.createElement("div", null, "Нажмите, чтобы пополнить баланс")
+			)/* , u.default.createElement(c.Modal, {
                 isOpen: s,
                 toggle: this._toggle
             }, u.default.createElement("form", {
@@ -21424,7 +21432,7 @@ webpackJsonp([27], [function(e, t, n) {
             }, u.default.createElement(m.default, {
                 className: "btn btn-success",
                 loading: a
-            },tryobtainShopSteamId(e.user.steamID), "Пополнить"))))))
+            },tryobtainShopSteamId(e.user.steamID), "Пополнить"))))) */)
         }
     }]),
     b);
@@ -21451,11 +21459,11 @@ webpackJsonp([27], [function(e, t, n) {
             })
         }
         ,
-        t._toggle = function(e) {
-            e.preventDefault(),
-            t.setState({
-                isOpen: !t.state.isOpen
-            })
+        t._toggle = function() {
+                    t.setState({
+						isOpen: !t.state.isOpen
+					})
+            
         }
         ,
         t.state = {
