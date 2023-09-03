@@ -682,6 +682,11 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 	height: 24rem;
 }
 }
+@media (max-width: 574px) {
+	.custom-warning2 {
+		right: -8px!important;
+	}
+}
 
 .qrcode-card-button{
 	display: none;
