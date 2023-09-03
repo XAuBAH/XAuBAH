@@ -1,4 +1,22 @@
 var curcontent = new Array();
+curcontent["contacts"] = {
+	xhead: 'Наши контакты',
+	xcon: `<div style="padding: 0px 10px;">
+	<br><br><br>
+<div class="store-products contacts-div">
+<div class="store-products__item store-products__qritem store-products__qrvk"><a class="product" href="https://vk.com/grandrust_server"><div class="navbar-brand">VK</div><img class="product__image" src="https://i.imgur.com/HwMyBiW.png"><div class="qrcode-card-button">Перейти</div>
+</a>
+</div>
+<div class="store-products__item store-products__qritem store-products__qrds"><a class="product" href="https://discord.com/invite/grandrust"><div class="navbar-brand">Discord</div><img class="product__image" src="https://i.imgur.com/Fj6DpuS.png"><div class="qrcode-card-button">Перейти</div>
+</a>
+</div>
+<div class="store-products__item store-products__qritem store-products__qrtg"><a class="product" href="https://t.me/grandrust_server"><div class="navbar-brand">Telegram</div><img class="product__image" src="https://i.imgur.com/tKgG8x2.png"><div class="qrcode-card-button">Перейти</div>
+</a>
+</div>
+</div>
+</div>`
+};
+
 curcontent["faq"] = {
 	xhead: 'Ответы на популярные вопросы',
 	xcon: `<div class="x-spoiler">
@@ -407,13 +425,27 @@ curcontent["rules"] = {
     <td class="tg-2lax"><b>Уникальный шкаф</b><br><br>
 		- Запрещено покупать, отдавать и т д. шкаф. Очки за шкаф зачтутся только в ходе честной игры.<br>
 		- Запрещено покупать/продавать информацию по местонахождению уникального шкафа у сторонних игроков, владельца или друзей владельца.<br>
-		- Игрок заабузивший нашивку, теряет возможность принять повторное участие на срок от 60 дней, а так же не получает нашивку.<br>
+		- Игрок, заабузивший нашивку, теряет возможность принять повторное участие на срок от 60 дней, а так же не получает нашивку.<br>
 		- Игрок, продавший или отдавший шкаф, теряет возможность принять повторное участие на срок от 60 дней.<br>
 		- Запрещено ставить шкаф в чужом доме для последующего уничтожения.<br>
 		- Запрещено уничтожать шкаф друга или заранее договорившись с игроком.<br>
 		- Запрещено повышать очки чужого шкафа.<br>
 		- Игрок, у которого уничтожили шкаф, теряет 50 очков. Игрок всё равно может выиграть, если наберёт баллов более 0.<br>
-		- Рейтинг победителей не смещается, в случае нарушений.<br>
+		- Рейтинг победителей не смещается в случае выбывания игрока.<br>
+	</td>
+  </tr>
+</tbody>
+</table>
+<table class="tg">
+<tbody>
+  <tr>
+	<td class="tg-1lax">8.3</td>
+    <td class="tg-2lax"><b>Skin Win</b><br><br>
+		- Запрещено накручивать очки заданий на друзьях.<br>
+		- Запрещено набивать на одном и том же игроке очки свыше 3 раз.<br>
+		- Игрок, заабузивший задание, теряет возможность принять повторное участие на срок от 60 дней, а так же теряет прогресс в заданиях.<br>
+		- При обнаружении серьёзных нарушений в правилах ивента Skin Win, игрок так же теряет баланс ивента на покупку скинов.<br>
+		- Вы можете получить вознаграждение в ивенте Skin Win при подаче жалобы на игрока, нарушившего правила ивента Skin Win.<br>
 	</td>
   </tr>
 </tbody>
@@ -626,7 +658,8 @@ curcontent["help"] = {
 <span class="MsoCommand">/tc</span> ТОП по ивентам шкафов.<br>
 <span class="MsoCommand">/who</span> узнать есть ли в доме уникальный шкаф (смотря на дом).<br>
 <span class="MsoCommand">/taxi</span> система автоматизированного такси.<br>
-<span class="MsoCommand">/help</span> узнать всю информацию о сервере в том числе о биндах.</div>`
+<span class="MsoCommand">/help</span> узнать всю информацию о сервере в том числе о биндах.</div>
+</div>`
 };
 
 				
@@ -867,9 +900,9 @@ curcontent["kit-elite"] = {
 <div class="kit_set"><div class="kit-items">
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/axe.salvaged.png"></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/icepick.salvaged.png"></div></div>
-<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.advanced.png">
-<div class="kit-item__quantity">дерево прод.</div></div></div>
 <div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/woodtea.advanced.png">
+<div class="kit-item__quantity">дерево прод.</div></div></div>
+<div class="kit-items__item"><div class="kit-item"><img class="kit-item__image" src="https://shop.grand-rust.ru/files/images/rust/items256/oretea.advanced.png">
 <div class="kit-item__quantity">руда прод.</div></div></div>
 </div></div></div>`
 };
@@ -1792,10 +1825,15 @@ function OvhUrlOverrite(){
 		var urlelelink = elelink.getAttribute("href");
 		if(urlelelink.startsWith('https://pay.moscow.ovh') || urlelelink.startsWith('/pay')){
 		   OvhPayUrl = urlelelink;
-		   console.log(OvhPayUrl);
+		   // console.log(OvhPayUrl);
 		   elelink.setAttribute("href", "javascript:;");
 		   elelink.setAttribute("onclick", "OpenOplata()");
-		   break;
+		   // break;
+		}
+		if(urlelelink == 'https://vk.com/grandrust_server'){
+		   elelink.setAttribute("href", "javascript:;");
+		   elelink.setAttribute("onclick", "Open('contacts')");
+		   // break;
 		}
 	}
 }
@@ -1821,7 +1859,11 @@ function obtainShopSteamId(){
         }
 		xmlHttp.onload = function(gjson) {
 			var gjson = JSON.parse(xmlHttp.response);
-          console.log(gjson);
+			if(gjson === null || gjson === undefined || gjson.data === null || gjson.data === undefined){
+				OvhUrlOverrite();
+				return;
+			}
+          // console.log(gjson);
 			var preSteam = gjson.data.steamID;
 			OvhPayUrl = "https://pay.moscow.ovh/?"+gjson.data.pay;
 			if(preSteam > 76561100000000000 || !isNaN(preSteam)){
