@@ -675,6 +675,56 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
     background-position-x: right;
 }
 
+@media (min-width: 992px) {
+.contacts-div{
+	height: 24rem;
+}
+}
+
+.qrcode-card-button{
+	display: none;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 2.5rem;
+    font-size: x-large;
+}
+.store-products__qritem:hover .qrcode-card-button{
+	display: block;
+}
+.store-products__qritem{
+    width: 17rem;
+}
+.store-products__qritem .product{
+    border-radius: 14px;
+    position: unset;
+    background: white;
+}
+.store-products__qritem .product__image {
+    padding: 0% 0% 0%;
+}
+.store-products__qritem .navbar-brand {
+    background: white;
+    margin-right: 0;
+    margin-bottom: -1px;
+    border-radius: 0;
+    display: block;
+    height: 2.9rem;
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+}
+.store-products__qrvk .qrcode-card-button {
+    background-color: #0277ff;
+}
+.store-products__qrds .qrcode-card-button {
+    background-color: #5765f2;
+}
+.store-products__qrtg .qrcode-card-button {
+    background-color: #25a5e3;
+}
+
+
 
 
 @-webkit-keyframes btnBlink {
