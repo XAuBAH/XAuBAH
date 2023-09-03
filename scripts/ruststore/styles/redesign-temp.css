@@ -255,7 +255,9 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 
 	.navbar-brand {
 		background: rgba(43, 52, 58, 0.8);
-		padding: 0.5em 2.34em;
+		width: 361.3px;
+		line-height: 2.2em;
+		text-align: center;
 		height: 3rem;
 		margin-right: 0.6rem;
 		border-radius: 3px;
@@ -722,6 +724,43 @@ a[href="/products/229629"]:before, a[href="/products/229630"]:before, a[href="/p
 }
 .store-products__qrtg .qrcode-card-button {
     background-color: #25a5e3;
+}
+.custom-warning2 {
+    position: absolute;
+    display: block;
+    pointer-events: none!important;
+    min-width: 290px;
+    right: 51px;
+    top: -124px;
+    bottom: 5px;
+    padding: 12px 12px 5px 12px;
+    background: rgba(244, 67, 54, 0.31);
+}
+.custom-warning2-padding {
+    padding: 4px 12px 5px 12px;
+    font-size: small;
+    min-width: 303px;
+}
+.custom-warning2::after {
+    position: absolute;
+    border-style: solid;
+    border-width: 1em 2.8em 0;
+    border-color: rgba(244, 67, 54, 0.31) transparent transparent transparent;
+    bottom: 100%;
+    content: "";
+    margin-left: 6.7em;
+    margin-bottom: -8.4em;
+    margin-top: 0px;
+    font-size: initial;
+}
+@media (max-width: 992px) {
+	.custom-warning2::after {
+		display: none;
+	}
+}
+#promo_container_header {
+    overflow: unset;
+    z-index: 3;
 }
 
 
