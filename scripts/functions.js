@@ -1906,7 +1906,9 @@ var MD5 = function(d){result = M(V(Y(X(d),8*d.length)));return result.toLowerCas
 DOMReady(function () {
 	
 	try{
-		setTimeout(() => obtainShopSteamId(), 6000);
+		setTimeout(() => obtainShopSteamId(), 1500);
+		setTimeout(() => obtainShopSteamId(), 4000);
+		obtainShopSteamId();
 	}catch(e){
 		console.log('element not found '+ e);
 	}
