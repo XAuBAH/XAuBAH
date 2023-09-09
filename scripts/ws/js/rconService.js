@@ -18,7 +18,7 @@ function RconService() {
   var LastIndex = 1001;
 
   Service.Connect = function(addr, pass) {
-    this.Socket = new WebSocket(window.location.protocol == 'https:' ? "wss://" : "ws://" + addr + "/" + pass);
+    this.Socket = new WebSocket((window.location.protocol == 'https:' ? "wss://" : "ws://") + addr + "/" + pass);
 	tries++;
 	if(tries == 1){
 		setTimeout( function ()
