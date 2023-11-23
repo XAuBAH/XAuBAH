@@ -370,6 +370,15 @@ body::-webkit-scrollbar-thumb {
 #Modal .modal-content {
     background: rgba(23, 23, 23, 0.86)!important;
 }
+
+@media (min-width: 1560px){
+	.xbox__body .store-global-discount {
+		background: rgba(23, 23, 23, 0.86);
+	}
+	.xbox__body .store-categories {
+		background: rgba(23, 23, 23, 0.86);
+}
+}
 @media (min-width: 1200px) {
   
 	.timer-dock #timer .number {
