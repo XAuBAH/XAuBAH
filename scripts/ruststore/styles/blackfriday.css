@@ -1,5 +1,5 @@
 /* ////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////head */
+/* //////////////////////////////////////////////////////head  не забыть ,gh/XAuBAH/XAuBAH@latest/scripts/ruststore/styles/blackfriday.css*/
 /* ////////////////////////////////////////////////////////////////// */
 /* 
 <script>
@@ -69,7 +69,7 @@ function SetTimerCD() {
 
 */
 /* ////////////////////////////////////////////////////////////////// */
-/* //////////////////////////////////////////////////////body */
+/* //////////////////////////////////////////////////////body перед content_blocked*/
 /* ////////////////////////////////////////////////////////////////// */
 /*
 
@@ -117,13 +117,14 @@ body::-webkit-scrollbar-thumb {
 
 .header__image {
         content: url("https://i.imgur.com/CXptxMM.png")!important;
+		width: 100% !important;
     }
 
 .wrapper {
     background: black !important;
 }
 .animated .header {
-    margin-top: 79px;
+    margin-top: 75px;
     margin-bottom: 50px;
 }
 .footer {
@@ -138,7 +139,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .substrate .caution {
-    background: url("https://i.imgur.com/bOcZZY1.jpg") left center repeat-x; /* https://i.imgur.com/VFT0NLC.png */
+    background: url("https://i.imgur.com/Xwck7Ac.jpg") left center repeat-x;
     background-size: contain;
     height: 65px;
     left: -20px;
@@ -348,7 +349,19 @@ body::-webkit-scrollbar-thumb {
 .xbox {
     background-color: rgba(23, 23, 23, 0.86);
 }
-.navbar {
+/* .navbar {
+    background: rgba(23, 23, 23, 0.86);
+} */
+.navbar-brand {
+    background: rgba(23, 23, 23, 0.86);
+}
+.navbar-toggleable-md .nav-link {
+    background: rgba(23, 23, 23, 0.86);
+}
+.nav-item .nav-link:focus, .nav-item .nav-link.active {
+    background: rgba(23, 23, 23, 0.86)!important;
+}
+.ml-auto .navbar-nav {
     background: rgba(23, 23, 23, 0.86);
 }
 .modal .modal-content {
@@ -357,7 +370,6 @@ body::-webkit-scrollbar-thumb {
 #Modal .modal-content {
     background: rgba(23, 23, 23, 0.86)!important;
 }
-
 @media (min-width: 1200px) {
   
 	.timer-dock #timer .number {
