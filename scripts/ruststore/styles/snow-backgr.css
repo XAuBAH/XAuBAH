@@ -1,4 +1,14 @@
 body {
 	background: url('https://i.imgur.com/XZDisCU.jpg'),
 				url('https://i.imgur.com/XZDisCU_d.webp?maxwidth=1500&fidelity=low');
+    background-position: 50% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0e0e0e;
+    overflow-y: overlay;
+}
+.snowoff{
+    position: fixed;
+    right: 5%;
+    top: 54px;
 }
