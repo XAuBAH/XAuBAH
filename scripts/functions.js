@@ -245,19 +245,11 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">4.3</td>
-    <td class="tg-2lax">Запрещено употребление нецензурных выражений и оскорбления других игроков.</td>
-  </tr>
-  <tr>
-    <td class="tg-1lax">4.4</td>
     <td class="tg-2lax">Запрещена реклама сторонних проектов и платформ в любой форме.</td>
   </tr>
   <tr>
-    <td class="tg-1lax">4.5</td>
+    <td class="tg-1lax">4.4</td>
     <td class="tg-2lax">Запрещено выдавать себя за администратора или проверяющего проекта. Запрещено использование "ADMIN" или "MODER", или похожие слова в нике.</td>
-  </tr>
-  <tr>
-    <td class="tg-1lax">4.6</td>
-    <td class="tg-2lax">Запрещено намеренное изменение нецензурной речи и оскорблений для обхода автоматического мута.</td>
   </tr>
 </tbody>
 </table>
@@ -1479,7 +1471,7 @@ curcontent["serv"] = {
 
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
-	xcon: `<div class="xbox oplata_info"><!-- marker qiwi --><!--
+	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
 <form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
 	<div class="qiwi-widget-title qiwi-title-2">QIWI</div>
@@ -1497,7 +1489,7 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-qiwi"></div><div class="payment-type payment-block-lava"></div>
 	</div>
 	</label>
-</form> --><!-- marker qiwi end --><!-- marker cards -->
+</form><!-- marker qiwi end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
 	<div class="qiwi-widget-title qiwi-title-2">Карты
@@ -1519,7 +1511,7 @@ curcontent["Oplata"] = {
 </form><!-- marker cards end --><!-- marker fk -->
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
-	<div class="qiwi-widget-title qiwi-title-3">QIWI, Криптовалюта,<br>YooMoney, WMZ и др.</div>
+	<div class="qiwi-widget-title qiwi-title-3">Криптовалюта,<br>YooMoney, WMZ и др.</div>
 	<div class="qiwi-inp-box">
 			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1591,13 +1583,13 @@ curcontent["Oplata"] = {
 
 
 
-var BlockListArrays = [['pistol.revolver', 'shotgun.double'], 
+var BlockListArrays = [['pistol.revolver', 'shotgun.double', 'snowballgun'], 
 ['pistol.python', 'pistol.semiauto', 'flamethrower', 'coffeecan.helmet', 'roadsign.kilt', 'roadsign.jacket'], 
 ['shotgun.pump', 'pistol.prototype17'], 
-['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.plate.torso', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants'],
-['rifle.ak', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.rocket.mlrs', 'ammo.grenadelauncher.he'], 
+['rifle.semiauto', 'smg.mp5', 'shotgun.spas12', 'pistol.m92', 'smg.thompson', 'smg.2', 'metal.facemask', 'metal.facemask.icemask', 'metal.plate.torso', 'metal.plate.torso.icevest', 'heavy.plate.helmet', 'heavy.plate.jacket', 'heavy.plate.pants', 'shotgun.m4'],
+['rifle.ak', 'rifle.ak.ice', 'rifle.ak.diver', 'rifle.bolt', 'rifle.lr300', 'rifle.l96', 'rifle.m39', 'ammo.rocket.mlrs', 'ammo.grenadelauncher.he'], 
 ['lmg.m249', 'hmlmg', 'grenade.f1', 'grenade.beancan', 'explosive.satchel', 'surveycharge', 'ammo.rifle.explosive'], 
-['explosive.timed', 'rocket.launcher']];
+['explosive.timed', 'rocket.launcher', 'homingmissile.launcher']];
 
 
 curcontent["block"] = {
@@ -1906,6 +1898,8 @@ var MD5 = function(d){result = M(V(Y(X(d),8*d.length)));return result.toLowerCas
 DOMReady(function () {
 	
 	try{
+		setTimeout(() => obtainShopSteamId(), 500);
+		setTimeout(() => obtainShopSteamId(), 1000);
 		setTimeout(() => obtainShopSteamId(), 1500);
 		setTimeout(() => obtainShopSteamId(), 4000);
 		obtainShopSteamId();
