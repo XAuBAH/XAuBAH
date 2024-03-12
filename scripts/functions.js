@@ -1474,7 +1474,8 @@ curcontent["Oplata"] = {
 	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
 <form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
-	<div class="qiwi-widget-title qiwi-title-2">QIWI</div>
+	<div class="qiwi-widget-title qiwi-title-2">СБП, Карты (P2P)
+		<p>Без комиссии</p></div>
 	<div class="qiwi-inp-box">
 			<label for="lava-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1485,15 +1486,15 @@ curcontent["Oplata"] = {
 	<div class="qiwi-button-box">
 		<button class="qiwi-submit-main" id="lava-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
-	<div class="payment-block">
-        <div class="payment-type payment-block-qiwi"></div><div class="payment-type payment-block-lava"></div>
+	<div class="payment-block" style="margin: 0 13.5% 7px;">
+        <div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-lava"></div>
 	</div>
 	</label>
 </form><!-- marker qiwi end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">Карты
-		<p>Российские и иностранные работают</p></div>
+	<div class="qiwi-widget-title qiwi-title-2">СБП, Карты
+		<p style="color: red;">Карты временно не работают</p></div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1505,7 +1506,7 @@ curcontent["Oplata"] = {
 		<button class="qiwi-submit-main" id="cent-submit-main" width="159px" type="submit">Оплатить</button>
 	</div>
 	<div class="payment-block">
-        <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-applepay"></div>
+        <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div>
 	</div>
 	</label>
 </form><!-- marker cards end --><!-- marker fk -->
@@ -1542,7 +1543,17 @@ curcontent["Oplata"] = {
 </div>
 <div class="x-spoiler">
 <input class="spoil-button" type="checkbox" tabindex="-1" style="height: 14%;">
-    <div class="spoil-box"><span class="spoil-close fa"></span><span class="spoil-open fa"></span><span class="spoil-head">Ни один метод выше не работает?</span><br>
+    <div class="spoil-box">
+	<div style="display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-ms-flex-pack: end;justify-content: space-between;"><div><span class="spoil-open fa"></span><span class="spoil-head">Ни один метод выше не работает?</span></div>
+		<div class="spoil-right-logo-box">
+			<span class="fa-cc-visa fa"></span>
+			<span class="fa-cc-mastercard fa"></span>
+			<span class="fa-cc-jcb fa"></span>
+			<span class="fa-cc-amex fa"></span>
+			<span class="fa-cc-paypal fa"></span>
+			<span class="fa-google fa">Pay</span>
+		</div>
+	</div>
 	<blockquote class="spoil-Untext">
 		<div class="container">
 		  <div class="row">
