@@ -377,7 +377,7 @@
 .x-spoiler span.spoil-open{
 	padding-left: 2px;
     padding-right: 8px;
-	text-decoration: underline;
+	/* text-decoration: underline; */
 } 
 .x-spoiler span.spoil-close:before{
 	content: "\f0ab";

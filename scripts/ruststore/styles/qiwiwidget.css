@@ -198,6 +198,22 @@
     pointer-events: none;
 }
 
+.spoil-right-logo-box span {
+    font-size: 1.7rem;
+    margin: 0 1px;
+    color: rgba(143,143,143,.48);
+}
+.spoil-right-logo-box .fa-google {
+    font: normal normal normal 1.7rem/1.43 FontAwesome,Arial!important;
+    background: rgba(143,143,143,.48);
+    color: rgb(42 51 58);
+    border-radius: 2px;
+    padding: 0 3px;
+    letter-spacing: -4px;
+    transform: scale(0.55,0.6);
+    margin: 0 -13px;
+}
+
 
 .qiwi-donation-amount:focus~.qiwi-label {
     -webkit-transform: scale(0.65) translate(-23px,-40px);
