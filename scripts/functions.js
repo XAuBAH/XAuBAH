@@ -1472,7 +1472,7 @@ curcontent["serv"] = {
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
 	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
-<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
+<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php" style="display: none;">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
 	<div class="qiwi-widget-title qiwi-title-2">СБП, Карты (P2P)
 		<p>Без комиссии</p></div>
