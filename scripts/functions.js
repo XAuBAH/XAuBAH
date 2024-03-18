@@ -1474,8 +1474,8 @@ curcontent["Oplata"] = {
 	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
 <form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
-	<div class="qiwi-widget-title qiwi-title-2">СБП, Карты (P2P)
-		<p>Без комиссии</p></div>
+	<div class="qiwi-widget-title qiwi-title-2">Карты
+		<p>Комиссия 7%</p></div>
 	<div class="qiwi-inp-box">
 			<label for="lava-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1493,7 +1493,8 @@ curcontent["Oplata"] = {
 </form><!-- marker qiwi end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">СБП</div>
+	<div class="qiwi-widget-title qiwi-title-2">СБП
+		<p>Самая минимальная комиссия</p></div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1578,7 +1579,7 @@ curcontent["Oplata"] = {
 				<span style="font-size: x-small;">(Чем крупнее платёж - тем выгоднее комиссия платформы Tebex)</span>
 				<div class="tebex-warning mb-2 mt-4" style="background-color: #f0ad4e5e;padding: 5px 10px;border-radius: 5px;color: #ffe4c4;">
 					<h4><b>Внимание!</b></h4>
-					<div>- Очень важно авторизоваться там с того же аккаунта Steam.<br>- Указать там сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам на баланс в нашем магазине.</div>
+					<div>- Очень важно авторизоваться в Tebex с того же аккаунта Steam.<br>- Указать в Tebex сумму именно в валюте USD.<br><i class="fa fa-info-circle"></i> После оплаты можно возвращаться на эту станицу и обновить её, сумма в рублях будет автоматически начислена вам на баланс в нашем магазине.</div>
 				</div>
 			  </div>
 			</div>
