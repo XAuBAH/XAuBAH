@@ -1493,7 +1493,7 @@ curcontent["Oplata"] = {
 </form><!-- marker qiwi end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">СБП
+	<div class="qiwi-widget-title qiwi-title-2">Карты, СБП
 		<p>Самая минимальная комиссия</p></div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
@@ -1512,7 +1512,7 @@ curcontent["Oplata"] = {
 </form><!-- marker cards end --><!-- marker fk -->
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
-	<div class="qiwi-widget-title qiwi-title-3">СБП, КАРТЫ,<br>YooMoney, WMZ и др.</div>
+	<div class="qiwi-widget-title qiwi-title-3">КАРТЫ, СБП,<br>YooMoney, WMZ и др.</div>
 	<div class="qiwi-inp-box">
 			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1558,7 +1558,7 @@ curcontent["Oplata"] = {
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-10 offset-md-1">
-			  <h1 class="tebex-header text-center mb-4">Сколько вы хотели перевести?</h1>
+			  <h4 class="tebex-header text-center mb-4">Попробуйте наш заграничный агрегатор платежей, тут вы найдёте множество разных способов пополнения почти для всех стран мира:</h4>
 			  <form onsubmit="return false">
 				<div class="form-group">
 				  <div class="input-group"><div class="input-group-addon">RUB</div><input id="rubInput" type="tel" class="form-control form-control-lg" placeholder="Введите сумму желаемого перевода в рублях" autocomplete="off"></div>
@@ -1758,8 +1758,8 @@ function centHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('cent-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 15 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('cent-error-box').innerText = "От 15 до 15000 RUB";
+	if(inputfloat < 100 || inputfloat > 50000 || isNaN(inputfloat)){
+		document.getElementById('cent-error-box').innerText = "От 100 до 50000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
@@ -1779,8 +1779,8 @@ function lavaHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('lava-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 5 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('lava-error-box').innerText = "От 5 до 15000 RUB";
+	if(inputfloat < 200 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('lava-error-box').innerText = "От 200 до 15000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
