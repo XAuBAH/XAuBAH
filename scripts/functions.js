@@ -1493,7 +1493,7 @@ curcontent["Oplata"] = {
 </form><!-- marker qiwi end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
-	<div class="qiwi-widget-title qiwi-title-2">Карты, СБП
+	<div class="qiwi-widget-title qiwi-title-2">СБП
 		<p>Самая минимальная комиссия</p></div>
 	<div class="qiwi-inp-box">
 			<label for="cent-donation-amount" class="qiwi-label">Cумма</label>
