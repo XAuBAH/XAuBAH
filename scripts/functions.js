@@ -505,7 +505,7 @@ curcontent["rules"] = {
   </tr>
   <tr>
     <td class="tg-1lax">9.14</td>
-    <td class="tg-2lax">Проверяющий в праве потребовать ваши личные переписки во всех доступных мессенджерах для проверки факта приобретения сторонних ПО. Так же проверяющий имеет право просматривать файлы/картинки/видео/аудио,  если это будет связано с игрой/читами/макросами/банами/покупкой акка. Если во время проверки либо до нее, Вы удалиете какой-либо файл, переписки и тд., без ведома проверяющего - это приравнивается к отказу от проверки и последующий бан.</td>
+    <td class="tg-2lax">Проверяющий в праве потребовать ваши личные переписки во всех доступных мессенджерах для проверки факта приобретения сторонних ПО. Так же проверяющий имеет право просматривать файлы/картинки/видео/аудио,  если это будет связано с игрой/читами/макросами/банами/покупкой акка. Если во время проверки либо до нее, Вы удалите какой-либо файл, переписки и тд., без ведома проверяющего - это приравнивается к отказу от проверки и последующий бан.</td>
   </tr>
   <tr>
     <td class="tg-1lax">9.15</td>
@@ -1509,7 +1509,26 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div>
 	</div>
 	</label>
-</form><!-- marker cards end --><!-- marker fk -->
+</form><!-- marker cards end --><!-- marker fk2 -->
+<form onsubmit="return freekassaHandler2(event)" class="qiwi-inp-form" id="fk-inp-form2" method="get" target="_blank" action="/api/freekassa.php">
+<label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other2">
+	<div class="qiwi-widget-title qiwi-title-3">РФ КАРТЫ
+		<p>Комиссия больше</p></div>
+	<div class="qiwi-inp-box">
+			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>
+			<div class="qiwi-rub">₽</div>
+			<input type="tel" class="qiwi-donation-amount" id="fk-donation-amount2" name="amo" required="" value="">
+			<input type="hidden" id="fk-donation-account2" name="acc" value="0">
+			<div class="qiwi-error-box" id="fk-error-box2"></div>
+	</div>
+	<div class="qiwi-button-box">
+		<button class="qiwi-submit-main" id="fk-submit-main2" width="159px" type="submit">Оплатить</button>
+	</div>
+	<div class="payment-block">
+        <div class="payment-type payment-block-visa" style="filter: invert(1);"></div><div class="payment-type payment-block-mastercard" style="filter: invert(1);"></div><div class="payment-type payment-block-mir" style="filter: invert(1);"></div>
+	</div>
+	</label>
+</form><!-- marker fk2 end --><!-- marker fk -->
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
 	<div class="qiwi-widget-title qiwi-title-3">P2P КАРТЫ, СБП,<br>YooMoney, WMZ и др.</div>
@@ -1733,6 +1752,26 @@ function freekassaHandler(e){
 	
 	return null;
 }
+function freekassaHandler2(e){
+	qiwiFormHandle();
+	var inputval = document.getElementById('fk-donation-amount2').value;
+	var inputfloat = parseFloat(inputval);
+	if(inputfloat < 30 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('fk-error-box2').innerText = "От 30 до 15000 RUB";
+		e.preventDefault();
+		return false;
+	}else{
+		document.getElementById('fk-error-box2').innerText = "";
+	}
+	document.getElementById('fk-donation-amount2').value = inputfloat;
+	if(CustomerSteamId == "0" || CustomerSteamId == ""){
+		document.getElementById('fk-error-box2').innerText = "Пожалуйста авторизуйтесь в магазине!";
+		e.preventDefault();
+		return false;
+	}
+	
+	return null;
+}
 /* function unitpayHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('unitpay-donation-amount').value;
@@ -1819,6 +1858,9 @@ function qiwiFormHandle(){
 	var a7 = document.getElementById('qiwi-successUrl');
 	if(a7 != null)
 	a7.value = 'https://'+window.location.hostname;
+	var a8 = document.getElementById('fk-donation-account2');
+	if(a8 != null)
+	a8.value = CustomerSteamId;
 }
 
 function OvhUrlOverrite(){
@@ -1943,7 +1985,7 @@ DOMReady(function () {
 	if(visitorCountry == 'UA'){
 		var origstring = curcontent["Oplata"].xcon.toString();
 		try{
-			curcontent["Oplata"].xcon = origstring.replace(/<!-- marker cards -->.*<!-- marker cards end -->/gs, '').replace('Скины, Криптовалюта, YooMoney и др.', 'Карты, Скины, Криптовалюта и др.').replace(' qiwi-inp-other', '');
+			curcontent["Oplata"].xcon = origstring.replace(/<!-- marker fk2 -->.*<!-- marker fk2 end -->/gs, '').replace(/<!-- marker cards -->.*<!-- marker cards end -->/gs, '').replace('Скины, Криптовалюта, YooMoney и др.', 'Карты, Скины, Криптовалюта и др.').replace(' qiwi-inp-other', '');
 			
 			var qiwiformstr = curcontent["Oplata"].xcon.match(/<!-- marker qiwi -->.*<!-- marker qiwi end -->/gs)[0].replace('marker', '');
 			var fkformstr = curcontent["Oplata"].xcon.match(/<!-- marker fk -->.*<!-- marker fk end -->/gs)[0].replace('marker', '');
