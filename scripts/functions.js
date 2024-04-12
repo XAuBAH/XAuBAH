@@ -1510,7 +1510,7 @@ curcontent["Oplata"] = {
 	</div>
 	</label>
 </form><!-- marker cards end --><!-- marker fk2 -->
-<form onsubmit="return freekassaHandler2(event)" class="qiwi-inp-form" id="fk-inp-form2" method="get" target="_blank" action="/api/freekassa.php">
+<form onsubmit="return freekassaHandler2(event)" class="qiwi-inp-form" id="fk-inp-form2" method="get" target="_blank" action="/api/freekassa.php" style="display: none;">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other2">
 	<div class="qiwi-widget-title qiwi-title-3">РФ КАРТЫ
 		<p>Комиссия больше</p></div>
@@ -1529,7 +1529,7 @@ curcontent["Oplata"] = {
 	</div>
 	</label>
 </form><!-- marker fk2 end --><!-- marker fk -->
-<form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
+<form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/" style="display: none;">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
 	<div class="qiwi-widget-title qiwi-title-3">P2P КАРТЫ, СБП,<br>YooMoney, WMZ и др.</div>
 	<div class="qiwi-inp-box">
