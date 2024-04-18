@@ -1472,7 +1472,7 @@ curcontent["serv"] = {
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
 	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
-<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
+<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php" style="display: none;">
 <label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava" style="width: 209px;">
 	<div class="qiwi-widget-title qiwi-title-2" style="margin-top: -4px;height: 61px;">С карты на карту 
 		<p>Большая комиссия и неудобно. Не допускайте ошибок в номерах</p></div>
@@ -1529,7 +1529,7 @@ curcontent["Oplata"] = {
 	</div>
 	</label>
 </form><!-- marker fk2 end --><!-- marker fk -->
-<form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/" style="display: none;">
+<form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
 	<div class="qiwi-widget-title qiwi-title-3">P2P КАРТЫ, СБП,<br>YooMoney, WMZ и др.</div>
 	<div class="qiwi-inp-box">
