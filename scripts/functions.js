@@ -1472,10 +1472,10 @@ curcontent["serv"] = {
 curcontent["Oplata"] = {
 	xhead: 'Пополнение баланса',
 	xcon: `<div class="xbox oplata_info"><!-- marker qiwi -->
-<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php" style="display: none;">
-<label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava">
-	<div class="qiwi-widget-title qiwi-title-2">Карты
-		<p>Комиссия 7%</p></div>
+<form onsubmit="return lavaHandler(event)" class="qiwi-inp-form" id="lava-inp-form" method="get" target="_blank" action="/api/lava.php">
+<label for="lava-donation-amount" class="qiwi-inp-main" id="qiwi-inp-lava" style="width: 209px;">
+	<div class="qiwi-widget-title qiwi-title-2" style="margin-top: -4px;height: 61px;">С карты на карту 
+		<p>Большая комиссия и неудобно. Не допускайте ошибок в номерах</p></div>
 	<div class="qiwi-inp-box">
 			<label for="lava-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1818,8 +1818,8 @@ function lavaHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('lava-donation-amount').value;
 	var inputfloat = parseFloat(inputval).toFixed(2);
-	if(inputfloat < 200 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('lava-error-box').innerText = "От 200 до 15000 RUB";
+	if(inputfloat < 300 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('lava-error-box').innerText = "От 300 до 15000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
