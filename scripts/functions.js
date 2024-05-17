@@ -1490,7 +1490,29 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-mir"></div><div class="payment-type payment-block-lava"></div>
 	</div>
 	</label>
-</form><!-- marker qiwi end --><!-- marker cards -->
+</form><!-- marker qiwi end --><!-- marker yoomoney -->
+<form onsubmit="return YooMoneyHandler(event)" class="qiwi-inp-form" id="fk-inp-form2" method="post" target="_blank" action="https://yoomoney.ru/quickpay/confirm">
+<label for="fk-donation-amount2" class="qiwi-inp-main" id="qiwi-inp-other2">
+	<div class="qiwi-widget-title qiwi-title-3">РФ КАРТЫ
+		<p>Через YooMoney</p></div>
+	<div class="qiwi-inp-box">
+			<label for="fk-donation-amount2" class="qiwi-label">Cумма</label>
+			<div class="qiwi-rub">₽</div>
+			<input type="tel" class="qiwi-donation-amount" id="fk-donation-amount2" name="oldsum" required="" value="">
+			<input type="hidden" id="fk-donation-amount-hid2" name="sum" value="">
+			<input type="hidden" name="receiver" value="410013417821765"/>
+			<input type="hidden" id="fk-donation-account2" name="label" value="0"/>
+			<input type="hidden" name="quickpay-form" value="button"/>
+			<div class="qiwi-error-box" id="fk-error-box2"></div>
+	</div>
+	<div class="qiwi-button-box">
+		<button class="qiwi-submit-main" id="fk-submit-main2" width="159px" type="submit" style="background-color: #702ff4;box-shadow: 0 12px 15px 0 rgba(112,47,244,.45);">Оплатить</button>
+	</div>
+	<div class="payment-block">
+        <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div>
+	</div>
+	</label>
+</form><!-- marker yoomoney end --><!-- marker cards -->
 <form onsubmit="return centHandler(event)" class="qiwi-inp-form" id="cent-inp-form" method="get" target="_blank" action="/api/cent.php">
 <label for="cent-donation-amount" class="qiwi-inp-main" id="qiwi-inp-cent">
 	<div class="qiwi-widget-title qiwi-title-2">СБП
@@ -1509,29 +1531,10 @@ curcontent["Oplata"] = {
         <div class="payment-type payment-block-visa"></div><div class="payment-type payment-block-mastercard"></div><div class="payment-type payment-block-mir"></div>
 	</div>
 	</label>
-</form><!-- marker cards end --><!-- marker fk2 -->
-<form onsubmit="return freekassaHandler2(event)" class="qiwi-inp-form" id="fk-inp-form2" method="get" target="_blank" action="/api/freekassa.php" style="display: none;">
-<label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other2">
-	<div class="qiwi-widget-title qiwi-title-3">РФ КАРТЫ
-		<p>Комиссия больше</p></div>
-	<div class="qiwi-inp-box">
-			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>
-			<div class="qiwi-rub">₽</div>
-			<input type="tel" class="qiwi-donation-amount" id="fk-donation-amount2" name="amo" required="" value="">
-			<input type="hidden" id="fk-donation-account2" name="acc" value="0">
-			<div class="qiwi-error-box" id="fk-error-box2"></div>
-	</div>
-	<div class="qiwi-button-box">
-		<button class="qiwi-submit-main" id="fk-submit-main2" width="159px" type="submit">Оплатить</button>
-	</div>
-	<div class="payment-block">
-        <div class="payment-type payment-block-visa" style="filter: invert(1);"></div><div class="payment-type payment-block-mastercard" style="filter: invert(1);"></div><div class="payment-type payment-block-mir" style="filter: invert(1);"></div>
-	</div>
-	</label>
-</form><!-- marker fk2 end --><!-- marker fk -->
+</form><!-- marker cards end --><!-- marker fk -->
 <form onsubmit="return freekassaHandler(event)" class="qiwi-inp-form" id="fk-inp-form" method="get" target="_blank" action="https://pay.freekassa.ru/">
 <label for="fk-donation-amount" class="qiwi-inp-main qiwi-inp-other" id="qiwi-inp-other">
-	<div class="qiwi-widget-title qiwi-title-3">P2P КАРТЫ, СБП,<br>YooMoney, WMZ и др.</div>
+	<div class="qiwi-widget-title qiwi-title-3">Криптовалюта, СБП,<br>YooMoney, WMZ и др.</div>
 	<div class="qiwi-inp-box">
 			<label for="fk-donation-amount" class="qiwi-label">Cумма</label>
 			<div class="qiwi-rub">₽</div>
@@ -1752,23 +1755,25 @@ function freekassaHandler(e){
 	
 	return null;
 }
-function freekassaHandler2(e){
+function YooMoneyHandler(e){
 	qiwiFormHandle();
 	var inputval = document.getElementById('fk-donation-amount2').value;
 	var inputfloat = parseFloat(inputval);
-	if(inputfloat < 30 || inputfloat > 15000 || isNaN(inputfloat)){
-		document.getElementById('fk-error-box2').innerText = "От 30 до 15000 RUB";
+	if(inputfloat < 20 || inputfloat > 15000 || isNaN(inputfloat)){
+		document.getElementById('fk-error-box2').innerText = "От 20 до 15000 RUB";
 		e.preventDefault();
 		return false;
 	}else{
 		document.getElementById('fk-error-box2').innerText = "";
 	}
-	document.getElementById('fk-donation-amount2').value = inputfloat;
 	if(CustomerSteamId == "0" || CustomerSteamId == ""){
 		document.getElementById('fk-error-box2').innerText = "Пожалуйста авторизуйтесь в магазине!";
 		e.preventDefault();
 		return false;
 	}
+	inputfloat = parseFloat(inputfloat / (1 - 0.0305)).toFixed(2);
+	console.log(inputfloat);
+	document.getElementById('fk-donation-amount-hid2').setAttribute("value", inputfloat);
 	
 	return null;
 }
@@ -1985,7 +1990,7 @@ DOMReady(function () {
 	if(visitorCountry == 'UA'){
 		var origstring = curcontent["Oplata"].xcon.toString();
 		try{
-			curcontent["Oplata"].xcon = origstring.replace(/<!-- marker fk2 -->.*<!-- marker fk2 end -->/gs, '').replace(/<!-- marker cards -->.*<!-- marker cards end -->/gs, '').replace('Скины, Криптовалюта, YooMoney и др.', 'Карты, Скины, Криптовалюта и др.').replace(' qiwi-inp-other', '');
+			curcontent["Oplata"].xcon = origstring.replace(/<!-- marker yoomoney -->.*<!-- marker yoomoney end -->/gs, '').replace(/<!-- marker cards -->.*<!-- marker cards end -->/gs, '').replace('Скины, Криптовалюта, YooMoney и др.', 'Карты, Скины, Криптовалюта и др.').replace(' qiwi-inp-other', '');
 			
 			var qiwiformstr = curcontent["Oplata"].xcon.match(/<!-- marker qiwi -->.*<!-- marker qiwi end -->/gs)[0].replace('marker', '');
 			var fkformstr = curcontent["Oplata"].xcon.match(/<!-- marker fk -->.*<!-- marker fk end -->/gs)[0].replace('marker', '');
