@@ -356,7 +356,7 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   name: "ПРМ"
 },{
   command: "giveallpartstest {steamid}",
-  image: "https://i.imgur.com/ii3lolX.png",
+  image: "https://i.imgur.com/YIMafzO.png",
   name: "ПРМ запчасти"
 },{
   command: "grant.permission {steamid} recycler.premium {amo}",
@@ -389,7 +389,7 @@ function PlayerInfoController( $scope, rconService, $routeParams )
 },{
   command: "giveplayercomp {steamid}",
   image: "https://i.imgur.com/LGMAyC9_d.webp?maxwidth=250&fidelity=low",
-  name: "Ферма запчасти"
+  name: "не работает"
 },{
   command: "xpgive {steamid} {amo}",
   image: "https://i.imgur.com/f8yOrh2.png",
@@ -457,11 +457,11 @@ function PlayerInfoController( $scope, rconService, $routeParams )
 },{
   command: "copter.add {steamid}",
   image: "https://i.imgur.com/NLd3HuS.png",
-  name: "Коптер"
+  name: "Не рабочее"
 },{
   command: "givecasino {steamid}",
   image: "https://i.imgur.com/5IVs5ZV.png",
-  name: "Игровой стол"
+  name: "Не рабочее"
 },{
   command: "addach {steamid} 1 1",
   image: "https://i.imgur.com/DAy0aef.png",
