@@ -355,6 +355,10 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   image: "https://i.imgur.com/aD1Vio6_d.png?maxwidth=250&fidelity=low",
   name: "ПРМ"
 },{
+  command: "giveallpartstest {steamid}",
+  image: "https://i.imgur.com/ii3lolX.png",
+  name: "ПРМ запчасти"
+},{
   command: "grant.permission {steamid} recycler.premium {amo}",
   image: "https://i.imgur.com/QM6TkB5_d.png?maxwidth=250&fidelity=low",
   name: "Перераб"
@@ -388,20 +392,28 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   name: "Ферма запчасти"
 },{
   command: "xpgive {steamid} {amo}",
-  image: "https://media.discordapp.net/attachments/619458176483328020/619461634318139392/cKJ41ae.png?width=256&height=256",
+  image: "https://i.imgur.com/f8yOrh2.png",
   name: "Гранды"
 },{
   command: "levelgive {steamid} {amo}",
-  image: "https://media.discordapp.net/attachments/619458176483328020/621437920674578433/icon.png?width=256&height=256",
+  image: "https://i.imgur.com/LOQXhKJ_d.png?maxwidth=384&fidelity=grand",
   name: "Левел"
 },{
-  command: "givegold {steamid} 1",
-  image: "https://media.discordapp.net/attachments/578323395842670593/878378478221803530/icon.png?width=256&height=256",
+  command: "givegold {steamid} {amo}",
+  image: "https://i.imgur.com/nN6PpnK.png",
   name: "Грандий"
 },{
-  command: "nalog givetoplayer {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/871838952091430952/icon.png?width=256&height=256",
-  name: "Пока не<br>работает"// Налог ящик
+  command: "givegoldlomidi {steamid} {amo}",
+  image: "https://i.imgur.com/qHeXuJi.png",
+  name: "Ломидий"
+},{
+  command: "givegoldporodaIRON {steamid} {amo}",
+  image: "https://i.imgur.com/na3Y39q.png",
+  name: "Твёрдая пор желез"
+},{
+  command: "givegoldporodaSULFUR {steamid} {amo}",
+  image: "https://i.imgur.com/D8ZmJOC.png",
+  name: "Твёрдая пор серы"
 },{
   command: "case.add {steamid} s2 10",
   image: "https://i.imgur.com/7HWdil3_d.png?maxwidth=250&fidelity=low",
@@ -444,28 +456,12 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   name: "Прем в склад<br>3д"
 },{
   command: "copter.add {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/738225124385488976/icon.png?width=256&height=256",
+  image: "https://i.imgur.com/NLd3HuS.png",
   name: "Коптер"
 },{
   command: "givecasino {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/878378605695107092/table.png?width=256&height=256",
+  image: "https://i.imgur.com/5IVs5ZV.png",
   name: "Игровой стол"
-},{
-  command: "th givecard1 {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/685235338398007374/vX4qb6R.png?width=256&height=256",
-  name: "Пока не<br>работает"// Карта 1
-},{
-  command: "th givecard2 {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/685235353212551188/2KmMtJF.png?width=256&height=256",
-  name: "Пока не<br>работает"// Карта 2
-},{
-  command: "th givecard3 {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/685235367678312473/2q4V2lG.png?width=256&height=256",
-  name: "Пока не<br>работает"// Карта 3
-},{
-  command: "th givecard4 {steamid}",
-  image: "https://media.discordapp.net/attachments/578323395842670593/685235411798327329/kzyItsE.png?width=256&height=256",
-  name: "Пока не<br>работает"// Карта 4
 },{
   command: "addach {steamid} 1 1",
   image: "https://i.imgur.com/DAy0aef.png",
@@ -480,20 +476,36 @@ function PlayerInfoController( $scope, rconService, $routeParams )
   name: "Нашивка 3"
 },{
   command: "buymap {steamid}",
-  image: "https://media.discordapp.net/attachments/619458176483328020/621462478328561664/1.png?width=256&height=256",
+  image: "https://i.imgur.com/lLhpgG0.png",
   name: "Карта 1"
 },{
   command: "buyuncommonmap {steamid}",
-  image: "https://media.discordapp.net/attachments/619458176483328020/621462296304287783/2.png?width=256&height=256",
+  image: "https://i.imgur.com/cDFYbOo.png",
   name: "Карта 2"
 },{
   command: "buyraremap {steamid}",
-  image: "https://media.discordapp.net/attachments/619458176483328020/621462355460620289/3.png?width=256&height=256",
+  image: "https://i.imgur.com/YhUQLdh.png",
   name: "Карта 3"
 },{
   command: "buyelitemap {steamid}",
-  image: "https://media.discordapp.net/attachments/619458176483328020/621462408992391168/4.png?width=256&height=256",
+  image: "https://i.imgur.com/HPr0I1H.png",
   name: "Карта 4"
+},{
+  command: "th givecard1 {steamid}",
+  image: "https://i.imgur.com/Hib5EFu.png",
+  name: "Пока не<br>работает"// Карта грбанка 1
+},{
+  command: "th givecard2 {steamid}",
+  image: "https://i.imgur.com/YM9vEih.png",
+  name: "Пока не<br>работает"// Карта грбанка 2
+},{
+  command: "th givecard3 {steamid}",
+  image: "https://i.imgur.com/7G3A864.png",
+  name: "Пока не<br>работает"// Карта грбанка 3
+},{
+  command: "th givecard4 {steamid}",
+  image: "https://i.imgur.com/pr6BGsi.png",
+  name: "Пока не<br>работает"// Карта грбанка 4
 },{
   command: "gathgame.refill {steamid} 200",
   image: "https://i.imgur.com/jc8a8Dt_d.png?maxwidth=250&fidelity=low",
